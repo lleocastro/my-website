@@ -1,13 +1,4 @@
 jQuery(function($) {
-    // Active WOW
-    var wow = new WOW({
-        boxClass:     'wow',
-        animateClass: 'animated',
-        offset:       10,
-        mobile:       true,
-        live:         true
-    }).init();
-
     // Progress Bar Counter
     $('.informations').on('inview', function(event, isInView) {
         if (isInView) {
