@@ -128,3 +128,18 @@
         });
     };
 }));
+
+/**
+ * ...
+ */
+$(function() {
+    var wow = new WOW({
+        boxClass:     'wow',
+        animateClass: 'animated',
+        offset:       10,
+        mobile:       true,
+        live:         true
+    }).init();
+
+    $('.counter').countTo();
+});
