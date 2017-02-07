@@ -16,27 +16,32 @@ html {
 /**
  * NAVBAR STYLES
  */
+.navbar {
+    height: 55px;
+}
+.navbar-brand {
+    margin-top: 12px;
+}
 .navbar-nav {
     float: right;
-    margin-top: 10px;
+    margin-top: 0;
 }
 .navbar-nav li {
+    height: 200px;
     display: inline-block;
-    padding: 15px;
+    padding: 20px;
     font-size: .9em;
 }
-.navbar .active {
-    border-bottom: 3px solid #00bcd4;
-}
-.navbar-nav li:hover {
-    border-bottom: 3px solid #00bcd4;
+.navbar .active, .navbar .active a {
+    color: #ffffff;
+    background-color: #00AEC4;
 }
 
 @media screen and (max-width: 997px) {
     .navbar .control-nav {
         position: absolute;
         right: 15px;
-        top: 24px;
+        top: 20px;
         display: block;
         width: 30px;
         padding: 4px 0;
@@ -88,18 +93,31 @@ html {
 
     .navbar-nav {
         float: left;
+        margin-top: 10px;
     }
 
     .navbar-nav li {
         display: block;
+        padding: 15px;
+        font-size: .9em;
+        height: auto;
     }
     .navbar-nav li, a {
-        color: #777;
+        color: #777 !important;
     }
+    .navbar .active {
+        border-bottom: 3px solid #00bcd4;
+    }
+    .navbar-nav li:hover {
+        border-bottom: 3px solid #00bcd4;
+    }
+    .navbar .active, .navbar .active a {
+        background-color: #ffffff;
+    }
+
     .brand {
         margin-left: 15px;
     }
-
 }
 #control-nav:checked ~ .control-nav-close {
     -webkit-transform: translate(0, 0);
