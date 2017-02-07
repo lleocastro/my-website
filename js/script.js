@@ -132,7 +132,7 @@
 /**
  * ...
  */
-$(function() {
+jQuery(function($) {
     var visibleHeight = $(window).height();
     var visibleWidth = $(window).width();
 
@@ -166,15 +166,31 @@ $(function() {
         });
     });
 
-    // $(document).ready(function () {
-    //     $('li a').click(function (e) {
-    //         e.preventDefault();
-    //         document.location.hash = $(this).attr('href');
-    //         $(".scroll").removeClass("active");
-    //         var link = $(this).hasClass('navbar-nav li') ? $(this) : $(this).closest('ul').prev();
-    //         link.addClass('active');
-    //     });
-    // });
+    // Navigation Scroll
+    $(window).scroll(function(event) {
+        Scroll();
+    });
+
+    // User define function
+    function Scroll() {
+        var contentTop      =   [];
+        var contentBottom   =   [];
+        var winTop      =   $(window).scrollTop();
+        var rangeTop    =   30;
+        $('.navbar-nav').find('a.scroll').each(function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            contentTop.push(target.offset().top - rangeTop);
+            contentBottom.push(target.offset().top + $( $(this).attr('href') ).height());
+        });
+        $.each( contentTop, function(i){
+            if (winTop > contentTop[i] - rangeTop) {
+                $('.navbar-nav li')
+                    .removeClass('active')
+                    .eq(i).addClass('active');
+            }
+        });
+    }
 
     //Active WOW.js
     var wow = new WOW({
