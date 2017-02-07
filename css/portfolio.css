@@ -60,7 +60,7 @@ article img {
 }
 
 @media screen and (max-width: 997px) {
-    .desc header, .desc h2 {
+    .desc header {
         text-align: center;
     }
 }
