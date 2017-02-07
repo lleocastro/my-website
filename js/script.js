@@ -9,7 +9,7 @@ jQuery(function($) {
             $(".backimage-full").css({'height': (visibleHeight - 50) + 'px'});
     });
 
-    //Active WOW
+    // Active WOW
     var wow = new WOW({
         boxClass:     'wow',
         animateClass: 'animated',
@@ -25,7 +25,7 @@ jQuery(function($) {
             $("#map").css({'width': (visibleWidth) + 'px'});
     });
 
-    //Scrolling
+    // Scrolling
     $(document).ready(function() {
         // Add smooth scrolling to all links
         $(".scroll").on('click', function(event) {
@@ -54,16 +54,12 @@ jQuery(function($) {
         var contentBottom   =   [];
         var winTop      =   $(window).scrollTop();
         var rangeTop    =   30;
-
-        // ...
         $('.navbar-nav').find('a.scroll').each(function() {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             contentTop.push(target.offset().top - rangeTop);
             contentBottom.push(target.offset().top + $( $(this).attr('href') ).height());
         });
-
-        // ...
         $.each( contentTop, function(i){
             if (winTop > contentTop[i] - rangeTop) {
                 $('.navbar-nav li')
@@ -77,15 +73,12 @@ jQuery(function($) {
     $('.progress').on('inview', function(event, isInView) {
         if (isInView) {
             // Active countTo plugin
-            $('.progress-label').countTo();
-
             $('.progress-label').countTo({
                 formatter: function (value, options) {
                     return value.toFixed(options.decimals) + "%";
                 }
             });
 
-            // ...
             $(this).unbind('inview');
         }
     });
