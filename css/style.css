@@ -167,6 +167,9 @@ html {
     color: #00bcd4;
 }
 
+.caption a {
+    color: #ffffff !important;
+}
 .caption .btn {
     max-width: 130px;
     font-size: .9em;
