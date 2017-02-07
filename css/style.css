@@ -1,3 +1,7 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
 ::-webkit-scrollbar-track {
     background-color: #F4F4F4;
 }
@@ -128,7 +132,6 @@
 }
 
 .caption h1 {
-    font-family: "Roboto", sans-serif;
     font-size: 4.5em;
     font-weight: 700;
     text-transform: uppercase;
@@ -136,7 +139,6 @@
     margin-bottom: 0;
 }
 .caption p {
-    font-family: "Roboto", sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 20px;
@@ -149,13 +151,13 @@
 
 .caption .btn {
     max-width: 130px;
-    padding: 10px;
-    padding-left: 2px;
+    font-size: .9em;
     margin: 30px auto;
-    box-shadow: 3px 2px 5px rgba(0, 0, 0, .3);
 }
 
 .btn-arrow {
+    width: 30px;
+    height: 35px;
     z-index: 1;
     left: 50%;
     margin-left: -27px;
@@ -195,6 +197,10 @@
         font-size: .9em;
         margin: 30px auto;
     }
+    .btn-arrow {
+        width: 26px;
+        height: 33px;
+    }
 }
 @media (max-width: 768px) {
     .caption h1 {
@@ -203,10 +209,6 @@
     .caption .btn {
         font-size: .8em;
         padding: 7px;
-    }
-    .btn-arrow {
-        width: 50.5px;
-        height: 50.5px;
     }
 }
 
@@ -231,7 +233,6 @@
 }
 
 .introduction {
-    font-family: "Roboto", sans-serif;
     color: #555 !important;
     font-weight: 300;
 }
@@ -301,7 +302,6 @@
 .service {
     text-align: center;
     padding: 5px;
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
 .service h1 {
@@ -332,15 +332,10 @@
 /**
  * SKILLS STYLES
  */
-
-.skills {
-    font-family: "Roboto", sans-serif;
-}
 .skills h1 {
     font-size: 2em;
 }
 .skills h1, .skills p, .skills h4 {
-    font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
 .skills .heading-line {
@@ -432,13 +427,9 @@
     width: 50%;
     margin-top: 7px;
     box-shadow: none;
-    border: none;
     margin-left: 0;
-    background-color: #00AEC4;
 }
-.to-action .btn:hover {
-    background-color: #009EB2;
-}
+
 .to-action .mini-text {
     margin-top: 5px;
     font-size: .8em;
@@ -491,19 +482,12 @@
 }
 .contact-form .btn {
     width: 100%;
-    background-color: #008A9C;
-    border: 1px solid #008A9C;
-}
-.contact-form .btn:hover {
-    border: 1px solid transparent;
-    background-color: #00717F;
 }
 
 /** Sub Footer */
 .sub-footer {
-    background-color: #212120;
     color: #DECFDE;
-    font-family: "Roboto", sans-serif;
+    background-color: #212120;
 }
 .sub-footer p, .sub-footer a, .sub-footer h5 {
     color: #DECFDE;
@@ -557,9 +541,6 @@
 }
 .marg-top {
     margin-top: 70px;
-}
-.no-paragraph {
-    margin: 2px auto;
 }
 
 /**

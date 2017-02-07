@@ -1,12 +1,12 @@
 /* Default Reset */
 html {
     color: #333;
-    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    font-family: "sans-serif", Arial, Helvetica;
     font-size: 16px;
     font-weight: normal;
     text-align: left;
     vertical-align: baseline;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 body {
@@ -328,7 +328,6 @@ th {
 .navbar-brand {
     font-size: 1.5em;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
     margin-top: 15px;
     margin-left: 10px;
     color: #5C565C;
@@ -348,36 +347,42 @@ th {
  */
 
 .btn {
-    font-family: "Roboto", sans-serif;
+    color: #ffffff;
     font-weight: 400;
     display: block;
-    font-size: .9em;
+    font-size: .8em;
     cursor: pointer;
     text-align: center;
-    text-transform: uppercase;
-}
-.btn-circle {
-    width: 55.5px;
-    height: 55.5px;
-    border-radius: 100%;
-}
-.btn-float {
-    z-index: 99999;
-    position: absolute;
-}
-.btn-default {
-    padding: 7px;
     margin: 0 auto;
     border-radius: 3px;
-}
-.btn-light {
-    color: #ffffff;
-    background-color: #00bcd4;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
-.btn-light:hover {
-    background-color: #009EB2;
+.btn-circle {
+    border-radius: 100%;
 }
+.btn-default {
+    background-color: #00AEC4;
+}
+.btn-default:hover {
+    background-color: #0093A6;
+}
+.btn-light {
+    background-color: #5cb85c;
+}
+.btn-light:hover {
+    background-color: #449d44;
+}
+.btn-dark {
+    background-color: #d9534f;
+}
+.btn-dark:hover {
+    background-color: #c9302c;
+}
+
+
 
 /**
  * END BUTTONS STYLES
@@ -410,8 +415,8 @@ textarea.form {
     margin: 0;
     padding: 6px 12px;
     border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
 }
 textarea.form {
     min-width: 100%;
@@ -475,7 +480,7 @@ textarea.form {
     width: 100%;
     font-size: .9em;
     cursor: default;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -518,7 +523,7 @@ textarea.form {
     background-color: #e8e8e8;
 }
 .table > tbody tr.inative {
-    background-color:#fff;
+    background-color:#ffffff;
     text-decoration: line-through;
 }
 
@@ -586,6 +591,10 @@ textarea.form {
 
 .no-margin {
     margin: 0 auto;
+}
+.no-paragraph {
+    font-size: .9em;
+    margin: 2px auto;
 }
 
 @media screen and (max-width: 768px) {
