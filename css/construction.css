@@ -1,0 +1,70 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+.lightbox {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.caption {
+    position: relative;
+    width: 57%;
+    height: auto;
+    text-align: center;
+}
+
+.caption h1 {
+    font-size: 3.9em;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    font-family: "Pacifico", cursive;
+}
+.caption p {
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.caption img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: -45px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 29px;
+    font-size: 1em;
+    margin-right: 7px;
+}
+
+.btn-show {
+    border: 1px solid #9E9E9E;
+    text-transform: none;
+    font-weight: 700;
+    background-color: transparent;
+}
+.btn-show:hover {
+    border: 1px solid #ffffff;
+}
+.btn-light {
+    background-color: #0fe0ba;
+    border: 1px solid transparent;
+}
+.btn-light:hover {
+    color: #666666;
+    background-color: #ffffff;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 10px;
+}
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+
+
