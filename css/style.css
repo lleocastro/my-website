@@ -30,9 +30,14 @@ html {
     height: 200px;
     display: inline-block;
     padding: 20px;
+    margin-right: -4px;
     font-size: .9em;
 }
 .navbar .active, .navbar .active a {
+    color: #ffffff;
+    background-color: #00AEC4;
+}
+.navbar-nav li:hover, .navbar-nav li:hover a {
     color: #ffffff;
     background-color: #00AEC4;
 }
@@ -80,7 +85,7 @@ html {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 200px;
+        width: 170px;
         border-left: 1px solid #ccc;
         background: #fff;
         overflow-x: auto;
@@ -92,7 +97,8 @@ html {
     }
 
     .navbar-nav {
-        float: left;
+        text-align: right;
+        float: right;
         margin-top: 10px;
     }
 
@@ -100,19 +106,8 @@ html {
         display: block;
         padding: 15px;
         font-size: .9em;
+        margin-right: 0;
         height: auto;
-    }
-    .navbar-nav li, a {
-        color: #777;
-    }
-    .navbar .active {
-        border-bottom: 3px solid #00bcd4;
-    }
-    .navbar-nav li:hover {
-        border-bottom: 3px solid #00bcd4;
-    }
-    .navbar .active, .navbar .active a {
-        background-color: #ffffff;
     }
 
     .brand {
