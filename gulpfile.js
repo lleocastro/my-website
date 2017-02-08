@@ -11,7 +11,7 @@ var sourcemaps = require('gulp-sourcemaps');
  *
  */
 gulp.task('sass', function(){
-    return gulp.src('template/assets/sass/app.scss')
+    return gulp.src('template/assets/sass/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
@@ -33,6 +33,6 @@ gulp.task('js', function(){
  *
  */
 gulp.task('watch', function(){
-    gulp.watch('template/assets/sass/app.scss', ['sass']);
+    gulp.watch('template/assets/sass/*.scss', ['sass']);
     gulp.watch('template/assets/js/*.js', ['js']);
 });

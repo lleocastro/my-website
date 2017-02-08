@@ -125,12 +125,8 @@ if (!function_exists('ie_support_field')) {
      */
     function ie_support_field()
     {
-        $html5shiv = asset('js/html5shiv.min.js');
-        $respond   = asset('js/respond.min.js');
-
         $field = "<!--[if lte IE 8]>\n";
-            $field .= '<script src='.'"'. $html5shiv .'"'.'></script>'."\n";
-            $field .= '<script src='.'"'. $respond .'"'.'></script>'."\n";
+            $field .= '<script src='.'"'. asset('js/ie-support.min.js') .'"'.'></script>'."\n";
         $field .= "<![endif]-->\n";
 
         return $field;
