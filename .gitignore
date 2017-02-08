@@ -1,2 +1,6 @@
 .idea/
+vendors/
+node_modules/
+composer.lock
+.env
 icon-credits~
