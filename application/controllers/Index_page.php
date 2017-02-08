@@ -18,7 +18,7 @@ class Index_page extends CI_Controller
      */
     public function index()
     {
-        $this->load->view('webapp/home');
+        $this->load->view('home');
     }
 
 }
