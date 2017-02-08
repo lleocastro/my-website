@@ -54,8 +54,15 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /**
+ * Portfólio Routes
+ */
+$route['portfolio/web-template'] = 'Portfolio/page_web_template';
+$route['portfolio/flappy-bird'] = 'Portfolio/page_flappy_bird';
+$route['portfolio/framework'] = 'Portfolio/page_framework';
+$route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
+
+/**
  * Auth Routes
- *
  */
 $route['login'] = 'auth/Login/index';
 $route['login/auth'] = 'auth/Login/show';

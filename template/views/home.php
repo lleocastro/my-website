@@ -267,7 +267,7 @@
             </div>
             <div class="line line-space">
                 <div class="m4col s4col col-space">
-                    <a href="pags/portfolio/web-template.html">
+                    <a href="<?php echo route('/portfolio/web-template') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                             <div class="line">
                                 <div class="collist">
@@ -284,7 +284,7 @@
                     </a>
                 </div>
                 <div class="m4col s4col col-space">
-                    <a href="pags/portfolio/flappy-bird.html">
+                    <a href="<?php echo route('/portfolio/flappy-bird') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                             <div class="line">
                                 <div class="collist">
@@ -301,7 +301,7 @@
                     </a>
                 </div>
                 <div class="m4col s4col col-space">
-                    <a href="pags/portfolio/leobcastro.html">
+                    <a href="<?php echo route('/portfolio/leobcastro') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                             <div class="line">
                                 <div class="collist">
@@ -320,7 +320,7 @@
             </div>
             <div class="line line-space">
                 <div class="m4col s4col col-space">
-                    <a href="pags/portfolio/framework.html">
+                    <a href="<?php echo route('/portfolio/framework') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                             <div class="line">
                                 <div class="collist">
