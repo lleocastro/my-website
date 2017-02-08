@@ -103,7 +103,7 @@ html {
         height: auto;
     }
     .navbar-nav li, a {
-        color: #777 !important;
+        color: #777;
     }
     .navbar .active {
         border-bottom: 3px solid #00bcd4;
