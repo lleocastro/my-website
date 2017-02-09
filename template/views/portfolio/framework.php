@@ -1,21 +1,17 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $this->config->item('language') ?>">
 <head>
-    <meta charset="UTF-8">
+    <?php require_once ('includes/meta.php') ?>
     <meta name="description" content=""/>
-    <meta name="author" content="Léo B. Castro"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="robots" content="index, follow"/>
 
     <meta property="og:title" content=""/>
     <meta property="og:description" content=""/>
     <meta property="og:type" content="article"/>
     <meta property="og:image" content=""/>
     <meta property="og:url" content=""/>
-    <meta property="og:site_name" content="LEOBCASTRO"/>
-    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
+    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
     <meta name="twitter:title" content=""/>
     <meta name="twitter:card" content="summary"/>
@@ -23,34 +19,13 @@
     <meta name="twitter:image" content=""/>
     <meta name="twitter:url" content=""/>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <?php require_once ('includes/links.php') ?>
 
-    <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
-
-    <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
-    <link rel="stylesheet" href="<?php echo asset('css/portfolio.min.css') ?>"/>
-
-    <?php echo ie_support_field() ?>
-
-    <title>Léo B. Castro - Portfólio - Framework</title>
+    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Framework</title>
 </head>
 <body>
 <div class="container-full">
-    <!-- NAVBAR -->
-    <div class="navbar navbar-fixed navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a title="Logo" class="scroll" href="<?php echo route('/') ?>">
-                    <img title="Logo" src="<?php echo asset('img/logo/logo-small.png') ?>" alt="Logo do website"/>
-                </a>
-            </div>
-            <a title="Voltar para o portfólio" href="../../index.html#portfolio" class="btn btn-dark navbar-btn" role="button">
-                <i class="material-icons" style="vertical-align: -29%">replay</i>
-                Voltar
-            </a>
-        </div>
-    </div><!-- END NAVBAR -->
+    <?php require_once ('includes/navbar.php') ?>
 
     <div class="container-full desc">
         <section class="container container-space margin-top">
@@ -115,13 +90,8 @@
             </div>
         </div>
     </div><!-- END DEV INFORMATIONS -->
-
-    <footer class="container-full final-footer">
-        <p class="center">&copy; 2017 LEOBCASTRO - todos os direitos reservados.</p>
-    </footer>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/final-footer.php') ?>
 </div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="<?php echo asset('js/animations.min.js') ?>"></script>
-    <script src="<?php echo asset('js/portfolio.min.js') ?>"></script>
+    <?php require_once ('includes/scripts.php') ?>
 </html>

@@ -54,14 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /**
- * Portfólio Routes
- */
-$route['portfolio/web-template'] = 'Portfolio/page_web_template';
-$route['portfolio/flappy-bird'] = 'Portfolio/page_flappy_bird';
-$route['portfolio/framework'] = 'Portfolio/page_framework';
-$route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
-
-/**
  * Auth Routes
  */
 $route['login'] = 'auth/Login/index';
@@ -69,4 +61,28 @@ $route['login/auth'] = 'auth/Login/show';
 $route['logout'] = 'auth/Logout/index';
 $route['register'] = 'auth/AccountRegister/index';
 $route['register/auth'] = 'auth/AccountRegister/store';
+// ...
+
+/**
+ * Portfólio Routes
+ */
+$route['portfolio/web-template'] = 'Portfolio/page_web_template';
+$route['portfolio/flappy-bird'] = 'Portfolio/page_flappy_bird';
+$route['portfolio/framework'] = 'Portfolio/page_framework';
+$route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
+// ...
+
+/**
+ * Blog Routes
+ */
+$route['blog'] = 'Helper_page/in_construction';
+// ...
+
+/**
+ * Simple Routes
+ */
+$route['questionario'] = 'Helper_page/in_construction';
+$route['curriculo'] = 'Helper_page/in_construction';
+$route['creditos'] = 'Helper_page/in_construction';
+$route['hahaha'] = 'Helper_page/in_construction';
 

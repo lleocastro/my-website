@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $this->config->item('language') ?>">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php echo $this->config->item('charset') ?>">
     <meta name="description" content=""/>
     <meta name="author" content="Léo B. Castro"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -14,8 +14,8 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="img/intro.jpg"/>
     <meta property="og:url" content="https://lleocastro.github.io/hello-world-html/"/>
-    <meta property="og:site_name" content="LEOBCASTRO"/>
-    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
+    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
     <meta name="twitter:title" content="Full-Stack Web Developer"/>
     <meta name="twitter:card" content="summary"/>
@@ -48,7 +48,7 @@
         }
         </script>
 
-    <title>Léo B. Castro - Full-Stack Web Developer - SJCampos</title>
+    <title><?php echo getenv('APP_NAME') ?> - Full-Stack Web Developer - SJCampos</title>
 </head>
 <body>
 <div class="container-full">
@@ -73,8 +73,8 @@
                     <li><a class="scroll" href="#about-me">Sobre Mim</a></li>
                     <li><a class="scroll" href="#portfolio">Portfólio</a></li>
                     <li><a class="scroll" href="#contact-me">Contato</a></li>
-                    <li><a style="text-decoration: line-through" href="pags/in-construction.html">Meu Blog</a></li>
-                    <li><a style="text-decoration: line-through" href="pags/in-construction.html">Curriculo</a></li>
+                    <li><a style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Meu Blog</a></li>
+                    <li><a style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">Curriculo</a></li>
                 </ul>
             </div>
         </div>
@@ -484,18 +484,18 @@
                             <ul>
                                 <li><a class="scroll" href="#contact-me">De um feedback</a></li>
                                 <li><a class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
-                                <li><a style="text-decoration: line-through" href="pags/in-construction.html">De uma olhada no meu curriculo</a></li>
-                                <li><a style="text-decoration: line-through" href="pags/in-construction.html">Descubra meu blog</a></li>
-                                <li><a style="text-decoration: line-through" class="scroll" href="#">Esse questionário é pra você!</a></li>
+                                <li><a style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">De uma olhada no meu curriculo</a></li>
+                                <li><a style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Descubra meu blog</a></li>
+                                <li><a style="text-decoration: line-through" class="scroll" href="<?php echo route('/questionario') ?>">Esse questionário é pra você!</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="s3col col-space">
                         <p class="nav-link-title"><strong>Informações</strong></p>
                         <ul>
-                            <li><a href="#intro">Sobre o site</a></li>
-                            <li><a style="text-decoration: line-through" href="pags/in-construction.html">Não entre aqui!</a></li>
-                            <li><a href="pags/author-credits.html" rel="nofollow">Creditos</a></li>
+                            <li><a href="<?php echo route('/') ?>">Sobre o site</a></li>
+                            <li><a style="text-decoration: line-through" href="<?php echo route('/hahaha') ?>" rel="nofollow">Não entre aqui!</a></li>
+                            <li><a href="<?php echo route('/creditos') ?>" rel="nofollow">Creditos</a></li>
                         </ul>
                     </div>
                     <div class="s5col mobile-text-center">
@@ -517,9 +517,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-full final-footer">
-            <p class="center">&copy; 2017 LEOBCASTRO - todos os direitos reservados.</p>
-        </div>
+        <?php require_once ('layouts/includes/final-footer.php') ?>
     </footer><!-- END FOOTER -->
 </div>
 </body>
