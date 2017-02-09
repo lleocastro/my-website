@@ -21,4 +21,15 @@ class Index_page extends CI_Controller
         $this->load->view('home');
     }
 
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return HttpResponse
+     */
+    public function store_email()
+    {
+        //
+    }
+
 }
