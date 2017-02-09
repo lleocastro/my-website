@@ -76,8 +76,8 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-if (is_dir(APP_ROOT . 'language/pt_BR/')) {
-    $config['language'] = 'pt_BR';
+if (is_dir(APP_ROOT . 'language/'. getenv('APP_LANG') .'/')) {
+    $config['language'] = (string) getenv('APP_LANG');
 } else {
     $config['language'] = 'english';
 }
@@ -93,7 +93,7 @@ if (is_dir(APP_ROOT . 'language/pt_BR/')) {
 | See http://php.net/htmlspecialchars for a list of supported charsets.
 |
 */
-$config['charset'] = 'UTF-8';
+$config['charset'] = (string) getenv('APP_CHARSET');
 
 /*
 |--------------------------------------------------------------------------
