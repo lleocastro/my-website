@@ -21,6 +21,7 @@ class Index_page extends CI_Controller
      */
     public function index()
     {
+        $this->output->cache('60');
         return $this->load->view('home');
     }
 
@@ -30,7 +31,7 @@ class Index_page extends CI_Controller
      */
     public function store_email()
     {
-        $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|min_length[7]|max_length[100]');
+        $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|xss_clean|min_length[7]|max_length[100]');
 
         if ($this->form_validation->run() !== false) {
             $email = $this->input->post()['email'];
@@ -70,10 +71,10 @@ class Index_page extends CI_Controller
      */
     public function store_message()
     {
-        $this->form_validation->set_rules('name', 'nome', 'trim|required|min_length[3]|max_length[50]');
-        $this->form_validation->set_rules('lastname', 'sobrenome', 'trim|required|min_length[3]|max_length[50]');
-        $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|min_length[7]|max_length[100]');
-        $this->form_validation->set_rules('message', 'mensagem', 'trim|required|min_length[2]');
+        $this->form_validation->set_rules('name', 'nome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
+        $this->form_validation->set_rules('lastname', 'sobrenome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
+        $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|xss_clean|min_length[7]|max_length[100]');
+        $this->form_validation->set_rules('message', 'mensagem', 'trim|required|xss_clean|min_length[2]');
 
         if ($this->form_validation->run() !== false) {
             $data = $this->input->post();
