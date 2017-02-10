@@ -16,7 +16,7 @@ class Portfolio extends CI_Controller
      */
     public function page_web_template()
     {
-        $this->load->view('portfolio/web-template');
+        return $this->load->view('portfolio/web-template');
     }
 
     /**
@@ -24,7 +24,7 @@ class Portfolio extends CI_Controller
      */
     public function page_flappy_bird()
     {
-        $this->load->view('portfolio/flappy-bird');
+        return $this->load->view('portfolio/flappy-bird');
     }
 
     /**
@@ -32,7 +32,7 @@ class Portfolio extends CI_Controller
      */
     public function page_framework()
     {
-        $this->load->view('portfolio/framework');
+        return $this->load->view('portfolio/framework');
     }
 
     /**
@@ -40,7 +40,7 @@ class Portfolio extends CI_Controller
      */
     public function page_leobcastro()
     {
-        $this->load->view('portfolio/leobcastro');
+        return $this->load->view('portfolio/leobcastro');
     }
 
 }

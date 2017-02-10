@@ -12,13 +12,13 @@ class Helper_page extends CI_Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * Displays a temporary error page.
      *
      * @return HttpResponse
      */
     public function in_construction()
     {
-        $this->load->view('errors/in-construction');
+        return $this->load->view('errors/in-construction');
     }
 
 }

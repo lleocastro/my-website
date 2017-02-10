@@ -468,6 +468,7 @@
                                 </div>
                                 <div class="line">
                                     <div class="collist col-space">
+                                        <?php echo csrf_field() ?>
                                         <button id="message-submit" type="submit" class="btn btn-default">
                                             <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                                             Enviar
