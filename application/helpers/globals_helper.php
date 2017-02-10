@@ -1,31 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-if (!function_exists('env')) {
-    /**
-     * Gets the value of an environment variable.
-     *
-     * @param  string  $value
-     * @param  mixed   $default
-     *
-     * @return mixed
-     */
-    function env($value, $default = null)
-    {
-        $value = getenv($value);
-
-        if ($value === false || empty($value)) {
-            return htmlentities($default);
-        }
-
-        return htmlentities($value);
-    }
-}
-
 if (!function_exists('asset'))
 {
     /**
-     * Assets Loader
+     * Assets loader.
      *
      * @param  string $assetPath
      *
@@ -53,22 +32,6 @@ if (!function_exists('route'))
         $name = str_ireplace('.', DS, $name);
         $url  = ($id != null) ? base_url($name) . DS . "{$id}" : base_url($name);
         return $url;
-    }
-}
-
-if (!function_exists('redirect'))
-{
-    /**
-     * Route alias to call controller methods
-     *
-     * @param	string $url
-     * @param	int $code
-     *
-     * @return	HttpResponse
-     */
-    function redirect($url, $code)
-    {
-        return redirect($url, 'auto', $code);
     }
 }
 
