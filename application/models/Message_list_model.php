@@ -4,12 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Message_list_model extends CI_Model
 {
     /**
-     * int
+     * @var int
      */
     protected $id;
 
     /**
-     * string
+     * @var string
      */
     protected $name;
     protected $last_name;

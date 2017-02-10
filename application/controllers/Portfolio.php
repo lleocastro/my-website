@@ -12,7 +12,9 @@ class Portfolio extends CI_Controller
     }
 
     /**
+     * Displays a porfólio page.
      *
+     * @return HttpResponse
      */
     public function page_web_template()
     {
@@ -20,7 +22,9 @@ class Portfolio extends CI_Controller
     }
 
     /**
+     * Displays a porfólio page.
      *
+     * @return HttpResponse
      */
     public function page_flappy_bird()
     {
@@ -28,7 +32,9 @@ class Portfolio extends CI_Controller
     }
 
     /**
+     * Displays a porfólio page.
      *
+     * @return HttpResponse
      */
     public function page_framework()
     {
@@ -36,7 +42,9 @@ class Portfolio extends CI_Controller
     }
 
     /**
+     * Displays a porfólio page.
      *
+     * @return HttpResponse
      */
     public function page_leobcastro()
     {
