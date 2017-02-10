@@ -35,7 +35,7 @@ class Index_page extends CI_Controller
         if ($this->form_validation->run() !== false) {
             $email = $this->input->post()['email'];
 
-            if ($this->email_model->find_by_email($email) == null) {
+            if (!$this->email_model->exists($email)) {
                 $this->email_model->set_email($email)
                     ->save();
 
@@ -75,16 +75,16 @@ class Index_page extends CI_Controller
 
         if ($resp->isSuccess()) {
             $this->form_validation->set_rules('name', 'nome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
-            $this->form_validation->set_rules('lastname', 'sobrenome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
             $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|xss_clean|min_length[7]|max_length[100]');
+            $this->form_validation->set_rules('subject', 'assunto', 'trim|required|xss_clean|min_length[3]|max_length[100]');
             $this->form_validation->set_rules('message', 'mensagem', 'trim|required|xss_clean|min_length[2]');
 
             if ($this->form_validation->run() !== false) {
                 $data = $this->input->post();
 
                 $this->message_model->set_name($data['name'])
-                    ->set_last_name($data['lastname'])
                     ->set_email($data['email'])
+                    ->set_subject($data['subject'])
                     ->set_message($data['message'])
                     ->save();
 

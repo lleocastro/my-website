@@ -12,8 +12,8 @@ class Message_list_model extends CI_Model
      * @var string
      */
     protected $name;
-    protected $last_name;
     protected $email;
+    protected $subject;
     protected $message;
     protected $created_at;
 
@@ -32,7 +32,7 @@ class Message_list_model extends CI_Model
      *
      * @return Email_list_model
      */
-    public function find_one($id)
+    public function find($id)
     {
         $sql = "SELECT * FROM x_visitors_messages WHERE id = ? LIMIT 1";
         $query = $this->db->query($sql, (int) $id);
@@ -48,12 +48,12 @@ class Message_list_model extends CI_Model
      */
     public function save()
     {
-        if ((!empty($this->name)) && (!empty($this->last_name)) && (!empty($this->email))
+        if ((!empty($this->name)) && (!empty($this->email)) && (!empty($this->subject))
             && (!empty($this->message))) {
             $status = $this->db->insert('x_visitors_messages', [
-                'name' => $this->name,
-                'lastname' => $this->last_name,
-                'email' => $this->email,
+                'name'    => $this->name,
+                'email'   => $this->email,
+                'subject' => $this->subject,
                 'message' => $this->message
             ]);
 
@@ -94,26 +94,7 @@ class Message_list_model extends CI_Model
      */
     public function set_name($name)
     {
-        $this->name = htmlentities((string) $name);
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function get_last_name()
-    {
-        return $this->lastname;
-    }
-
-    /**
-     * @param string $last_name
-     *
-     * @return Message_list_model
-     */
-    public function set_last_name($last_name)
-    {
-        $this->last_name = htmlentities((string) $last_name);
+        $this->name = $this->security->xss_clean($name);
         return $this;
     }
 
@@ -132,7 +113,26 @@ class Message_list_model extends CI_Model
      */
     public function set_email($email)
     {
-        $this->email = htmlentities((string) $email);
+        $this->email = $this->security->xss_clean($email);
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function get_subject()
+    {
+        return $this->subject;
+    }
+
+    /**
+     * @param string $subject
+     *
+     * @return Message_list_model
+     */
+    public function set_subject($subject)
+    {
+        $this->subject = $this->security->xss_clean($subject);
         return $this;
     }
 
@@ -151,7 +151,7 @@ class Message_list_model extends CI_Model
      */
     public function set_message($message)
     {
-        $this->message = (string) $message;
+        $this->message = $this->security->xss_clean($message);
         return $this;
     }
 

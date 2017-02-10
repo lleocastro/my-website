@@ -43,15 +43,15 @@ class Email_list_model extends CI_Model
      *
      * @param string $email
      *
-     * @return string
+     * @return bool
      */
-    public function find_by_email($email)
+    public function exists($email)
     {
         $sql = "SELECT email FROM x_email_list WHERE email = ? LIMIT 1";
-        $query = $this->db->query($sql, htmlentities((string) $email));
+        $query = $this->db->query($sql, $this->security->xss_clean($email));
         $result = $query->row(0, 'Email_list_model');
 
-        return (!empty($result)) ? $result->email : null;
+        return (!empty($result)) ? true : false;
     }
 
     /**
@@ -101,7 +101,7 @@ class Email_list_model extends CI_Model
      */
     public function set_email($email)
     {
-        $this->email = htmlentities((string) $email);
+        $this->email = $this->security->xss_clean($email);
         return $this;
     }
 

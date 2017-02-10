@@ -29,8 +29,8 @@ class Message_list_Test extends TestCase
         $x = substr(base64_encode(uniqid(mt_rand(), true)), 0, 17);
         $this->assertTrue(
             $this->CI->message_model->set_name('Léo')
-                ->set_last_name('Castro')
                 ->set_email("{$x}@example.com")
+                ->set_subject('Test Insertion')
                 ->set_message('Oiee, testandooo...')
                 ->save()
         );
@@ -41,7 +41,7 @@ class Message_list_Test extends TestCase
      */
     public function test_not_find_message_by_id()
     {
-        $this->assertNull($this->CI->message_model->find_one(0));
+        $this->assertNull($this->CI->message_model->find(0));
     }
 
     /**
@@ -51,8 +51,8 @@ class Message_list_Test extends TestCase
     public function test_exception_in_invalid_message_save()
     {
         $this->CI->message_model->set_name('')
-            ->set_last_name('')
             ->set_email('')
+            ->set_subject('')
             ->set_message('')
             ->save();
     }

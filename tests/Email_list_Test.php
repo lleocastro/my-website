@@ -26,10 +26,7 @@ class Email_list_Test extends TestCase
      */
     public function test_get_email_in_list()
     {
-        $email_list = $this->CI->email_model->find(1);
-        $this->assertEquals('leonardo_carvalho@outlook.com',
-            $email_list->get_email()
-        );
+        $this->assertTrue($this->CI->email_model->exists('leonardo_carvalho@outlook.com'));
     }
 
     /**

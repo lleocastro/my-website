@@ -92,7 +92,27 @@ jQuery(function($) {
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(data) {
-                    ajaxActionAfter("#action-form", "#action-submit", $.parseJSON(data), ".to-action .callback");
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $("#action-submit").removeClass("btn-default").addClass("registered").html(
+                            '<i class="material-icons" style="vertical-align: -29%">done</i>'
+                            + ' Cadastrado!'
+                        );
+                        document.getElementById("action-submit").setAttribute("type", "button");
+
+                        jQuery.fn.reset = function () {
+                            $(this).each(function () {
+                                this.reset();
+                            });
+                        };
+                        $("#action-form").reset();
+                    } else {
+                        data.errors.forEach(function(error, index) {
+                            $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(".to-action .callback").fadeOut(parseInt(4000 + index));
+                        });
+
+                        document.getElementById("csrf_token").setAttribute("value", data.token);
+                    }
                 }
             });
 
@@ -109,37 +129,32 @@ jQuery(function($) {
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(data) {
-                    ajaxActionAfter("#message-form", "#message-submit", $.parseJSON(data), ".contact-form .callback");
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $("#message-submit").removeClass("btn-default").addClass("registered").html(
+                            '<i class="material-icons" style="vertical-align: -29%">done</i>'
+                            + ' Enviado!'
+                        );
+                        document.getElementById("message-submit").setAttribute("type", "button");
+
+                        jQuery.fn.reset = function () {
+                            $(this).each(function () {
+                                this.reset();
+                            });
+                        };
+                        $("#message-form").reset();
+                    } else {
+                        data.errors.forEach(function(error, index) {
+                            $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(".contact-form .callback").fadeOut(parseInt(4000 + index));
+                        });
+
+                        grecaptcha.reset();
+                    }
                 }
             });
 
             return false;
         });
     });
-
-    // Ajax Callback
-    function ajaxActionAfter(formName, submitName, data, divCallback) {
-        if (data.status) {
-            $(submitName).removeClass("btn-default").addClass("registered").html(
-                '<i class="material-icons" style="vertical-align: -29%">done</i>'
-                + ' Completado!'
-            );
-            document.getElementById(submitName.substring(1)).setAttribute("type", "button");
-
-            jQuery.fn.reset = function () {
-                $(this).each(function () {
-                    this.reset();
-                });
-            };
-            $(formName).reset();
-        } else {
-            data.errors.forEach(function(error, index) {
-                $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(divCallback).fadeOut(parseInt(4000 + index));
-            });
-
-            grecaptcha.reset();
-            document.getElementById("csrf_token").setAttribute("value", data.token);
-        }
-    }
 
 });
