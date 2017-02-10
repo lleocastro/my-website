@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/home.min.css') ?>"/>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <?php echo ie_support_field() ?>
 
     <script type="application/ld+json">
@@ -232,8 +234,8 @@
                             <div class="collist">
                                 <p class="mini-text">Javascript</p>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 41%" data-wow-duration="2600ms" data-wow-delay="900ms">
-                                        <span class="progress-label" data-from="0" data-to="41" data-speed="2500" data-refresh-interval="30">41%</span>
+                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="2600ms" data-wow-delay="900ms">
+                                        <span class="progress-label" data-from="0" data-to="61" data-speed="2500" data-refresh-interval="30">61%</span>
                                     </div>
                                 </div>
                             </div>
@@ -242,8 +244,8 @@
                             <div class="collist">
                                 <p class="mini-text">PHP 5/7</p>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 86%" data-wow-duration="3000ms" data-wow-delay="700ms">
-                                        <span class="progress-label" data-from="0" data-to="86" data-speed="2900" data-refresh-interval="30">86%</span>
+                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 89%" data-wow-duration="3000ms" data-wow-delay="700ms">
+                                        <span class="progress-label" data-from="0" data-to="89" data-speed="2900" data-refresh-interval="30">89%</span>
                                     </div>
                                 </div>
                             </div>
@@ -371,15 +373,19 @@
             </div>
             <div class="line">
                 <div class="collist">
-                    <form method="post" action="" accept-charset="utf-8">
-                        <input class="form" type="email" placeholder="Coloque seu principal email que eu entro em contato" required/>
-                        <button type="submit" class="btn btn-default wow fadeInRightBig" data-wow-duration="2000ms" data-wow-delay="800ms">
+                    <form id="action-form" method="post" action="<?php echo route('/store/email') ?>" accept-charset="utf-8">
+                        <input class="form" name="email" id="email" type="text" placeholder="Coloque seu principal email que eu entro em contato"/>
+                        <?php echo csrf_field() ?>
+                        <button id="action-submit" type="submit" class="btn btn-default wow fadeInRightBig" data-wow-duration="2000ms" data-wow-delay="800ms">
                             <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                             Cadastrar
                         </button>
                     </form>
                     <p class="mini-text wow fadeInLeftBig" data-wow-duration="2000ms" data-wow-delay="900ms">Também odeio spam!</p>
                 </div>
+            </div>
+            <div class="line line-space">
+                <div class="callback"></div>
             </div>
         </section>
     </div><!-- END CALL TO ACTION -->
@@ -431,7 +437,7 @@
                             </div>
                         </div>
                         <div class="m6col s6col col-space contact-form">
-                            <form method="post" action="" accept-charset="utf-8">
+                            <form id="message-form" method="post" action="<?php echo route('store/message') ?>" accept-charset="utf-8">
                                 <div class="line line-space">
                                     <div class="collist mobile-text-center">
                                         <h4>Mande-me uma mensagem</h4>
@@ -456,17 +462,20 @@
                                 </div>
                                 <div class="line">
                                     <div class="collist col-space">
-                                        <label for="msg">Mensagem:</label>
-                                        <textarea id="msg" name="msg" class="form" placeholder="Sua mensagem"></textarea>
+                                        <label for="message">Mensagem:</label>
+                                        <textarea id="message" name="message" class="form" placeholder="Sua mensagem"></textarea>
                                     </div>
                                 </div>
                                 <div class="line">
                                     <div class="collist col-space">
-                                        <button type="submit" class="btn btn-default">
+                                        <button id="message-submit" type="submit" class="btn btn-default">
                                             <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                                             Enviar
                                         </button>
                                     </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="callback"></div>
                                 </div>
                             </form>
                         </div>
@@ -521,7 +530,6 @@
     </footer><!-- END FOOTER -->
 </div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
 </html>

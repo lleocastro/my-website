@@ -145,7 +145,7 @@ if (! function_exists('csrf_field')) {
         $token = $CI->security->get_csrf_hash();
         $tokenName = $CI->security->get_csrf_token_name();
 
-        return "<input type='hidden' name='{$tokenName}' value='{$token}'/>";
+        return "<input type='hidden' id='{$tokenName}' name='{$tokenName}' value='{$token}'/>";
     }
 }
 

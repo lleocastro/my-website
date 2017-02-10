@@ -63,6 +63,9 @@ $route['register'] = 'auth/AccountRegister/index';
 $route['register/auth'] = 'auth/AccountRegister/store';
 // ...
 
+$route['store/email'] = 'Index_page/store_email';
+$route['store/message'] = 'Index_page/store_message';
+
 /**
  * Portfólio Routes
  */

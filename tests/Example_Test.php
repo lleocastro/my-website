@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 use \PHPUnit_Framework_TestCase as TestCase;
 
-class ExampleTest extends TestCase
+class Example_Test extends TestCase
 {
     /**
      * @test
