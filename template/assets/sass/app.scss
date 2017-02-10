@@ -358,7 +358,7 @@ th {
   padding: 8px 15px;
   text-transform: uppercase;
   border: 1px solid transparent;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 .btn-circle {
@@ -366,21 +366,21 @@ th {
 }
 .btn-default {
   background-color: #00AEC4;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-default:hover {
   background-color: #0093A6;
 }
 .btn-light {
   background-color: #5cb85c;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-light:hover {
   background-color: #449d44;
 }
 .btn-dark {
   background-color: #d9534f;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .btn-dark:hover {
   background-color: #c9302c;
@@ -530,6 +530,33 @@ textarea.form {
   background-color:#ffffff;
   text-decoration: line-through;
 }
+
+/**
+ * ALERT STYLES
+ */
+
+.alert {
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  transition: all .2s ease-in-out;
+}
+.alert-success {
+  color: #31708f;
+  border-color: #bce8f1;
+  background-color: #d9edf7;
+}
+.alert-danger {
+  color: #a94442;
+  border-color: #ebccd1;
+  background-color: #f2dede;
+}
+
+/**
+ * END ALERT STYLES
+ */
 
 /**
  * END TABLE STYLES

@@ -1,8 +1,8 @@
 jQuery(function($) {
     var visibleHeight = $(window).height();
-    var visibleWidth = $(window).width();
+    var visibleWidth  = $(window).width();
 
-    //
+    // Load Full Image
     $(".backimage-full").css({'height': (visibleHeight - 50) + 'px'});
     $(window).resize(function () {
         'use strict',
@@ -48,7 +48,7 @@ jQuery(function($) {
         Scroll();
     });
 
-    // User define function
+    // Navbar Transition Scroll
     function Scroll() {
         var contentTop      =   [];
         var contentBottom   =   [];
@@ -82,5 +82,65 @@ jQuery(function($) {
             $(this).unbind('inview');
         }
     });
+
+    // Ajax Action Form
+    $(document).ready(function() {
+        $('#action-form').submit(function(event) {
+            event.preventDefault();
+            $.ajax({
+                url: $('#action-form').attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(data) {
+                    data = $.parseJSON(data);
+                    ajaxActionAfter("#action-form", "#action-submit", data, ".to-action .callback");
+                }
+            });
+
+            return false;
+        });
+    });
+
+    // Ajax Message Form
+    $(document).ready(function() {
+        $('#message-form').submit(function(event) {
+            event.preventDefault();
+            $.ajax({
+                url: $('#message-form').attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(data) {
+                    data = $.parseJSON(data);
+                    ajaxActionAfter("#message-form", "#message-submit", data, ".contact-form .callback");
+                }
+            });
+
+            return false;
+        });
+    });
+
+    // Ajax Callback
+    function ajaxActionAfter(formName, submitName, data, divCallback) {
+        if (data.status) {
+            $(submitName).removeClass("btn-default").addClass("registered").html(
+                '<i class="material-icons" style="vertical-align: -29%">done</i>'
+                + ' Completado!'
+            );
+            document.getElementById(submitName.substring(1)).setAttribute("type", "button");
+
+            jQuery.fn.reset = function () {
+                $(this).each(function () {
+                    this.reset();
+                });
+            };
+            $(formName).reset();
+        } else {
+            data.errors.forEach(function(error, index) {
+                $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(divCallback).fadeOut(parseInt(4000 + index));
+            });
+
+            document.getElementById("csrf_token").setAttribute("value", data.token);
+        }
+    }
 
 });
