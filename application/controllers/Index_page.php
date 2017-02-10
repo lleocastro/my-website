@@ -21,7 +21,6 @@ class Index_page extends CI_Controller
      */
     public function index()
     {
-        $this->output->cache('60');
         return $this->load->view('home');
     }
 
