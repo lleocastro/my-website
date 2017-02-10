@@ -70,32 +70,41 @@ class Index_page extends CI_Controller
      */
     public function store_message()
     {
-        $this->form_validation->set_rules('name', 'nome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
-        $this->form_validation->set_rules('lastname', 'sobrenome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
-        $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|xss_clean|min_length[7]|max_length[100]');
-        $this->form_validation->set_rules('message', 'mensagem', 'trim|required|xss_clean|min_length[2]');
+        $recaptcha = new \ReCaptcha\ReCaptcha(getenv('RECAPTCHA_KEY'));
+        $resp = $recaptcha->verify($this->input->post()['g-recaptcha-response'], filter_input(INPUT_SERVER, 'REMOTE_ADDR'));
 
-        if ($this->form_validation->run() !== false) {
-            $data = $this->input->post();
+        if ($resp->isSuccess()) {
+            $this->form_validation->set_rules('name', 'nome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
+            $this->form_validation->set_rules('lastname', 'sobrenome', 'trim|required|xss_clean|min_length[3]|max_length[50]');
+            $this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|xss_clean|min_length[7]|max_length[100]');
+            $this->form_validation->set_rules('message', 'mensagem', 'trim|required|xss_clean|min_length[2]');
 
-            $this->message_model->set_name($data['name'])
-                ->set_last_name($data['lastname'])
-                ->set_email($data['email'])
-                ->set_message($data['message'])
-                ->save();
+            if ($this->form_validation->run() !== false) {
+                $data = $this->input->post();
 
-            $return = [
-                'status' => true
-            ];
+                $this->message_model->set_name($data['name'])
+                    ->set_last_name($data['lastname'])
+                    ->set_email($data['email'])
+                    ->set_message($data['message'])
+                    ->save();
+
+                $return = [
+                    'status' => true
+                ];
+            } else {
+                $errors = trim(validation_errors());
+                $errors = str_ireplace('<p>', '', $errors);
+                $errors = str_ireplace('</p>', '', $errors);
+                $errors = str_ireplace("\n", '', $errors);
+                $return = [
+                    'status' => false,
+                    'errors' => array_filter(explode('.', $errors))
+                ];
+            }
         } else {
-            $errors = trim(validation_errors());
-            $errors = str_ireplace('<p>', '', $errors);
-            $errors = str_ireplace('</p>', '', $errors);
-            $errors = str_ireplace("\n", '', $errors);
             $return = [
                 'status' => false,
-                'token'  => $this->security->get_csrf_hash(),
-                'errors' => array_filter(explode('.', $errors))
+                'errors' => $resp->getErrorCodes()
             ];
         }
 

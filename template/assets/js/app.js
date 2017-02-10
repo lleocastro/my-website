@@ -92,8 +92,7 @@ jQuery(function($) {
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(data) {
-                    data = $.parseJSON(data);
-                    ajaxActionAfter("#action-form", "#action-submit", data, ".to-action .callback");
+                    ajaxActionAfter("#action-form", "#action-submit", $.parseJSON(data), ".to-action .callback");
                 }
             });
 
@@ -110,8 +109,7 @@ jQuery(function($) {
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(data) {
-                    data = $.parseJSON(data);
-                    ajaxActionAfter("#message-form", "#message-submit", data, ".contact-form .callback");
+                    ajaxActionAfter("#message-form", "#message-submit", $.parseJSON(data), ".contact-form .callback");
                 }
             });
 
@@ -139,6 +137,7 @@ jQuery(function($) {
                 $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(divCallback).fadeOut(parseInt(4000 + index));
             });
 
+            grecaptcha.reset();
             document.getElementById("csrf_token").setAttribute("value", data.token);
         }
     }
