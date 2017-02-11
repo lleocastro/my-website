@@ -23,14 +23,13 @@
     <meta name="twitter:image" content=""/>
     <meta name="twitter:url" content=""/>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-
     <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
 
     <link rel="stylesheet" href="<?php echo asset('css/animate.min.css') ?>"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/home.min.css') ?>"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
     <?php echo ie_support_field() ?>
 
@@ -82,7 +81,7 @@
 
     <!-- FULL IMAGE -->
     <a name="intro"></a>
-    <div class="container-full backimage backimage-full" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)">
+    <div id="backimage-full" class="container-full backimage backimage-full animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)">
         <div class="lightbox center">
             <div class="caption">
                 <h1>Léo B. <span>Castro</span></h1>
@@ -546,8 +545,33 @@
     </footer><!-- END FOOTER -->
 </div>
 </body>
+    <script>
+        var visibleHeight = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+
+        // Resize full intro image
+        backImg = document.getElementById("backimage-full");
+        backImg.style.height = (visibleHeight - 50) + "px";
+
+        // Window object resize
+        var addEvent = function(object, type, callback) {
+            if (object == null || typeof(object) == 'undefined') return;
+            if (object.addEventListener) {
+                object.addEventListener(type, callback, false);
+            } else if (object.attachEvent) {
+                object.attachEvent("on" + type, callback);
+            } else {
+                object["on" + type] = callback;
+            }
+        };
+
+        addEvent(window, "resize", function(event) {
+            backImg.style.height = (visibleHeight - 50) + "px";
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
 </html>
