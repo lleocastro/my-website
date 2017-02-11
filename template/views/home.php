@@ -157,7 +157,7 @@
             <div class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
                 <h1 class="no-margin">O que faço de melhor</h1>
                 <div class="heading-line"></div>
-                <p>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</p>
+                <p><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
             </div>
         </div>
         <div class="line">
@@ -166,15 +166,15 @@
                     <div class="s6col">
                         <div class="service wow fadeInUp" data-wow-delay="500ms">
                             <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt=""/>
-                            <h3>Criar Site</h3>
-                            <p>Todo o layout é projetado pensando no usuário, levando em consideração experiência e usabilidade.</p>
+                            <h3>Website</h3>
+                            <p>Todo o layout é projetado pensando no usuário, levando em consideração a praticidade e a <em class="text-normal">usabilidade</em>.</p>
                         </div>
                     </div>
                     <div class="s6col">
                         <div class="service wow fadeInUp" data-wow-delay="700ms">
                             <img title="Web design" src="<?php echo asset('img/icons/development.svg') ?>" alt=""/>
-                            <h3>Sistema Web</h3>
-                            <p>Desenvolvimento de aplicações web para automatizar processos em prol de gerar resultados.</p>
+                            <h3>Aplicação</h3>
+                            <p>O <em class="text-normal">desenvolvimento</em> é 100% otimizado para obter o máximo de performance e desempenho nos <em class="text-normal">sistemas</em>.</p>
                         </div>
                     </div>
                 </div>
@@ -184,15 +184,15 @@
                     <div class="s6col">
                         <div class="service wow fadeInUp" data-wow-delay="900ms">
                             <img title="Web design" src="<?php echo asset('img/icons/responsive.svg') ?>" alt=""/>
-                            <h3>SEO Eficiente</h3>
-                            <p>Aumenta a visibilidade dos sites nos mecanimos de busca para atrair mais visitantes e clientes.</p>
+                            <h3>SEO/SMO</h3>
+                            <p>Toda a estrutura é semanticamente correta para um melhor <em class="text-normal">rankeamento em motores de busca</em> (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
                         </div>
                     </div>
                     <div class="s6col">
                         <div class="service wow fadeInUp" data-wow-delay="1100ms">
                             <img title="Web design" src="<?php echo asset('img/icons/support.svg') ?>" alt=""/>
                             <h3>Suporte</h3>
-                            <p>Estou sempre disposto a atender da melhor forma possível. 24 horas por dia, 7 dias por semana.</p>
+                            <p>Precaução é cruscial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
                         </div>
                     </div>
                 </div>
