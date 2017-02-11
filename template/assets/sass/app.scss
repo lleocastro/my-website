@@ -32,8 +32,8 @@ textarea {
   overflow: hidden;
   position: relative;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img,
@@ -566,14 +566,10 @@ textarea.form {
 
 .backimage {
   overflow: visible;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .lightbox {
@@ -594,12 +590,12 @@ textarea.form {
 }
 
 .center {
-  display: -webkit-flex;
   display: flex;
+  display: -webkit-flex;
   -webkit-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  justify-content: center;
+          justify-content: center;
 }
 
 .fund {
