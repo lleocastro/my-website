@@ -144,7 +144,7 @@ html {
     text-align: center;
 }
 
-.caption h1 {
+.caption h2 {
     font-size: 4.5em;
     font-weight: 700;
     text-transform: uppercase;
@@ -188,7 +188,7 @@ html {
 }
 
 @media (max-width: 1025px) {
-    .caption h1 {
+    .caption h2 {
         font-size: 3.5em;
     }
     .caption p {
@@ -202,7 +202,7 @@ html {
 }
 
 @media (max-width: 838px) {
-    .caption h1 {
+    .caption h2 {
         font-size: 3em;
     }
     .caption p {
@@ -215,7 +215,7 @@ html {
     }
 }
 @media (max-width: 768px) {
-    .caption h1 {
+    .caption h2 {
         font-size: 2.5em;
     }
     .caption .btn {
@@ -248,7 +248,7 @@ html {
     color: #555 !important;
     font-weight: 300;
 }
-.introduction h2 {
+.introduction h4 {
     font-size: 2.3rem;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -267,7 +267,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .introduction h2 {
+    .introduction h4 {
         font-size: 2em;
     }
     .my-pic {
@@ -279,7 +279,7 @@ html {
 .profile {
     padding-bottom: 35px;
 }
-.profile-header h1 {
+.profile-header h3 {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -317,9 +317,11 @@ html {
     padding: 5px;
     font-weight: 300;
 }
+.service p {
+    font-size: 1em;
+}
 .service h1 {
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: 1.5em;
 }
 .service img {
     width: 70px;
@@ -346,11 +348,11 @@ html {
 /**
  * SKILLS STYLES
  */
-.skills h1 {
+.skills h3 {
     font-size: 2em;
     font-weight: 700;
 }
-.skills h1, .skills p, .skills h4 {
+.skills h1, .skills p, .skills h3 {
     color: #ffffff;
 }
 .skills .heading-line {
@@ -370,7 +372,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .skills h1 {
+    .skills h3 {
         font-size: 1.7em;
     }
 }
@@ -388,7 +390,7 @@ html {
     padding-top: 20px;
     padding-bottom: 50px;
 }
-.portfolio h1 {
+.portfolio h3 {
     font-size: 2em;
     font-weight: 700;
 }
@@ -430,11 +432,11 @@ html {
 .to-action {
     background-color: #00bcd4;
 }
-.to-action h4 {
+.to-action h5 {
     font-size: 2em;
     font-weight: 700;
 }
-.to-action h4, .to-action p {
+.to-action h5, .to-action p {
     color: #ffffff;
 }
 .to-action .heading-line {
@@ -453,7 +455,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .to-action h4 {
+    .to-action h5 {
         font-size: 1.7em;
     }
     .to-action .btn {
@@ -472,7 +474,7 @@ html {
 .footer {
     background-color: #183E42;
 }
-.footer h4, .footer i {
+.footer h3, .footer h4, .footer i {
     font-weight: 700;
     color: #ffffff;
 }
@@ -512,10 +514,10 @@ html {
     color: #DECFDE;
     background-color: #212120;
 }
-.sub-footer p, .sub-footer a, .sub-footer h5 {
+.sub-footer p, .sub-footer a, .sub-footer h6 {
     color: #DECFDE;
 }
-.sub-footer h5 {
+.sub-footer h6 {
     margin-bottom: 0;
     font-size: 1.4em;
     font-weight: 700;

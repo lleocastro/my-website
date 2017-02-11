@@ -54,7 +54,7 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <a title="Logo" class="scroll" href="#intro">
-                            <img title="Logo" src="<?php echo asset('img/logo/logo-small.png') ?>" alt="Logo"/>
+                            <img title="Logo" src="<?php echo asset('img/logo/logo-small.png') ?>" alt="Logo do site de desenvolvimento web do LEOBCASTRO"/>
                         </a>
                     </div>
                     <!-- TOGGLE NAVBAR BUTTON -->
@@ -63,7 +63,7 @@
                     <label for="control-nav" class="control-nav-close"></label>
                     <!-- COLLAPSE NAVBAR -->
                     <div class="navbar-collapse">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav" role="menu">
                             <li class="active"><a class="scroll" href="#intro">Inicio</a></li>
                             <li><a class="scroll" href="#about-me">Sobre Mim</a></li>
                             <li><a class="scroll" href="#portfolio">Portfólio</a></li>
@@ -80,15 +80,15 @@
         <div id="backimage-full" class="container-full backimage backimage-full animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)">
             <div class="lightbox center">
                 <div class="caption">
-                    <h1>Léo B. <span>Castro</span></h1>
-                    <p>Web Developer, UX/UI Designer, Creative</p>
+                    <h2>Léo B. <span>Castro</span></h2>
+                    <p class="tagline">Web Developer, UX/UI Designer, Creative</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
                         <i class="large material-icons" style="vertical-align: -29%">phone</i>
                         Contate-me
                     </a>
                 </div>
             </div>
-            <a title="Sobre mim" href="#about-me" class="btn btn-circle btn-arrow wow bounceInRight center scroll" data-wow-duration="2000ms" data-wow-delay="300ms" role="button">
+            <a title="Resumo sobre Léo" href="#about-me" class="btn btn-circle btn-arrow wow bounceInRight center scroll" data-wow-duration="2000ms" data-wow-delay="300ms" role="button">
                 <img title="Seta" src="<?php echo asset('img/icons/arrow-down.svg') ?>" alt="Seta apontando para baixo"/>
             </a>
         </div><!-- END FULL IMAGE -->
@@ -98,44 +98,44 @@
             <div class="line line-space">
                 <div class="m4col col-space center">
                     <div class="my-pic center">
-                        <img title="Léo B. Castro" src="<?php echo asset('img/eu.jpg') ?>" alt="Foto de Léo B. Castro">
+                        <img title="Léo B. Castro" src="<?php echo asset('img/eu.jpg') ?>" alt="Foto de perfil do Léo B. Castro">
                     </div>
                 </div>
                 <div class="m8col col-space">
                     <div class="line">
                         <div class="collist col-space">
                             <section class="introduction">
-                                <h2 class="no-margin">Resumo</h2>
+                                <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
-                                <p class="intro">Olá, sou webmaster full-stack em São José dos Campos, São Paulo. Atualmente desenvolvo sistemas, sites e aplicações para a web com o intuito de sempre gerar resultados. Bom, também sou um eterno estudante, curso análise e desenvolvimento de sistemas, UX/UI design e um pouco de marketing digital nas horas vagas.</p>
+                                <p class="tagline intro">Olá, sou webmaster full-stack em São José dos Campos, São Paulo. Atualmente desenvolvo sistemas, sites e aplicações para a web com o intuito de sempre gerar resultados. Bom, também sou um eterno estudante, curso análise e desenvolvimento de sistemas, UX/UI design e um pouco de marketing digital nas horas vagas.</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
                             <ul>
                                 <li>
-                                    <a title="Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
-                                        <img title="Google Plus" src="<?php echo asset('img/icons/google-plus.svg') ?>" alt=""/>
+                                    <a title="Me siga no Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
+                                        <img title="Google Plus" src="<?php echo asset('img/icons/google-plus.svg') ?>" alt="Google plus pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
-                                        <img title="LinkedIn" src="<?php echo asset('img/icons/linkedin.svg') ?>" alt=""/>
+                                    <a title="Me siga no LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
+                                        <img title="LinkedIn" src="<?php echo asset('img/icons/linkedin.svg') ?>" alt="LinkedIn pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
-                                        <img title="Instagram" src="<?php echo asset('img/icons/instagram.svg') ?>" alt=""/>
+                                    <a title="Me siga no Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
+                                        <img title="Instagram" src="<?php echo asset('img/icons/instagram.svg') ?>" alt="Instagram pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
-                                        <img title="Facebook" src="<?php echo asset('img/icons/facebook.svg') ?>" alt=""/>
+                                    <a title="Me siga no Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
+                                        <img title="Facebook" src="<?php echo asset('img/icons/facebook.svg') ?>" alt="Facebook pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="Github" rel="nofollow" href="https://github.com/lleocastro">
-                                        <img title="Github" src="<?php echo asset('img/icons/github.svg') ?>" alt=""/>
+                                    <a title="Me siga no Github" rel="nofollow" href="https://github.com/lleocastro">
+                                        <img title="Github" src="<?php echo asset('img/icons/github.svg') ?>" alt="Github pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                             </ul>
@@ -147,46 +147,46 @@
         <!-- SERVICES -->
         <section class="container profile">
             <div class="line line-space">
-                <div class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
-                    <h1 class="no-margin">O que faço de melhor</h1>
+                <header class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
+                    <h3 class="no-margin">O que faço de melhor</h3>
                     <div class="heading-line"></div>
-                    <p><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
-                </div>
+                    <p class="tagline"><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
+                </header>
             </div>
             <div class="line">
                 <div class="m6col">
                     <div class="line">
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="500ms">
-                                <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt=""/>
-                                <h3>Website</h3>
+                            <article class="service wow fadeInUp" data-wow-delay="500ms">
+                                <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt="Icone ilustrando a criação de um site"/>
+                                <h1>Website</h1>
                                 <p>Todo o layout é projetado pensando no usuário, levando em consideração a praticidade e a <em class="text-normal">usabilidade</em>.</p>
-                            </div>
+                            </article>
                         </div>
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="700ms">
-                                <img title="Web design" src="<?php echo asset('img/icons/development.svg') ?>" alt=""/>
-                                <h3>Aplicação</h3>
+                            <article class="service wow fadeInUp" data-wow-delay="700ms">
+                                <img title="Desenvolvimento" src="<?php echo asset('img/icons/development.svg') ?>" alt="Icone ilustrando a abertura e fechamento de tags, representando o desenvolvimento web"/>
+                                <h1>Aplicativo</h1>
                                 <p>O <em class="text-normal">desenvolvimento</em> é 100% otimizado para obter o máximo de performance e desempenho nos <em class="text-normal">sistemas</em>.</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
                 <div class="m6col">
                     <div class="line">
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="900ms">
-                                <img title="Web design" src="<?php echo asset('img/icons/responsive.svg') ?>" alt=""/>
-                                <h3>SEO/SMO</h3>
+                            <article class="service wow fadeInUp" data-wow-delay="900ms">
+                                <img title="Search Engine Optimization" src="<?php echo asset('img/icons/responsive.svg') ?>" alt="Icone ilustrando a otimização de site para rankear melhor em motores de busca"/>
+                                <h1>SEO/SMO</h1>
                                 <p>Toda a estrutura é semanticamente correta para um melhor <em class="text-normal">rankeamento em motores de busca</em> (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
-                            </div>
+                            </article>
                         </div>
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="1100ms">
-                                <img title="Web design" src="<?php echo asset('img/icons/support.svg') ?>" alt=""/>
-                                <h3>Suporte</h3>
+                            <article class="service wow fadeInUp" data-wow-delay="1100ms">
+                                <img title="Suporte" src="<?php echo asset('img/icons/support.svg') ?>" alt="Icone ilustrando um atendente ao telefone fornecendo suporte"/>
+                                <h1>Suporte</h1>
                                 <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                 <div class="container container-space">
                     <div class="line line-space">
                         <div class="collist col-space">
-                            <h1 class="no-margin">Minhas Habilidades</h1>
+                            <h3 class="no-margin">Minhas Habilidades</h3>
                             <div class="heading-line"></div>
                         </div>
                     </div>
@@ -250,11 +250,11 @@
         <div class="container-full back-portfolio">
             <section class="container container-space portfolio">
                 <div class="line line-space">
-                    <div class="collist">
-                        <h1 class="no-margin">Meu Portfólio</h1>
+                    <header class="collist">
+                        <h3 class="no-margin">Meu Portfólio</h3>
                         <div class="heading-line"></div>
-                        <p>Veja alguns dos meus principais projetos, que vai desde desenvolver sites, sistemas web a games. Clique para mais informações!</p>
-                    </div>
+                        <p class="tagline">Veja alguns dos meus principais projetos, que vai desde desenvolver sites, sistemas web a games. Clique para mais informações!</p>
+                    </header>
                 </div>
                 <div class="line line-space">
                     <div class="s6col m4col col-space">
@@ -262,7 +262,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="<?php echo asset('img/escape-preview.png') ?>"/>
+                                        <img title="Web template" src="<?php echo asset('img/escape-preview.png') ?>" alt="Imagem em PSD de um site de uma agencia web"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -279,7 +279,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="<?php echo asset('img/flappy-bird.jpg') ?>"/>
+                                        <img title="Game flappy bird" src="<?php echo asset('img/flappy-bird.jpg') ?>" alt="Imagem de introdução para o jogo desenvolvido baseado no flappy bird"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -296,7 +296,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="<?php echo asset('img/44839-O4FYT8.jpg') ?>"/>
+                                        <img title="LEOBCASTRO" src="<?php echo asset('img/44839-O4FYT8.jpg') ?>" alt="Imagem ilustrativa representando o desenvolvimento do site leobcastro"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -313,7 +313,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="<?php echo asset('img/OJ91BD0.jpg') ?>"/>
+                                        <img title="CSS Stylle" src="<?php echo asset('img/OJ91BD0.jpg') ?>" alt="Imagem ilustrativa representando o layout de um site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -330,7 +330,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="<?php echo asset('img/startup-framework-preview.png') ?>"/>
+                                        <img title="Framework" src="<?php echo asset('img/startup-framework-preview.png') ?>" alt="Imagem ilustrando o funcionamento de um framework em dispositivos moveis"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -347,7 +347,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="<?php echo asset('img/icons/marketing.svg') ?>"/>
+                                        <img title="Premium" src="<?php echo asset('img/icons/marketing.svg') ?>" alt="Icone ilustrando um premio de melhor posição"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -368,9 +368,9 @@
             <section class="container container-space wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                 <div class="line line-space">
                     <div class="collist">
-                        <h4 class="no-margin">Deixe seu E-mail!</h4>
+                        <h5 class="no-margin">Deixe seu E-mail!</h5>
                         <div class="heading-line"></div>
-                        <p>Deixe seu email para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
+                        <p class="tagline">Deixe seu email para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
                     </div>
                 </div>
                 <div class="line">
@@ -405,7 +405,7 @@
                             <div class="m6col s6col mobile-text-center">
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h4 class="no-margin">Contate-me</h4>
+                                        <h3 class="no-margin">Contate-me</h3>
                                         <div class="heading-line"></div>
                                     </div>
                                 </div>
@@ -512,7 +512,7 @@
                             </ul>
                         </div>
                         <div class="s5col mobile-text-center">
-                            <h5>Já que chegou até aqui..</h5>
+                            <h6>Já que chegou até aqui..</h6>
                             <p>Uau! Se você chegou até aqui e não deixou seu email ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um feedback para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
                         </div>
                     </div>
@@ -558,6 +558,6 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </html>
