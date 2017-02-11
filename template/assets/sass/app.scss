@@ -75,6 +75,7 @@ pre {
 
 a {
   color: #017fb5;
+  outline: 0 !important;
   text-decoration: none;
   background-color: transparent;
 }
@@ -85,7 +86,7 @@ input,
 optgroup,
 select,
 textarea {
-  outline: 0;
+  outline: 0 !important;
 }
 button,
 select,
