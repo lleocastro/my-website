@@ -63,8 +63,12 @@ $route['register'] = 'auth/AccountRegister/index';
 $route['register/auth'] = 'auth/AccountRegister/store';
 // ...
 
+/**
+ * Forms Action Routes
+ */
 $route['store/email'] = 'Index_page/store_email';
 $route['store/message'] = 'Index_page/store_message';
+// ...
 
 /**
  * Portfólio Routes
@@ -86,6 +90,6 @@ $route['blog'] = 'Helper_page/in_construction';
  */
 $route['questionario'] = 'Helper_page/in_construction';
 $route['curriculo'] = 'Helper_page/in_construction';
-$route['creditos'] = 'Helper_page/in_construction';
+$route['creditos'] = 'Pages/page_credits';
 $route['hahaha'] = 'Helper_page/in_construction';
 
