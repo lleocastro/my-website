@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/home.min.css') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="<?php echo asset('css/toastr.min.css') ?>"/>
 
     <?php echo ie_support_field() ?>
 
@@ -386,9 +387,6 @@
                         <p class="mini-text wow fadeInLeftBig" data-wow-duration="2000ms" data-wow-delay="900ms">Também odeio spam!</p>
                     </div>
                 </div>
-                <div class="line line-space">
-                    <div class="callback"></div>
-                </div>
             </section>
         </div><!-- END CALL TO ACTION -->
         <!-- GOOGLE MAPS -->
@@ -477,9 +475,6 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="line line-space">
-                                        <div class="callback"></div>
-                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -558,6 +553,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
+    <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </html>

@@ -108,7 +108,7 @@ jQuery(function($) {
                         $("#action-form").reset();
                     } else {
                         data.errors.forEach(function(error, index) {
-                            $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(".to-action .callback").fadeOut(parseInt(4000 + index));
+                            toastr.warning(error);
                         });
 
                         document.getElementById("csrf_token").setAttribute("value", data.token);
@@ -145,7 +145,7 @@ jQuery(function($) {
                         $("#message-form").reset();
                     } else {
                         data.errors.forEach(function(error, index) {
-                            $("<div class='alert alert-danger'>" + error + "</div>").insertBefore(".contact-form .callback").fadeOut(parseInt(4000 + index));
+                            toastr.warning(error);
                         });
 
                         grecaptcha.reset();
