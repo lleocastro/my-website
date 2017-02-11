@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html lang="<?php echo $this->config->item('language') ?>">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php echo $this->config->item('charset') ?>">
     <meta name="description" content="Creditos para os icones e imagens do site"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex, nofollow"/>
 
-    <link rel="shortcut icon" href="../img/logo/logo-icon.ico"/>
-
+    <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300, 700"/>
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
@@ -45,7 +44,7 @@
     <title><?php echo getenv('APP_NAME') ?> - Creditos para Autores</title>
 </head>
 <body>
-    <div class="container-full">
+    <main class="container-full" role="main">
         <!-- NAVBAR -->
         <div class="navbar navbar-fixed navbar-default" role="navigation">
             <div class="container">
@@ -60,7 +59,7 @@
                 </a>
             </div>
         </div><!-- END NAVBAR -->
-
+        <!-- CREDITS -->
         <div class="container container-space margin-top">
             <div class="line line-space">
                 <div class="collist">
@@ -97,8 +96,8 @@
                     <p class="no-paragraph"><a href="http://www.freepik.com/free-vector/web-design-background_1015293.htm" rel="nofollow">css-stylle-logo (Freepik)</a></p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!-- END CREDITS -->
+    </main>
     <?php require_once (dirname(__DIR__) . '/layouts/includes/final-footer.php') ?>
 </body>
 </html>

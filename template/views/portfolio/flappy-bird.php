@@ -24,9 +24,8 @@
     <title><?php echo getenv('APP_NAME') ?> - Portfólio - Flappy Bird</title>
 </head>
 <body>
-    <div class="container-full">
+    <main class="container-full" role="main">
         <?php require_once ('includes/navbar.php') ?>
-
         <!-- CASE DESCRIPTION -->
         <div class="container-full desc">
             <section class="container container-space margin-top">
@@ -39,7 +38,7 @@
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="Home page" src="<?php echo asset('img/flappy-bird-print.png') ?>" alt="Website do jogo flappy bird aberto em um mac"/>
+                        <img title="Game home page" src="<?php echo asset('img/flappy-bird-print.png') ?>" alt="Website do jogo flappy bird aberto em um mac"/>
                     </div>
                     <div class="m6col col-space">
                         <h2>Proin fringilla luctus</h2>
@@ -53,7 +52,6 @@
                 </article>
             </section>
         </div><!-- END CASE DESCRIPTION -->
-
         <!-- DEV INFORMATIONS -->
         <div class="container-full backimage informations" style="background-image: url(<?php echo asset('img/portfolio.jpeg') ?>)">
             <div class="lightbox">
@@ -92,7 +90,7 @@
             </div>
         </div><!-- END DEV INFORMATIONS -->
         <?php require_once (dirname(__DIR__) . '/layouts/includes/final-footer.php') ?>
-    </div>
+    </main>
 </body>
     <?php require_once ('includes/scripts.php') ?>
 </html>
