@@ -111,10 +111,10 @@
                 <div class="line">
                     <div class="collist col-space">
                         <section class="introduction">
-                            <h2 class="no-margin">Léo Castro</h2>
+                            <h2 class="no-margin">Resumo</h2>
                             <div class="heading-line"></div>
                             <p class="introduce">Full-Stack Web Developer / Creative</p>
-                            <p class="intro">Olá, sou webmaster full-stack em São José dos Campos, São Paulo. Atualmente desenvolvo sistemas, sites e aplicações para a web com o intuito de sempre inovar e gerar resultados (esse é meu mantra). Bom, também sou um eterno estudante, curso análise e desenvolvimento de sistemas, UX/UI design e um pouco de marketing digital nas horas vagas.</p>
+                            <p class="intro">Olá, sou webmaster full-stack em São José dos Campos, São Paulo. Atualmente desenvolvo sistemas, sites e aplicações para a web com o intuito de sempre gerar resultados. Bom, também sou um eterno estudante, curso análise e desenvolvimento de sistemas, UX/UI design e um pouco de marketing digital nas horas vagas.</p>
                         </section>
                     </div>
                     <div class="collist col-space social-links">
@@ -192,7 +192,7 @@
                         <div class="service wow fadeInUp" data-wow-delay="1100ms">
                             <img title="Web design" src="<?php echo asset('img/icons/support.svg') ?>" alt=""/>
                             <h3>Suporte</h3>
-                            <p>Precaução é cruscial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
+                            <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
                         </div>
                     </div>
                 </div>
@@ -213,8 +213,8 @@
                 <div class="line">
                     <div class="s6col">
                         <div class="skills-left">
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                            <p>As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search of lorem ipsum</p>
+                            <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014. Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas também já programei para desktop e android.</p>
+                            <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, com o objetivo de aumentar a <em class="text-normal">produtividade</em> e diminuir o tempo "humano" gasto em <em class="text-normal">tarefas rotineiras que poderiam ser administradas por um sistema</em>.</p>
                         </div>
                     </div>
                     <div class="s6col">
@@ -222,8 +222,8 @@
                             <div class="collist">
                                 <p class="mini-text">HTML5 / CSS3</p>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="2900ms" data-wow-delay="500ms">
-                                        <span class="progress-label" data-from="0" data-to="73" data-speed="2800" data-refresh-interval="30">73%</span>
+                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="3500ms" data-wow-delay="500ms">
+                                        <span class="progress-label" data-from="0" data-to="73" data-speed="3500" data-refresh-interval="30">73%</span>
                                     </div>
                                 </div>
                             </div>
@@ -232,8 +232,8 @@
                             <div class="collist">
                                 <p class="mini-text">Javascript</p>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="2600ms" data-wow-delay="900ms">
-                                        <span class="progress-label" data-from="0" data-to="61" data-speed="2500" data-refresh-interval="30">61%</span>
+                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="3800ms" data-wow-delay="900ms">
+                                        <span class="progress-label" data-from="0" data-to="61" data-speed="3800" data-refresh-interval="30">61%</span>
                                     </div>
                                 </div>
                             </div>
@@ -242,8 +242,8 @@
                             <div class="collist">
                                 <p class="mini-text">PHP 5/7</p>
                                 <div class="progress">
-                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 89%" data-wow-duration="3000ms" data-wow-delay="700ms">
-                                        <span class="progress-label" data-from="0" data-to="89" data-speed="2900" data-refresh-interval="30">89%</span>
+                                    <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 89%" data-wow-duration="4100ms" data-wow-delay="700ms">
+                                        <span class="progress-label" data-from="0" data-to="89" data-speed="4100" data-refresh-interval="30">89%</span>
                                     </div>
                                 </div>
                             </div>
@@ -484,6 +484,7 @@
                 </div>
             </div>
         </div>
+        <div class="separator-light"></div>
         <a name="footer"></a>
         <div class="container-full sub-footer">
             <div class="container container-space">
