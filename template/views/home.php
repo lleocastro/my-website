@@ -266,7 +266,7 @@
                 </div>
             </div>
             <div class="line line-space">
-                <div class="m4col s4col col-space">
+                <div class="s6col m4col col-space">
                     <a href="<?php echo route('/portfolio/web-template') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                             <div class="line">
@@ -283,7 +283,7 @@
                         </article>
                     </a>
                 </div>
-                <div class="m4col s4col col-space">
+                <div class="s6col m4col col-space">
                     <a href="<?php echo route('/portfolio/flappy-bird') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                             <div class="line">
@@ -300,7 +300,7 @@
                         </article>
                     </a>
                 </div>
-                <div class="m4col s4col col-space">
+                <div class="s6col m4col col-space">
                     <a href="<?php echo route('/portfolio/leobcastro') ?>">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                             <div class="line">
@@ -317,11 +317,26 @@
                         </article>
                     </a>
                 </div>
-            </div>
-            <div class="line line-space">
-                <div class="m4col s4col col-space">
-                    <a href="<?php echo route('/portfolio/framework') ?>">
+                <div class="s6col m4col col-space">
+                    <a href="#">
                         <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
+                            <div class="line">
+                                <div class="collist">
+                                    <img src="<?php echo asset('img/OJ91BD0.jpg') ?>"/>
+                                </div>
+                            </div>
+                            <div class="line line-space">
+                                <div class="collist">
+                                    <h1>CSS Stylle</h1>
+                                    <p>In lacinia euismod molestie. Phasellus consectetur nulla id erat porttitor viverra.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="s6col m4col col-space">
+                    <a href="<?php echo route('/portfolio/framework') ?>">
+                        <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                             <div class="line">
                                 <div class="collist">
                                     <img src="<?php echo asset('img/startup-framework-preview.png') ?>"/>
@@ -336,9 +351,9 @@
                         </article>
                     </a>
                 </div>
-                <div class="m4col s4col col-space">
+                <div class="s6col m4col col-space">
                     <a href="#contact-me" class="scroll">
-                        <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="1100ms">
+                        <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
                             <div class="line">
                                 <div class="collist">
                                     <img src="<?php echo asset('img/icons/marketing.svg') ?>"/>
@@ -353,7 +368,6 @@
                         </article>
                     </a>
                 </div>
-                <div class="m4col"></div>
             </div>
         </section>
     </div><!-- END PORTFÓLIO -->
