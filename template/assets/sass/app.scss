@@ -562,6 +562,65 @@ textarea.form {
  */
 
 /**
+ * PRELOADER STYLES
+ */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999998;
+  background: #ffffff;
+}
+.preloader > img {
+  height: 64px;
+  width: 64px;
+}
+.loader {
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 2px solid;
+  border-radius: 100%;
+  display: inline-block;
+  border-top-color: rgba(0,0,0, 0.65);
+  border-bottom-color: rgba(0,0,0, 0.65);
+  border-left-color: rgba(0,0,0, 0.15);
+  border-right-color: rgba(0,0,0, 0.15);
+  -webkit-animation: loader-cycle 0.8s ease-in-out infinite alternate;
+     -moz-animation: loader-cycle 0.8s ease-in-out infinite alternate;
+      -ms-animation: loader-cycle 0.8s ease-in-out infinite alternate;
+       -o-animation: loader-cycle 0.8s ease-in-out infinite alternate;
+          animation: loader-cycle 0.8s ease-in-out infinite alternate;
+}
+@keyframes loader-cycle {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@-webkit-keyframes loader-cycle {
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes loader-cycle {
+  from { -moz-transform: rotate(0deg); }
+  to   { -moz-transform: rotate(360deg); }
+}
+@-o-keyframes loader-cycle {
+  from { -o-transform: rotate(0deg); }
+  to   { -o-transform: rotate(360deg); }
+}
+@-ms-keyframes loader-cycle {
+  from { -ms-transform: rotate(0deg); }
+  to   { -ms-transform: rotate(360deg); }
+}
+
+/**
+ * END PRELOADER STYLES
+ */
+
+/**
  * HELPERS STYLES
  */
 
