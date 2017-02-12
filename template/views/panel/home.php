@@ -11,7 +11,7 @@
 </head>
 <body>
     <main id="wrapper" role="main">
-        <?php require_once (dirname(__DIR__) . '/layouts/includes/panel-navbar.php') ?>
+        <?php require_once ('includes/navbar.php') ?>
 
         <div id="page-wrapper">
             <div class="container-fluid">
@@ -37,15 +37,15 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
+                        <div class="panel panel-green">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-5x"></i>
+                                        <i class="fa fa-tasks fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">6</div>
-                                        <div>Novos Emails!</div>
+                                        <div class="huge"><?php echo $total_unread_messages ?></div>
+                                        <div>Novas MSGs!</div>
                                     </div>
                                 </div>
                             </div>
@@ -59,15 +59,15 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
+                        <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
+                                        <i class="fa fa-comments fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">12</div>
-                                        <div>Novas MSGs!</div>
+                                        <div class="huge"><?php echo $total_unread_emails ?></div>
+                                        <div>Novos Emails!</div>
                                     </div>
                                 </div>
                             </div>

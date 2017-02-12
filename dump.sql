@@ -15,6 +15,7 @@ DROP TABLE IF EXISTS 'x_email_list';
 CREATE TABLE x_email_list (
   id INT unsigned AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(100) NOT NULL UNIQUE,
+  unread TINYINT(1) NOT NULL,
   created_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -25,5 +26,6 @@ CREATE TABLE x_visitors_messages (
   email VARCHAR(100) NOT NULL,
   subject VARCHAR(100) NOT NULL,
   message LONGTEXT NOT NULL,
+  unread TINYINT(1) NOT NULL,
   created_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

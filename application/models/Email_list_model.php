@@ -7,6 +7,7 @@ class Email_list_model extends CI_Model
      * @var int
      */
     public $id;
+    protected $unread;
 
     /**
      * @var string
@@ -58,15 +59,30 @@ class Email_list_model extends CI_Model
      * Store a email in the list.
      *
      * @return bool
+     *
+     * @throws InvalidArgumentException
      */
     public function save()
     {
         if (!empty($this->email)) {
-            $status = $this->db->insert('x_email_list', ['email' => $this->email]);
+            $status = $this->db->insert('x_email_list', [
+                'email'  => $this->email,
+                'unread' => $this->set_unread()->get_unread()
+            ]);
             return $status;
         }
 
         throw new InvalidArgumentException('Email not can null.');
+    }
+
+    /**
+     * Update if unread email in the list.
+     *
+     * @return bool
+     */
+    public function update_unread()
+    {
+        //
     }
 
     /**
@@ -75,6 +91,18 @@ class Email_list_model extends CI_Model
     public function gets_all()
     {
         //
+    }
+
+    /**
+     * @return array
+     */
+    public function unread_emails()
+    {
+        $sql = "SELECT * FROM x_email_list WHERE unread = ?";
+        $query = $this->db->query($sql, 1);
+        $result = $query->result('Email_list_model');
+
+        return (!empty($result)) ? $result : null;
     }
 
     /**
@@ -96,12 +124,32 @@ class Email_list_model extends CI_Model
     /**
      * @param string $email
      *
-     * @return string
+     * @return Email_list_model
      *
      */
     public function set_email($email)
     {
         $this->email = $this->security->xss_clean($email);
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function get_unread()
+    {
+        return $this->unread;
+    }
+
+    /**
+     * @param int $unread
+     *
+     * @return Email_list_model
+     *
+     */
+    public function set_unread($unread = 1)
+    {
+        $this->unread = (int) $unread;
         return $this;
     }
 

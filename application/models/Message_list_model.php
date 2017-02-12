@@ -7,6 +7,7 @@ class Message_list_model extends CI_Model
      * @var int
      */
     protected $id;
+    protected $unread;
 
     /**
      * @var string
@@ -54,7 +55,8 @@ class Message_list_model extends CI_Model
                 'name'    => $this->name,
                 'email'   => $this->email,
                 'subject' => $this->subject,
-                'message' => $this->message
+                'message' => $this->message,
+                'unread'  => $this->set_unread()->get_unread()
             ]);
 
             return $status;
@@ -69,6 +71,18 @@ class Message_list_model extends CI_Model
     public function gets_all()
     {
         //
+    }
+
+    /**
+     * @return array
+     */
+    public function unread_messages()
+    {
+        $sql = "SELECT * FROM x_visitors_messages WHERE unread = ?";
+        $query = $this->db->query($sql, 1);
+        $result = $query->result('Message_list_model');
+
+        return (!empty($result)) ? $result : null;
     }
 
     /**
@@ -152,6 +166,26 @@ class Message_list_model extends CI_Model
     public function set_message($message)
     {
         $this->message = $this->security->xss_clean($message);
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function get_unread()
+    {
+        return $this->unread;
+    }
+
+    /**
+     * @param int $unread
+     *
+     * @return Message_list_model
+     *
+     */
+    public function set_unread($unread = 1)
+    {
+        $this->unread = (int) $unread;
         return $this;
     }
 
