@@ -112,7 +112,7 @@ if (! function_exists('csrf_field')) {
     }
 }
 
-if(!function_exists('auth_data')) {
+if (!function_exists('auth_data')) {
     /**
      * Returns some data from the current user.
      *
@@ -132,6 +132,20 @@ if(!function_exists('auth_data')) {
         }
 
         return null;
+    }
+}
+
+if (!function_exists('get_validation_errors')) {
+    /**
+     *
+     * @return array
+     */
+    function get_validation_errors_in_array()
+    {
+        $errors = trim(validation_errors());
+        $errors = str_ireplace('<p>', '', $errors);
+        $errors = str_ireplace('</p>', '', $errors);
+        return array_filter(explode("\n", $errors));
     }
 }
 
