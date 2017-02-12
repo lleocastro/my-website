@@ -578,7 +578,7 @@ textarea.form {
   height: 64px;
   width: 64px;
 }
-.loader {
+.preloader-loader {
   width: 64px;
   height: 64px;
   padding: 0;
@@ -591,7 +591,6 @@ textarea.form {
   border-right-color: rgba(0,0,0, 0.15);
   -webkit-animation: loader-cycle 0.8s ease-in-out infinite alternate;
      -moz-animation: loader-cycle 0.8s ease-in-out infinite alternate;
-      -ms-animation: loader-cycle 0.8s ease-in-out infinite alternate;
        -o-animation: loader-cycle 0.8s ease-in-out infinite alternate;
           animation: loader-cycle 0.8s ease-in-out infinite alternate;
 }
@@ -610,10 +609,6 @@ textarea.form {
 @-o-keyframes loader-cycle {
   from { -o-transform: rotate(0deg); }
   to   { -o-transform: rotate(360deg); }
-}
-@-ms-keyframes loader-cycle {
-  from { -ms-transform: rotate(0deg); }
-  to   { -ms-transform: rotate(360deg); }
 }
 
 /**

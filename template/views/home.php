@@ -48,8 +48,6 @@
     <title><?php echo getenv('APP_NAME') ?> - Full-Stack Web Developer - SJCampos</title>
 </head>
 <body>
-    <!-- PRELOADER -->
-<!--    <div class="preloader center"><div class="loader"></div></div><!-- END PRELOADER -->
     <main class="container-full" role="main">
         <header>
             <!-- NAVBAR -->
@@ -554,13 +552,6 @@
         });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<!--    <script>-->
-<!--        jQuery(function($) {-->
-<!--            $(window).load(function () {-->
-<!--                $('.preloader').remove();-->
-<!--            });-->
-<!--        });-->
-<!--    </script>-->
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
     <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>

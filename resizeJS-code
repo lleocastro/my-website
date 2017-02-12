@@ -20,3 +20,12 @@
             backImg.style.height = (visibleHeight - 50) + "px";
         });
     </script>
+
+
+<!--    <script>-->
+<!--        jQuery(function($) {-->
+<!--            $(window).load(function () {-->
+<!--                $('.preloader').remove();-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
