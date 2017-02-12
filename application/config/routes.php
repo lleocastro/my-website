@@ -54,16 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /**
- * Auth Routes
- */
-$route['login'] = 'auth/Login/index';
-$route['login/auth'] = 'auth/Login/show';
-$route['logout'] = 'auth/Logout/index';
-$route['register'] = 'auth/AccountRegister/index';
-$route['register/auth'] = 'auth/AccountRegister/store';
-// ...
-
-/**
  * Forms Action Routes
  */
 $route['store/email'] = 'Index_page/store_email';
@@ -93,3 +83,18 @@ $route['curriculo'] = 'Helper_page/in_construction';
 $route['creditos'] = 'Pages/page_credits';
 $route['hahaha'] = 'Helper_page/in_construction';
 
+/**
+ * Auth Routes
+ * Secret access: [wragnar93]
+ */
+$route['wragnar93/dashboard/login'] = 'auth/Login';
+$route['login/auth'] = 'auth/Login/show';
+$route['logout'] = 'auth/Logout/index';
+$route['register'] = 'auth/AccountRegister';
+$route['register/auth'] = 'auth/AccountRegister/store';
+// ...
+
+/**
+ * Panel Routes
+ */
+$route['lbc/dashboard'] = 'panel/Home';
