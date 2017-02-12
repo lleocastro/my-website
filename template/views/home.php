@@ -21,13 +21,13 @@
     <meta name="twitter:image" content=""/>
     <meta name="twitter:url" content=""/>
 
-    <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
     <link rel="stylesheet" href="<?php echo asset('css/animate.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/home.min.css') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="<?php echo asset('css/toastr.min.css') ?>"/>
+    <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
 
     <?php echo ie_support_field() ?>
 
@@ -48,6 +48,8 @@
     <title><?php echo getenv('APP_NAME') ?> - Full-Stack Web Developer - SJCampos</title>
 </head>
 <body>
+    <!-- PRELOADER -->
+<!--    <div class="preloader center"><div class="loader"></div></div><!-- END PRELOADER -->
     <main class="container-full" role="main">
         <header>
             <!-- NAVBAR -->
@@ -84,7 +86,7 @@
                     <h2>Léo B. <span>Castro</span></h2>
                     <p class="tagline">Web Developer, UX/UI Designer, Creative</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
-                        <i class="large material-icons" style="vertical-align: -29%">phone</i>
+                        <i class="material-icons" style="vertical-align: -29%">phone</i>
                         Contate-me
                     </a>
                 </div>
@@ -552,6 +554,13 @@
         });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--    <script>-->
+<!--        jQuery(function($) {-->
+<!--            $(window).load(function () {-->
+<!--                $('.preloader').remove();-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
     <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
