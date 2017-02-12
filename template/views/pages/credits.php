@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="<?php echo $this->config->item('language') ?>">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
     <meta name="description" content="Creditos para os icones e imagens do site"/>
     <meta name="author" content="Léo B. Castro"/>
