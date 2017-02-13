@@ -88,9 +88,13 @@ class Email_list_model extends CI_Model
     /**
      * @return array
      */
-    public function gets_all()
+    public function all()
     {
-        //
+        $sql = "SELECT * FROM x_email_list";
+        $query = $this->db->query($sql);
+        $result = $query->result('Email_list_model');
+
+        return (!empty($result)) ? $result : null;
     }
 
     /**
