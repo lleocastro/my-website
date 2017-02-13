@@ -84,17 +84,16 @@ $route['creditos'] = 'Pages/page_credits';
 $route['hahaha'] = 'Helper_page/in_construction';
 
 /**
- * Auth Routes
- * Secret access: [wragnar93]
- */
-$route['wragnar93/dashboard/login'] = 'auth/Login';
-$route['login/auth'] = 'auth/Login/show';
-$route['logout'] = 'auth/Logout/index';
-$route['register'] = 'auth/AccountRegister';
-$route['register/auth'] = 'auth/AccountRegister/store';
-// ...
-
-/**
  * Panel Routes
  */
-$route['lbc/dashboard'] = 'panel/Home';
+$route['dashboard'] = 'panel/Home';
+$route['dashboard/emails-list'] = 'panel/Show_emails';
+$route['dashboard/messages-list'] = 'panel/Show_messages';
+
+/** Panel Auth Routes */
+$route['dashboard/login'] = 'auth/Login';
+$route['login/auth'] = 'auth/Login/show';
+$route['logout'] = 'auth/Logout/index';
+$route['dashboard/user/register'] = 'auth/AccountRegister';
+$route['register/auth'] = 'auth/AccountRegister/store';
+
