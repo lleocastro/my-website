@@ -8,7 +8,7 @@ class AccountRegister extends CI_Controller
      *
      * @var string
      */
-    protected $redirect_to = 'login';
+    protected $redirect_to = 'dashboard';
 
     /**
      * Create a new controller instance.
@@ -16,7 +16,7 @@ class AccountRegister extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->auth->who_see('noauth');
+        $this->auth->who_see('auth', 'dashboard/login');
     }
 
     /**
@@ -36,7 +36,7 @@ class AccountRegister extends CI_Controller
      */
     public function store()
     {
-        $callback = $this->auth->register($this->input->post());
+        $callback = $this->auth->register();
 
         if ($callback !== null) {
             return $this->load->view('auth/sign-up', [
@@ -44,7 +44,7 @@ class AccountRegister extends CI_Controller
             ]);
         }
 
-        return redirect($this->redirect_to);
+        redirect($this->redirect_to);
     }
 
 }

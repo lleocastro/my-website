@@ -122,13 +122,7 @@ if (!function_exists('auth_data')) {
     {
         $CI =& get_instance();
         if($CI->auth->can()) {
-            $obj = new stdClass();
-            $obj->id = $CI->auth->get_user_data()['auth_user_id'];
-            $obj->name = $CI->auth->get_user_data()['auth_user_name'];
-            $obj->lastname = $CI->auth->get_user_data()['auth_user_lastname'];
-            $obj->email = $CI->auth->get_user_data()['auth_user_email'];
-
-            return $obj;
+            return $CI->auth->get_user_data();
         }
 
         return null;

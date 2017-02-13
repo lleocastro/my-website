@@ -8,7 +8,7 @@ class Login extends CI_Controller
      *
      * @var string
      */
-    protected $redirect_to = 'home';
+    protected $redirect_to = 'dashboard';
 
     /**
      * Create a new controller instance.
@@ -16,7 +16,7 @@ class Login extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->auth->who_see('noauth');
+        $this->auth->who_see('noauth', $this->redirect_to);
     }
 
     /**
@@ -36,15 +36,14 @@ class Login extends CI_Controller
      */
     public function show()
     {
-        $callback = $this->auth->authenticate($this->input->post());
-
+        $callback = $this->auth->authenticate();
         if ($callback !== null) {
             return $this->load->view('auth/sign-in', [
                 'errors' => $callback->errors()
             ]);
         }
 
-        return redirect($this->redirect_to);
+        redirect($this->redirect_to);
     }
 
 }
