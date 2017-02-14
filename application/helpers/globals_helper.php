@@ -149,3 +149,19 @@ if (!function_exists('get_validation_errors')) {
     }
 }
 
+if (!function_exists('analytics')) {
+    /**
+     *
+     * @return void
+     */
+    function analytics()
+    {
+        $CI =& get_instance();
+        $CI->page_views->set_agent(filter_input(INPUT_SERVER, 'HTTP_USER_AGENT'))
+            ->set_addr(filter_input(INPUT_SERVER, 'REMOTE_ADDR'))
+            ->set_host(filter_input(INPUT_SERVER, 'HTTP_HOST'))
+            ->set_route(base_url(uri_string()))
+            ->save();
+    }
+}
+

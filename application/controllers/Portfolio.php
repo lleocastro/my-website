@@ -9,7 +9,6 @@ class Portfolio extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        //$this->output->cache('120');
     }
 
     /**
@@ -19,6 +18,7 @@ class Portfolio extends CI_Controller
      */
     public function page_web_template()
     {
+        analytics();
         return $this->load->view('portfolio/web-template');
     }
 
@@ -29,6 +29,7 @@ class Portfolio extends CI_Controller
      */
     public function page_flappy_bird()
     {
+        analytics();
         return $this->load->view('portfolio/flappy-bird');
     }
 
@@ -39,6 +40,7 @@ class Portfolio extends CI_Controller
      */
     public function page_framework()
     {
+        analytics();
         return $this->load->view('portfolio/framework');
     }
 
@@ -49,6 +51,7 @@ class Portfolio extends CI_Controller
      */
     public function page_leobcastro()
     {
+        analytics();
         return $this->load->view('portfolio/leobcastro');
     }
 

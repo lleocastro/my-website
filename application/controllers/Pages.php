@@ -18,7 +18,19 @@ class Pages extends CI_Controller
      */
     public function page_credits()
     {
+        analytics();
         return $this->load->view('pages/credits');
+    }
+
+    /**
+     * Displays a temporary error page.
+     *
+     * @return HttpResponse
+     */
+    public function in_construction()
+    {
+        analytics();
+        return $this->load->view('errors/in-construction');
     }
 
 }
