@@ -25,8 +25,9 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
             <li class="active"><a href="<?php echo route('/dashboard') ?>"><i class="fa fa-fw fa-dashboard"></i> Inicio</a></li>
-            <li><a href="<?php echo route('dashboard/emails-list') ?>"><i class="fa fa-fw fa-edit"></i> Lista de Emails</a></li>
-            <li><a href="<?php echo route('dashboard/messages-list') ?>"><i class="fa fa-fw fa-edit"></i> Lista de Mensagens</a></li>
+            <li><a href="<?php echo route('/dashboard/emails') ?>"><i class="fa fa-fw fa-envelope"></i> Lista de Emails</a></li>
+            <li><a href="<?php echo route('/dashboard/messages') ?>"><i class="fa fa-fw fa-comment"></i> Lista de Mensagens</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-send"></i> Enviar Notificações</a></li>
             <li><a href="<?php echo route('/') ?>"><i class="fa fa-fw fa-refresh"></i> Voltar para o Site</a></li>
         </ul>
     </div>

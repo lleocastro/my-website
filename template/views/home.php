@@ -376,7 +376,7 @@
                 </div>
                 <div class="line">
                     <div class="collist">
-                        <form id="action-form" method="post" action="<?php echo route('store/email') ?>" accept-charset="utf-8">
+                        <form id="action-form" method="post" action="<?php echo route('/email/store') ?>" accept-charset="utf-8">
                             <input class="form" type="email" id="email" name="email" placeholder="Coloque seu principal email"/>
                             <?php echo csrf_field() ?>
                             <button id="action-submit" type="submit" class="btn btn-default wow fadeInRightBig" data-wow-duration="2000ms" data-wow-delay="800ms">
@@ -435,7 +435,7 @@
                                 </div>
                             </div>
                             <div class="m6col s6col col-space contact-form">
-                                <form id="message-form" method="post" action="<?php echo route('store/message') ?>" accept-charset="utf-8">
+                                <form id="message-form" method="post" action="<?php echo route('/message/store') ?>" accept-charset="utf-8">
                                     <div class="line line-space">
                                         <div class="collist mobile-text-center">
                                             <h4>Mande-me uma mensagem</h4>
