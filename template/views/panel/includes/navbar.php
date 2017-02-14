@@ -28,6 +28,7 @@
             <li><a href="<?php echo route('/dashboard/emails') ?>"><i class="fa fa-fw fa-envelope"></i> Lista de Emails</a></li>
             <li><a href="<?php echo route('/dashboard/messages') ?>"><i class="fa fa-fw fa-comment"></i> Lista de Mensagens</a></li>
             <li><a href="#"><i class="fa fa-fw fa-send"></i> Enviar Notificações</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-area-chart"></i> Relatório</a></li>
             <li><a href="<?php echo route('/') ?>"><i class="fa fa-fw fa-refresh"></i> Voltar para o Site</a></li>
         </ul>
     </div>
