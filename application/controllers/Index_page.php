@@ -11,6 +11,7 @@ class Index_page extends CI_Controller
         parent::__construct();
         $this->load->library('requests/Email_list_form_request');
         $this->load->library('requests/Message_list_form_request');
+        $this->load->model('Page_view_model', 'view_model');
         $this->load->model('Email_list_model', 'email_model');
         $this->load->model('Message_list_model', 'message_model');
     }
@@ -22,9 +23,14 @@ class Index_page extends CI_Controller
      */
     public function index()
     {
+        $this->view_model->set_agent(filter_input(INPUT_SERVER, 'HTTP_USER_AGENT'))
+            ->set_addr(filter_input(INPUT_SERVER, 'REMOTE_ADDR'))
+            ->set_host(filter_input(INPUT_SERVER, 'HTTP_HOST'))
+            ->set_route(route('/'))
+            ->save();
+
         return $this->load->view('home');
     }
-
 
     /**
      * Store a newly created email in storage.

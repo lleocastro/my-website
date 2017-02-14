@@ -12,6 +12,7 @@ class Home extends CI_Controller
         $this->auth->who_see('auth');
         $this->load->model('Email_list_model', 'email_model');
         $this->load->model('Message_list_model', 'message_model');
+        $this->load->model('Page_view_model', 'view_model');
     }
 
     /**
@@ -23,7 +24,8 @@ class Home extends CI_Controller
     {
         return $this->load->view('panel/home', [
             'total_unread_emails'   => count($this->email_model->unread_emails()),
-            'total_unread_messages' => count($this->message_model->unread_messages())
+            'total_unread_messages' => count($this->message_model->unread_messages()),
+            'page_views' => $this->view_model->all()
         ]);
     }
 
