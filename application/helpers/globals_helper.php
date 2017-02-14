@@ -6,7 +6,7 @@ if (!function_exists('asset'))
     /**
      * Assets loader.
      *
-     * @param  string $assetPath
+     * @param string $assetPath
      *
      * @return string
      */
@@ -22,10 +22,10 @@ if (!function_exists('route'))
     /**
      * Route alias to call controller methods
      *
-     * @param	string $name
-     * @param   int    $id
+     * @param string $name
+     * @param int $id
      *
-     * @return	string
+     * @return string
      */
     function route($name, $id = null)
     {
@@ -38,12 +38,12 @@ if (!function_exists('route'))
 if (!function_exists('spit'))
 {
     /**
+     * Scape the malicious scripts.
      *
+     * @param string $data
+     * @param bool $scape
      *
-     * @param	string $data
-     * @param   bool   $scape
-     *
-     * @return	string
+     * @return string
      */
     function spit($data, $scape = false)
     {
@@ -54,11 +54,11 @@ if (!function_exists('spit'))
 if (!function_exists('old'))
 {
     /**
+     * Retrieve old values of form inputs.
      *
+     * @param string $value
      *
-     * @param	string $value
-     *
-     * @return	string
+     * @return string
      */
     function old($value)
     {
@@ -137,6 +137,7 @@ if (!function_exists('auth_data')) {
 
 if (!function_exists('get_validation_errors')) {
     /**
+     * Retrieve all validations errors in array.
      *
      * @return array
      */
@@ -151,6 +152,7 @@ if (!function_exists('get_validation_errors')) {
 
 if (!function_exists('analytics')) {
     /**
+     * Pixel for site access analysis.
      *
      * @return void
      */
@@ -167,6 +169,7 @@ if (!function_exists('analytics')) {
 
 if (!function_exists('pagination_styled')) {
     /**
+     * Pagination styled with bootstrap css.
      *
      * @return array
      */
