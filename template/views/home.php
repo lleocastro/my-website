@@ -378,7 +378,7 @@
                     <div class="collist">
                         <form id="action-form" method="post" action="<?php echo route('/email/store') ?>" accept-charset="utf-8">
                             <input class="form" type="email" id="email" name="email" placeholder="Coloque seu principal email"/>
-                            <?php echo csrf_field() ?>
+                            <?php echo csrf_field('action_token') ?>
                             <button id="action-submit" type="submit" class="btn btn-default wow fadeInRightBig" data-wow-duration="2000ms" data-wow-delay="800ms">
                                 <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                                 Cadastrar
@@ -386,6 +386,7 @@
                         </form>
                         <p class="mini-text wow fadeInLeftBig" data-wow-duration="2000ms" data-wow-delay="900ms">Também odeio spam!</p>
                     </div>
+                    <div class="callback"></div>
                 </div>
             </section>
         </div><!-- END CALL TO ACTION -->
@@ -464,17 +465,16 @@
                                             <textarea id="message" name="message" class="form" placeholder="Sua mensagem"></textarea>
                                         </div>
                                     </div>
-                                    <div class="line line-space">
-                                        <div class="g-recaptcha center" data-sitekey="6Le5HxUUAAAAALPKPPPxNNqIXJn_cUDtjZlsNf1P"></div>
-                                    </div>
                                     <div class="line">
                                         <div class="collist col-space">
+                                            <?php echo csrf_field('message_token') ?>
                                             <button id="message-submit" type="submit" class="btn btn-default">
                                                 <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                                                 Enviar
                                             </button>
                                         </div>
                                     </div>
+                                    <div class="line line-space callback"></div>
                                 </form>
                             </div>
                         </div>
@@ -555,5 +555,4 @@
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
     <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 </html>

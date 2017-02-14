@@ -65,32 +65,23 @@ class Index_page extends CI_Controller
      */
     public function store_message()
     {
-        $recaptcha = new \ReCaptcha\ReCaptcha(getenv('RECAPTCHA_KEY'));
-        $resp = $recaptcha->verify($this->input->post()['g-recaptcha-response'], filter_input(INPUT_SERVER, 'REMOTE_ADDR'));
+        if ($this->message_list_form_request->run()) {
+            $data = $this->input->post();
 
-        if ($resp->isSuccess()) {
-            if ($this->message_list_form_request->run()) {
-                $data = $this->input->post();
+            $this->message_model->set_name($data['name'])
+                ->set_email($data['email'])
+                ->set_subject($data['subject'])
+                ->set_message($data['message'])
+                ->save();
 
-                $this->message_model->set_name($data['name'])
-                    ->set_email($data['email'])
-                    ->set_subject($data['subject'])
-                    ->set_message(trim($data['message']))
-                    ->save();
-
-                $return = [
-                    'status' => true
-                ];
-            } else {
-                $return = [
-                    'status' => false,
-                    'errors' => $this->message_list_form_request->fails()
-                ];
-            }
+            $return = [
+                'status' => true
+            ];
         } else {
             $return = [
                 'status' => false,
-                'errors' => $resp->getErrorCodes()
+                'token'  => $this->security->get_csrf_hash(),
+                'errors' => $this->message_list_form_request->fails()
             ];
         }
 

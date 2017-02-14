@@ -111,10 +111,24 @@ jQuery(function($) {
                             toastr.warning(error);
                         });
 
-                        document.getElementById("csrf_token").setAttribute("value", data.token);
+                        document.getElementById("action_token").setAttribute("value", data.token);
                     }
                 }
             });
+
+            $(".contact-form #name").prop('readonly', true);
+            $(".contact-form #email").prop('readonly', true);
+            $(".contact-form #subject").prop('readonly', true);
+            $(".contact-form #message").prop('readonly', true);
+
+            document.getElementById("message-submit").setAttribute("type", "button");
+            $(".contact-form .callback div.alert").remove();
+            $(".contact-form .callback").append(
+                "<div class='alert alert-success'>" +
+                "Olá! Como você me enviou seu email agora preciso que você atualize a pagina para poder me " +
+                "enviar uma mensagem. 'Questões de segurança'. Obrigado :)" +
+                "</div>"
+            );
 
             return false;
         });
@@ -148,10 +162,21 @@ jQuery(function($) {
                             toastr.warning(error);
                         });
 
+                        document.getElementById("message_token").setAttribute("value", data.token);
                         grecaptcha.reset();
                     }
                 }
             });
+
+            $(".to-action #email").prop('readonly', true);
+            document.getElementById("action-submit").setAttribute("type", "button");
+            $(".to-action .callback div.alert").remove();
+            $(".to-action .callback").append(
+                "<div class='alert alert-success'>" +
+                    "Olá! Como você me enviou uma mensagem agora preciso que você atualize a pagina para poder me " +
+                    "enviar seu email. 'Questões de segurança'. Obrigado :)" +
+                "</div>"
+            );
 
             return false;
         });

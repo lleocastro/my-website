@@ -100,15 +100,21 @@ if (! function_exists('csrf_field')) {
     /**
      * Generate CSRF token form.
      *
+     * @param string $custom_id
+     *
      * @return string
      */
-    function csrf_field()
+    function csrf_field($custom_id = '')
     {
         $CI =& get_instance();
         $token = $CI->security->get_csrf_hash();
         $tokenName = $CI->security->get_csrf_token_name();
 
-        return "<input type='hidden' id='{$tokenName}' name='{$tokenName}' value='{$token}'/>";
+        if (empty($custom_id)) {
+            $custom_id = $tokenName;
+        }
+
+        return "<input type='hidden' id='{$custom_id}' name='{$tokenName}' value='{$token}'/>";
     }
 }
 
