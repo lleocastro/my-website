@@ -65,16 +65,16 @@ $route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
 /**
  * Blog Routes
  */
-$route['blog'] = 'Helper_page/in_construction';
+$route['blog'] = 'Pages/in_construction';
 // ...
 
 /**
  * Simple Routes
  */
-$route['questionario'] = 'Helper_page/in_construction';
-$route['curriculo'] = 'Helper_page/in_construction';
+$route['questionario'] = 'Pages/in_construction';
+$route['curriculo'] = 'Pages/in_construction';
 $route['creditos'] = 'Pages/page_credits';
-$route['hahaha'] = 'Helper_page/in_construction';
+$route['hahaha'] = 'Pages/in_construction';
 
 /**
  * Panel Routes
