@@ -165,3 +165,33 @@ if (!function_exists('analytics')) {
     }
 }
 
+if (!function_exists('pagination_styled')) {
+    /**
+     *
+     * @return array
+     */
+    function pagination_styled()
+    {
+        return [
+            'full_tag_open'   => '<nav aria-label="Page navigation"><ul class="pagination">',
+            'full_tag_close'  => '</ul></nav>',
+            'first_link'      => false,
+            'last_link'       => false,
+            'first_tag_open'  => '<li>',
+            'first_tag_close' => '</li>',
+            'prev_link'       => '<span aria-hidden="true">&laquo;</span>',
+            'prev_tag_open'   => '<li>',
+            'prev_tag_close'  => '</li>',
+            'next_link'       => '<span aria-hidden="true">&raquo;</span>',
+            'next_tag_open'   => '<li>',
+            'next_tag_close'  => '</li>',
+            'last_tag_open'   => '<li>',
+            'last_tag_close'  => '</li>',
+            'cur_tag_open'    => '<li class="active"><a href="#">',
+            'cur_tag_close'   => '</a></li>',
+            'num_tag_open'    => '<li>',
+            'num_tag_close'   => '</li>'
+        ];
+    }
+}
+

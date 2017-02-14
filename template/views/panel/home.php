@@ -88,7 +88,7 @@
                                         <i class="fa fa-line-chart fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge"><?php echo count($page_views) ?></div>
+                                        <div class="huge"><?php echo $total_views ?></div>
                                         <div>Total de Views!</div>
                                     </div>
                                 </div>
@@ -159,7 +159,9 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="panel-footer"></div>
+                        <div class="panel-footer center">
+                            <?php echo $pagination_links ?>
+                        </div>
                     </div>
                 </div>
             </div>

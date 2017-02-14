@@ -18,6 +18,16 @@ class Page_view_model extends CI_Model
     protected $date_time;
 
     /**
+     * @var string
+     */
+    private $table = 'x_page_views';
+
+    /**
+     * @var int
+     */
+    protected $total_lines = null;
+
+    /**
      * Loads the necessary resources to the controller.
      */
     public function __construct()
@@ -36,12 +46,12 @@ class Page_view_model extends CI_Model
     {
         if ((!empty($this->agent)) && (!empty($this->addr)) && (!empty($this->host))
             && (!empty($this->route))) {
-            $status = $this->db->insert('x_page_views', [
+            $status = $this->db->insert($this->table, [
                 'agent' => $this->agent,
                 'addr'  => $this->addr,
                 'host'  => $this->host,
                 'route' => $this->route,
-                'date_time' => $this->set_date_time()->get_date_time()
+                'date_time' => date("Y-m-d H:i:s")
             ]);
 
             return $status;
@@ -55,11 +65,64 @@ class Page_view_model extends CI_Model
      */
     public function all()
     {
-        $sql = "SELECT * FROM x_page_views";
-        $query = $this->db->query($sql);
-        $result = $query->result('Page_view_model');
+        $this->db->order_by('date_time', 'desc');
+        $query = $this->db->get($this->table);
 
-        return (!empty($result)) ? $result : null;
+        if ($query->num_rows() > 0) {
+            return $query->result('Page_view_model');
+        }
+
+        return null;
+    }
+
+    /**
+     * @return int
+     */
+    public function count()
+    {
+        return $this->db->count_all($this->table);
+    }
+
+    /**
+     * @param int $total_lines
+     *
+     * @return Page_view_model
+     */
+    public function paginate($total_lines)
+    {
+        $this->total_lines = (int) $total_lines;
+
+        $offset = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
+        $query  = $this->db->get($this->table, $this->total_lines, $offset);
+
+        if ($query->num_rows() > 0) {
+            return $query->result('Page_view_model');
+        }
+
+        return null;
+    }
+
+    /**
+     * @return string
+     */
+    public function pagination_links()
+    {
+        if ($this->total_lines !== null) {
+            $this->load->library('pagination');
+
+            $config = [
+                'base_url'    => base_url('/dashboard'),
+                'per_page'    => $this->total_lines,
+                'num_links'   => 5,
+                'uri_segment' => 2,
+                'total_rows'  => $this->count(),
+            ];
+
+            $this->pagination->initialize(array_merge($config, pagination_styled()));
+            return $this->pagination->create_links();
+        }
+
+        return null;
     }
 
     /**
@@ -148,15 +211,6 @@ class Page_view_model extends CI_Model
     public function get_date_time()
     {
         return $this->date_time;
-    }
-
-    /**
-     * @return Page_view_model
-     */
-    protected function set_date_time()
-    {
-        $this->date_time = date("Y-m-d H:i:s");
-        return $this;
     }
 
 }

@@ -88,6 +88,7 @@ $route['register/auth'] = 'auth/AccountRegister/store';
 
 /** Panel Index */
 $route['dashboard'] = 'panel/Home';
+$route['dashboard/(:num)'] = 'panel/Home';
 
 /** Panel Emails */
 $route['dashboard/emails'] = 'panel/Show_emails';
