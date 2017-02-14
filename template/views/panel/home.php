@@ -41,7 +41,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
+                                        <i class="fa fa-inbox fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge"><?php echo $total_unread_messages ?></div>
@@ -51,7 +51,7 @@
                             </div>
                             <a href="<?php echo route('/dashboard/messages') ?>">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-left">Ver Detalhes</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -63,7 +63,7 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-5x"></i>
+                                        <i class="fa fa-envelope fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge"><?php echo $total_unread_emails ?></div>
@@ -73,7 +73,7 @@
                             </div>
                             <a href="<?php echo route('/dashboard/emails') ?>">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-left">Ver Detalhes</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -85,17 +85,17 @@
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                        <i class="fa fa-line-chart fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">122</div>
+                                        <div class="huge"><?php echo count($page_views) ?></div>
                                         <div>Total de Views!</div>
                                     </div>
                                 </div>
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-left">Ver Detalhes</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -110,19 +110,56 @@
                                         <i class="fa fa-support fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">3</div>
+                                        <div class="huge">0</div>
                                         <div>Super Click!</div>
                                     </div>
                                 </div>
                             </div>
                             <a href="#">
                                 <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-left">Ver Detalhes</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Alguns Dados de Acesso</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table id="email-table" class="table table-striped table-responsive table-hover table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Paginas Acessadas</th>
+                                    <th>Origem</th>
+                                    <th>Acessado em</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php if ($page_views !== null): ?>
+                                    <?php foreach ($page_views as $page_view): ?>
+                                        <tr>
+                                            <td><?php echo $page_view->get_route() ?></td>
+                                            <td><?php echo $page_view->get_addr() ?></td>
+                                            <td><?php echo $page_view->get_date_time() ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php else: ?>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>Sem Informações...</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                <?php endif; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel-footer"></div>
                     </div>
                 </div>
             </div>
