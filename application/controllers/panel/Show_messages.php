@@ -10,7 +10,7 @@ class Show_messages extends CI_Controller
     {
         parent::__construct();
         $this->auth->who_see('auth');
-        $this->load->model('Message_list_model', 'message_model');
+        $this->load->model('Message_list_model', 'message_list');
     }
 
     /**
@@ -21,7 +21,8 @@ class Show_messages extends CI_Controller
     public function index()
     {
         return $this->load->view('panel/messages-list', [
-            'messages' => $this->message_model->all()
+            'messages' => $this->message_list->paginate(5),
+            'pagination_links' => $this->message_list->pagination_links()
         ]);
     }
 
@@ -34,7 +35,7 @@ class Show_messages extends CI_Controller
      */
     public function show($id)
     {
-        $message = $this->message_model->find($id)->set_unread(0)
+        $message = $this->message_list->find($id)->set_unread(0)
             ->update_unread();
 
         return $this->load->view('panel/show-data', [
@@ -49,8 +50,8 @@ class Show_messages extends CI_Controller
      */
     public function destroy($id)
     {
-        if ($this->message_model->find($id) !== null) {
-            $this->message_model->delete($id);
+        if ($this->message_list->find($id) !== null) {
+            $this->message_list->delete($id);
         }
 
         redirect('dashboard/messages');

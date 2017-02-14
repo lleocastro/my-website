@@ -64,7 +64,9 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="panel-footer"></div>
+                        <div class="panel-footer center">
+                            <?php echo $pagination_links ?>
+                        </div>
                     </div>
                 </div>
             </div>

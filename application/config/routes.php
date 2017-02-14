@@ -98,6 +98,7 @@ $route['dashboard/email/delete/(:num)'] = 'panel/Show_emails/destroy/$1';
 
 /** Panel Messages */
 $route['dashboard/messages'] = 'panel/Show_messages';
+$route['dashboard/messages/(:num)'] = 'panel/Show_messages';
 $route['dashboard/message/show/(:num)'] = 'panel/Show_messages/show/$1';
 $route['dashboard/message/delete/(:num)'] = 'panel/Show_messages/destroy/$1';
 
