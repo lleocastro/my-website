@@ -66,11 +66,33 @@ class Message_list_model extends CI_Model
     }
 
     /**
+     * Update if unread email in the list.
+     *
+     * @return Message_list_model
+     */
+    public function update_unread()
+    {
+        if (!empty($this->id)) {
+            $this->db->set('unread', $this->get_unread());
+            $this->db->where('id', $this->get_id());
+            $this->db->update('x_visitors_messages');
+
+            return $this;
+        }
+
+        throw new InvalidArgumentException('Unread and id not can null.');
+    }
+
+    /**
      * @return array
      */
-    public function gets_all()
+    public function all()
     {
-        //
+        $sql = "SELECT * FROM x_visitors_messages";
+        $query = $this->db->query($sql);
+        $result = $query->result('Message_list_model');
+
+        return (!empty($result)) ? $result : null;
     }
 
     /**
@@ -83,6 +105,19 @@ class Message_list_model extends CI_Model
         $result = $query->result('Message_list_model');
 
         return (!empty($result)) ? $result : null;
+    }
+
+    /**
+     * @param int $id
+     *
+     * @return bool
+     */
+    public function delete($id)
+    {
+        $this->db->where('id', (int) $id);
+        $status = $this->db->delete('x_visitors_messages');
+
+        return $status;
     }
 
     /**
