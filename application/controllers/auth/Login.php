@@ -26,6 +26,7 @@ class Login extends CI_Controller
      */
     public function index()
     {
+        analytics();
         return $this->load->view('auth/sign-in');
     }
 

@@ -72,7 +72,7 @@ class Email_list_model extends CI_Model
     public function save()
     {
         if (!empty($this->email)) {
-            $status = $this->db->insert('x_email_list', [
+            $status = $this->db->insert($this->table, [
                 'email'  => $this->email,
                 'unread' => $this->set_unread()->get_unread(),
                 'created_at' => date("Y-m-d H:i:s"),
@@ -138,7 +138,7 @@ class Email_list_model extends CI_Model
      */
     public function unread_emails()
     {
-        $sql = "SELECT * FROM x_email_list WHERE unread = ?";
+        $sql = "SELECT * FROM {$this->table} WHERE unread = ?";
         $query = $this->db->query($sql, 1);
         $result = $query->result('Email_list_model');
 
@@ -153,7 +153,7 @@ class Email_list_model extends CI_Model
     public function delete($id)
     {
         $this->db->where('id', (int) $id);
-        $status = $this->db->delete('x_email_list');
+        $status = $this->db->delete($this->table);
 
         return $status;
     }

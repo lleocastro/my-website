@@ -93,7 +93,9 @@ class Page_view_model extends CI_Model
         $this->total_lines = (int) $total_lines;
 
         $offset = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
-        $query  = $this->db->get($this->table, $this->total_lines, $offset);
+
+        $this->db->order_by('date_time', 'desc');
+        $query = $this->db->get($this->table, $this->total_lines, $offset);
 
         if ($query->num_rows() > 0) {
             return $query->result('Page_view_model');

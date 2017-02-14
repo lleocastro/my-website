@@ -15,6 +15,12 @@ class User_model extends CI_Model
     protected $lastname;
     protected $email;
     protected $password;
+    protected $token;
+
+    /**
+     * @var string
+     */
+    private $table = 'x_users';
 
     /**
      * Loads the necessary resources to the controller.
@@ -34,7 +40,7 @@ class User_model extends CI_Model
      */
     public function find_by_email($email)
     {
-        $sql = "SELECT id, name, lastname, password FROM x_users WHERE email = ? LIMIT 1";
+        $sql = "SELECT id, name, lastname, password FROM {$this->table} WHERE email = ? LIMIT 1";
         $query = $this->db->query($sql, $this->security->xss_clean($email));
         $result = $query->row(0, 'User_model');
 
@@ -52,12 +58,12 @@ class User_model extends CI_Model
     {
         if ((!empty($this->name)) && (!empty($this->last_name)) && (!empty($this->email))
             && (!empty($this->password))) {
-            $status = $this->db->insert('x_users', [
+            $status = $this->db->insert($this->table, [
                 'name' => $this->name,
                 'lastname' => $this->lastname,
                 'email' => $this->email,
                 'password' => $this->password,
-                'remember_token' => $this->set_token()->get_token(),
+                'token' => $this->set_token()->get_token(),
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s")
             ]);
@@ -74,11 +80,11 @@ class User_model extends CI_Model
     public function update_token()
     {
         $this->db->set([
-            'remember_token' => $this->set_token()->get_token()
+            'token' => $this->set_token()->get_token()
         ], false);
 
         $this->db->where('id', $this->get_id());
-        $status = $this->db->update('x_users');
+        $status = $this->db->update($this->table);
 
         return $status;
     }
