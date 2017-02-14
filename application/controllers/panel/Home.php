@@ -23,9 +23,9 @@ class Home extends CI_Controller
     public function index()
     {
         return $this->load->view('panel/home', [
-            'total_unread_emails'   => count($this->email_list->unread_emails()),
+            'total_unread_emails'   => $this->email_list->count(true),
             'total_unread_messages' => count($this->message_list->unread_messages()),
-            'total_views' => $this->page_view->count(),
+            'total_page_views' => $this->page_view->count(),
             'page_views'  => $this->page_view->paginate(7),
             'pagination_links' => $this->page_view->pagination_links()
         ]);
