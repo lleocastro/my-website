@@ -54,13 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /**
- * Forms Action Routes
- */
-$route['store/email'] = 'Index_page/store_email';
-$route['store/message'] = 'Index_page/store_message';
-// ...
-
-/**
  * Portfólio Routes
  */
 $route['portfolio/web-template'] = 'Portfolio/page_web_template';
@@ -86,14 +79,26 @@ $route['hahaha'] = 'Helper_page/in_construction';
 /**
  * Panel Routes
  */
-$route['dashboard'] = 'panel/Home';
-$route['dashboard/emails-list'] = 'panel/Show_emails';
-$route['dashboard/messages-list'] = 'panel/Show_messages';
-
-/** Panel Auth Routes */
+/** Panel Auth */
 $route['dashboard/login'] = 'auth/Login';
 $route['login/auth'] = 'auth/Login/show';
 $route['logout'] = 'auth/Logout/index';
 $route['dashboard/user/register'] = 'auth/AccountRegister';
 $route['register/auth'] = 'auth/AccountRegister/store';
 
+/** Panel Index */
+$route['dashboard'] = 'panel/Home';
+
+/** Panel Emails */
+$route['dashboard/emails'] = 'panel/Show_emails';
+$route['dashboard/email/show/(:num)'] = 'panel/Show_emails/show/$1';
+$route['dashboard/email/delete/(:num)'] = 'panel/Show_emails/destroy/$1';
+
+/** Panel Messages */
+$route['dashboard/messages'] = 'panel/Show_messages';
+$route['dashboard/message/show/(:num)'] = 'panel/Show_messages/show/$1';
+$route['dashboard/message/delete/(:num)'] = 'panel/Show_messages/destroy/$1';
+
+/** Home Action Routes */
+$route['email/store'] = 'Index_page/store_email';
+$route['message/store'] = 'Index_page/store_message';
