@@ -75,7 +75,7 @@ class Index_page extends CI_Controller
                 $this->message_model->set_name($data['name'])
                     ->set_email($data['email'])
                     ->set_subject($data['subject'])
-                    ->set_message($data['message'])
+                    ->set_message(trim($data['message']))
                     ->save();
 
                 $return = [
