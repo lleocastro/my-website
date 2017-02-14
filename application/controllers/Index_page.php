@@ -9,10 +9,6 @@ class Index_page extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->library('requests/Email_list_form_request');
-        $this->load->library('requests/Message_list_form_request');
-        $this->load->model('Email_list_model', 'email_model');
-        $this->load->model('Message_list_model', 'message_model');
     }
 
     /**
@@ -31,11 +27,14 @@ class Index_page extends CI_Controller
      */
     public function store_email()
     {
+        $this->load->library('requests/Email_list_form_request');
+        $this->load->model('Email_list_model', 'email_list');
+
         if ($this->email_list_form_request->run()) {
             $email = $this->input->post()['email'];
 
-            if (!$this->email_model->exists($email)) {
-                $this->email_model->set_email($email)
+            if (!$this->email_list->exists($email)) {
+                $this->email_list->set_email($email)
                     ->save();
 
                 $return = [
@@ -65,10 +64,13 @@ class Index_page extends CI_Controller
      */
     public function store_message()
     {
+        $this->load->library('requests/Message_list_form_request');
+        $this->load->model('Message_list_model', 'message_list');
+
         if ($this->message_list_form_request->run()) {
             $data = $this->input->post();
 
-            $this->message_model->set_name($data['name'])
+            $this->message_list->set_name($data['name'])
                 ->set_email($data['email'])
                 ->set_subject($data['subject'])
                 ->set_message($data['message'])

@@ -10,7 +10,7 @@ class Show_emails extends CI_Controller
     {
         parent::__construct();
         $this->auth->who_see('auth');
-        $this->load->model('Email_list_model', 'email_model');
+        $this->load->model('Email_list_model', 'email_list');
     }
 
     /**
@@ -21,7 +21,8 @@ class Show_emails extends CI_Controller
     public function index()
     {
         return $this->load->view('panel/emails-list', [
-            'emails' => $this->email_model->all()
+            'emails' => $this->email_list->paginate(5),
+            'pagination_links' => $this->email_list->pagination_links()
         ]);
     }
 
@@ -34,7 +35,7 @@ class Show_emails extends CI_Controller
      */
     public function show($id)
     {
-        $email = $this->email_model->find($id)->set_unread(0)
+        $email = $this->email_list->find($id)->set_unread(0)
             ->update_unread();
 
         return $this->load->view('panel/show-data', [
@@ -49,8 +50,8 @@ class Show_emails extends CI_Controller
      */
     public function destroy($id)
     {
-        if ($this->email_model->find($id) !== null) {
-            $this->email_model->delete($id);
+        if ($this->email_list->find($id) !== null) {
+            $this->email_list->delete($id);
         }
 
         redirect('dashboard/emails');

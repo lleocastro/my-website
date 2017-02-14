@@ -92,6 +92,7 @@ $route['dashboard/(:num)'] = 'panel/Home';
 
 /** Panel Emails */
 $route['dashboard/emails'] = 'panel/Show_emails';
+$route['dashboard/emails/(:num)'] = 'panel/Show_emails';
 $route['dashboard/email/show/(:num)'] = 'panel/Show_emails/show/$1';
 $route['dashboard/email/delete/(:num)'] = 'panel/Show_emails/destroy/$1';
 

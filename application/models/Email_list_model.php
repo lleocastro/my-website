@@ -8,12 +8,19 @@ class Email_list_model extends CI_Model
      */
     public $id;
     protected $unread;
+    protected $total_lines = null;
 
     /**
      * @var string
      */
     protected $email;
     protected $created_at;
+    protected $updated_at;
+
+    /**
+     * @var string
+     */
+    private $table = 'x_email_list';
 
     /**
      * Loads the necessary resources to the controller.
@@ -32,7 +39,7 @@ class Email_list_model extends CI_Model
      */
     public function find($id)
     {
-        $sql = "SELECT * FROM x_email_list WHERE id = ? LIMIT 1";
+        $sql = "SELECT * FROM {$this->table} WHERE id = ? LIMIT 1";
         $query = $this->db->query($sql, (int) $id);
         $result = $query->row(0, 'Email_list_model');
 
@@ -48,7 +55,7 @@ class Email_list_model extends CI_Model
      */
     public function exists($email)
     {
-        $sql = "SELECT email FROM x_email_list WHERE email = ? LIMIT 1";
+        $sql = "SELECT email FROM {$this->table} WHERE email = ? LIMIT 1";
         $query = $this->db->query($sql, $this->security->xss_clean($email));
         $result = $query->row(0, 'Email_list_model');
 
@@ -67,7 +74,9 @@ class Email_list_model extends CI_Model
         if (!empty($this->email)) {
             $status = $this->db->insert('x_email_list', [
                 'email'  => $this->email,
-                'unread' => $this->set_unread()->get_unread()
+                'unread' => $this->set_unread()->get_unread(),
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s")
             ]);
             return $status;
         }
@@ -84,8 +93,9 @@ class Email_list_model extends CI_Model
     {
         if (!empty($this->id)) {
             $this->db->set('unread', $this->get_unread());
+            $this->db->set('updated_at', date("Y-m-d H:i:s"));
             $this->db->where('id', $this->get_id());
-            $status = $this->db->update('x_email_list');
+            $this->db->update($this->table);
 
             return $this;
         }
@@ -98,11 +108,29 @@ class Email_list_model extends CI_Model
      */
     public function all()
     {
-        $sql = "SELECT * FROM x_email_list";
-        $query = $this->db->query($sql);
-        $result = $query->result('Email_list_model');
+        $query = $this->db->get($this->table);
 
-        return (!empty($result)) ? $result : null;
+        if ($query->num_rows() > 0) {
+            return $query->result('Email_list_model');
+        }
+
+        return null;
+    }
+
+    /**
+     *
+     * @param bool $count_unread
+     *
+     * @return int
+     */
+    public function count($count_unread = false)
+    {
+        if ($count_unread) {
+            $this->db->where('unread', 1);
+            return $this->db->count_all_results($this->table);
+        }
+
+        return $this->db->count_all($this->table);
     }
 
     /**
@@ -128,6 +156,48 @@ class Email_list_model extends CI_Model
         $status = $this->db->delete('x_email_list');
 
         return $status;
+    }
+
+    /**
+     * @param int $total_lines
+     *
+     * @return Page_view_model
+     */
+    public function paginate($total_lines)
+    {
+        $this->total_lines = (int) $total_lines;
+
+        $offset = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $query  = $this->db->get($this->table, $this->total_lines, $offset);
+
+        if ($query->num_rows() > 0) {
+            return $query->result('Email_list_model');
+        }
+
+        return null;
+    }
+
+    /**
+     * @return string
+     */
+    public function pagination_links()
+    {
+        if ($this->total_lines !== null) {
+            $this->load->library('pagination');
+
+            $config = [
+                'base_url'    => base_url('/dashboard/emails'),
+                'per_page'    => $this->total_lines,
+                'num_links'   => 5,
+                'uri_segment' => 3,
+                'total_rows'  => $this->count(),
+            ];
+
+            $this->pagination->initialize(array_merge($config, pagination_styled()));
+            return $this->pagination->create_links();
+        }
+
+        return null;
     }
 
     /**
@@ -184,6 +254,14 @@ class Email_list_model extends CI_Model
     public function get_created_at()
     {
         return $this->created_at;
+    }
+
+    /**
+     * @return string
+     */
+    public function get_updated_at()
+    {
+        return $this->updated_at;
     }
 
 }
