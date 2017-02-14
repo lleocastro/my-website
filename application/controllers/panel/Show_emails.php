@@ -25,4 +25,35 @@ class Show_emails extends CI_Controller
         ]);
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param int $id
+     *
+     * @return HttpResponse
+     */
+    public function show($id)
+    {
+        $email = $this->email_model->find($id)->set_unread(0)
+            ->update_unread();
+
+        return $this->load->view('panel/show-data', [
+            'email' => $email
+        ]);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param int $id
+     */
+    public function destroy($id)
+    {
+        if ($this->email_model->find($id) !== null) {
+            $this->email_model->delete($id);
+        }
+
+        redirect('dashboard/emails');
+    }
+
 }

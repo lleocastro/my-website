@@ -78,11 +78,19 @@ class Email_list_model extends CI_Model
     /**
      * Update if unread email in the list.
      *
-     * @return bool
+     * @return Email_list_model
      */
     public function update_unread()
     {
-        //
+        if (!empty($this->id)) {
+            $this->db->set('unread', $this->get_unread());
+            $this->db->where('id', $this->get_id());
+            $status = $this->db->update('x_email_list');
+
+            return $this;
+        }
+
+        throw new InvalidArgumentException('Unread and id not can null.');
     }
 
     /**
@@ -107,6 +115,19 @@ class Email_list_model extends CI_Model
         $result = $query->result('Email_list_model');
 
         return (!empty($result)) ? $result : null;
+    }
+
+    /**
+     * @param int $id
+     *
+     * @return bool
+     */
+    public function delete($id)
+    {
+        $this->db->where('id', (int) $id);
+        $status = $this->db->delete('x_email_list');
+
+        return $status;
     }
 
     /**

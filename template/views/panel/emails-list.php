@@ -27,7 +27,7 @@
                             <h3 class="panel-title"></h3>
                         </div>
                         <div class="panel-body">
-                            <table class="table table-striped table-responsive table-hover table-responsive">
+                            <table id="email-table" class="table table-responsive table-hover table-responsive">
                                 <thead>
                                 <tr>
                                     <th>#</th>
@@ -37,16 +37,27 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($emails as $email): ?>
-                                <tr>
-                                    <td><?php echo $email->get_id() ?></td>
-                                    <td><?php echo $email->get_email() ?></td>
-                                    <td><?php echo $email->get_created_at() ?></td>
-                                    <td>
-                                        <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-                                    </td>
-                                </tr>
-                                <?php endforeach; ?>
+                                    <?php if ($emails !== null): ?>
+                                        <?php foreach ($emails as $email): ?>
+                                            <tr <?php if ($email->get_unread()) echo "class='active'" ?>>
+                                                <td><?php echo $email->get_id() ?></td>
+                                                <td><?php echo $email->get_email() ?></td>
+                                                <td><?php echo $email->get_created_at() ?></td>
+                                                <td>
+                                                    <a id="submit" href="<?php echo route('dashboard/email/show', $email->get_id()) ?>">
+                                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    <?php else: ?>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>Sem emails...</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    <?php endif; ?>
                                 </tbody>
                             </table>
                         </div>
@@ -58,5 +69,5 @@
     </div>
 </main>
 </body>
-<?php require_once ('includes/scripts.php') ?>
+    <?php require_once ('includes/scripts.php') ?>
 </html>
