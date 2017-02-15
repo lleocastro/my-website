@@ -31,9 +31,9 @@
             <section class="container container-space margin-top">
                 <div class="line line-space">
                     <header class="collist col-space ">
-                        <h1 class="no-margin title">Donec facilisis tortor quis risus</h1>
+                        <h1 class="no-margin title">Codificação da Interface do Site</h1>
                         <div class="heading-line"></div>
-                        <p class="tagline">Aliquam erat volutpat. Cras aliquet pharetra turpis, consectetur sagittis quam volutpat sed. </p>
+                        <p class="tagline">Toda a interface foi minuciosamente pensada na usabilidade e acessibilidade dos usuários.</p>
                     </header>
                 </div>
                 <article class="line line-space">
@@ -41,16 +41,37 @@
                         <img title="LEOBCASTRO Home page" src="<?php echo asset('img/leobcastro-print.png') ?>" alt="Website do Léo B. Castro aberto em um mac"/>
                     </div>
                     <div class="m6col col-space">
-                        <h2>Proin fringilla luctus</h2>
-                        <p>Nullam dolor quam, dignissim nec pretium et, cursus sit amet magna. Proin fringilla luctus ipsum, a ornare metus ullamcorper sagittis. Vivamus blandit, nisi quis tempus dignissim, eros mauris blandit elit, rutrum iaculis neque ligula vitae arcu. Nunc placerat nibh ac tellus vehicula ultrices. Pellentesque lectus ante, posuere a lectus at, egestas vulputate ipsum.</p>
-                        <p>Suspendisse at dolor velit. Etiam placerat nibh nisl, sit amet consequat orci porta a. Vestibulum vitae nunc euismod.</p>
-                        <a title="Entrar no site" href="#" class="btn btn-light" role="button">
+                        <h2>Detalhes Técnicos</h2>
+                        <p>O layout é simples e amigavel (<a href="#">desenvolvido com meu framework CSS</a>) para que qualquer pessoal possa navegar sem dificuldades, além disso <em class="text-normal">toda a estrutura é semanticamente correta</em> com uma <em class="text-normal">arquitetura de informações bem estruturadas</em> e organizadas para tornar o site mais pratico de usar.</p>
+                        <p><strong>"Levo muito a sério qualidade e performance no desenvolvimento, mas você já deve ter notado isso no meu site, certo?</strong> 😜</p>
+                        <p>Mas não basta apenas ser bonito e rapido, também tem que gerar resultados, por isso tem todo um trabalho de <em class="text-normal">SEO</em> e <em class="text-normal">marketing digital</em> em cima dele. A final, foi por esse trabalho que você me encontrou...</p>
+                        <a title="Voltar para a home do site" href="<?php echo route('/') ?>" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">replay</i>
                             Vamos Lá de Novo?
                         </a>
                     </div>
                 </article>
             </section>
+            <section class="container">
+                <article class="line line-space">
+                    <div class="m6col col-space">
+                        <h2>Painel de Controle</h2>
+                        <p>Com o meu <em class="text-normal">dashboard</em> é possivel <em class="text-normal">gerenciar o site</em> e todo o seu conteúdo, atravéz de qualquer dispositivo com internet. É possivel saber <em class="text-normal">o que os usuários estão fazendo no site</em>, o que estão vendo, de qual dispositivo estão acessando, horario do acesso, etc... Esse <em class="text-normal">dashboard possui uma interface bem simples</em> para que qualquer pessoa sem conhecimento técnico consiga facilmente utiliza-lo.</p>
+                        <p>É possivel ver e <em class="text-normal">manipular os emails</em> (<em class="text-normal">captura de emails</em>) e mensagens que os visitantes deixam no site, podendo responde-los ou adiciona-los em alguma lista para nutrição de leads (<em class="text-normal">marketing de conversão</em>).</p>
+                        <a title="Exemplo da interface do dashboard" href="<?php echo route('/dashboard-template') ?>" class="btn btn-light" role="button">
+                            <i class="material-icons" style="vertical-align: -29%">visibility</i>
+                            Ver o Template do Dashboard
+                        </a>
+                    </div>
+                    <div class="m6col col-space center">
+                        <img title="LEOBCASTRO Dashboard" src="<?php echo asset('img/dashboard-print.png') ?>" alt="Dashboard do website aberto em um ipad"/>
+                    </div>
+                    <div class="collist col-space">
+                        <p class="info-text">*Esse painel de controle (dashboard) é um projeto novo e ambicioso que estou desenvolvendo, para tornar a gestão de sites simples e trivial.</p>
+                    </div>
+                </article>
+            </section>
+            <div class="container container-space"></div>
         </div><!-- END CASE DESCRIPTION -->
         <!-- DEV INFORMATIONS -->
         <div class="container-full backimage informations" style="background-image: url(<?php echo asset('img/portfolio.jpeg') ?>)">

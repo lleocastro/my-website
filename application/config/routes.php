@@ -75,6 +75,7 @@ $route['questionario'] = 'Pages/in_construction';
 $route['curriculo'] = 'Pages/in_construction';
 $route['creditos'] = 'Pages/page_credits';
 $route['hahaha'] = 'Pages/in_construction';
+$route['dashboard-template'] = 'Pages/in_construction';
 
 /**
  * Panel Routes
