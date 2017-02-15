@@ -31,9 +31,9 @@
             <section class="container container-space margin-top">
                 <div class="line line-space">
                     <header class="collist col-space ">
-                        <h1 class="no-margin title">Donec facilisis tortor quis risus</h1>
+                        <h1 class="no-margin title">Flappy Bird: Um viciante game</h1>
                         <div class="heading-line"></div>
-                        <p class="tagline">Aliquam erat volutpat. Cras aliquet pharetra turpis, consectetur sagittis quam volutpat sed. </p>
+                        <p class="tagline">Desenvolvi esse jogo baseado no próprio seguindo um mini curso online sobre <em class="text-normal">criação de jogos</em>.</p>
                     </header>
                 </div>
                 <article class="line line-space">
@@ -41,9 +41,9 @@
                         <img title="Game home page" src="<?php echo asset('img/flappy-bird-print.png') ?>" alt="Website do jogo flappy bird aberto em um mac"/>
                     </div>
                     <div class="m6col col-space">
-                        <h2>Proin fringilla luctus</h2>
-                        <p>Nullam dolor quam, dignissim nec pretium et, cursus sit amet magna. Proin fringilla luctus ipsum, a ornare metus ullamcorper sagittis. Vivamus blandit, nisi quis tempus dignissim, eros mauris blandit elit, rutrum iaculis neque ligula vitae arcu. Nunc placerat nibh ac tellus vehicula ultrices. Pellentesque lectus ante, posuere a lectus at, egestas vulputate ipsum.</p>
-                        <p>Suspendisse at dolor velit. Etiam placerat nibh nisl, sit amet consequat orci porta a. Vestibulum vitae nunc euismod.</p>
+                        <h2>Sobre o Desenvolvimento</h2>
+                        <p>Bom, como já disse antes, esse jogo foi densenvolvido seguindo aulas de um mini curso sobre <em class="text-normal">desenvolvimento de jogos</em> para web. Onde o objetivo era utilizar as <em class="text-normal">tecnologias web</em> para implementar a lógica do jogo. Ele foi desenvolvido basicamente com <em class="text-normal">HTML5</em>, <em class="text-normal">CSS3</em>, <em class="text-normal">Javascript</em> e algumas bibliotecas para reproduzir os sons do game.</p>
+                        <p><strong>Infelizmente esse jogo não funciona corretamente em dispositivos moveis (tablets e smartphones) por uma pequena incompatibilidades com algumas bibliotecas e algumas ações próprio do jogo</strong>.</p>
                         <a title="Entrar no site" href="https://lleocastro.github.io/flappy-bird" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">play_arrow</i>
                             Bora jogar?
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="s6col col-space">
                                     <p class="icon"><i class="material-icons">info_outline</i></p>
-                                    <p class="counter" data-from="0" data-to="109" data-speed="1900" data-refresh-interval="30">98</p>
+                                    <p class="counter" data-from="0" data-to="98" data-speed="1900" data-refresh-interval="30">98</p>
                                     <p class="title-counter">Copos de Café</p>
                                 </div>
                             </div>
