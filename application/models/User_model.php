@@ -56,7 +56,7 @@ class User_model extends CI_Model
      */
     public function save()
     {
-        if ((!empty($this->name)) && (!empty($this->last_name)) && (!empty($this->email))
+        if ((!empty($this->name)) && (!empty($this->lastname)) && (!empty($this->email))
             && (!empty($this->password))) {
             $status = $this->db->insert($this->table, [
                 'name' => $this->name,
@@ -79,11 +79,9 @@ class User_model extends CI_Model
      */
     public function update_token()
     {
-        $this->db->set([
-            'token' => $this->set_token()->get_token()
-        ], false);
-
-        $this->db->where('id', $this->get_id());
+        $this->db->set(['token' => $this->set_token()->get_token()], false);
+        $this->db->set('updated_at', date("Y-m-d H:i:s"));
+        $this->db->where('id', $this->id);
         $status = $this->db->update($this->table);
 
         return $status;
