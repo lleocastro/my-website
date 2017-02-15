@@ -125,7 +125,7 @@ jQuery(function($) {
             $(".contact-form .callback div.alert").remove();
             $(".contact-form .callback").append(
                 "<div class='alert alert-success'>" +
-                "Olá! Como você me enviou seu email, agora preciso que você atualize a pagina para poder me " +
+                "Olá! Como você me enviou seu email, agora preciso que atualize a pagina para poder me " +
                 "enviar uma mensagem. 'Questões de segurança'. Obrigado :)" +
                 "</div>"
             );
@@ -172,7 +172,7 @@ jQuery(function($) {
             $(".to-action .callback div.alert").remove();
             $(".to-action .callback").append(
                 "<div class='alert alert-success'>" +
-                    "Olá! Como você me enviou uma mensagem, agora preciso que você atualize a pagina para poder me " +
+                    "Olá! Como você me enviou uma mensagem, agora preciso que atualize a pagina para poder me " +
                     "enviar seu email. 'Questões de segurança'. Obrigado :)" +
                 "</div>"
             );
