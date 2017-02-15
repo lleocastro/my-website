@@ -26,6 +26,7 @@ class Home extends CI_Controller
             'total_unread_emails'   => $this->email_list->count(true),
             'total_unread_messages' => $this->message_list->count(true),
             'total_page_views' => $this->page_view->count(),
+            'total_online' => $this->page_view->online_counter(),
             'page_views'  => $this->page_view->paginate(7),
             'pagination_links' => $this->page_view->pagination_links()
         ]);

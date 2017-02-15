@@ -110,7 +110,7 @@
                                         <i class="fa fa-globe fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">0</div>
+                                        <div class="huge"><?php echo $total_online ?></div>
                                         <div>Online Agora!</div>
                                     </div>
                                 </div>

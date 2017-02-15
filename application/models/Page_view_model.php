@@ -76,6 +76,29 @@ class Page_view_model extends CI_Model
     }
 
     /**
+     *
+     */
+    public function online_counter()
+    {
+        $page_views = $this->all();
+        $on = 0;
+
+        foreach ($page_views as $page_view) {
+            if (substr($page_view->get_date_time(), 0, strlen($page_view->get_date_time())-3)
+                == substr(date("Y-m-d H:i:s"), 0, strlen(date("Y-m-d H:i:s"))-3) ) {
+                if (substr($page_view->get_date_time(), -2) <= 40) {
+                    $on++;
+                } else {
+                    $on--;
+                }
+            }
+        }
+
+        unset($page_view);
+        return $on;
+    }
+
+    /**
      * @return int
      */
     public function count()

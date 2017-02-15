@@ -41,3 +41,10 @@ CREATE TABLE x_page_views (
   created_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS 'x_online_counter';
+CREATE TABLE x_online_counter (
+  id INT unsigned AUTO_INCREMENT PRIMARY KEY,
+  addr VARCHAR(15) NOT NULL,
+  timing TIMESTAMP NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
