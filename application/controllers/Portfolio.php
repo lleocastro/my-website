@@ -38,10 +38,10 @@ class Portfolio extends CI_Controller
      *
      * @return HttpResponse
      */
-    public function page_framework()
+    public function page_framework_php()
     {
         analytics();
-        return $this->load->view('portfolio/framework');
+        return $this->load->view('portfolio/framework-php');
     }
 
     /**

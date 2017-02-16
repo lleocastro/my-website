@@ -58,7 +58,7 @@ $route['translate_uri_dashes'] = FALSE;
  */
 $route['portfolio/web-template'] = 'Portfolio/page_web_template';
 $route['portfolio/flappy-bird'] = 'Portfolio/page_flappy_bird';
-$route['portfolio/framework'] = 'Portfolio/page_framework';
+$route['portfolio/framework-php'] = 'Portfolio/page_framework_php';
 $route['portfolio/framework-css'] = 'Portfolio/page_framework_css';
 $route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
 // ...
