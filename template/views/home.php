@@ -271,7 +271,7 @@
                 </div>
                 <div class="line line-space">
                     <div class="s6col m4col col-space">
-                        <a href="<?php echo route('/portfolio/web-template') ?>">
+                        <a href="<?php echo route('/portfolio/agencia-web') ?>">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                                 <div class="line">
                                     <div class="collist">

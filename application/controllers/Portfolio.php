@@ -16,10 +16,10 @@ class Portfolio extends CI_Controller
      *
      * @return HttpResponse
      */
-    public function page_web_template()
+    public function page_web_agency()
     {
         analytics();
-        return $this->load->view('portfolio/web-template');
+        return $this->load->view('portfolio/web-agency');
     }
 
     /**

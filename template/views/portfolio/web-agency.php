@@ -1,25 +1,32 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo $this->config->item('language') ?>">
+<html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta name="description" content="Template de uma agência de desenvolvimento web ficticia focada em resultados através de SEO"/>
+
+    <meta itemprop="name" content="Template de uma agência web"/>
+    <meta itemprop="description" content="Template de uma agência de desenvolvimento web ficticia"/>
+    <meta itemprop="image" content="<?php echo $this->config->item('base_url') ?>img/eu.jpg"/>
+    <meta itemprop="url" content="<?php echo $this->config->item('base_url') ?>portfolio/agencia-web"/>
+
+    <meta property="og:title" content="<?php echo getenv('APP_NAME') ?> - Template de uma agência web"/>
+    <meta property="og:description" content="Template de uma agência de desenvolvimento web ficticia"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
+    <meta property="og:image" content="<?php echo asset('img/website-web-agency.png') ?>"/>
+    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-    <meta name="twitter:title" content=""/>
+
+    <meta name="twitter:title" content="<?php echo getenv('APP_NAME') ?> - Template de uma agência web"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Template de uma agência de desenvolvimento web ficticia"/>
+    <meta name="twitter:image" content="<?php echo asset('img/website-web-agency.png') ?>"/>
+    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Web Template</title>
+    <title><?php echo getenv('APP_NAME') ?> - Template de uma Agência Web</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -30,7 +37,7 @@
                 <div class="line line-space">
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Website de uma Agência Web</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline"><em class="text-normal">Website fictício</em> de uma <em class="text-normal">agência de desenvolvimento web</em> para um projeto pessoal, antigo.</p>
                     </header>
                 </div>
