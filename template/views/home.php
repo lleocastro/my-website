@@ -99,7 +99,7 @@
             <div class="line line-space">
                 <div class="m4col col-space center">
                     <div class="my-pic center">
-                        <img title="Léo B. Castro" src="<?php echo asset('img/eu.jpg') ?>" alt="Foto de perfil do Léo B. Castro">
+                        <img title="Léo B. Castro" src="<?php echo asset('img/leo-castro.jpg') ?>" alt="Foto de perfil do Léo B. Castro">
                     </div>
                 </div>
                 <div class="m8col col-space">
@@ -167,7 +167,7 @@
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="700ms">
                                 <img title="Desenvolvimento" src="<?php echo asset('img/icons/development.svg') ?>" alt="Icone ilustrando a abertura e fechamento de tags, representando o desenvolvimento web"/>
-                                <h1>Aplicativo</h1>
+                                <h1>Sistemas</h1>
                                 <p>O <em class="text-normal">desenvolvimento</em> é 100% otimizado para obter o máximo de performance e desempenho nos <em class="text-normal">sistemas</em>.</p>
                             </article>
                         </div>
@@ -263,13 +263,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Web template" src="<?php echo asset('img/escape-preview.png') ?>" alt="Imagem em PSD de um site de uma agencia web"/>
+                                        <img title="Agência web" src="<?php echo asset('img/website-web-agency.png') ?>" alt="Imagem em PSD do site de uma agencia web"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Web Template</h1>
-                                        <p>Website ficticio para uma agencia de desenvolvimento web.</p>
+                                        <h1>Agência Web</h1>
+                                        <p>Desenvolvimento de um website ficticio para uma agência de desenvolvimento web. Leia!</p>
                                     </div>
                                 </div>
                             </article>
@@ -280,13 +280,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Game flappy bird" src="<?php echo asset('img/flappy-bird.jpg') ?>" alt="Imagem de introdução para o jogo desenvolvido baseado no flappy bird"/>
+                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Imagem de introdução do jogo desenvolvido baseado no flappy bird"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Flappy Bird</h1>
-                                        <p>Um divertido e viciante game para se jogar no browser desktop.</p>
+                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso sobre desenvolvimento de jogos.</p>
                                     </div>
                                 </div>
                             </article>
@@ -297,13 +297,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="LEOBCASTRO" src="<?php echo asset('img/44839-O4FYT8.jpg') ?>" alt="Imagem ilustrativa representando o desenvolvimento do site leobcastro"/>
+                                        <img title="Website LEOBCASTRO" src="<?php echo asset('img/leobcastro-website.jpg') ?>" alt="Imagem ilustrativa representando o desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>LEOBCASTRO</h1>
-                                        <p>Sim! Meu site também entra nessa lista, porque ele não é só um site :p</p>
+                                        <p>Meu próprio website entra nessa lista, porque ele é meu projeto mais recente, veja detalhes!</p>
                                     </div>
                                 </div>
                             </article>
@@ -314,13 +314,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="CSS Stylle" src="<?php echo asset('img/OJ91BD0.jpg') ?>" alt="Imagem ilustrativa representando o layout de um site"/>
+                                        <img title="CSS Stylle" src="<?php echo asset('img/website-layout.jpg') ?>" alt="Imagem ilustrativa representando o layout de um site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>CSS Stylle</h1>
-                                        <p>In lacinia euismod molestie. Phasellus consectetur nulla id erat porttitor viverra.</p>
+                                        <h1>Web Design</h1>
+                                        <p>Meu "<em class="text-normal">criador de site</em>". Uma biblioteca CSS que me permite criar sites unicos para o projeto.</p>
                                     </div>
                                 </div>
                             </article>
@@ -331,13 +331,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework" src="<?php echo asset('img/startup-framework-preview.png') ?>" alt="Imagem ilustrando o funcionamento de um framework em dispositivos moveis"/>
+                                        <img title="Framework" src="<?php echo asset('img/framework-preview.png') ?>" alt="Imagem ilustrando o funcionamento de um framework em dispositivos moveis"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Framework</h1>
-                                        <p>Minha versão customizada do CodeIgniter (um fantástico framework web).</p>
+                                        <h1>Framework PHP</h1>
+                                        <p>Esse framework me possibilita entregar projetos em menos tempo e ainda sim manter a qualidade.</p>
                                     </div>
                                 </div>
                             </article>
@@ -348,13 +348,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Premium" src="<?php echo asset('img/icons/marketing.svg') ?>" alt="Icone ilustrando um premio de melhor posição"/>
+                                        <img title="Posição premium" src="<?php echo asset('img/icons/marketing.svg') ?>" alt="Icone ilustrando um premio de melhor posição"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Seu Projeto</h1>
-                                        <p>Talvez seu projeto seja o proximo nesta lista.. Vamos conversar?</p>
+                                        <p>Quem sabe seu projeto seja o proximo nesta lista... Vamos conversar? Consultoria? Café?</p>
                                     </div>
                                 </div>
                             </article>

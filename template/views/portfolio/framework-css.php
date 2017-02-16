@@ -21,7 +21,7 @@
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Framework</title>
+    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Framework CSS</title>
 </head>
 <body>
     <main class="container-full" role="main">
