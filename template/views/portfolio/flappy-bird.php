@@ -1,23 +1,28 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo $this->config->item('language') ?>">
+<html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
+    <meta name="description" content="Jogo desenvolvido baseado no próprio seguindo um mini curso online sobre criação de jogos"/>
 
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta itemprop="name" content="Game flappy bird"/>
+    <meta itemprop="description" content="Jogo desenvolvido baseado no próprio seguindo um curso online sobre criação de jogos"/>
+    <meta itemprop="image" content="<?php echo asset('img/game-flappy-bird.jpg') ?>"/>
+    <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
+
+    <meta property="og:title" content="Game flappy bird"/>
+    <meta property="og:description" content="Jogo desenvolvido baseado no próprio seguindo um curso online sobre criação de jogos"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
+    <meta property="og:image" content="<?php echo asset('img/game-flappy-bird.jpg') ?>"/>
+    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content=""/>
+    <meta name="twitter:title" content="Game flappy bird"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Jogo desenvolvido baseado no próprio seguindo um curso online sobre criação de jogos"/>
+    <meta name="twitter:image" content="<?php echo asset('img/game-flappy-bird.jpg') ?>"/>
+    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 

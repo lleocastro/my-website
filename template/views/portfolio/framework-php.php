@@ -1,27 +1,32 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo $this->config->item('language') ?>">
+<html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
+    <meta name="description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
 
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta itemprop="name" content="Versão customizada do Codeigniter"/>
+    <meta itemprop="description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
+    <meta itemprop="image" content="<?php echo asset('img/framewok-php.png') ?>"/>
+    <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
+
+    <meta property="og:title" content="Versão customizada do Codeigniter"/>
+    <meta property="og:description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
+    <meta property="og:image" content="<?php echo asset('img/framewok-php.png') ?>"/>
+    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content=""/>
+    <meta name="twitter:title" content="Versão customizada do Codeigniter"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
+    <meta name="twitter:image" content="<?php echo asset('img/framewok-php.png') ?>"/>
+    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Framework PHP</title>
+    <title><?php echo getenv('APP_NAME') ?> - Versão customizada do Codeigniter</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -38,7 +43,7 @@
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="Código do projeto" src="<?php echo asset('img/framework-print.png') ?>" alt="código do projeto aberto em uma IDE"/>
+                        <img title="Código do projeto" src="<?php echo asset('img/framework-php.png') ?>" alt="código do projeto aberto em uma IDE"/>
                     </div>
                     <div class="m6col col-space">
                         <h2>Sobre a Ferramenta</h2>

@@ -16,22 +16,22 @@
 
     <meta itemprop="name" content="Leo B. Castro - Desenvolvimento web"/>
     <meta itemprop="description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
-    <meta itemprop="image" content="<?php echo $this->config->item('base_url') ?>img/eu.jpg"/>
-    <meta itemprop="url" content="<?php echo $this->config->item('base_url') ?>"/>
+    <meta itemprop="image" content="<?php echo asset('img/intro.jpg') ?>"/>
+    <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Leo B. Castro - Desenvolvimento web"/>
     <meta property="og:description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<?php echo $this->config->item('base_url') ?>img/intro.jpg"/>
-    <meta property="og:url" content="<?php echo $this->config->item('base_url') ?>"/>
+    <meta property="og:image" content="<?php echo asset('img/intro.jpg') ?>"/>
+    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
     <meta property="og:site_name" content="Léo B. Castro"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
     <meta name="twitter:title" content="Leo B. Castro - Desenvolvimento web"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
-    <meta name="twitter:image" content="<?php echo $this->config->item('base_url') ?>img/intro.jpg"/>
-    <meta name="twitter:url" content="<?php echo $this->config->item('base_url') ?>"/>
+    <meta name="twitter:image" content="<?php echo asset('img/intro.jpg') ?>"/>
+    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
     <link rel="stylesheet" href="<?php echo asset('css/animate.min.css') ?>"/>
@@ -51,9 +51,9 @@
             "description": "Full-Stack Web Developer, UX/UI Designer, Creative",
             "jobTitle": "Web Developer",
             "email": "leonardo_carvalho@outlook.com",
-            "url": "<?php echo $this->config->item('base_url') ?>",
+            "url": "<?php echo base_url(uri_string()) ?>",
             "address": "São José dos Campos, São Paulo - Brasil",
-            "image": "<?php echo $this->config->item('base_url') ?>img/eu.jpg"
+            "image": "<?php echo asset('img/eu.jpg') ?>"
         }
     </script>
 
@@ -77,12 +77,12 @@
                     <!-- COLLAPSE NAVBAR -->
                     <div class="navbar-collapse">
                         <ul class="navbar-nav" role="menu">
-                            <li class="active"><a class="scroll" href="#intro">Inicio</a></li>
-                            <li><a class="scroll" href="#about-me">Sobre Mim</a></li>
-                            <li><a class="scroll" href="#portfolio">Portfólio</a></li>
-                            <li><a class="scroll" href="#contact-me">Contato</a></li>
-                            <li><a style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Meu Blog</a></li>
-                            <li><a style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">Curriculo</a></li>
+                            <li class="active"><a title="Pagina inicial" class="scroll" href="#intro">Inicio</a></li>
+                            <li><a title="Um breve resumo" class="scroll" href="#about-me">Sobre Mim</a></li>
+                            <li><a title="Portfólio de projetos" class="scroll" href="#portfolio">Portfólio</a></li>
+                            <li><a title="Informações para contato" class="scroll" href="#contact-me">Contato</a></li>
+                            <li><a title="Blog pessoal" style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Meu Blog</a></li>
+                            <li><a title="Curriculo de Léo B. Castro" style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">Curriculo</a></li>
                         </ul>
                     </div>
                 </div>

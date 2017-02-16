@@ -1,27 +1,32 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo $this->config->item('language') ?>">
+<html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
+    <meta name="description" content="Esse framework permite criar websites unicos e exclusivos para cada projeto"/>
 
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta itemprop="name" content="Framework CSS altamente customizavel"/>
+    <meta itemprop="description" content="Esse framework permite criar websites unicos e exclusivos para cada projeto"/>
+    <meta itemprop="image" content="<?php echo asset('img/framewok-css.png') ?>"/>
+    <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
+
+    <meta property="og:title" content="Framework CSS altamente customizavel"/>
+    <meta property="og:description" content="Esse framework permite criar websites unicos e exclusivos para cada projeto"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
+    <meta property="og:image" content="<?php echo asset('img/framewok-css.png') ?>"/>
+    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content=""/>
+    <meta name="twitter:title" content="Framework CSS altamente customizavel"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Esse framework permite criar websites unicos e exclusivos para cada projeto"/>
+    <meta name="twitter:image" content="<?php echo asset('img/framewok-css.png') ?>"/>
+    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Framework CSS</title>
+    <title><?php echo getenv('APP_NAME') ?> - Framework CSS altamente customizavel</title>
 </head>
 <body>
     <main class="container-full" role="main">

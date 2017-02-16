@@ -7,8 +7,8 @@
 
     <meta itemprop="name" content="Template de uma agência web"/>
     <meta itemprop="description" content="Template de uma agência de desenvolvimento web ficticia"/>
-    <meta itemprop="image" content="<?php echo $this->config->item('base_url') ?>img/eu.jpg"/>
-    <meta itemprop="url" content="<?php echo $this->config->item('base_url') ?>portfolio/agencia-web"/>
+    <meta itemprop="image" content="<?php echo asset('img/website-web-agency.png') ?>"/>
+    <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="<?php echo getenv('APP_NAME') ?> - Template de uma agência web"/>
     <meta property="og:description" content="Template de uma agência de desenvolvimento web ficticia"/>

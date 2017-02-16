@@ -1,27 +1,32 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo $this->config->item('language') ?>">
+<html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
+    <meta name="description" content="Todo o layout do site foi minuciosamente pensado na usabilidade e acessibilidade dos usuários. Leia mais!"/>
 
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta itemprop="name" content="Como o site LEOBCASTRO foi desenvolvido"/>
+    <meta itemprop="description" content="Todo o layout do site foi minuciosamente pensado na usabilidade e acessibilidade dos usuários. Leia mais!"/>
+    <meta itemprop="image" content="<?php echo asset('img/leobcastro-website.jpg') ?>"/>
+    <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
+
+    <meta property="og:title" content="Como o site LEOBCASTRO foi desenvolvido"/>
+    <meta property="og:description" content="Todo o layout do site foi minuciosamente pensado na usabilidade e acessibilidade dos usuários. Leia mais!"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
+    <meta property="og:image" content="<?php echo asset('img/leobcastro-website.jpg') ?>"/>
+    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content=""/>
+    <meta name="twitter:title" content="Como o site LEOBCASTRO foi desenvolvido"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Todo o layout do site foi minuciosamente pensado na usabilidade e acessibilidade dos usuários. Leia mais!"/>
+    <meta name="twitter:image" content="<?php echo asset('img/leobcastro-website.jpg') ?>"/>
+    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - LEOBCASTRO</title>
+    <title><?php echo getenv('APP_NAME') ?> - Como o site LEOBCASTRO foi desenvolvido</title>
 </head>
 <body>
     <main class="container-full" role="main">
