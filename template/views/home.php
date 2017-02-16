@@ -121,7 +121,7 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
-                                <p class="tagline intro">Olá, sou webmaster full-stack em São José dos Campos, São Paulo. Atualmente desenvolvo sistemas, sites e aplicações para a web com o intuito de sempre gerar resultados. Bom, também sou um eterno estudante, curso análise e desenvolvimento de sistemas, UX/UI design e um pouco de marketing digital nas horas vagas.</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o <em class="text-normal">desenvolvimento de ferramentas</em> <a href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto" rel="nofollow">open source</a> para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
@@ -218,7 +218,7 @@
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014. Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas também já programei para desktop e android.</p>
+                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, estou cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014. Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas também já programei para desktop e android.</p>
                                 <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, com o objetivo de aumentar a <em class="text-normal">produtividade</em> e diminuir o tempo "humano" gasto em <em class="text-normal">tarefas rotineiras que poderiam ser administradas por um sistema</em>.</p>
                             </div>
                         </div>
