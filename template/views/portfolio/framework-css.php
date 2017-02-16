@@ -21,7 +21,7 @@
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Flappy Bird</title>
+    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Framework</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -31,22 +31,22 @@
             <section class="container container-space margin-top">
                 <div class="line line-space">
                     <header class="collist col-space ">
-                        <h1 class="no-margin title">Flappy Bird: Um viciante game</h1>
+                        <h1 class="no-margin title">Meu Framework Front-End</h1>
                         <div class="heading-line"></div>
-                        <p class="tagline">Desenvolvi esse jogo baseado no próprio seguindo um mini curso online sobre <em class="text-normal">criação de jogos</em>.</p>
+                        <p class="tagline">Ele me permite <em class="text-normal">criar websites</em> unicos e exclusivos para cada projeto. <strong>Altamente produtivo</strong>.</p>
                     </header>
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="Home page do jogo" src="<?php echo asset('img/flappy-bird-print.png') ?>" alt="Website do jogo flappy bird"/>
+                        <img title="Código fonte do projeto" src="<?php echo asset('img/framework-css.png') ?>" alt="Código fonte do bootstylle aberto em um mac"/>
                     </div>
                     <div class="m6col col-space">
-                        <h2>Sobre o Desenvolvimento</h2>
-                        <p>Bom, como já disse antes, esse jogo foi densenvolvido seguindo aulas de um mini curso sobre <em class="text-normal">desenvolvimento de jogos</em> para web. Onde o objetivo era utilizar as <em class="text-normal">tecnologias web</em> para implementar a lógica do jogo. Ele foi desenvolvido basicamente com <em class="text-normal">HTML5</em>, <em class="text-normal">CSS3</em>, <em class="text-normal">Javascript</em> e algumas bibliotecas para reproduzir os sons do game.</p>
-                        <p><strong>Infelizmente esse jogo não funciona corretamente em dispositivos moveis (tablets e smartphones) por uma pequena incompatibilidades com algumas bibliotecas e algumas ações próprio do jogo</strong>.</p>
-                        <a title="Entrar no site do jogo" href="https://lleocastro.github.io/flappy-bird" rel="nofollow" class="btn btn-light" role="button">
-                            <i class="material-icons" style="vertical-align: -29%">play_arrow</i>
-                            Bora jogar?
+                        <h2>Sobre a Ferramenta</h2>
+                        <p>Estou desenvolvendo esse framework para suprir uma necessidade minha de ter um <em class="text-normal">bootstrap CSS</em> flexivel e facilmente customizavel. Basicamente o "Bootstylle" possui varios componentes pré estilizados possibilitando estilizar efetivamente o componente por projeto, o que me permite <em class="text-normal">desenvolver sites</em> unicos.</p>
+                        <p>Toda a interface do meu site "<a href="<?php echo route('/') ?>">leobcastro.com</a>" foi desenvolvida com o Bootstylle. Ele me fornece tudo que preciso para <em class="text-normal">criar site</em> fluido e <em class="text-normal">responsivo</em> (acessivel a dispositivos móveis).</p>
+                        <a title="Ir para a página do projeto" href="https://github.com/lleocastro/bootstylle" rel="nofollow" class="btn btn-light" role="button">
+                            <i class="material-icons" style="vertical-align: -29%">visibility</i>
+                            Ver no Github
                         </a>
                     </div>
                 </article>
@@ -61,12 +61,12 @@
                             <div class="line line-space">
                                 <div class="s6col col-space">
                                     <p class="icon"><i class="material-icons">info_outline</i></p>
-                                    <p class="counter" data-from="0" data-to="869" data-speed="2000" data-refresh-interval="30">869</p>
+                                    <p class="counter" data-from="0" data-to="692" data-speed="2000" data-refresh-interval="30">692</p>
                                     <p class="title-counter">Linhas de Código</p>
                                 </div>
                                 <div class="s6col col-space">
                                     <p class="icon"><i class="material-icons">info_outline</i></p>
-                                    <p class="counter" data-from="0" data-to="9" data-speed="1100" data-refresh-interval="30">09</p>
+                                    <p class="counter" data-from="0" data-to="10" data-speed="1100" data-refresh-interval="30">10</p>
                                     <p class="title-counter">Nota de Design</p>
                                 </div>
                             </div>
@@ -75,12 +75,12 @@
                             <div class="line line-space">
                                 <div class="s6col col-space">
                                     <p class="icon"><i class="material-icons">info_outline</i></p>
-                                    <p class="counter" data-from="0" data-to="4320" data-speed="3000" data-refresh-interval="30">4320</p>
+                                    <p class="counter" data-from="0" data-to="21600" data-speed="3000" data-refresh-interval="30">21600</p>
                                     <p class="title-counter">Tempo Gasto (min)</p>
                                 </div>
                                 <div class="s6col col-space">
                                     <p class="icon"><i class="material-icons">info_outline</i></p>
-                                    <p class="counter" data-from="0" data-to="98" data-speed="1900" data-refresh-interval="30">98</p>
+                                    <p class="counter" data-from="0" data-to="323" data-speed="1500" data-refresh-interval="30">323</p>
                                     <p class="title-counter">Copos de Café</p>
                                 </div>
                             </div>
@@ -92,5 +92,5 @@
         <?php require_once (dirname(__DIR__) . '/layouts/includes/final-footer.php') ?>
     </main>
 </body>
-    <?php require_once ('includes/scripts.php') ?>
+<?php require_once ('includes/scripts.php') ?>
 </html>

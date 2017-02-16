@@ -31,20 +31,20 @@
             <section class="container container-space margin-top">
                 <div class="line line-space">
                     <header class="collist col-space ">
-                        <h1 class="no-margin title">Donec facilisis tortor quis risus</h1>
+                        <h1 class="no-margin title">Meu Framework Back-End</h1>
                         <div class="heading-line"></div>
-                        <p class="tagline">Aliquam erat volutpat. Cras aliquet pharetra turpis, consectetur sagittis quam volutpat sed. </p>
+                        <p class="tagline">Essa é minha versão customizada do <a href="https://codeigniter.com/" rel="nofollow">Codeigniter</a>, um fantástico framework para <em class="text-normal">dev web</em>.</p>
                     </header>
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="Home page" src="<?php echo asset('img/framework-print.png') ?>" alt="IDE com código aberto em um mac"/>
+                        <img title="Código do projeto" src="<?php echo asset('img/framework-print.png') ?>" alt="código do projeto aberto em uma IDE"/>
                     </div>
                     <div class="m6col col-space">
-                        <h2>Proin fringilla luctus</h2>
-                        <p>Nullam dolor quam, dignissim nec pretium et, cursus sit amet magna. Proin fringilla luctus ipsum, a ornare metus ullamcorper sagittis. Vivamus blandit, nisi quis tempus dignissim, eros mauris blandit elit, rutrum iaculis neque ligula vitae arcu. Nunc placerat nibh ac tellus vehicula ultrices. Pellentesque lectus ante, posuere a lectus at, egestas vulputate ipsum.</p>
-                        <p>Suspendisse at dolor velit. Etiam placerat nibh nisl, sit amet consequat orci porta a. Vestibulum vitae nunc euismod.</p>
-                        <a title="Entrar no site" href="https://github.com/lleocastro/my-custom-ci" rel="nofollow" class="btn btn-light" role="button">
+                        <h2>Sobre a Ferramenta</h2>
+                        <p>O CodeIgniter é um framework PHP construído para que desenvolvedores possam <em class="text-normal">criar aplicações web</em> completas. Ainda com toda essa base, minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no <em class="text-normal">desenvolvimento back-end</em> e melhora o <em class="text-normal">desenvolvimento front-end</em>. O que me possibilita entregar projetos em menos tempo e ainda sim manter a <em class="text-normal">qualidade e performance na aplicação web</em>.</p>
+                        <p><strong>E ainda possuo varias outras ferramentas no <a href="#">meu github</a>, uma delas você pode conferir <a href="#">aqui no meu portfólio</a>.</strong></p>
+                        <a title="Ir para a página do projeto" href="https://github.com/lleocastro/my-custom-ci" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>
                             Ver no Github
                         </a>

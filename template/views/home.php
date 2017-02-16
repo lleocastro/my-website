@@ -310,7 +310,7 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="#">
+                        <a href="<?php echo route('/portfolio/framework-css') ?>">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">

@@ -49,6 +49,17 @@ class Portfolio extends CI_Controller
      *
      * @return HttpResponse
      */
+    public function page_framework_css()
+    {
+        analytics();
+        return $this->load->view('portfolio/framework-css');
+    }
+
+    /**
+     * Displays a porfólio page.
+     *
+     * @return HttpResponse
+     */
     public function page_leobcastro()
     {
         analytics();

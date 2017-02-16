@@ -30,15 +30,15 @@
         <div class="container-full desc">
             <section class="container container-space margin-top">
                 <div class="line line-space">
-                    <header class="collist col-space ">
-                        <h1 class="no-margin title">Codificação da Interface do Site</h1>
+                    <header class="collist col-space">
+                        <h1 class="no-margin title">Sobre o Site LEOBCASTRO</h1>
                         <div class="heading-line"></div>
                         <p class="tagline">Toda a interface foi minuciosamente pensada na usabilidade e acessibilidade dos usuários.</p>
                     </header>
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="LEOBCASTRO Home page" src="<?php echo asset('img/leobcastro-print.png') ?>" alt="Website do Léo B. Castro aberto em um mac"/>
+                        <img title="Home page do site LEOBCASTRO" src="<?php echo asset('img/leobcastro-print.png') ?>" alt="Website do Léo B. Castro aberto em um mac"/>
                     </div>
                     <div class="m6col col-space">
                         <h2>Detalhes Técnicos</h2>
