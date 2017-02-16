@@ -1,25 +1,37 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo $this->config->item('language') ?>">
+<html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content=""/>
+    <meta name="description" content="Léo B. Castro é um desenvolvedor web , apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
-    <meta property="og:title" content="Full-Stack Web Developer"/>
-    <meta property="og:description" content="Desenvolvimento inteligente de soluções web para seu negócio."/>
+
+    <link rel="base" href="https://www.leobcastro.com"/>
+    <link rel="canonical" href="https://www.leobcastro.com/"/>
+    <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
+    <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
+
+    <meta itemprop="name" content="Leo B. Castro - Desenvolvimento web"/>
+    <meta itemprop="description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
+    <meta itemprop="image" content="<?php echo $this->config->item('base_url') ?>img/eu.jpg"/>
+    <meta itemprop="url" content="<?php echo $this->config->item('base_url') ?>"/>
+
+    <meta property="og:title" content="Leo B. Castro - Desenvolvimento web"/>
+    <meta property="og:description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="img/intro.jpg"/>
-    <meta property="og:url" content="https://lleocastro.github.io/hello-world-html/"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
+    <meta property="og:image" content="<?php echo $this->config->item('base_url') ?>img/intro.jpg"/>
+    <meta property="og:url" content="<?php echo $this->config->item('base_url') ?>"/>
+    <meta property="og:site_name" content="Léo B. Castro"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-    <meta name="twitter:title" content="Full-Stack Web Developer"/>
+
+    <meta name="twitter:title" content="Leo B. Castro - Desenvolvimento web"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
+    <meta name="twitter:image" content="<?php echo $this->config->item('base_url') ?>img/intro.jpg"/>
+    <meta name="twitter:url" content="<?php echo $this->config->item('base_url') ?>"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
     <link rel="stylesheet" href="<?php echo asset('css/animate.min.css') ?>"/>
@@ -39,13 +51,13 @@
             "description": "Full-Stack Web Developer, UX/UI Designer, Creative",
             "jobTitle": "Web Developer",
             "email": "leonardo_carvalho@outlook.com",
-            "url": "leobcastro.com",
+            "url": "<?php echo $this->config->item('base_url') ?>",
             "address": "São José dos Campos, São Paulo - Brasil",
-            "image": "img/eu.jpg"
+            "image": "<?php echo $this->config->item('base_url') ?>img/eu.jpg"
         }
-        </script>
+    </script>
 
-    <title><?php echo getenv('APP_NAME') ?> - Full-Stack Web Developer - SJCampos</title>
+    <title>Léo B. Castro - Desenvolvedor Web em São José dos Campos</title>
 </head>
 <body>
     <main class="container-full" role="main">
