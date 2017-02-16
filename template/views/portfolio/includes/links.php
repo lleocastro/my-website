@@ -1,4 +1,4 @@
-
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 

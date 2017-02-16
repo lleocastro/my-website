@@ -44,7 +44,7 @@ class Index_page extends CI_Controller
                 $return = [
                     'status' => false,
                     'token'  => $this->security->get_csrf_hash(),
-                    'errors' => ['This email is already registered!']
+                    'errors' => ['Este e-mail já está registado!']
                 ];
             }
 

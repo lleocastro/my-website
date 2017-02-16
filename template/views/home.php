@@ -381,9 +381,9 @@
             <section class="container container-space wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                 <div class="line line-space">
                     <div class="collist">
-                        <h5 class="no-margin">Deixe seu E-mail!</h5>
+                        <h3 class="no-margin">Orçamento Rápido</h3>
                         <div class="heading-line"></div>
-                        <p class="tagline">Deixe seu email para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
+                        <p class="tagline">Deixe seu e-mail para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
                     </div>
                 </div>
                 <div class="line">
@@ -506,7 +506,7 @@
                                     <li><a class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
                                     <li><a style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">De uma olhada no meu curriculo</a></li>
                                     <li><a style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Descubra meu blog</a></li>
-                                    <li><a style="text-decoration: line-through" class="scroll" href="<?php echo route('/questionario') ?>">Esse questionário é pra você!</a></li>
+                                    <li><a class="scroll" href="https://goo.gl/forms/rC5ZZDEAtxaJ1GEI2">Esse questionário é pra você!</a></li>
                                 </ul>
                             </nav>
                         </div>

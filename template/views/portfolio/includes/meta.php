@@ -1,4 +1,4 @@
-
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 <meta charset="<?php echo $this->config->item('charset') ?>">
 <meta name="author" content="Léo B. Castro"/>

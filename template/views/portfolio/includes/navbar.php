@@ -1,4 +1,4 @@
-
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- NAVBAR -->
 <div class="navbar navbar-fixed navbar-default" role="navigation">
     <div class="container">

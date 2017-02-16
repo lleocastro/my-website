@@ -126,9 +126,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Alguns Dados de Acesso</h3>
+                            <h3 class="panel-title"></h3>
                         </div>
                         <div class="panel-body">
                             <table id="email-table" class="table table-striped table-responsive table-hover table-responsive">
