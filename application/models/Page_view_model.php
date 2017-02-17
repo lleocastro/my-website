@@ -28,6 +28,11 @@ class Page_view_model extends CI_Model
     protected $total_lines = null;
 
     /**
+     * @var array
+     */
+    protected $ignore_list = [];
+
+    /**
      * Loads the necessary resources to the controller.
      */
     public function __construct()
@@ -46,6 +51,15 @@ class Page_view_model extends CI_Model
     {
         if ((!empty($this->agent)) && (!empty($this->addr)) && (!empty($this->host))
             && (!empty($this->route))) {
+
+            if (!empty($this->ignore_list)) {
+                foreach ($this->ignore_list as $ignore) {
+                    if ($this->addr == $ignore) {
+                        return false;
+                    }
+                }
+            }
+
             $status = $this->db->insert($this->table, [
                 'agent' => $this->agent,
                 'addr'  => $this->addr,
@@ -148,6 +162,12 @@ class Page_view_model extends CI_Model
         }
 
         return null;
+    }
+
+    public function ignores(array $addrs)
+    {
+        $this->ignore_list = $addrs;
+        return $this;
     }
 
     /**
