@@ -119,7 +119,7 @@
                         <div class="collist col-space">
                             <section class="introduction">
                                 <h4 class="no-margin">Resumo</h4>
-                                <div class="heading-line"></div>
+                                <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
                                 <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o <em class="text-normal">desenvolvimento de ferramentas</em> <a href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto" rel="nofollow">open source</a> para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
@@ -162,7 +162,7 @@
             <div class="line line-space">
                 <header class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
                     <h3 class="no-margin">O que faço de melhor</h3>
-                    <div class="heading-line"></div>
+                    <div class="heading-line" role="separator"></div>
                     <p class="tagline"><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
                 </header>
             </div>
@@ -212,7 +212,7 @@
                     <div class="line line-space">
                         <div class="collist col-space">
                             <h3 class="no-margin">Minhas Habilidades</h3>
-                            <div class="heading-line"></div>
+                            <div class="heading-line" role="separator"></div>
                         </div>
                     </div>
                     <div class="line">
@@ -265,7 +265,7 @@
                 <div class="line line-space">
                     <header class="collist">
                         <h3 class="no-margin">Meu Portfólio</h3>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Veja alguns dos meus principais projetos, que vai desde desenvolver sites, sistemas web a games. Clique para mais informações!</p>
                     </header>
                 </div>
@@ -382,7 +382,7 @@
                 <div class="line line-space">
                     <div class="collist">
                         <h3 class="no-margin">Orçamento Rápido</h3>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Deixe seu e-mail para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
                     </div>
                 </div>
@@ -417,7 +417,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h3 class="no-margin">Contate-me</h3>
-                                        <div class="heading-line"></div>
+                                        <div class="heading-line" role="separator"></div>
                                     </div>
                                 </div>
                                 <div class="line">
