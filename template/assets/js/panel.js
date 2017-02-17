@@ -7,30 +7,22 @@ jQuery(function($) {
         $("#page-wrapper").css({'min-height': (visibleHeight - 50) + 'px'});
     });
 
-    // // Ajax: Set if readed
-    // $(document).ready(function() {
-    //     $("#email-table tr.active").click(function(event) {
-    //         var index = $(this).index();
-    //         $.ajax({
-    //             processData: 'application/x-www-form-urlencoded',
-    //             type: 'post',
-    //             data: {
-    //                 'id': $(this).find('td:not(:empty):first').text(),
-    //                 'csrf_token': $('input[name="csrf_token"]').val()
-    //             },
-    //             dataType: 'html',
-    //             url: "emails-list/update",
-    //             success: function(data) {
-    //                 data = $.parseJSON(data);
-    //                 if (data.status) {
-    //                     location.reload(true);
-    //                 }
-    //             }
-    //         });
-    //
-    //         return false;
-    //     });
-    // });
+    // Ajax, ajax, ajax...
+    $(document).ready(function() {
+        setInterval(function () {
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                //data: {'': $},
+                url: "ajax/counters",
+                success: function(data) {
+                    $(".unread-emails-counter").text(data.total_unread_emails);
+                    $(".unread-messages-counter").text(data.total_unread_messages);
+                    $(".views_counter").text(data.total_views);
+                    $(".online-counter").text(data.current_online);
+                }
+            });
+        }, 1000);
+    });
 
 });
-
