@@ -44,7 +44,7 @@
                                         <i class="fa fa-inbox fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge unread-messages-counter">0</div>
+                                        <div class="huge unread-messages-counter"><?php echo $total_unread_messages ?></div>
                                         <div>Novas MSGs!</div>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                         <i class="fa fa-envelope fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge unread-emails-counter">0</div>
+                                        <div class="huge unread-emails-counter"><?php echo $total_unread_emails ?></div>
                                         <div>Novos Emails!</div>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@
                                         <i class="fa fa-line-chart fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge views_counter">0</div>
+                                        <div class="huge views_counter"><?php echo $total_views ?></div>
                                         <div>Total de Views!</div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                                         <i class="fa fa-globe fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge online-counter">0</div>
+                                        <div class="huge online-counter"><?php echo $current_online ?></div>
                                         <div>Online Agora!</div>
                                     </div>
                                 </div>

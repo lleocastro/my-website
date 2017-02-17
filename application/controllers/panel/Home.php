@@ -23,19 +23,23 @@ class Home extends CI_Controller
     public function index()
     {
         return $this->load->view('panel/home', [
-            'page_views'   => $this->page_view->paginate(7),
+            'total_unread_emails'   => $this->email_list->count(true),
+            'total_unread_messages' => $this->message_list->count(true),
+            'current_online' => $this->page_view->online_counter(),
+            'total_views'=> $this->page_view->count(),
+            'page_views' => $this->page_view->paginate(7),
             'pagination_links' => $this->page_view->pagination_links()
         ]);
     }
 
-    public function counters()
-    {
-        echo json_encode([
-            'total_unread_emails'   => $this->email_list->count(true),
-            'total_unread_messages' => $this->message_list->count(true),
-            'total_views'    => $this->page_view->count(),
-            'current_online' => $this->page_view->online_counter()
-        ]);
-    }
+//    public function counters()
+//    {
+//        echo json_encode([
+//            'total_unread_emails'   => $this->email_list->count(true),
+//            'total_unread_messages' => $this->message_list->count(true),
+//            'total_views'    => $this->page_view->count(),
+//            'current_online' => $this->page_view->online_counter()
+//        ]);
+//    }
 
 }
