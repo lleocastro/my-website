@@ -29,18 +29,42 @@
                         <div class="panel-body">
                             <?php if (isset($email)): ?>
                             <form method="post" action="<?php echo route('dashboard/email/delete', $email->get_id()) ?>">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" value="<?php echo $email->get_email(); ?>" readonly />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <p class="mini-text">E-mail:</p>
+                                            <input type="email" class="form-control" value="<?php echo $email->get_email(); ?>" readonly />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <p class="mini-text">Protocolo:</p>
+                                            <input type="text" class="form-control" value="<?php echo $email->get_addr(); ?>" readonly />
+                                        </div>
+                                    </div>
                                 </div>
                             <?php elseif (isset($message)): ?>
                             <form method="post" action="<?php echo route('dashboard/message/delete', $message->get_id()) ?>">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" value="<?php echo $message->get_name() ?>" readonly />
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <p class="mini-text">Nome:</p>
+                                            <input type="text" class="form-control" value="<?php echo $message->get_name() ?>" readonly />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <p class="mini-text">Protocolo:</p>
+                                            <input type="text" class="form-control" value="<?php echo $message->get_addr() ?>" readonly />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
+                                    <p class="mini-text">E-mail:</p>
                                     <input type="email" class="form-control" value="<?php echo $message->get_email() ?>" readonly />
                                 </div>
                                 <div class="form-group">
+                                    <p class="mini-text">Mensagem:</p>
                                     <textarea class="form-control" style="max-width: 100% !important; min-width: 100% !important;" readonly>
                                         <?php echo $message->get_message() ?>
                                     </textarea>

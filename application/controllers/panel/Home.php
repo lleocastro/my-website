@@ -32,13 +32,4 @@ class Home extends CI_Controller
         ]);
     }
 
-    public function counters()
-    {
-        echo json_encode([
-            'total_unread_emails'   => $this->email_list->count(true),
-            'total_unread_messages' => $this->message_list->count(true),
-            'current_online' => $this->page_view->online_counter()
-        ]);
-    }
-
 }

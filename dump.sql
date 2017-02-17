@@ -15,6 +15,7 @@ CREATE TABLE x_email_list (
   id INT unsigned AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(100) NOT NULL UNIQUE,
   unread TINYINT(1) NOT NULL,
+  addr VARCHAR(15) NOT NULL,
   created_at TIMESTAMP,
   updated_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -27,6 +28,7 @@ CREATE TABLE x_message_list (
   subject VARCHAR(100) NOT NULL,
   message LONGTEXT NOT NULL,
   unread TINYINT(1) NOT NULL,
+  addr VARCHAR(15) NOT NULL,
   created_at TIMESTAMP,
   updated_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -38,6 +40,15 @@ CREATE TABLE x_page_views (
   addr VARCHAR(15) NOT NULL,
   host VARCHAR (50) NOT NULL,
   route VARCHAR(255),
+  created_at TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS 'x_blocker_list';
+CREATE TABLE x_blocker_list (
+  id INT unsigned AUTO_INCREMENT PRIMARY KEY,
+  addr VARCHAR(15) NOT NULL,
+  reason VARCHAR (100) DEFAULT 'Spamming',
+  level TINYINT(1) NOT NULL,
   created_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

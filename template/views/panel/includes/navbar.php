@@ -14,11 +14,9 @@
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
             <ul class="dropdown-menu alert-dropdown">
-                <li><a href="#">Novos E-mails <span class="badge unread-messages-counter">7</span></a></li>
-                <li><a href="#">Novas Mensagens <span class="badge unread-emails-counter">14</span></a></li>
-                <li><a href="#">Users Online Agora <span class="badge online-counter">0</span></a></li>
+                <li><a href="#">Sem notificações.</a></li>
                 <li class="divider" role="separator"></li>
-                <li><a href="#">View All</a></li>
+                <li><a href="#">Ver Todas</a></li>
             </ul>
         </li>
         <li class="dropdown">
@@ -39,6 +37,7 @@
             <li><a href="<?php echo route('/dashboard/messages') ?>"><i class="fa fa-fw fa-comment"></i> Lista de Mensagens</a></li>
             <li><a href="#"><i class="fa fa-fw fa-send"></i> Enviar Notificações</a></li>
             <li><a href="#"><i class="fa fa-fw fa-area-chart"></i> Relatório</a></li>
+            <li><a href="<?php echo route('dashboard/bloqueios') ?>"><i class="fa fa-fw fa-eye-slash"></i> Usuários Bloqueados</a></li>
             <li><a href="<?php echo route('/') ?>"><i class="fa fa-fw fa-refresh"></i> Voltar para o Site</a></li>
         </ul>
     </div>

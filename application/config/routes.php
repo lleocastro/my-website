@@ -104,6 +104,11 @@ $route['dashboard/messages/(:num)'] = 'panel/Show_messages';
 $route['dashboard/message/show/(:num)'] = 'panel/Show_messages/show/$1';
 $route['dashboard/message/delete/(:num)'] = 'panel/Show_messages/destroy/$1';
 
+$route['dashboard/bloqueios'] = 'panel/Blocker';
+$route['dashboard/bloqueios/(:num)'] = 'panel/Blocker';
+$route['dashboard/bloqueio/store'] = 'panel/Blocker/store';
+$route['dashboard/bloqueio/delete/(:num)'] = 'panel/Blocker/destroy/$1';
+
 /** Ajax Requests */
 $route['email/store'] = 'Index_page/store_email';
 $route['message/store'] = 'Index_page/store_message';

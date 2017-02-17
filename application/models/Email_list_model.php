@@ -14,6 +14,7 @@ class Email_list_model extends CI_Model
      * @var string
      */
     protected $email;
+    protected $addr;
     protected $created_at;
     protected $updated_at;
 
@@ -75,6 +76,7 @@ class Email_list_model extends CI_Model
             $status = $this->db->insert($this->table, [
                 'email'  => $this->email,
                 'unread' => $this->set_unread()->get_unread(),
+                'addr'   => $this->set_addr()->get_addr(),
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s")
             ]);
@@ -225,6 +227,26 @@ class Email_list_model extends CI_Model
     public function set_email($email)
     {
         $this->email = $this->security->xss_clean($email);
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function get_addr()
+    {
+        return $this->addr;
+    }
+
+    /**
+     * @return Email_list_model
+     */
+    protected function set_addr()
+    {
+        $this->addr = $this->security->xss_clean(
+            filter_input(INPUT_SERVER, 'REMOTE_ADDR')
+        );
+
         return $this;
     }
 

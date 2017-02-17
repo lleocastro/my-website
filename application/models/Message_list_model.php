@@ -17,6 +17,7 @@ class Message_list_model extends CI_Model
     protected $email;
     protected $subject;
     protected $message;
+    protected $addr;
     protected $created_at;
     protected $updated_at;
 
@@ -64,6 +65,7 @@ class Message_list_model extends CI_Model
                 'subject' => $this->subject,
                 'message' => $this->message,
                 'unread'  => $this->set_unread()->get_unread(),
+                'addr'    => $this->set_addr()->get_addr(),
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s")
             ]);
@@ -271,6 +273,26 @@ class Message_list_model extends CI_Model
     public function set_message($message)
     {
         $this->message = $this->security->xss_clean($message);
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function get_addr()
+    {
+        return $this->addr;
+    }
+
+    /**
+     * @return Message_list_model
+     */
+    protected function set_addr()
+    {
+        $this->addr = $this->security->xss_clean(
+            filter_input(INPUT_SERVER, 'REMOTE_ADDR')
+        );
+
         return $this;
     }
 
