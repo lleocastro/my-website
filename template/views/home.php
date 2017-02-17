@@ -121,7 +121,7 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
-                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o <em class="text-normal">desenvolvimento de ferramentas</em> <a href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto" rel="nofollow">open source</a> para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o <em class="text-normal">desenvolvimento de ferramentas</em> <a title="O que é 'open source'" href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto" rel="nofollow">open source</a> para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
@@ -227,7 +227,7 @@
                                 <div class="collist">
                                     <p class="mini-text">HTML5 / CSS3</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="3500ms" data-wow-delay="500ms">
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="4000ms" data-wow-delay="500ms">
                                             <span class="progress-label" data-from="0" data-to="73" data-speed="3500" data-refresh-interval="30">73%</span>
                                         </div>
                                     </div>
@@ -237,8 +237,8 @@
                                 <div class="collist">
                                     <p class="mini-text">Javascript</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="3800ms" data-wow-delay="900ms">
-                                            <span class="progress-label" data-from="0" data-to="61" data-speed="3800" data-refresh-interval="30">61%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 59%" data-wow-duration="4000ms" data-wow-delay="900ms">
+                                            <span class="progress-label" data-from="0" data-to="59" data-speed="3800" data-refresh-interval="30">59%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -247,8 +247,8 @@
                                 <div class="collist">
                                     <p class="mini-text">PHP 5/7</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 89%" data-wow-duration="4100ms" data-wow-delay="700ms">
-                                            <span class="progress-label" data-from="0" data-to="89" data-speed="4100" data-refresh-interval="30">89%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 91%" data-wow-duration="4100ms" data-wow-delay="700ms">
+                                            <span class="progress-label" data-from="0" data-to="91" data-speed="4100" data-refresh-interval="30">91%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +266,8 @@
                     <header class="collist">
                         <h3 class="no-margin">Meu Portfólio</h3>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Veja alguns dos meus principais projetos, que vai desde desenvolver sites, sistemas web a games. Clique para mais informações!</p>
+                        <p class="tagline">Veja alguns dos meus projetos mais recentes, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns games</p>
+                        <p class="mini-text">*Clique no projeto para mais informações!</p>
                     </header>
                 </div>
                 <div class="line line-space">
@@ -462,7 +463,7 @@
                                         </div>
                                         <div class="m6col col-space">
                                             <label for="email">E-mail:</label>
-                                            <input id="email" name="email" class="form" type="email" placeholder="Seu principal email"/>
+                                            <input id="email" name="email" class="form" type="email" placeholder="Principal email"/>
                                         </div>
                                     </div>
                                     <div class="line">
@@ -520,7 +521,7 @@
                         </div>
                         <div class="s5col mobile-text-center">
                             <h6>Já que chegou até aqui..</h6>
-                            <p>Uau! Se você chegou até aqui e não deixou seu email ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um feedback para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
+                            <p>Uau! Se você chegou até aqui e não deixou seu e-mail ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um feedback para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
                         </div>
                     </div>
                     <div class="line line-space mobile-text-center">
