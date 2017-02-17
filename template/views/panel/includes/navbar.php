@@ -14,12 +14,9 @@
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
             <ul class="dropdown-menu alert-dropdown">
-                <li><a href="#">Alert Name <span class="label label-default">Alert Badge</span></a></li>
-                <li><a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a></li>
-                <li><a href="#">Alert Name <span class="label label-success">Alert Badge</span></a></li>
-                <li><a href="#">Alert Name <span class="label label-info">Alert Badge</span></a></li>
-                <li><a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a></li>
-                <li><a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a></li>
+                <li><a href="#">Novos E-mails <span class="badge unread-messages-counter">7</span></a></li>
+                <li><a href="#">Novas Mensagens <span class="badge unread-emails-counter">14</span></a></li>
+                <li><a href="#">Users Online Agora <span class="badge online-counter">0</span></a></li>
                 <li class="divider" role="separator"></li>
                 <li><a href="#">View All</a></li>
             </ul>
