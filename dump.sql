@@ -46,7 +46,7 @@ CREATE TABLE x_page_views (
 DROP TABLE IF EXISTS 'x_blocker_list';
 CREATE TABLE x_blocker_list (
   id INT unsigned AUTO_INCREMENT PRIMARY KEY,
-  addr VARCHAR(15) NOT NULL,
+  addr VARCHAR(15) UNIQUE NOT NULL,
   reason VARCHAR (100) DEFAULT 'Spamming',
   level TINYINT(1) NOT NULL,
   created_at TIMESTAMP

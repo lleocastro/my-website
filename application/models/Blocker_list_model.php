@@ -51,6 +51,22 @@ class Blocker_list_model extends CI_Model
     }
 
     /**
+     * Retrieve a email from list.
+     *
+     * @param string $addr
+     *
+     * @return bool
+     */
+    public function exists($addr)
+    {
+        $sql = "SELECT addr FROM {$this->table} WHERE addr = ? LIMIT 1";
+        $query = $this->db->query($sql, $this->security->xss_clean($addr));
+        $result = $query->row(0, 'Blocker_list_model');
+
+        return (!empty($result)) ? true : false;
+    }
+
+    /**
      * Store a informations.
      *
      * @return bool

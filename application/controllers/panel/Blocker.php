@@ -38,14 +38,22 @@ class Blocker extends CI_Controller
         if ($this->blocker_list_form_request->run()) {
             $data = $this->input->post();
 
-            $this->blocker_list->set_addr($data['protocol'])
-                ->set_reason($data['reason'])
-                ->set_level(isset($data['level']) ? $data['level'] : 1)
-                ->save();
+            if (!$this->blocker_list->exists($data['protocol'])) {
+                $this->blocker_list->set_addr($data['protocol'])
+                    ->set_reason($data['reason'])
+                    ->set_level(isset($data['level']) ? $data['level'] : 1)
+                    ->save();
 
-            $return = [
-                'status'  => true
-            ];
+                $return = [
+                    'status' => true
+                ];
+            } else {
+                $return = [
+                    'status' => false,
+                    'token'  => $this->security->get_csrf_hash(),
+                    'errors' => ['Esse protocolo já está bloqueado!']
+                ];
+            }
         } else {
             $return = [
                 'status' => false,
