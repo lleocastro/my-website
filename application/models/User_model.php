@@ -92,7 +92,7 @@ class User_model extends CI_Model
      */
     public function get_id()
     {
-        return $this->id;
+        return $this->security->xss_clean($this->id);
     }
 
     /**
@@ -100,7 +100,7 @@ class User_model extends CI_Model
      */
     public function get_name()
     {
-        return $this->name;
+        return $this->security->xss_clean($this->name);
     }
 
     /**
@@ -119,7 +119,7 @@ class User_model extends CI_Model
      */
     public function get_lastname()
     {
-        return $this->lastname;
+        return $this->security->xss_clean($this->lastname);
     }
 
     /**
@@ -138,7 +138,7 @@ class User_model extends CI_Model
      */
     public function get_email()
     {
-        return $this->email;
+        return $this->security->xss_clean($this->email);
     }
 
     /**
@@ -157,7 +157,7 @@ class User_model extends CI_Model
      */
     public function get_password()
     {
-        return $this->password;
+        return $this->security->xss_clean($this->password);
     }
 
     /**
@@ -178,7 +178,7 @@ class User_model extends CI_Model
      */
     public function get_token()
     {
-        return $this->token;
+        return $this->security->xss_clean($this->token);
     }
 
     /**
@@ -193,9 +193,11 @@ class User_model extends CI_Model
         $host  = filter_input(INPUT_SERVER, 'HTTP_HOST');
         $date  = date('Ydm');
 
-        $token = $this->hash->generate($host . $ip . $agent . $date);
-        $this->token = $this->security->xss_clean($token);
+        $token = $this->hash->generate(
+            $this->security->xss_clean($host . $ip . $agent . $date)
+        );
 
+        $this->token = $token;
         return $this;
     }
 

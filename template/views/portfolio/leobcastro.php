@@ -47,7 +47,7 @@
                     </div>
                     <div class="m6col col-space">
                         <h2>Detalhes Técnicos</h2>
-                        <p>O layout é simples e amigavel (<a href="#">desenvolvido com meu framework CSS</a>) para que qualquer pessoal possa navegar sem dificuldades, além disso <em class="text-normal">toda a estrutura é semanticamente correta</em> com uma <em class="text-normal">arquitetura de informações bem estruturadas</em> e organizadas para tornar o site mais pratico de usar.</p>
+                        <p>O layout é simples e amigável (<a href="<?php echo route('portfolio/framework-css') ?>">desenvolvido com meu framework CSS</a>) para que qualquer pessoal possa navegar sem dificuldades, além disso <em class="text-normal">toda a estrutura é semanticamente correta</em> com uma <em class="text-normal">arquitetura de informações bem estruturadas</em> e organizadas para tornar o site mais pratico de usar.</p>
                         <p><strong>"Levo muito a sério qualidade e performance no desenvolvimento, mas você já deve ter notado isso no meu site, certo?</strong> 😜</p>
                         <p>Mas não basta apenas ser bonito e rapido, também tem que gerar resultados, por isso tem todo um trabalho de <em class="text-normal">SEO</em> e <em class="text-normal">marketing digital</em> em cima dele. A final, foi por esse trabalho que você me encontrou...</p>
                         <a title="Voltar para a home do site" href="<?php echo route('/') ?>" class="btn btn-light" role="button">
@@ -61,8 +61,8 @@
                 <article class="line line-space">
                     <div class="m6col col-space">
                         <h2>Painel de Controle</h2>
-                        <p>Com o meu <em class="text-normal">dashboard</em> é possivel <em class="text-normal">gerenciar o site</em> e todo o seu conteúdo, atravéz de qualquer dispositivo com internet. É possivel saber <em class="text-normal">o que os usuários estão fazendo no site</em>, o que estão vendo, de qual dispositivo estão acessando, horario do acesso, etc... Esse <em class="text-normal">dashboard possui uma interface bem simples</em> para que qualquer pessoa sem conhecimento técnico consiga facilmente utiliza-lo.</p>
-                        <p>É possivel ver e <em class="text-normal">manipular os emails</em> (<em class="text-normal">captura de emails</em>) e mensagens que os visitantes deixam no site, podendo responde-los ou adiciona-los em alguma lista para nutrição de leads (<em class="text-normal">marketing de conversão</em>).</p>
+                        <p>Com o meu <em class="text-normal">dashboard</em> é possivel <em class="text-normal">gerenciar o site</em> e todo o seu conteúdo, atravéz de qualquer dispositivo com internet. É possivel saber <em class="text-normal">o que os usuários estão fazendo no site</em>, o que estão vendo, de qual dispositivo estão acessando, horário do acesso, etc... Esse <em class="text-normal">dashboard possui uma interface bem simples</em> para que qualquer pessoa sem conhecimento técnico consiga facilmente utiliza-lo.</p>
+                        <p>É possivel ver e <em class="text-normal">manipular os e-mails</em> (<em class="text-normal">captura de e-mails</em>) e mensagens que os visitantes deixam no site, podendo responde-los ou adiciona-los em alguma lista para nutrição de leads (<em class="text-normal">marketing de conversão</em>).</p>
                         <a title="Exemplo da interface do dashboard" href="<?php echo route('/dashboard-template') ?>" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>
                             Ver o Template do Dashboard

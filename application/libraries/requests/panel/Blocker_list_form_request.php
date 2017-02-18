@@ -29,7 +29,7 @@ class Blocker_list_form_request
         return [
             'Protocol' => [
                 'field' => 'protocol',
-                'label' => 'protocolo',
+                'label' => 'identidade',
                 'rules' => 'trim|required|xss_clean|valid_ip|max_length[15]'
             ],
             'Reason' => [

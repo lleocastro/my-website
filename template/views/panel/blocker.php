@@ -25,7 +25,7 @@
                 <form id="blocker-form" method="post" action="<?php echo route('dashboard/bloqueio/store') ?>" accept-charset="utf-8">
                     <div class="row">
                         <div class="col-sm-3">
-                            <p class="mini-text">Protocolo:</p>
+                            <p class="mini-text">Identidade:</p>
                             <input type="text" name="protocol" class="form-control"/>
                         </div>
                         <div class="col-sm-5">

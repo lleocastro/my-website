@@ -197,7 +197,7 @@ class Message_list_model extends CI_Model
      */
     public function get_id()
     {
-        return $this->id;
+        return $this->security->xss_clean($this->id);
     }
 
     /**
@@ -205,7 +205,7 @@ class Message_list_model extends CI_Model
      */
     public function get_name()
     {
-        return $this->name;
+        return $this->security->xss_clean($this->name);
     }
 
     /**
@@ -224,7 +224,7 @@ class Message_list_model extends CI_Model
      */
     public function get_email()
     {
-        return $this->email;
+        return $this->security->xss_clean($this->email);
     }
 
     /**
@@ -243,7 +243,7 @@ class Message_list_model extends CI_Model
      */
     public function get_subject()
     {
-        return $this->subject;
+        return $this->security->xss_clean($this->subject);
     }
 
     /**
@@ -262,7 +262,7 @@ class Message_list_model extends CI_Model
      */
     public function get_message()
     {
-        return $this->message;
+        return $this->security->xss_clean($this->message);
     }
 
     /**
@@ -281,7 +281,7 @@ class Message_list_model extends CI_Model
      */
     public function get_addr()
     {
-        return $this->addr;
+        return $this->security->xss_clean($this->addr);
     }
 
     /**
@@ -301,7 +301,7 @@ class Message_list_model extends CI_Model
      */
     public function get_unread()
     {
-        return $this->unread;
+        return $this->security->xss_clean($this->unread);
     }
 
     /**
@@ -321,7 +321,7 @@ class Message_list_model extends CI_Model
      */
     public function get_created_at()
     {
-        return $this->created_at;
+        return $this->security->xss_clean($this->created_at);
     }
 
     /**
@@ -329,7 +329,7 @@ class Message_list_model extends CI_Model
      */
     public function get_updated_at()
     {
-        return $this->updated_at;
+        return $this->security->xss_clean($this->updated_at);
     }
 
 }

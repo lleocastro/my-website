@@ -171,7 +171,7 @@ class Blocker_list_model extends CI_Model
      */
     public function get_id()
     {
-        return $this->id;
+        return $this->security->xss_clean($this->id);
     }
 
     /**
@@ -179,7 +179,7 @@ class Blocker_list_model extends CI_Model
      */
     public function get_addr()
     {
-        return $this->addr;
+        return $this->security->xss_clean($this->addr);
     }
 
     /**
@@ -198,7 +198,7 @@ class Blocker_list_model extends CI_Model
      */
     public function get_reason()
     {
-        return $this->reason;
+        return $this->security->xss_clean($this->reason);
     }
 
     /**
@@ -217,7 +217,7 @@ class Blocker_list_model extends CI_Model
      */
     public function get_level()
     {
-        return $this->level;
+        return $this->security->xss_clean($this->level);
     }
 
     /**
@@ -241,7 +241,7 @@ class Blocker_list_model extends CI_Model
      */
     public function get_timestamp()
     {
-        return $this->created_at;
+        return $this->security->xss_clean($this->created_at);
     }
 
 }

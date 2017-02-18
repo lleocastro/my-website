@@ -6,7 +6,7 @@ class Email_list_model extends CI_Model
     /**
      * @var int
      */
-    public $id;
+    protected $id;
     protected $unread;
     protected $total_lines = null;
 
@@ -207,7 +207,7 @@ class Email_list_model extends CI_Model
      */
     public function get_id()
     {
-        return $this->id;
+        return $this->security->xss_clean($this->id);
     }
 
     /**
@@ -215,7 +215,7 @@ class Email_list_model extends CI_Model
      */
     public function get_email()
     {
-        return $this->email;
+        return $this->security->xss_clean($this->email);
     }
 
     /**
@@ -235,7 +235,7 @@ class Email_list_model extends CI_Model
      */
     public function get_addr()
     {
-        return $this->addr;
+        return $this->security->xss_clean($this->addr);
     }
 
     /**
@@ -255,7 +255,7 @@ class Email_list_model extends CI_Model
      */
     public function get_unread()
     {
-        return $this->unread;
+        return $this->security->xss_clean($this->unread);
     }
 
     /**
@@ -275,7 +275,7 @@ class Email_list_model extends CI_Model
      */
     public function get_created_at()
     {
-        return $this->created_at;
+        return $this->security->xss_clean($this->created_at);
     }
 
     /**
@@ -283,7 +283,7 @@ class Email_list_model extends CI_Model
      */
     public function get_updated_at()
     {
-        return $this->updated_at;
+        return $this->security->xss_clean($this->updated_at);
     }
 
 }

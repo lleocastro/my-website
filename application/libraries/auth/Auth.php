@@ -23,8 +23,6 @@ class Auth
     public function __construct()
     {
         $this->CI =& get_instance();
-        $this->CI->load->library('requests/Login_form_request');
-        $this->CI->load->library('requests/User_form_request');
         $this->CI->load->library('security/Hash', 'hash');
         $this->CI->load->model('User_model', 'user');
         $this->CI->lang->load("auth");
@@ -37,6 +35,8 @@ class Auth
      */
     public function authenticate()
     {
+        $this->CI->load->library('requests/Login_form_request');
+
         if ($this->CI->login_form_request->run()) {
             $data = $this->CI->input->post();
             $user = $this->CI->user->find_by_email($data['email']);
@@ -137,7 +137,7 @@ class Auth
      *
      * @param string $redirect_to
      *
-     * @return HttpResponse
+     * @return void
      */
     public function logout($redirect_to = '/')
     {
@@ -165,6 +165,8 @@ class Auth
      */
     public function register()
     {
+        $this->CI->load->library('requests/User_form_request');
+
         if ($this->CI->user_form_request->run()) {
             $data = $this->CI->input->post();
 
@@ -191,10 +193,10 @@ class Auth
     public function get_user_data()
     {
         $obj = new stdClass();
-        $obj->id = $this->CI->session->auth_user_id;
+        $obj->id   = $this->CI->session->auth_user_id;
         $obj->name = $this->CI->session->auth_user_name;
         $obj->lastname = $this->CI->session->auth_user_lastname;
-        $obj->email = $this->CI->session->auth_user_email;
+        $obj->email    = $this->CI->session->auth_user_email;
         return $obj;
     }
 

@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <p class="mini-text">Protocolo:</p>
+                                            <p class="mini-text">Identidade:</p>
                                             <input type="text" class="form-control" value="<?php echo $email->get_addr(); ?>" readonly />
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <p class="mini-text">Protocolo:</p>
+                                            <p class="mini-text">Identidade:</p>
                                             <input type="text" class="form-control" value="<?php echo $message->get_addr() ?>" readonly />
                                         </div>
                                     </div>

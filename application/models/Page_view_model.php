@@ -6,7 +6,7 @@ class Page_view_model extends CI_Model
     /**
      * @var int
      */
-    public $id;
+    protected $id;
 
     /**
      * @var string
@@ -175,7 +175,7 @@ class Page_view_model extends CI_Model
      */
     public function get_id()
     {
-        return $this->id;
+        return $this->security->xss_clean($this->id);
     }
 
     /**
@@ -183,11 +183,12 @@ class Page_view_model extends CI_Model
      */
     public function get_agent()
     {
-        return $this->agent;
+        return $this->security->xss_clean($this->agent);
     }
 
     /**
      * @param string $agent
+     *
      * @return Page_view_model
      */
     public function set_agent($agent)
@@ -201,11 +202,12 @@ class Page_view_model extends CI_Model
      */
     public function get_addr()
     {
-        return $this->addr;
+        return $this->security->xss_clean($this->addr);
     }
 
     /**
      * @param string $addr
+     *
      * @return Page_view_model
      */
     public function set_addr($addr)
@@ -219,11 +221,12 @@ class Page_view_model extends CI_Model
      */
     public function get_host()
     {
-        return $this->host;
+        return $this->security->xss_clean($this->host);
     }
 
     /**
      * @param string $host
+     *
      * @return Page_view_model
      */
     public function set_host($host)
@@ -237,11 +240,12 @@ class Page_view_model extends CI_Model
      */
     public function get_route()
     {
-        return $this->route;
+        return $this->security->xss_clean($this->route);
     }
 
     /**
      * @param string $route
+     *
      * @return Page_view_model
      */
     public function set_route($route)
@@ -255,7 +259,7 @@ class Page_view_model extends CI_Model
      */
     public function get_date_time()
     {
-        return $this->date_time;
+        return $this->security->xss_clean($this->date_time);
     }
 
 }

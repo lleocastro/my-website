@@ -514,7 +514,7 @@
                         <div class="s3col col-space">
                             <p class="nav-link-title"><strong>Informações</strong></p>
                             <ul>
-                                <li><a href="<?php echo route('/') ?>">Sobre o site</a></li>
+                                <li><a href="<?php echo route('portfolio/leobcastro') ?>">Sobre o site</a></li>
                                 <li><a style="text-decoration: line-through" href="<?php echo route('/hahaha') ?>" rel="nofollow">Não entre aqui!</a></li>
                                 <li><a href="<?php echo route('/creditos') ?>" rel="nofollow">Creditos</a></li>
                             </ul>
