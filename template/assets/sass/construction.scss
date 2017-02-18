@@ -7,6 +7,7 @@ html {
 }
 
 .caption {
+    display: block;
     position: relative;
     width: 60%;
     height: auto;
@@ -92,3 +93,20 @@ html {
         margin-left: -43px;
     }
 }
+
+.notification {
+    display: none;
+
+}
+.notification input {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    height: 50px !important;
+}
+.btn-full {
+    width: 100%;
+}
+.notification .btn {
+    padding: 15px 0;
+}
+

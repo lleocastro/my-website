@@ -52,3 +52,12 @@ CREATE TABLE x_blocker_list (
   created_at TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS 'x_notification_list';
+CREATE TABLE x_notification_list (
+  id INT unsigned AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  label VARCHAR(30) NOT NULL,
+  created_at TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

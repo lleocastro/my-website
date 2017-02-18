@@ -113,3 +113,4 @@ $route['dashboard/bloqueio/delete/(:num)'] = 'panel/Blocker/destroy/$1';
 $route['email/store'] = 'Index_page/store_email';
 $route['message/store'] = 'Index_page/store_message';
 $route['ajax/counters'] = 'panel/Home/counters';
+$route['notification/blog'] = 'Notifications/blog_done';

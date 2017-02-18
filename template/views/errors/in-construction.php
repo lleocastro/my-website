@@ -15,20 +15,46 @@
 
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/construction.min.css') ?>"/>
+    <link rel="stylesheet" href="<?php echo asset('css/toastr.min.css') ?>"/>
 
     <?php echo ie_support_field() ?>
 
     <title>OPS!</title>
 </head>
 <body>
-<div class="container-full backimage backimage-full" style="background-image: url(<?php echo asset('img/page-in-construct.jpeg') ?>)">
+<main class="container-full backimage backimage-full" style="background-image: url(<?php echo asset('img/page-in-construct.jpeg') ?>)" role="main">
     <section class="lightbox center">
-        <header class="caption">
+        <div class="message caption">
             <h1>Página em Construção</h1>
-            <p class="tagline">In vitae fermentum velit. Mauris ullamcorper lorem vel eros luctus facilisis. Etiam suscipit, leo non semper porttitor, sem ligula tincidunt nisi.</p>
+            <p class="tagline">Ops! Desculpe pelo inconveniente, mas esse modúlo ainda está em desenvolvimento. Deixe seu e-mail que eu aviso quando estiver disponivel. :)</p>
             <a title="Voltar para leobcastro.com" href="<?php echo route('/') ?>" class="btn btn-show" role="button">Voltar para o site</a>
-            <a title="Notificação por email" href="#" class="btn btn-show btn-light" role="button">Notifique-me!</a>
-        </header>
+            <a id="active-form" title="Notificação por email" href="#" class="btn btn-show btn-light" role="button">Notifique-me!</a>
+        </div>
+
+        <div class="notification caption">
+            <h1>Notificações</h1>
+            <div class="container container-space">
+                <form id="notification-form" method="post" action="<?php echo route('notification/blog') ?>" accept-charset="utf-8">
+                    <div class="line">
+                        <div class="collist col-space">
+                            <input type="text" name="name" class="form" placeholder="Como você se chama?"/>
+                        </div>
+                        <div class="collist col-space">
+                            <input type="email" name="email" class="form" placeholder="Seu principal e-mail"/>
+                        </div>
+                    </div>
+                    <div class="line line-space">
+                        <div class="s7col col-space">
+                            <?php echo csrf_field('notification_token') ?>
+                            <button id="notify-submit" type="submit" class="btn btn-light btn-full">Ativar Notificação</button>
+                        </div>
+                        <div class="s5col col-space">
+                            <a id="rollback" href="#" class="btn btn-dark btn-full" role="button">Cancelar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="social-links">
             <a title="Facebook" href="https://www.facebook.com/leobcastro94" rel="nofollow">
@@ -45,8 +71,9 @@
             </a>
         </div>
     </section>
-</div>
+</main>
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="<?php echo asset('js/construction.min.js') ?>"></script>
+    <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
 </html>
