@@ -199,3 +199,28 @@ if (!function_exists('pagination_styled')) {
     }
 }
 
+if (!function_exists('blocker')) {
+    /**
+     *
+     *
+     * @return mixed
+     */
+    function blocker()
+    {
+        $CI =& get_instance();
+        $CI->load->model('Blocker_list_model', 'blockers');
+
+        if ($CI->blockers->all() !== null) {
+            foreach ($CI->blockers->all() as $blocker) {
+                if ($blocker->get_level() == 1) {
+                    return false;
+                } elseif ($blocker->get_level() == 2) {
+                    redirect('blog');
+                }
+            }
+        }
+
+        return false;
+    }
+}
+
