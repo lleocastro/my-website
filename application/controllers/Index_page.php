@@ -76,6 +76,12 @@ class Index_page extends CI_Controller
                 ->set_message($data['message'])
                 ->save();
 
+            sender(
+                $data['email'], $data['name'],
+                'leonardo_carvalho@outlook.com',
+                $data['subject'], $data['message']
+            );
+
             $return = [
                 'status' => true
             ];

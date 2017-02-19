@@ -138,6 +138,12 @@ jQuery(function($) {
     $(document).ready(function() {
         $('#message-form').submit(function(event) {
             event.preventDefault();
+
+            $("#message-submit").html(
+                '<i class="material-icons" style="vertical-align: -29%">loop</i>'
+                + ' Enviando...'
+            );
+
             $.ajax({
                 url: $('#message-form').attr('action'),
                 type: 'POST',

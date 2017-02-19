@@ -224,3 +224,61 @@ if (!function_exists('blocker')) {
     }
 }
 
+if (!function_exists('notify')) {
+    /**
+     *
+     *
+     * @param string $title
+     * @param string $content
+     * @param mixed  $attach
+     *
+     * @return bool
+     */
+    function notify($title, $content, $attach = null)
+    {
+        $CI =& get_instance();
+        $CI->load->library('email');
+
+        $CI->email->from(getenv('MAIL_USERNAME'), 'LEOBCASTRO Notify');
+        $CI->email->subject($CI->security->xss_clean($title));
+        $CI->email->to('leonardo_carvalho@outlook.com');
+        $CI->email->message(nl2br($CI->security->xss_clean($content)));
+
+        if ($attach !== null) {
+            $CI->email->attach($attach);
+        }
+
+        return $CI->email->send();
+    }
+}
+
+if (!function_exists('sender')) {
+    /**
+     *
+     *
+     * @param string $from
+     * @param string $name
+     * @param string $to
+     * @param string $subject
+     * @param string $message
+     *
+     * @return bool
+     */
+    function sender($from, $name, $to, $subject, $message)
+    {
+        $CI =& get_instance();
+        $CI->load->library('email');
+
+        $CI->email->from(
+            $CI->security->xss_clean($from),
+            $CI->security->xss_clean($name)
+        );
+
+        $CI->email->subject($CI->security->xss_clean($subject));
+        $CI->email->to($CI->security->xss_clean($to));
+        $CI->email->message(nl2br($CI->security->xss_clean($message)));
+
+        return $CI->email->send();
+    }
+}
+
