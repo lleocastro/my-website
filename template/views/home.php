@@ -293,13 +293,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="CSS Stylle" src="<?php echo asset('img/notes.jpg') ?>" alt="Imagem ilustrativa representando o layout de um site"/>
+                                        <img title="Notas" src="<?php echo asset('img/notes.jpg') ?>" alt="Imagem ilustrativa representando blocos de anotações"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Sistema de Notas</h1>
-                                        <p>Nunc ut est non urna consectetur consectetur vel in quam. Vivamus varius eu quam vel mollis.</p>
+                                        <p>Aplicativo para o <em class="text-normal">gerenciamento de notas</em> com uma separação por marcadores e painel ADM.</p>
                                     </div>
                                 </div>
                             </article>
@@ -378,13 +378,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework" src="<?php echo asset('img/component.jpg') ?>" alt="Imagem ilustrando o funcionamento de um framework em dispositivos moveis"/>
+                                        <img title="Componente" src="<?php echo asset('img/component.jpg') ?>" alt="Imagem ilustrando a criação de um componente"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Carregador de Classes</h1>
-                                        <p>Nunc ut est non urna consectetur consectetur vel in quam. Vivamus varius eu quam vel mollis.</p>
+                                        <p><em class="text-normal">Algoritmo</em> para <em class="text-normal">carregar classes com namespaces</em>, facilitando a importação e instanciação.</p>
                                     </div>
                                 </div>
                             </article>

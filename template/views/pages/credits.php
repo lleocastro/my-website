@@ -95,6 +95,8 @@
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/web-background-design_1033612.htm' rel="nofollow">web-background-design (Freepik)</a></p>
                     <p class="no-paragraph"><a href="https://www.youtube.com/watch?v=cFT_3bEyl_g" rel="nofollow">flappy-bird-logo (HBruna)</a></p>
                     <p class="no-paragraph"><a href="http://www.freepik.com/free-vector/web-design-background_1015293.htm" rel="nofollow">css-stylle-logo (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/weekly-planner-with-colores-post-it_848978.htm' rel="nofollow">weekly-planner-with-colores-post-it_848978 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/adaptative-web-development-vector_757643.htm' rel="nofollow">adaptative-web-development-vector_757643 (Freepik)</a></p>
                 </div>
             </div>
         </div><!-- END CREDITS -->
