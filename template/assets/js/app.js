@@ -87,6 +87,12 @@ jQuery(function($) {
     $(document).ready(function() {
         $('#action-form').submit(function(event) {
             event.preventDefault();
+
+            $("#action-submit").html(
+                '<i class="material-icons" style="vertical-align: -29%">loop</i>'
+                + ' Cadastrando...'
+            );
+
             $.ajax({
                 url: $('#action-form').attr('action'),
                 type: 'POST',
@@ -107,7 +113,12 @@ jQuery(function($) {
                         };
                         $("#action-form").reset();
                     } else {
-                        data.errors.forEach(function(error, index) {
+                        $("#action-submit").html(
+                            '<i class="material-icons" style="vertical-align: -29%">verified_user</i>'
+                            + ' Cadastrar'
+                        );
+
+                        data.errors.forEach(function(error) {
                             toastr.warning(error);
                         });
 
@@ -164,6 +175,11 @@ jQuery(function($) {
                         };
                         $("#message-form").reset();
                     } else {
+                        $("#message-submit").html(
+                            '<i class="material-icons" style="vertical-align: -29%">verified_user</i>'
+                            + ' Enviar'
+                        );
+
                         data.errors.forEach(function(error, index) {
                             toastr.warning(error);
                         });

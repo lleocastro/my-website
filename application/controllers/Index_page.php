@@ -37,6 +37,9 @@ class Index_page extends CI_Controller
                 $this->email_list->set_email($email)
                     ->save();
 
+                // Email notification
+                notify('Novo Email!', $email);
+
                 $return = [
                     'status' => true
                 ];
@@ -76,6 +79,7 @@ class Index_page extends CI_Controller
                 ->set_message($data['message'])
                 ->save();
 
+            // Sent to email too
             sender(
                 $data['email'], $data['name'],
                 'leonardo_carvalho@outlook.com',
