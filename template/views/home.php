@@ -289,17 +289,17 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="<?php echo route('/portfolio/flappy-bird') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
+                        <a href="#">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Imagem de introdução do jogo desenvolvido baseado no flappy bird"/>
+                                        <img title="CSS Stylle" src="<?php echo asset('img/notes.jpg') ?>" alt="Imagem ilustrativa representando o layout de um site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Flappy Bird</h1>
-                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso sobre desenvolvimento de jogos.</p>
+                                        <h1>Sistema de Notas</h1>
+                                        <p>Nunc ut est non urna consectetur consectetur vel in quam. Vivamus varius eu quam vel mollis.</p>
                                     </div>
                                 </div>
                             </article>
@@ -340,6 +340,23 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
+                        <a href="<?php echo route('/portfolio/flappy-bird') ?>">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
+                                <div class="line">
+                                    <div class="collist">
+                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Imagem de introdução do jogo desenvolvido baseado no flappy bird"/>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <h1>Flappy Bird</h1>
+                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso sobre desenvolvimento de jogos.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/framework-php') ?>">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
@@ -351,6 +368,23 @@
                                     <div class="collist">
                                         <h1>Framework PHP</h1>
                                         <p>Esse framework me possibilita entregar projetos em menos tempo e ainda sim manter a qualidade.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="s6col m4col col-space">
+                        <a href="#">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                                <div class="line">
+                                    <div class="collist">
+                                        <img title="Framework" src="<?php echo asset('img/component.jpg') ?>" alt="Imagem ilustrando o funcionamento de um framework em dispositivos moveis"/>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <h1>Carregador de Classes</h1>
+                                        <p>Nunc ut est non urna consectetur consectetur vel in quam. Vivamus varius eu quam vel mollis.</p>
                                     </div>
                                 </div>
                             </article>
@@ -427,7 +461,7 @@
                                             E-mail
                                         </p>
                                         <p class="no-paragraph">leonardo_carvalho@outlook.com</p>
-                                        <p class="no-paragraph">lleocarvalho0@gmail.com</p>
+                                        <p class="no-paragraph">leobcastroinc@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -435,7 +469,7 @@
                                         <p><i class="material-icons" style="vertical-align: -29%">phone</i>
                                             Telefone
                                         </p>
-                                        <p class="no-paragraph">+55 (012) 992739408</p>
+                                        <p class="no-paragraph">+55 (012) 991729408</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -445,6 +479,15 @@
                                         </p>
                                         <p class="no-paragraph">Rua João Vilaça de Oliveira - Jardim Boa Vista,</p>
                                         <p class="no-paragraph">São José dos Campos, SP</p>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <p><i class="material-icons" style="vertical-align: -29%">today</i>
+                                            Dia/Horário
+                                        </p>
+                                        <p class="no-paragraph">De segunda-feira à sexta-feira</p>
+                                        <p class="no-paragraph">Das 08:00 as 19:00 horas</p>
                                     </div>
                                 </div>
                             </div>
