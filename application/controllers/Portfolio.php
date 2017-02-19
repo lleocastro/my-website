@@ -66,4 +66,26 @@ class Portfolio extends CI_Controller
         return $this->load->view('portfolio/leobcastro');
     }
 
+    /**
+     * Displays a porfólio page.
+     *
+     * @return HttpResponse
+     */
+    public function page_notes_system()
+    {
+        analytics();
+        return $this->load->view('portfolio/notes-system');
+    }
+
+    /**
+     * Displays a porfólio page.
+     *
+     * @return HttpResponse
+     */
+    public function page_includder()
+    {
+        analytics();
+        return $this->load->view('portfolio/includder-component');
+    }
+
 }

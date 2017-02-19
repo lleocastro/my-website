@@ -289,7 +289,7 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="#">
+                        <a href="<?php echo route('/portfolio/sistema-de-notas') ?>">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
@@ -316,7 +316,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>LEOBCASTRO</h1>
-                                        <p>Meu próprio website entra nessa lista, porque ele é meu projeto mais recente, veja detalhes!</p>
+                                        <p>Meu próprio website entra nessa lista, porque ele é meu projeto mais recente. Veja detalhes!</p>
                                     </div>
                                 </div>
                             </article>
@@ -374,7 +374,7 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="#">
+                        <a href="<?php echo route('/portfolio/carregador-de-classes') ?>">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">

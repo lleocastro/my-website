@@ -61,6 +61,8 @@ $route['portfolio/flappy-bird'] = 'Portfolio/page_flappy_bird';
 $route['portfolio/framework-php'] = 'Portfolio/page_framework_php';
 $route['portfolio/framework-css'] = 'Portfolio/page_framework_css';
 $route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
+$route['portfolio/sistema-de-notas'] = 'Portfolio/page_notes_system';
+$route['portfolio/carregador-de-classes'] = 'Portfolio/page_includder';
 // ...
 
 /**
