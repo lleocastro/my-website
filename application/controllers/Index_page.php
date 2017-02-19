@@ -38,7 +38,7 @@ class Index_page extends CI_Controller
                     ->save();
 
                 // Email notification
-                notify('Novo Email!', $email);
+                notify('Novo Email!', "Opaaa! Temos um novo email em nossa lista '{$email}' :)");
 
                 $return = [
                     'status' => true

@@ -239,6 +239,7 @@ if (!function_exists('notify')) {
         $CI =& get_instance();
         $CI->load->library('email');
 
+        $CI->email->clear(true);
         $CI->email->from(getenv('MAIL_USERNAME'), 'LEOBCASTRO Notify');
         $CI->email->subject($CI->security->xss_clean($title));
         $CI->email->to('leonardo_carvalho@outlook.com');
@@ -269,6 +270,7 @@ if (!function_exists('sender')) {
         $CI =& get_instance();
         $CI->load->library('email');
 
+        $CI->email->clear(true);
         $CI->email->from(
             $CI->security->xss_clean($from),
             $CI->security->xss_clean($name)
