@@ -26,7 +26,7 @@
 
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Template de uma Agência Web</title>
+    <title><?php echo getenv('APP_NAME') ?> - Template Agência Web</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -47,7 +47,8 @@
                     </div>
                     <div class="m6col col-space">
                         <h2>Sobre o Projeto</h2>
-                        <p>Este é um <strong>projeto antigo</strong>, meu, onde o objetivo era aplicar meus recentes conhecimentos sobre <em class="text-normal">SEO</em> e <em class="text-normal">marketing digital</em> (como palavras chave, <em class="text-normal">captura de emails</em>, elementos estratégicamente posicionados para <em class="text-normal">gerar mais conversões</em>, etc...). Escolhi o tema "<em class="text-normal">Agência de desenvolvimento web</em>" porque é a minha área e consequentemente ficou mais facil para mim criar e <em class="text-normal">estruturar todo o conteúdo no layout</em>.</p>
+                        <p>Este é um projeto antigo, meu, onde o objetivo era aplicar meus recentes conhecimentos sobre <em class="text-normal">SEO</em> e <em class="text-normal">marketing digital</em> (como palavras chave, <em class="text-normal">captura de emails</em>, elementos estratégicamente posicionados para <em class="text-normal">gerar mais conversões</em>, etc...).</p>
+                        <p><strong>Escolhi o tema "<em class="text-normal">Agência de desenvolvimento web</em>" porque é a minha área e consequentemente ficou mais facil para mim criar e <em class="text-normal">estruturar todo o conteúdo no layout</em></strong>.</p>
                         <p>Evolui muito desde esse projeto até hoje em dia, você pode conferir um pouco dessa evolução no meu <a href="#">próprio site (no portfólio)</a>.</p>
                         <a title="Entrar no site da Prisme" class="btn btn-light" href="https://lleocastro.github.io/developer-agency-template" rel="nofollow" role="button">
                             <i class="material-icons" style="vertical-align: -29%">web</i>

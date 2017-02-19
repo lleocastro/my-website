@@ -8,4 +8,3 @@
 <link rel="stylesheet" href="<?php echo asset('css/portfolio.min.css') ?>"/>
 
 <?php echo ie_support_field() ?>
-

@@ -47,7 +47,9 @@
                     </div>
                     <div class="m6col col-space">
                         <h2>Sobre a Ferramenta</h2>
-                        <p>O CodeIgniter é um framework PHP construído para que desenvolvedores possam <em class="text-normal">criar aplicações web</em> completas. Ainda com toda essa base, minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no <em class="text-normal">desenvolvimento back-end</em>, e melhora o <em class="text-normal">desenvolvimento front-end</em>. O que me possibilita entregar projetos em menos tempo mantendo a <em class="text-normal">qualidade e performance na aplicação web</em>.</p>
+                        <p>O CodeIgniter é um framework PHP construído para que desenvolvedores possam <em class="text-normal">criar aplicações web</em> completas.</p>
+                        <p>Ainda com toda essa base, minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no <em class="text-normal">desenvolvimento back-end</em>, e melhora o <em class="text-normal">desenvolvimento front-end</em>.</p>
+                        <p>O que me possibilita entregar projetos em menos tempo mantendo a <em class="text-normal">qualidade e performance na aplicação web</em>.</p>
                         <p><strong>E ainda possuo varias outras ferramentas no <a href="#">meu github</a>, uma delas você pode conferir <a href="#">aqui no meu portfólio</a>.</strong></p>
                         <a title="Ir para a página do projeto" href="https://github.com/lleocastro/my-custom-ci" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>

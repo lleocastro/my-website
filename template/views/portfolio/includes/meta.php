@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="robots" content="index, follow"/>
 
-<link rel="base" href="https://www.leobcastro.com"/>
+<link rel="base" href="<?php echo base_url() ?>"/>
 <link rel="canonical" href="<?php echo base_url(uri_string()) ?>"/>
 <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
 <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
