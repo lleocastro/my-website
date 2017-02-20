@@ -30,7 +30,7 @@ class Confirmation extends CI_Controller
 
                 sender(
                     'leobcastroinc@gmail.com', 'LEOBCASTRO',
-                    $user->get_email(), 'Me fale sobre', $body
+                    $user->get_email(), 'Me Fale Sobre', $body
                 );
 
                 return $this->load->view('layouts/email/confirmed-email');

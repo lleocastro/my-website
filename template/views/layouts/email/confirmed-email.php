@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="noindex, nofollow"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,600"/>
     <style>
         html, body {
-            background-color: #FFFFFF;
+            margin: 0;
+            height: 100vh;
             color: #636b6f;
             font-size: 16px;
-            font-family: 'Raleway', sans-serif;
             font-weight: 100;
-            height: 100vh;
-            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #FFFFFF;
         }
         .center {
             display: flex;
@@ -29,6 +30,10 @@
         }
         .title {
             font-size: 5em;
+            margin-bottom: 20px;
+        }
+        .sub-title {
+            font-size: 1.5em;
             margin-bottom: 50px;
         }
         a {
@@ -42,6 +47,10 @@
             border: 1px solid #333333;
             text-transform: uppercase;
         }
+        a:hover {
+            border: 1px solid #777777;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+        }
 
         @media screen and (max-width: 992px) {
             .title {
@@ -52,7 +61,9 @@
             .title {
                 font-size: 3em;
             }
-
+            .sub-title {
+                font-size: 1.3em;
+            }
             .center a {
                 padding: 13px 20px;
                 font-size: 0.7em;
@@ -60,7 +71,7 @@
         }
     </style>
 
-    <title>Confirmado</title>
+    <title>LEOBCASTRO - Email Confirmado</title>
 </head>
 <body>
     <div class="center">
@@ -68,8 +79,10 @@
             <div class="title">
                 Email Confirmado!
             </div>
-
-            <a href="<?php echo route('/') ?>">Voltar para o site</a>
+            <div class="sub-title">
+                Cheque seu email! Acabei de lhe enviar um email
+            </div>
+            <a title="leobcastro.com" href="<?php echo route('/') ?>">Voltar para o site</a>
         </div>
     </div>
 </body>

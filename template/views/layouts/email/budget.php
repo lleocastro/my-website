@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-Opa! Léo aqui de novo.
+Opa! Léo aqui de novo 😄
 
 Bom, agora que chegamos até aqui, preciso que você me responda uma simples pergunta para que
 eu tenha uma ideia inicial do seu problema.
@@ -17,7 +17,7 @@ Que tipo de solução você tem em mente?
 - Não tenho certeza.
 
 
-* Responda esse email com uma dessas respostas a cima, e se possivel forneça mais detalhes, como:
+* Responda esse email com uma dessas respostas acima, e se possivel forneça mais detalhes, como:
 
 - Descreva sobre o projeto, objetivo, prazos, especificações técnicas..
 - O que você espera dessa solução?
@@ -25,5 +25,6 @@ Que tipo de solução você tem em mente?
 
 ...
 Léo B. Castro
+(<a href="<?php echo base_url() ?>"><?php echo base_url() ?></a>)
 (<a href="https://www.linkedin.com/in/leobcastro/">https://www.linkedin.com/in/leobcastro/</a>)
 CEO
