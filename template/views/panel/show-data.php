@@ -36,10 +36,16 @@
                                             <input type="email" class="form-control" value="<?php echo $email->get_email(); ?>" readonly />
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-3">
                                         <div class="form-group">
                                             <p class="mini-text">Identidade:</p>
                                             <input type="text" class="form-control" value="<?php echo $email->get_addr(); ?>" readonly />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <p class="mini-text">Desde:</p>
+                                            <input type="text" class="form-control" value="<?php echo $email->get_created_at(); ?>" readonly />
                                         </div>
                                     </div>
                                 </div>

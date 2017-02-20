@@ -32,7 +32,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Email</th>
-                                    <th>Desde</th>
+                                    <th>Status</th>
                                     <th>##</th>
                                 </tr>
                                 </thead>
@@ -42,7 +42,7 @@
                                             <tr <?php if ($email->get_unread()) echo "class='active'" ?>>
                                                 <td><?php echo $email->get_id() ?></td>
                                                 <td><?php echo $email->get_email() ?></td>
-                                                <td><?php echo $email->get_created_at() ?></td>
+                                                <td><?php echo $email->get_status() ?></td>
                                                 <td>
                                                     <a id="submit" href="<?php echo route('dashboard/email/show', $email->get_id()) ?>">
                                                         <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
