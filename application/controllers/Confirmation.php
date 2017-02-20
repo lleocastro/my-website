@@ -26,6 +26,13 @@ class Confirmation extends CI_Controller
             $status = $user->set_status('Active')->update_status();
 
             if ($status) {
+                $body = $this->load->view('layouts/email/budget', [], true);
+
+                sender(
+                    'leobcastroinc@gmail.com', 'LEOBCASTRO',
+                    $user->get_email(), 'Me fale sobre', $body
+                );
+
                 return $this->load->view('layouts/email/confirmed-email');
             }
         }
