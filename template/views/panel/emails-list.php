@@ -22,9 +22,9 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title"></h3>
+                            <h3 class="panel-title"><a href="#" class="btn btn-default">Download</a></h3>
                         </div>
                         <div class="panel-body">
                             <table id="email-table" class="table table-responsive table-hover table-responsive">
