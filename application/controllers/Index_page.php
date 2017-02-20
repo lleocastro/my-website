@@ -54,8 +54,8 @@ class Index_page extends CI_Controller
                 }
 
                 // Email notification
-                $body = $this->load->view('layouts/email/notify', ['email' => $email], true);
-                notify('Novo Email!', $body);
+                //$body = $this->load->view('layouts/email/notify', ['email' => $email], true);
+                //notify('Novo Email!', $body);
 
                 $return = [
                     'status' => true
