@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow"/>
 
     <link rel="base" href="https://www.leobcastro.com"/>
-    <link rel="canonical" href="https://www.leobcastro.com/"/>
+    <link rel="canonical" href="<?php echo base_url() ?>"/>
     <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
@@ -50,14 +50,14 @@
             "name": "Léo B. Castro",
             "description": "Full-Stack Web Developer, UX/UI Designer, Creative",
             "jobTitle": "Web Developer",
-            "email": "leonardo_carvalho@outlook.com",
+            "email": "<?php echo getenv('MAIL_USERNAME') ?>",
             "url": "<?php echo base_url(uri_string()) ?>",
             "address": "São José dos Campos, São Paulo - Brasil",
-            "image": "<?php echo asset('img/eu.jpg') ?>"
+            "image": "<?php echo asset('img/leo-castro.jpg') ?>"
         }
     </script>
 
-    <title>Léo B. Castro - Desenvolvedor Web em São José dos Campos</title>
+    <title>Desenvolvedor Web Full-Stack - São José dos Campos</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -218,8 +218,9 @@
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, estou cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014. Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas também já programei para desktop e android.</p>
-                                <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, com o objetivo de aumentar a <em class="text-normal">produtividade</em> e diminuir o tempo "humano" gasto em <em class="text-normal">tarefas rotineiras que poderiam ser administradas por um sistema</em>.</p>
+                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, estou cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014.</p>
+                                <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop e android.</p>
+                                <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, objetivando aumentar a produtividade e <em class="text-normal">gerar mais resultados</em>.</p>
                             </div>
                         </div>
                         <div class="s6col">
@@ -228,7 +229,7 @@
                                     <p class="mini-text">HTML5 / CSS3</p>
                                     <div class="progress">
                                         <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="4000ms" data-wow-delay="500ms">
-                                            <span class="progress-label" data-from="0" data-to="73" data-speed="3500" data-refresh-interval="30">73%</span>
+                                            <span class="progress-label" data-from="0" data-to="73" data-speed="4000" data-refresh-interval="30">73%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -238,7 +239,7 @@
                                     <p class="mini-text">Javascript</p>
                                     <div class="progress">
                                         <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 59%" data-wow-duration="4000ms" data-wow-delay="900ms">
-                                            <span class="progress-label" data-from="0" data-to="59" data-speed="3800" data-refresh-interval="30">59%</span>
+                                            <span class="progress-label" data-from="0" data-to="59" data-speed="4000" data-refresh-interval="30">59%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -248,7 +249,7 @@
                                     <p class="mini-text">PHP 5/7</p>
                                     <div class="progress">
                                         <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 91%" data-wow-duration="4100ms" data-wow-delay="700ms">
-                                            <span class="progress-label" data-from="0" data-to="91" data-speed="4100" data-refresh-interval="30">91%</span>
+                                            <span class="progress-label" data-from="0" data-to="91" data-speed="4400" data-refresh-interval="30">91%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +267,7 @@
                     <header class="collist">
                         <h3 class="no-margin">Meu Portfólio</h3>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Veja alguns dos meus projetos mais recentes, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns games</p>
+                        <p class="tagline">Veja alguns dos meus projetos mais recentes, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns simples games.</p>
                         <p class="mini-text">*Clique no projeto para mais informações!</p>
                     </header>
                 </div>
@@ -350,7 +351,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Flappy Bird</h1>
-                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso sobre desenvolvimento de jogos.</p>
+                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso de desenvolvimento de jogos. Jogue!</p>
                                     </div>
                                 </div>
                             </article>
@@ -419,6 +420,7 @@
                         <h3 class="no-margin">Orçamento Rápido</h3>
                         <div class="heading-line" role="separator"></div>
                         <p class="tagline">Deixe seu e-mail para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
+                        <p class="mini-text">*Uma pergunta com 6 possiveis respostas, marque a que melhor descreve seu problema e me envie. 😋</p>
                     </div>
                 </div>
                 <div class="line">
@@ -564,7 +566,7 @@
                         </div>
                         <div class="s5col mobile-text-center">
                             <h6>Já que chegou até aqui..</h6>
-                            <p>Uau! Se você chegou até aqui e não deixou seu e-mail ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um feedback para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
+                            <p>Uau! Se você chegou até aqui e não deixou seu e-mail ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um <a title="Feedback" href="#contact-me" class="scroll">feedback</a> para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
                         </div>
                     </div>
                     <div class="line line-space mobile-text-center">
