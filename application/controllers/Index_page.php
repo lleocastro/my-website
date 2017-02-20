@@ -38,12 +38,15 @@ class Index_page extends CI_Controller
                     ->save();
 
                 $pending = $this->email_list->find_by_email($email);
+
                 if ($pending !== null) {
-                    $this->load->library('encrypt');
-                    $hash = $this->encrypt->encode($pending->get_id());
-                    $url = base_url();
+                    $this->load->library('security/Hash_mask');
+
+                    $url  = base_url();
+                    $hash = $this->hash_mask->disguise($pending->get_id());
                     $link = "{$url}confirm/email/{$hash}";
                     $body = $this->load->view('layouts/email/confirm-email', ['link' => $link], true);
+
                     sender(
                         'leobcastroinc@gmail.com', 'LEOBCASTRO',
                         $pending->get_email(), 'Confimar E-mail', $body
@@ -51,7 +54,8 @@ class Index_page extends CI_Controller
                 }
 
                 // Email notification
-                notify('Novo Email!', "Opaaa! Temos um novo email em nossa lista '{$email}' :)");
+                $body = $this->load->view('layouts/email/notify', ['email' => $email], true);
+                notify('Novo Email!', $body);
 
                 $return = [
                     'status' => true

@@ -284,3 +284,24 @@ if (!function_exists('sender')) {
     }
 }
 
+if (!function_exists('day_message')) {
+    /**
+     *
+     *
+     * @return string
+     */
+    function day_message()
+    {
+        $data = date('H');
+
+        if (($data >= 1) && ($data <= 12)) {
+            return 'Bom dia';
+        } elseif (($data >= 12) && ($data <= 18)) {
+            return 'Boa tarde';
+        } elseif (($data >= 18) && ($data <= 24)) {
+            return 'Boa noite';
+        }
+
+        return 'Tudo bem?';
+    }
+}

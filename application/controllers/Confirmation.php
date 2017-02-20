@@ -17,17 +17,17 @@ class Confirmation extends CI_Controller
     public function email_list($id)
     {
         $this->load->model('Email_list_model', 'email_list');
-        $this->load->library('encrypt');
+        $this->load->library('security/Hash_mask');
 
-        $user = $this->email_list->find($this->encrypt->decode($id));
+        $id = $this->security->xss_clean($id);
+        $user = $this->email_list->find($this->hash_mask->retrieve($id));
+
         if (($user !== null) && ($user->get_status() == 'Pending')) {
             $status = $user->set_status('Active')->update_status();
 
             if ($status) {
                 return $this->load->view('pages/confirmed-email');
             }
-
-            echo 'Ops! Parece que algo deu errado :( Acesse o link novamente!';
         }
 
         redirect('/');
