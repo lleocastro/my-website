@@ -14,6 +14,7 @@ DROP TABLE IF EXISTS 'x_email_list';
 CREATE TABLE x_email_list (
   id INT unsigned AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(100) NOT NULL UNIQUE,
+  status ENUM("Pending", "Active") NOT NULL,
   unread TINYINT(1) NOT NULL,
   addr VARCHAR(15) NOT NULL,
   created_at TIMESTAMP,

@@ -7,6 +7,6 @@ $config['smtp_pass'] = getenv('MAIL_PASSWORD');
 $config['protocol'] = 'smtp';
 $config['validate'] = TRUE;
 $config['mailtype'] = 'html';
-$config['charset'] = 'iso-8859-1';
+$config['charset'] = getenv('APP_CHARSET');
 $config['wordwrap'] = TRUE;
 $config['newline'] = "\r\n";

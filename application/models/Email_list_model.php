@@ -17,6 +17,7 @@ class Email_list_model extends CI_Model
     protected $addr;
     protected $created_at;
     protected $updated_at;
+    protected $status;
 
     /**
      * @var string
@@ -41,7 +42,23 @@ class Email_list_model extends CI_Model
     public function find($id)
     {
         $sql = "SELECT * FROM {$this->table} WHERE id = ? LIMIT 1";
-        $query = $this->db->query($sql, (int) $id);
+        $query = $this->db->query($sql, (int)$id);
+        $result = $query->row(0, 'Email_list_model');
+
+        return (!empty($result)) ? $result : null;
+    }
+
+    /**
+     * Retrieve a email from list.
+     *
+     * @param string $email
+     *
+     * @return Email_list_model
+     */
+    public function find_by_email($email)
+    {
+        $sql = "SELECT * FROM {$this->table} WHERE email = ? LIMIT 1";
+        $query = $this->db->query($sql, $this->security->xss_clean($email));
         $result = $query->row(0, 'Email_list_model');
 
         return (!empty($result)) ? $result : null;
@@ -74,11 +91,12 @@ class Email_list_model extends CI_Model
     {
         if (!empty($this->email)) {
             $status = $this->db->insert($this->table, [
-                'email'  => $this->email,
+                'email' => $this->email,
                 'unread' => $this->set_unread()->get_unread(),
-                'addr'   => $this->set_addr()->get_addr(),
+                'addr' => $this->set_addr()->get_addr(),
                 'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s")
+                'updated_at' => date("Y-m-d H:i:s"),
+                'status' => 'Pending'
             ]);
             return $status;
         }
@@ -154,7 +172,7 @@ class Email_list_model extends CI_Model
      */
     public function delete($id)
     {
-        $this->db->where('id', (int) $id);
+        $this->db->where('id', (int)$id);
         $status = $this->db->delete($this->table);
 
         return $status;
@@ -167,10 +185,10 @@ class Email_list_model extends CI_Model
      */
     public function paginate($total_lines)
     {
-        $this->total_lines = (int) $total_lines;
+        $this->total_lines = (int)$total_lines;
 
         $offset = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-        $query  = $this->db->get($this->table, $this->total_lines, $offset);
+        $query = $this->db->get($this->table, $this->total_lines, $offset);
 
         if ($query->num_rows() > 0) {
             return $query->result('Email_list_model');
@@ -188,11 +206,11 @@ class Email_list_model extends CI_Model
             $this->load->library('pagination');
 
             $config = [
-                'base_url'    => base_url('/dashboard/emails'),
-                'per_page'    => $this->total_lines,
-                'num_links'   => 5,
+                'base_url' => base_url('/dashboard/emails'),
+                'per_page' => $this->total_lines,
+                'num_links' => 5,
                 'uri_segment' => 3,
-                'total_rows'  => $this->count(),
+                'total_rows' => $this->count(),
             ];
 
             $this->pagination->initialize(array_merge($config, pagination_styled()));
@@ -200,6 +218,21 @@ class Email_list_model extends CI_Model
         }
 
         return null;
+    }
+
+    public function update_status()
+    {
+        if (!empty($this->status)) {
+            $this->db->set('status', $this->status);
+            $this->db->set('updated_at', date("Y-m-d H:i:s"));
+            $this->db->where('id', $this->get_id());
+            $status = $this->db->update($this->table);
+
+            return $status;
+        }
+
+        throw new InvalidArgumentException('Status and id not can null.');
+
     }
 
     /**
@@ -284,6 +317,26 @@ class Email_list_model extends CI_Model
     public function get_updated_at()
     {
         return $this->security->xss_clean($this->updated_at);
+    }
+
+    /**
+     * @return string
+     */
+    public function get_status()
+    {
+        return $this->security->xss_clean($this->status);
+    }
+
+    /**
+     *
+     * @param string $status
+     *
+     * @return Email_list_model
+     */
+    public function set_status($status)
+    {
+        $this->status = $this->security->xss_clean($status);
+        return $this;
     }
 
 }
