@@ -26,7 +26,7 @@ class Confirmation extends CI_Controller
             $status = $user->set_status('Active')->update_status();
 
             if ($status) {
-                return $this->load->view('pages/confirmed-email');
+                return $this->load->view('layouts/email/confirmed-email');
             }
         }
 

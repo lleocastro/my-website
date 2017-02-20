@@ -1,9 +1,10 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-Olá, <?php echo day_message() ?>
+Opa! <?php echo day_message() ?>, Léo aqui.
 <br>
 Mandei esse email porque você se cadastrou para receber um orçamento rapido no <a href="<?php echo base_url() ?>">leobcastro.com</a>
 
-Mas para que eu possa mandar o orçamento, primeiro você precisa confirmar seu email.
+Mas para que eu possa mandar o orçamento você precisa confirmar seu email, assim vou ter
+certeza que estou enviando para o email correto.
 
 Clique no link para confirmar! <a href="<?php echo $link ?>"><?php echo $link ?></a>
 
