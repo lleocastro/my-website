@@ -57,4 +57,32 @@ class Show_emails extends CI_Controller
         redirect('dashboard/emails');
     }
 
+    /**
+     *
+     */
+    public function emails_download()
+    {
+        $this->load->helper('file');
+        $data   = json_encode($this->email_list->all_in_array());
+        $status = write_file(dirname(dirname((__DIR__))) . '/cache/emails.json', $data);
+
+        if ($status) {
+            $file = dirname(dirname((__DIR__))) . '/cache/emails.json';
+            if ((file_exists($file)) && (is_readable($file))) {
+                header("Content-Type: application/force-download");
+                header("Content-Disposition: attachment; filename=leobcastro-emails.json");
+                header("Content-Length: ".filesize($file));
+                header("Accept-Ranges: bytes");
+                header("Pragma: no-cache");
+                header("Expires: 0");
+                header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+                header("Content-transfer-encoding: binary");
+
+                @readfile($file);
+                unset($data);
+                exit();
+            }
+        }
+    }
+
 }

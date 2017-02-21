@@ -24,7 +24,11 @@
                 <div class="col-xs-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><a href="#" class="btn btn-default">Download</a></h3>
+                            <h3 class="panel-title">
+                                <a title="Download em JSON" href="<?php echo route('dashboard/download/emails') ?>" class="btn btn-default" role="button">
+                                    Download
+                                </a>
+                            </h3>
                         </div>
                         <div class="panel-body">
                             <table id="email-table" class="table table-responsive table-hover table-responsive">

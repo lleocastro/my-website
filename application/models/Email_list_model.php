@@ -124,7 +124,7 @@ class Email_list_model extends CI_Model
     }
 
     /**
-     * @return array
+     * @return Email_list_model
      */
     public function all()
     {
@@ -132,6 +132,20 @@ class Email_list_model extends CI_Model
 
         if ($query->num_rows() > 0) {
             return $query->result('Email_list_model');
+        }
+
+        return null;
+    }
+
+    /**
+     * @return array
+     */
+    public function all_in_array()
+    {
+        $query = $this->db->get($this->table);
+
+        if ($query->num_rows() > 0) {
+            return $query->result();
         }
 
         return null;

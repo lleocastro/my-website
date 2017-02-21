@@ -99,12 +99,14 @@ $route['dashboard/emails'] = 'panel/Show_emails';
 $route['dashboard/emails/(:num)'] = 'panel/Show_emails';
 $route['dashboard/email/show/(:num)'] = 'panel/Show_emails/show/$1';
 $route['dashboard/email/delete/(:num)'] = 'panel/Show_emails/destroy/$1';
+$route['dashboard/download/emails'] = 'panel/Show_emails/emails_download';
 
 /** Panel Messages */
 $route['dashboard/messages'] = 'panel/Show_messages';
 $route['dashboard/messages/(:num)'] = 'panel/Show_messages';
 $route['dashboard/message/show/(:num)'] = 'panel/Show_messages/show/$1';
 $route['dashboard/message/delete/(:num)'] = 'panel/Show_messages/destroy/$1';
+$route['dashboard/download/messages'] = 'panel/Show_messages/messages_download';
 
 $route['dashboard/bloqueios'] = 'panel/Blocker';
 $route['dashboard/bloqueios/(:num)'] = 'panel/Blocker';

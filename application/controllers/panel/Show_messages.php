@@ -57,4 +57,32 @@ class Show_messages extends CI_Controller
         redirect('dashboard/messages');
     }
 
+    /**
+     *
+     */
+    public function messages_download()
+    {
+        $this->load->helper('file');
+        $data   = json_encode($this->message_list->all_in_array());
+        $status = write_file(dirname(dirname((__DIR__))) . '/cache/messages.json', $data);
+
+        if ($status) {
+            $file = dirname(dirname((__DIR__))) . '/cache/messages.json';
+            if ((file_exists($file)) && (is_readable($file))) {
+                header("Content-Type: application/force-download");
+                header("Content-Disposition: attachment; filename=leobcastro-messages.json");
+                header("Content-Length: ".filesize($file));
+                header("Accept-Ranges: bytes");
+                header("Pragma: no-cache");
+                header("Expires: 0");
+                header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+                header("Content-transfer-encoding: binary");
+
+                @readfile($file);
+                unset($data);
+                exit();
+            }
+        }
+    }
+
 }
