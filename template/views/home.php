@@ -128,27 +128,27 @@
                             <ul>
                                 <li>
                                     <a title="Me siga no Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
-                                        <img title="Google Plus" src="<?php echo asset('img/icons/google-plus.svg') ?>" alt="Google plus pessoal de Léo B. Castro"/>
+                                        <img title="Google Plus" src="<?php echo asset('img/icons/google-plus2.svg') ?>" alt="Google plus pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
                                     <a title="Me siga no LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
-                                        <img title="LinkedIn" src="<?php echo asset('img/icons/linkedin.svg') ?>" alt="LinkedIn pessoal de Léo B. Castro"/>
+                                        <img title="LinkedIn" src="<?php echo asset('img/icons/linkedin2.svg') ?>" alt="LinkedIn pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
                                     <a title="Me siga no Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
-                                        <img title="Instagram" src="<?php echo asset('img/icons/instagram.svg') ?>" alt="Instagram pessoal de Léo B. Castro"/>
+                                        <img title="Instagram" src="<?php echo asset('img/icons/instagram2.svg') ?>" alt="Instagram pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
                                     <a title="Me siga no Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
-                                        <img title="Facebook" src="<?php echo asset('img/icons/facebook.svg') ?>" alt="Facebook pessoal de Léo B. Castro"/>
+                                        <img title="Facebook" src="<?php echo asset('img/icons/facebook2.svg') ?>" alt="Facebook pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
                                     <a title="Me siga no Github" rel="nofollow" href="https://github.com/lleocastro">
-                                        <img title="Github" src="<?php echo asset('img/icons/github.svg') ?>" alt="Github pessoal de Léo B. Castro"/>
+                                        <img title="Github" src="<?php echo asset('img/icons/github2.svg') ?>" alt="Github pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                             </ul>
@@ -171,16 +171,16 @@
                     <div class="line">
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="500ms">
-                                <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt="Icone ilustrando a criação de um site"/>
+                                <img title="Web design" src="<?php echo asset('img/icons/browser.svg') ?>" alt="Criação de site e web design"/>
                                 <h1>Website</h1>
-                                <p>Todo o layout é projetado pensando no usuário, levando em consideração a praticidade e a <em class="text-normal">usabilidade</em>.</p>
+                                <p>Cada layout é projetado pensando no usuário, levando em consideração a praticidade e a usabilidade.</p>
                             </article>
                         </div>
                         <div class="s6col">
-                            <article class="service wow fadeInUp" data-wow-delay="700ms">
-                                <img title="Desenvolvimento" src="<?php echo asset('img/icons/development.svg') ?>" alt="Icone ilustrando a abertura e fechamento de tags, representando o desenvolvimento web"/>
-                                <h1>Sistemas</h1>
-                                <p>O <em class="text-normal">desenvolvimento</em> é 100% otimizado para obter o máximo de performance e desempenho nos <em class="text-normal">sistemas</em>.</p>
+                            <article class="service wow fadeInUp" data-wow-delay="900ms">
+                                <img title="Search Engine Optimization" src="<?php echo asset('img/icons/bar-chart.svg') ?>" alt="Otimização de site para rankear melhor em motores de busca"/>
+                                <h1>SEO/SMO</h1>
+                                <p>Toda a estrutura é semanticamente correta para um melhor <em class="text-normal">rankeamento em motores de busca</em> (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
                             </article>
                         </div>
                     </div>
@@ -188,15 +188,15 @@
                 <div class="m6col">
                     <div class="line">
                         <div class="s6col">
-                            <article class="service wow fadeInUp" data-wow-delay="900ms">
-                                <img title="Search Engine Optimization" src="<?php echo asset('img/icons/responsive.svg') ?>" alt="Icone ilustrando a otimização de site para rankear melhor em motores de busca"/>
-                                <h1>SEO/SMO</h1>
-                                <p>Toda a estrutura é semanticamente correta para um melhor <em class="text-normal">rankeamento em motores de busca</em> (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
+                            <article class="service wow fadeInUp" data-wow-delay="700ms">
+                                <img title="Desenvolvimento" src="<?php echo asset('img/icons/laptop.svg') ?>" alt="Desenvolvimento de aplicações web"/>
+                                <h1>Aplicações</h1>
+                                <p>O desenvolvimento é 100% otimizado para obter o máximo de performance e desempenho nos sistemas.</p>
                             </article>
                         </div>
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="1100ms">
-                                <img title="Suporte" src="<?php echo asset('img/icons/support.svg') ?>" alt="Icone ilustrando um atendente ao telefone fornecendo suporte"/>
+                                <img title="Suporte" src="<?php echo asset('img/icons/support2.svg') ?>" alt="Icone ilustrando suporte 24 horas"/>
                                 <h1>Suporte</h1>
                                 <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
                             </article>
@@ -218,7 +218,7 @@
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, estou cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014.</p>
+                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho <?php echo date('Y') - 1994 ?> anos, estou cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014.</p>
                                 <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop e android.</p>
                                 <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, objetivando aumentar a produtividade e <em class="text-normal">gerar mais resultados</em>.</p>
                             </div>
@@ -419,8 +419,7 @@
                     <div class="collist">
                         <h3 class="no-margin">Orçamento Rápido</h3>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Deixe seu e-mail para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
-                        <p class="mini-text">*Uma pergunta com 6 possiveis respostas, marque a que melhor descreve seu problema e me envie. 😋</p>
+                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o tipo de projeto, antes de efetivamente marcarmos algo.</p>
                     </div>
                 </div>
                 <div class="line">
@@ -486,10 +485,10 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <p><i class="material-icons" style="vertical-align: -29%">today</i>
-                                            Dia/Horário
+                                            Atendimento
                                         </p>
                                         <p class="no-paragraph">De segunda-feira à sexta-feira</p>
-                                        <p class="no-paragraph">Das 08:00 as 19:00 horas</p>
+                                        <p class="no-paragraph">Das 08:00 as 17:00 horas</p>
                                     </div>
                                 </div>
                             </div>
