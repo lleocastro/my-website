@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-Opa! Léo aqui de novo 😄
+Opa! Léo aqui de novo,
 
 Bom, agora que chegamos até aqui, preciso que você me responda uma simples pergunta para que
 eu tenha uma ideia inicial do seu problema.

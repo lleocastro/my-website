@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="robots" content="noindex, nofollow"/>
 
+    <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,600"/>
+
     <style>
         html, body {
             margin: 0;
@@ -82,7 +84,7 @@
             <div class="sub-title">
                 Cheque seu email! Acabei de lhe enviar um email
             </div>
-            <a title="leobcastro.com" href="<?php echo route('/') ?>">Voltar para o site</a>
+            <a title="<?php echo route('/') ?>" href="<?php echo route('/') ?>">Voltar para o site</a>
         </div>
     </div>
 </body>

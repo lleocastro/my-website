@@ -1,5 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-Opa! <?php echo day_message() ?>, Léo aqui.
+Opa! <?php echo day_message() ?>. Léo aqui,
 <br>
 Te mandei esse email porque você se cadastrou para receber um orçamento de desenvolvimento de uma solução web,
 mas antes tenho que te fazer uma pergunta.
