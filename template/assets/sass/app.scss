@@ -386,7 +386,16 @@ th {
 .btn-dark:hover {
   background-color: #c9302c;
 }
-
+.btn-transparent {
+  padding: 15px 0;
+  color: #333333 !important;
+  border: 1px solid #969696;
+  box-shadow: none;
+  background-color: transparent!important;
+}
+.btn-transparent:hover {
+  border: 1px solid #333333;
+}
 
 
 /**
