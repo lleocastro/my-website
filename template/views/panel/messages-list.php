@@ -30,7 +30,7 @@
                             <table class="table table-responsive table-hover table-responsive">
                                 <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>ID</th>
                                     <th>Email</th>
                                     <th>Assunto</th>
                                     <th>Desde</th>

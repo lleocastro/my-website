@@ -30,7 +30,7 @@
                             <table id="email-table" class="table table-responsive table-hover table-responsive">
                                 <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>ID</th>
                                     <th>Email</th>
                                     <th>Status</th>
                                     <th>##</th>
