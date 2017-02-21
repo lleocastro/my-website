@@ -57,7 +57,7 @@
         }
     </script>
 
-    <title>Desenvolvedor Web Full-Stack - São José dos Campos</title>
+    <title>Léo B. Castro - Desenvolvedor Web em São José dos Campos</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -121,7 +121,7 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
-                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o <em class="text-normal">desenvolvimento de ferramentas</em> <a title="O que é 'open source'" href="https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto" rel="nofollow">open source</a> para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
@@ -153,6 +153,11 @@
                                 </li>
                             </ul>
                         </div>
+                        <a title="Baixar currículo de Léo B. Castro" href="<?php echo route('/download/curriculo') ?>" class="btn btn-transparent" role="button" download>
+                            <i class="material-icons" style="vertical-align: -29%">offline_pin</i>
+                            Baixar Currículo
+                        </a>
+                        <p class="mini-text safe-download">Seguro! Sem vírus.</p>
                     </div>
                 </div>
             </div>
@@ -171,7 +176,7 @@
                     <div class="line">
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="500ms">
-                                <img title="Web design" src="<?php echo asset('img/icons/browser.svg') ?>" alt="Criação de site e web design"/>
+                                <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt="Criação de site e web design"/>
                                 <h1>Website</h1>
                                 <p>Cada layout é projetado pensando no usuário, levando em consideração a praticidade e a usabilidade.</p>
                             </article>
@@ -180,7 +185,7 @@
                             <article class="service wow fadeInUp" data-wow-delay="900ms">
                                 <img title="Search Engine Optimization" src="<?php echo asset('img/icons/bar-chart.svg') ?>" alt="Otimização de site para rankear melhor em motores de busca"/>
                                 <h1>SEO/SMO</h1>
-                                <p>Toda a estrutura é semanticamente correta para um melhor <em class="text-normal">rankeamento em motores de busca</em> (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
+                                <p>Toda a estrutura é semanticamente correta para um melhor rankeamento em motores de busca (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
                             </article>
                         </div>
                     </div>
@@ -218,9 +223,9 @@
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho <?php echo date('Y') - 1994 ?> anos, estou cursando <em class="text-normal">análise e desenvolvimento de sistemas</em>, porém atuando na área desde 2014.</p>
+                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho <?php echo date('Y') - 1994 ?> anos, estou cursando análise e desenvolvimento de sistemas, porém atuando na área desde 2014.</p>
                                 <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop e android.</p>
-                                <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, objetivando aumentar a produtividade e <em class="text-normal">gerar mais resultados</em>.</p>
+                                <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, objetivando aumentar a produtividade e gerar mais resultados.</p>
                             </div>
                         </div>
                         <div class="s6col">
@@ -294,7 +299,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Notas" src="<?php echo asset('img/notes.jpg') ?>" alt="Imagem ilustrativa representando blocos de anotações"/>
+                                        <img title="Notas" src="<?php echo asset('img/notes.jpg') ?>" alt="Imagem ilustrativa representando um sistema de notas"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -311,7 +316,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Website LEOBCASTRO" src="<?php echo asset('img/leobcastro-website.jpg') ?>" alt="Imagem ilustrativa representando o desenvolvimento do site LEOBCASTRO"/>
+                                        <img title="Website LEOBCASTRO" src="<?php echo asset('img/leobcastro-website.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -328,7 +333,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="CSS Stylle" src="<?php echo asset('img/website-layout.jpg') ?>" alt="Imagem ilustrativa representando o layout de um site"/>
+                                        <img title="CSS Stylle" src="<?php echo asset('img/website-layout.jpg') ?>" alt="Biblioteca CSS para desenvolver sites"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -362,7 +367,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework" src="<?php echo asset('img/framework-preview.png') ?>" alt="Imagem ilustrando o funcionamento de um framework em dispositivos moveis"/>
+                                        <img title="Framework" src="<?php echo asset('img/framework-preview.png') ?>" alt="Funcionamento de um framework em dispositivos moveis"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -379,7 +384,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Componente" src="<?php echo asset('img/component.jpg') ?>" alt="Imagem ilustrando a criação de um componente"/>
+                                        <img title="Componente" src="<?php echo asset('img/component.jpg') ?>" alt="Imagem ilustrando a criação de um componente PHP"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">

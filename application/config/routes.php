@@ -117,3 +117,4 @@ $route['message/store'] = 'Index_page/store_message';
 $route['ajax/counters'] = 'panel/Home/counters';
 $route['notification/blog'] = 'Notifications/blog_done';
 $route['confirm/email/(:any)'] = 'Confirmation/email_list/$1';
+$route['download/curriculo'] = 'Index_page/curriculum_download';

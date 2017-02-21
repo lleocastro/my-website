@@ -117,4 +117,30 @@ class Index_page extends CI_Controller
         echo json_encode($return);
     }
 
+    /**
+     *
+     */
+    public function curriculum_download()
+    {
+        $file = dirname(dirname(__DIR__)) . '/public/files/curriculo.docx';
+
+        if ((file_exists($file)) && (is_readable($file))) {
+            header("Content-Type: application/force-download");
+            header("Content-Disposition: attachment; filename=curriculo-leobcastro.docx");
+            header("Content-Length: ".filesize($file));
+            header("Accept-Ranges: bytes");
+            header("Pragma: no-cache");
+            header("Expires: 0");
+            header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+            header("Content-transfer-encoding: binary");
+            @readfile($file);
+
+            //$returns = [];
+            return true;
+        } else {
+            //$returns = [];
+            return false;
+        }
+    }
+
 }
