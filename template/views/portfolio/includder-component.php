@@ -48,7 +48,8 @@
                     </div>
                     <div class="m6col col-space">
                         <h2>Para Desenvolvedores</h2>
-                        <p>Autoload para fazer o carregamento de classes PHP dinamicamente. Possui facil integração com qualquer projeto web, tendo apenas que configurar algumas variaveis sensiveis ao projeto.</p>
+                        <p>Autoload para fazer o carregamento de classes PHP dinamicamente.</p>
+                        <p>Possui facil integração com qualquer projeto web, tendo apenas que configurar algumas variaveis sensiveis ao projeto.</p>
                         <p>Na pagina do projeto no meu github contém a documentação de como utiliza-lo. Acesse!</p>
                         <a title="Ir para a página do projeto" href="https://github.com/lleocastro/includder" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>
