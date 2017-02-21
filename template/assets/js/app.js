@@ -112,6 +112,12 @@ jQuery(function($) {
                             });
                         };
                         $("#action-form").reset();
+
+                        $(".to-action .callback div.alert").remove();
+                        $(".to-action .callback").append(
+                            "<div class='alert alert-success'>Acabei de enviar um email de confirmação para seu email. :)</div>"
+                        );
+
                     } else {
                         $("#action-submit").html(
                             '<i class="material-icons" style="vertical-align: -29%">verified_user</i>'
