@@ -100,6 +100,7 @@ $route['dashboard/emails/(:num)'] = 'panel/Show_emails';
 $route['dashboard/email/show/(:num)'] = 'panel/Show_emails/show/$1';
 $route['dashboard/email/delete/(:num)'] = 'panel/Show_emails/destroy/$1';
 $route['dashboard/download/emails'] = 'panel/Show_emails/emails_download';
+$route['reconfirm/email/(:num)'] = 'panel/Show_emails/resend/$1';
 
 /** Panel Messages */
 $route['dashboard/messages'] = 'panel/Show_messages';

@@ -22,9 +22,16 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title"></h3>
+                            <h3 class="panel-title">
+                                <?php if ((isset($email)) && ($email->get_status() == 'Pending')): ?>
+                                    <form id="reconfirm-form" method="post" action="<?php echo route('reconfirm/email', $email->get_id()) ?>" accept-charset="utf-8">
+                                        <?php echo csrf_field('reconfirm_token') ?>
+                                        <button id="reconfirm-submit" type="submit" class="btn btn-default">Reenviar Confirmação</button>
+                                    </form>
+                                <?php endif; ?>
+                            </h3>
                         </div>
                         <div class="panel-body">
                             <?php if (isset($email)): ?>

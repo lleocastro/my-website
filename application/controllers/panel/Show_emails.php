@@ -85,4 +85,33 @@ class Show_emails extends CI_Controller
         }
     }
 
+    public function resend($id)
+    {
+        $pending = $this->email_list->find($id);
+
+        if ($pending !== null) {
+            $this->load->library('security/Hash_mask');
+
+            $url  = base_url();
+            $hash = $this->hash_mask->disguise($pending->get_id());
+            $link = "{$url}confirm/email/{$hash}";
+            $body = $this->load->view('layouts/email/reconfirm-email', ['link' => $link], true);
+
+            sender(
+                'leobcastroinc@gmail.com', 'LEOBCASTRO',
+                $pending->get_email(), 'Confimar E-mail', $body
+            );
+
+            $return = [
+                'status' => true
+            ];
+        } else {
+            $return = [
+                'status' => false
+            ];
+        }
+
+        echo json_encode($return);
+    }
+
 }
