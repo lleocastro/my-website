@@ -85,7 +85,7 @@ class Show_emails extends CI_Controller
         }
     }
 
-    public function resend($id)
+    public function resend_email($id)
     {
         $pending = $this->email_list->find($id);
 
@@ -94,12 +94,48 @@ class Show_emails extends CI_Controller
 
             $url  = base_url();
             $hash = $this->hash_mask->disguise($pending->get_id());
-            $link = "{$url}confirm/email/{$hash}";
-            $body = $this->load->view('layouts/email/reconfirm-email', ['link' => $link], true);
+            $in_list  = "{$url}confirm/email/{$hash}";
+            $out_list = "{$url}confirm/email/delete/{$hash}";
+            $body = $this->load->view('layouts/email/reconfirm-email', [
+                'in_list'  => $in_list,
+                'out_list' => $out_list
+            ], true);
 
             sender(
                 'leobcastroinc@gmail.com', 'LEOBCASTRO',
                 $pending->get_email(), 'Confimar E-mail', $body
+            );
+
+            $return = [
+                'status' => true
+            ];
+        } else {
+            $return = [
+                'status' => false
+            ];
+        }
+
+        echo json_encode($return);
+    }
+
+    public function resend_budget($id)
+    {
+        $active = $this->email_list->find($id);
+
+        if ($active !== null) {
+            $this->load->library('security/Hash_mask');
+
+            $url  = base_url();
+            $hash = $this->hash_mask->disguise($pending->get_id());
+            $out_list = "{$url}confirm/email/delete/{$hash}";
+
+            $body = $this->load->view('layouts/email/reconfirm-budget', [
+                'out_list' => $out_list
+            ], true);
+
+            sender(
+                'leobcastroinc@gmail.com', 'LEOBCASTRO',
+                $active->get_email(), 'Me Fale Sobre', $body
             );
 
             $return = [

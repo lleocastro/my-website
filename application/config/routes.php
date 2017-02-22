@@ -100,7 +100,8 @@ $route['dashboard/emails/(:num)'] = 'panel/Show_emails';
 $route['dashboard/email/show/(:num)'] = 'panel/Show_emails/show/$1';
 $route['dashboard/email/delete/(:num)'] = 'panel/Show_emails/destroy/$1';
 $route['dashboard/download/emails'] = 'panel/Show_emails/emails_download';
-$route['reconfirm/email/(:num)'] = 'panel/Show_emails/resend/$1';
+$route['reconfirm/email/(:num)'] = 'panel/Show_emails/resend_email/$1';
+$route['reconfirm/budget/(:num)'] = 'panel/Show_emails/resend_budget/$1';
 
 /** Panel Messages */
 $route['dashboard/messages'] = 'panel/Show_messages';
@@ -120,4 +121,5 @@ $route['message/store'] = 'Index_page/store_message';
 $route['ajax/counters'] = 'panel/Home/counters';
 $route['notification/blog'] = 'Notifications/blog_done';
 $route['confirm/email/(:any)'] = 'Confirmation/email_list/$1';
+$route['confirm/email/delete/(:any)'] = 'Confirmation/destroy_email_list/$1';
 $route['download/curriculo'] = 'Index_page/curriculum_download';

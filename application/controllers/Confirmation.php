@@ -40,4 +40,22 @@ class Confirmation extends CI_Controller
         redirect('/');
     }
 
+    /**
+     *
+     */
+    public function destroy_email_list($id)
+    {
+        $this->load->model('Email_list_model', 'email_list');
+        $this->load->library('security/Hash_mask');
+
+        $id   = $this->security->xss_clean($id);
+        $user = $this->email_list->find($this->hash_mask->retrieve($id));
+
+        if ($user !== null) {
+            $status = $user->delete($id);
+        }
+
+        redirect('/');
+    }
+
 }

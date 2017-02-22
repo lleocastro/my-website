@@ -1,15 +1,15 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 Opa! Tudo bem?
 
-A alguns dias mandei um email para um orçamento de uma solução web para seu negócio/empresa
-e você não me respondeu... Então pensei que talvez você não tenha recebido ou
-talvez tenha apagado por engano..
+A alguns dias mandei um email com alguns detalhes e algumas perguntas para que eu pudesse montar
+um orçamento inicial (sem compromisso) de uma possivel solução web que iria alavancar negócio, mas você não me respondeu.
+Então pensei que talvez você não tenha recebido ou tenha apagado por engano...
 
 Caso ainda tenha interesse responda esse email o solicitando novamente. :)
 
 
 ps: Caso seja um engano apenas desconsidere.
-Caso queira sair da minha lista de emails clique neste link: xxx
+Para sair da minha lista de emails clique neste link: <a href="<?php echo $out_list ?>"><?php echo $out_list ?></a>
 
 ...
 Léo B. Castro
