@@ -79,6 +79,10 @@ $route['curriculo'] = 'Pages/in_construction';
 $route['creditos'] = 'Pages/page_credits';
 $route['hahaha'] = 'Pages/in_construction';
 $route['dashboard-template'] = 'Pages/in_construction';
+$route['confirm/email/(:any)'] = 'Confirmation/email_list/$1';
+$route['confirm/email/delete/(:any)'] = 'Confirmation/destroy_email_list/$1';
+$route['resend/budget/(:any)'] = 'Confirmation/budget/$1';
+$route['download/curriculo'] = 'Index_page/curriculum_download';
 
 /**
  * Panel Routes
@@ -120,6 +124,3 @@ $route['email/store'] = 'Index_page/store_email';
 $route['message/store'] = 'Index_page/store_message';
 $route['ajax/counters'] = 'panel/Home/counters';
 $route['notification/blog'] = 'Notifications/blog_done';
-$route['confirm/email/(:any)'] = 'Confirmation/email_list/$1';
-$route['confirm/email/delete/(:any)'] = 'Confirmation/destroy_email_list/$1';
-$route['download/curriculo'] = 'Index_page/curriculum_download';

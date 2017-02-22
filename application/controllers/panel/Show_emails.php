@@ -102,8 +102,8 @@ class Show_emails extends CI_Controller
             ], true);
 
             sender(
-                'leobcastroinc@gmail.com', 'LEOBCASTRO',
-                $pending->get_email(), 'Confimar E-mail', $body
+                'leobcastroinc@gmail.com', 'Léo B. Castro',
+                $pending->get_email(), 'Notei que você ainda não me confirmou seu email', $body
             );
 
             $return = [
@@ -128,14 +128,16 @@ class Show_emails extends CI_Controller
             $url  = base_url();
             $hash = $this->hash_mask->disguise($active->get_id());
             $out_list = "{$url}confirm/email/delete/{$hash}";
+            $resend_budget = "{$url}resend/budget/{$hash}";
 
             $body = $this->load->view('layouts/email/reconfirm-budget', [
-                'out_list' => $out_list
+                'out_list' => $out_list,
+                'resend_budget' => $resend_budget
             ], true);
 
             sender(
-                'leobcastroinc@gmail.com', 'LEOBCASTRO',
-                $active->get_email(), 'Me Fale Sobre', $body
+                'leobcastroinc@gmail.com', 'Léo B. Castro',
+                $active->get_email(), 'Você ainda não me respondeu sobre o orçamento :/', $body
             );
 
             $return = [

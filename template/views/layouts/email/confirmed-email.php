@@ -73,17 +73,13 @@
         }
     </style>
 
-    <title>LEOBCASTRO - Email Confirmado</title>
+    <title>LEOBCASTRO - Sucesso</title>
 </head>
 <body>
     <div class="center">
         <div>
-            <div class="title">
-                Email Confirmado!
-            </div>
-            <div class="sub-title">
-                Cheque seu email! Acabei de lhe enviar um email
-            </div>
+            <div class="title">Confirmado!</div>
+            <div class="sub-title">Cheque seu email! Acabei de lhe enviar outro email</div>
             <a title="<?php echo route('/') ?>" href="<?php echo route('/') ?>">Voltar para o site</a>
         </div>
     </div>

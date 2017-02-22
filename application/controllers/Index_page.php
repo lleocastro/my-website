@@ -45,17 +45,17 @@ class Index_page extends CI_Controller
                     $url  = base_url();
                     $hash = $this->hash_mask->disguise($pending->get_id());
                     $link = "{$url}confirm/email/{$hash}";
-                    $body = $this->load->view('layouts/email/confirm-email', ['link' => $link], true);
+                    $out_list = "{$url}confirm/email/delete/{$hash}";
+                    $body = $this->load->view('layouts/email/confirm-email', [
+                        'link' => $link,
+                        'out_list' => $out_list
+                    ], true);
 
                     sender(
-                        'leobcastroinc@gmail.com', 'LEOBCASTRO',
-                        $pending->get_email(), 'Confimar E-mail', $body
+                        'leobcastroinc@gmail.com', 'Léo B. Castro',
+                        $pending->get_email(), 'Vamos conversar um pouco?', $body
                     );
                 }
-
-                // Email notification
-                //$body = $this->load->view('layouts/email/notify', ['email' => $email], true);
-                //notify('Novo Email!', $body);
 
                 $return = [
                     'status' => true
@@ -134,13 +134,10 @@ class Index_page extends CI_Controller
             header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
             header("Content-transfer-encoding: binary");
             @readfile($file);
-
-            //$returns = [];
             return true;
-        } else {
-            //$returns = [];
-            return false;
         }
+
+        return false;
     }
 
 }

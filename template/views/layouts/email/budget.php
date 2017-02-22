@@ -5,9 +5,9 @@ Bom, agora que chegamos até aqui, preciso que você me responda uma simples per
 eu tenha uma ideia inicial do seu problema.
 
 É apenas para mim ter em mente que tipo de problema você está tendo, assim marcamos uma reunião onde vou
-colher mais alguns detalhes para montar um briefing da solução para você aprovar. :)
+colher mais alguns detalhes para montar um briefing da solução para que você aprove. 😁
 
-Que tipo de solução você tem em mente?
+<strong>Que tipo de solução você tem em mente?</strong>
 
 - Automatizar processos na minha empresa/negócio.
 - Meu atual sistema esta lento/desatualizado.
@@ -23,8 +23,4 @@ Que tipo de solução você tem em mente?
 - O que você espera dessa solução?
 
 
-...
-Léo B. Castro
-(<a href="<?php echo base_url() ?>"><?php echo base_url() ?></a>)
-(<a href="https://www.linkedin.com/in/leobcastro/">https://www.linkedin.com/in/leobcastro/</a>)
-CEO
+<?php require_once ('includes/footer.php') ?>
