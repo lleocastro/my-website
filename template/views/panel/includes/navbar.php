@@ -36,7 +36,7 @@
             <li><a href="<?php echo route('/dashboard/emails') ?>"><i class="fa fa-fw fa-envelope"></i> Lista Vip de Emails</a></li>
             <li><a href="<?php echo route('/dashboard/messages') ?>"><i class="fa fa-fw fa-comment"></i> Caixa de Entrada</a></li>
             <li><a href="#"><i class="fa fa-fw fa-area-chart"></i> Relatório de Acessos</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> Estatística e Clicks</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> Estatísticas e Clicks</a></li>
             <li><a href="<?php echo route('dashboard/bloqueios') ?>"><i class="fa fa-fw fa-eye-slash"></i> Usuários Bloqueados</a></li>
             <li><a href="<?php echo route('/') ?>"><i class="fa fa-fw fa-refresh"></i> Voltar para o Site</a></li>
         </ul>
