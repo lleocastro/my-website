@@ -52,7 +52,7 @@ class Confirmation extends CI_Controller
         $user = $this->email_list->find($this->hash_mask->retrieve($id));
 
         if ($user !== null) {
-            $status = $user->delete($id);
+            $user->delete($user->get_id());
         }
 
         redirect('/');

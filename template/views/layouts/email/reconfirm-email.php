@@ -20,7 +20,7 @@ Para confirmar seu email, clique neste link: <a href="<?php echo $in_list ?>"><?
 
 
 ps: Caso seja um engano apenas desconsidere.
-Para sair da minha lista de emails clique neste link: <a href="<?php echo $out_list ?>"><?php echo $out_list ?></a>
+Para sair da minha lista de emails <a href="<?php echo $out_list ?>">clique aqui</a>!
 
 ...
 Léo B. Castro

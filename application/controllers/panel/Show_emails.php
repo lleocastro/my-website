@@ -126,7 +126,7 @@ class Show_emails extends CI_Controller
             $this->load->library('security/Hash_mask');
 
             $url  = base_url();
-            $hash = $this->hash_mask->disguise($pending->get_id());
+            $hash = $this->hash_mask->disguise($active->get_id());
             $out_list = "{$url}confirm/email/delete/{$hash}";
 
             $body = $this->load->view('layouts/email/reconfirm-budget', [
