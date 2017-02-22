@@ -100,7 +100,8 @@ class Index_page extends CI_Controller
             sender(
                 $data['email'], $data['name'],
                 'leonardo_carvalho@outlook.com',
-                $data['subject'], $data['message']
+               '['. $data['email'] . '] ' . $data['subject'],
+                $data['message']
             );
 
             $return = [
