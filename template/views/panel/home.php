@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge"><?php echo $current_online ?></div>
-                                        <div>Online Agora!</div>
+                                        <div>Usuários Online</div>
                                     </div>
                                 </div>
                             </div>
