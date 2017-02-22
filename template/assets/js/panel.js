@@ -39,4 +39,32 @@ jQuery(function($) {
         });
     });
 
+    // Ajax
+    $(document).ready(function() {
+        $('#reconfirm-form').submit(function(event) {
+            event.preventDefault();
+
+            $("#reconfirm-submit").html('Reenviando...');
+
+            $.ajax({
+                url: $('#reconfirm-form').attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(data) {
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $("#reconfirm-submit").removeClass("btn-default").addClass("registered").html(
+                            'Reenviado!'
+                        );
+                    } else {
+                        $("#reconfirm-submit").html('Reenviar Confirmação');
+                        document.getElementById("reconfirm_token").setAttribute("value", data.token);
+                    }
+                }
+            });
+
+            return false;
+        });
+    });
+
 });
