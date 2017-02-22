@@ -26,9 +26,14 @@
                         <div class="panel-heading">
                             <h3 class="panel-title">
                                 <?php if ((isset($email)) && ($email->get_status() == 'Pending')): ?>
-                                    <form id="reconfirm-form" method="post" action="<?php echo route('reconfirm/email', $email->get_id()) ?>" accept-charset="utf-8">
-                                        <?php echo csrf_field('reconfirm_token') ?>
-                                        <button id="reconfirm-submit" type="submit" class="btn btn-default">Reenviar Confirmação</button>
+                                    <form id="reconfirm-email-form" method="post" action="<?php echo route('reconfirm/email', $email->get_id()) ?>" accept-charset="utf-8">
+                                        <?php echo csrf_field('reconfirm_token'); ?>
+                                        <button id="reconfirm-email-submit" type="submit" class="btn btn-default">Reenviar Confirmação</button>
+                                    </form>
+                                <?php elseif ((isset($email)) && ($email->get_status() == 'Active')): ?>
+                                    <form id="reconfirm-budget-form" method="post" action="<?php echo route('reconfirm/budget', $email->get_id()) ?>" accept-charset="utf-8">
+                                        <?php echo csrf_field('reconfirm_token'); ?>
+                                        <button id="reconfirm-budget-submit" type="submit" class="btn btn-default">Reenviar Orçamento</button>
                                     </form>
                                 <?php endif; ?>
                             </h3>

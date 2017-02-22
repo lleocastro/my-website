@@ -39,25 +39,53 @@ jQuery(function($) {
         });
     });
 
-    // Ajax
+    // Reconfirm Email
     $(document).ready(function() {
-        $('#reconfirm-form').submit(function(event) {
+        $('#reconfirm-email-form').submit(function(event) {
             event.preventDefault();
 
-            $("#reconfirm-submit").html('Reenviando...');
+            $("#reconfirm-email-submit").html('Reenviando...');
 
             $.ajax({
-                url: $('#reconfirm-form').attr('action'),
+                url: $('#reconfirm-email-form').attr('action'),
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(data) {
                     data = $.parseJSON(data);
                     if (data.status) {
-                        $("#reconfirm-submit").removeClass("btn-default").addClass("registered").html(
+                        $("#reconfirm-email-submit").removeClass("btn-default").addClass("registered").html(
                             'Reenviado!'
                         );
                     } else {
-                        $("#reconfirm-submit").html('Reenviar Confirmação');
+                        $("#reconfirm-email-submit").html('Reenviar Confirmação');
+                        document.getElementById("reconfirm_token").setAttribute("value", data.token);
+                    }
+                }
+            });
+
+            return false;
+        });
+    });
+
+    // Reconfirm Budget
+    $(document).ready(function() {
+        $('#reconfirm-budget-form').submit(function(event) {
+            event.preventDefault();
+
+            $("#reconfirm-budget-submit").html('Reenviando...');
+
+            $.ajax({
+                url: $('#reconfirm-budget-form').attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(data) {
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $("#reconfirm-budget-submit").removeClass("btn-default").addClass("registered").html(
+                            'Reenviado!'
+                        );
+                    } else {
+                        $("#reconfirm-budget-submit").html('Reenviar Orçamento');
                         document.getElementById("reconfirm_token").setAttribute("value", data.token);
                     }
                 }
