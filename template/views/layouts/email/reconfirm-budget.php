@@ -2,13 +2,14 @@
 Opa! Tudo bem?
 
 A alguns dias mandei um email para um orçamento de uma solução web para seu negócio/empresa
-e você não me respondeu... Então talvez você não tenha recebido ou
-talvez tenha apagado por engano.
+e você não me respondeu... Então pensei que talvez você não tenha recebido ou
+talvez tenha apagado por engano..
 
-Caso ainda tenha interesse responda esse email o requisitando novamente. :)
+Caso ainda tenha interesse responda esse email o solicitando novamente. :)
 
 
-Caso queira sair da minha lista clique neste link:
+ps: Caso seja um engano apenas desconsidere.
+Caso queira sair da minha lista de emails clique neste link: xxx
 
 ...
 Léo B. Castro

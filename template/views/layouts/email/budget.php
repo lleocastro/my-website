@@ -19,7 +19,7 @@ Que tipo de solução você tem em mente?
 
 * Responda esse email com uma dessas respostas acima, e se possivel forneça mais detalhes, como:
 
-- Descreva sobre o projeto, objetivo, prazos, especificações técnicas..
+- Descreva sobre o projeto, objetivo, prazos, especificações técnicas, etc...
 - O que você espera dessa solução?
 
 

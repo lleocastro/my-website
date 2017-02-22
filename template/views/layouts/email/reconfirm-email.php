@@ -5,25 +5,22 @@ A alguns dias mandei um email para confirmar o seu cadastro na minha lista de em
 mas você não confirmou... É para conversarmos um pouco sobre uma solução web que iria resolver
 problemas na sua empresa/negócio.
 
-<strong>Sem compromisso! Apenas uma conversa...</strong>
+<strong>Podemos falar sobre</strong>:
 
-Podemos falar sobre:
-
-- Um sistema para automatizar processos e consequentemente diminuir custos.
+- Um sistema para automatizar processos/tarefas, e consequentemente diminuir custos operacionais.
 - Conquistar novos clientes e manter contato com os atuais através de um blog, portal,
-site, email marketing ou newletter.
+site, email marketing ou newsletter.
 - Planejamento web completo.
-- Etc..
+- etc..
 
-"Investir em novos meios para se obter mais resultados é sempre bom, e a web é o lugar certo para isso. :)
+<strong>"</strong><em>Investir em novos meios para se obter mais resultados é sempre bom, e a web é o lugar certo para isso</em>. :)
 
 
 Para confirmar seu email, clique neste link: <a href="<?php echo $link ?>"><?php echo $link ?></a>
 
 
-PS: Caso seja um engano apenas desconsidere.
-Caso queira sair da minha lista clique neste link: xxx
-
+ps: Caso seja um engano apenas desconsidere.
+Caso queira sair da minha lista de emails clique neste link: xxx
 
 ...
 Léo B. Castro
