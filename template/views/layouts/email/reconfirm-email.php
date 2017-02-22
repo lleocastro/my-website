@@ -25,8 +25,6 @@ PS: Caso seja um engano apenas desconsidere.
 Caso queira sair da minha lista clique neste link: xxx
 
 
-Obrigado.
-
 ...
 Léo B. Castro
 (<a href="<?php echo base_url() ?>"><?php echo base_url() ?></a>)
