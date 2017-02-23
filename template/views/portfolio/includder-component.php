@@ -39,7 +39,7 @@
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Componente: Autoloader</h1>
                         <div class="heading-line"></div>
-                        <p class="tagline">Autoload desenvolvido para integrar no meu framework <a href="https://github.com/lleocastro/genniuz-framework" rel="nofollow">"Genniuz"</a>. Segue a especificação <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a>.</p>
+                        <p class="tagline">Autoload desenvolvido para integrar no meu framework <a title="Página do projeto" href="https://github.com/lleocastro/genniuz-framework" rel="nofollow">"Genniuz"</a>. Segue a especificação <a title="Site da especificação" href="http://www.php-fig.org/psr/psr-4/">PSR-4</a>.</p>
                     </header>
                 </div>
                 <article class="line line-space">

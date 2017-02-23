@@ -38,7 +38,7 @@
                 <div class="line line-space">
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Aplicativo de Notas Simples</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Um simples mas eficiente <em class="text-normal">gerenciador de notas online</em> para guardar anotações, listas e lembretes.</p>
                     </header>
                 </div>
@@ -49,7 +49,7 @@
                     <div class="m6col col-space">
                         <h2>Sobre o XNotes</h2>
                         <p>O XNotes é um aplicativo de notas online que permite a criação de notas, listas e lembretes para poder acessa-los de qualquer lugar e de qualquer dispositivo com internet (computator, notebook, tablet, smatphone, smart tv).</p>
-                        <p><strong>"Aliás todos os meus sites são compativeís com esses dispositivos. Teste meu site <a href="<?php echo route('/portfolio/leobcastro') ?>">(leobcastro)</a>. 😉</strong></p>
+                        <p><strong>"Aliás todos os meus sites são compativeís com esses dispositivos. Teste meu site <a title="Home page" href="<?php echo route('/portfolio/leobcastro') ?>">(leobcastro)</a>. 😉</strong></p>
                         <p>Atualmente o XNotes não está online (não está em produção), então não é possivel acessar a aplicação, mas pode ver o projeto no meu github.</p>
                         <a title="Ir para a página do projeto" href="https://github.com/lleocastro/xnotes" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>
