@@ -157,7 +157,7 @@
                             <i class="material-icons" style="vertical-align: -29%">offline_pin</i>
                             Baixar Currículo
                         </a>
-                        <p class="mini-text safe-download">Seguro! Sem vírus.</p>
+                        <small style="margin-top: 5px">Seguro! Sem vírus.</small>
                     </div>
                 </div>
             </div>
