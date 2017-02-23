@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Léo B. Castro é um desenvolvedor web , apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta name="description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -14,24 +14,27 @@
     <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
-    <meta itemprop="name" content="Leo B. Castro - Desenvolvimento web"/>
-    <meta itemprop="description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
-    <meta itemprop="image" content="<?php echo asset('img/intro.jpg') ?>"/>
+    <meta itemprop="name" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
+    <meta itemprop="description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta itemprop="image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="Leo B. Castro - Desenvolvimento web"/>
-    <meta property="og:description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
+    <meta property="og:title" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
+    <meta property="og:description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<?php echo asset('img/intro.jpg') ?>"/>
+    <meta property="og:image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
+    <meta property="og:image:type" content="image/jpg"/>
+    <meta property="og:image:width" content="800"/>
+    <meta property="og:image:height" content="600"/>
     <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="Léo B. Castro"/>
+    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content="Leo B. Castro - Desenvolvimento web"/>
+    <meta name="twitter:title" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Desenvolvimento inteligente de soluções web para seu negócio"/>
-    <meta name="twitter:image" content="<?php echo asset('img/intro.jpg') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
+    <meta name="twitter:description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta name="twitter:image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
+    <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
     <link rel="stylesheet" href="<?php echo asset('css/animate.min.css') ?>"/>
@@ -282,7 +285,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Agência web" src="<?php echo asset('img/website-web-agency.png') ?>" alt="Imagem em PSD do site de uma agencia web"/>
+                                        <img title="Agência Web" src="<?php echo asset('img/website-web-agency.png') ?>" alt="Website de uma agência web."/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -299,7 +302,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Notas" src="<?php echo asset('img/notes.jpg') ?>" alt="Imagem ilustrativa representando um sistema de notas"/>
+                                        <img title="Sistema de Notas" src="<?php echo asset('img/notes.jpg') ?>" alt="Sistema de notas online"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -316,7 +319,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Website LEOBCASTRO" src="<?php echo asset('img/leobcastro-website.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
+                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/leobcastro-website.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -333,7 +336,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="CSS Stylle" src="<?php echo asset('img/website-layout.jpg') ?>" alt="Biblioteca CSS para desenvolver sites"/>
+                                        <img title="Framework CSS" src="<?php echo asset('img/website-layout.jpg') ?>" alt="Um simples mas eficiente criador de site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -350,7 +353,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Imagem de introdução do jogo desenvolvido baseado no flappy bird"/>
+                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Jogo desenvolvido baseado no flappy bird"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -367,7 +370,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework" src="<?php echo asset('img/framework-preview.png') ?>" alt="Funcionamento de um framework em dispositivos moveis"/>
+                                        <img title="Framework PHP" src="<?php echo asset('img/framework-preview.png') ?>" alt="Uma versão customizada do Codeigniter"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -384,7 +387,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Componente" src="<?php echo asset('img/component.jpg') ?>" alt="Imagem ilustrando a criação de um componente PHP"/>
+                                        <img title="Componente Autoloader" src="<?php echo asset('img/component.jpg') ?>" alt="Autoload PHP para o carregamento de classes"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -401,13 +404,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Posição premium" src="<?php echo asset('img/icons/marketing.svg') ?>" alt="Icone ilustrando um premio de melhor posição"/>
+                                        <img title="Posição premium" src="<?php echo asset('img/icons/marketing.svg') ?>" alt="Premio de melhor posição"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Seu Projeto</h1>
-                                        <p>Quem sabe seu projeto seja o proximo nesta lista... Vamos conversar? Consultoria? Café?</p>
+                                        <p>Quem sabe seu projeto seja o proximo nesta lista... Vamos conversar? Consultoria? Café? 😜</p>
                                     </div>
                                 </div>
                             </article>
