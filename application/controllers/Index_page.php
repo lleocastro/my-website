@@ -119,15 +119,31 @@ class Index_page extends CI_Controller
     }
 
     /**
+     * Displays a curriculum pdf page.
+     *
+     * @return void
+     */
+    public function curriculum()
+    {
+        $file = dirname(dirname(__DIR__)) . '/public/files/curriculo.pdf';
+        if (is_readable($file)) {
+            header("Content-Type: application/pdf");
+            @readfile($file);
+            exit();
+        }
+
+        redirect('/');
+    }
+
+    /**
      *
      */
     public function curriculum_download()
     {
-        $file = dirname(dirname(__DIR__)) . '/public/files/curriculo.docx';
-
+        $file = dirname(dirname(__DIR__)) . '/public/files/curriculo.pdf';
         if ((file_exists($file)) && (is_readable($file))) {
             header("Content-Type: application/force-download");
-            header("Content-Disposition: attachment; filename=curriculo-leobcastro.docx");
+            header("Content-Disposition: attachment; filename=curriculo-leobcastro.pdf");
             header("Content-Length: ".filesize($file));
             header("Accept-Ranges: bytes");
             header("Pragma: no-cache");
@@ -135,10 +151,10 @@ class Index_page extends CI_Controller
             header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
             header("Content-transfer-encoding: binary");
             @readfile($file);
-            return true;
+            exit();
         }
 
-        return false;
+        redirect('/');
     }
 
 }

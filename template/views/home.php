@@ -82,7 +82,7 @@
                             <li><a title="Portfólio de projetos" class="scroll" href="#portfolio">Portfólio</a></li>
                             <li><a title="Informações para contato" class="scroll" href="#contact-me">Contato</a></li>
                             <li><a title="Blog pessoal" style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Meu Blog</a></li>
-                            <li><a title="Curriculo de Léo B. Castro" style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">Curriculo</a></li>
+                            <li><a title="Curriculo de Léo B. Castro" href="<?php echo route('/curriculo') ?>">Curriculo</a></li>
                         </ul>
                     </div>
                 </div>
@@ -554,7 +554,7 @@
                                 <ul>
                                     <li><a class="scroll" href="#contact-me">De um feedback</a></li>
                                     <li><a class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
-                                    <li><a style="text-decoration: line-through" href="<?php echo route('/curriculo') ?>">De uma olhada no meu curriculo</a></li>
+                                    <li><a href="<?php echo route('/curriculo') ?>">De uma olhada no meu curriculo</a></li>
                                     <li><a style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Descubra meu blog</a></li>
                                     <li><a class="scroll" href="https://goo.gl/forms/rC5ZZDEAtxaJ1GEI2">Esse questionário é pra você!</a></li>
                                 </ul>
@@ -564,7 +564,7 @@
                             <p class="nav-link-title"><strong>Informações</strong></p>
                             <ul>
                                 <li><a href="<?php echo route('portfolio/leobcastro') ?>">Sobre o site</a></li>
-                                <li><a style="text-decoration: line-through" href="<?php echo route('/hahaha') ?>" rel="nofollow">Não entre aqui!</a></li>
+                                <li><a style="text-decoration: line-through" href="<?php echo route('/hahaha') ?>" rel="nofollow">Trabalhe comigo</a></li>
                                 <li><a href="<?php echo route('/creditos') ?>" rel="nofollow">Creditos</a></li>
                             </ul>
                         </div>
