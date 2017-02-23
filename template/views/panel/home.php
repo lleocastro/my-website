@@ -163,6 +163,47 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1 class="page-header">
+                            <small><strong>Mensagens Recentes</strong></small>
+                        </h1>
+                        <div class="list-group">
+                            <?php if ($recent_messages !== null): ?>
+                                <?php foreach ($recent_messages as $recent_message): ?>
+                                    <a href="<?php echo route('dashboard/message/show', $recent_message->get_id()) ?>" class="list-group-item">
+                                        <h4 class="list-group-item-heading"><?php echo $recent_message->get_subject() ?></h4>
+                                        <p class="list-group-item-text"><?php echo $recent_message->get_message() ?></p>
+                                    </a>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Sem Mensagens</h4>
+                                    <p class="list-group-item-text">...</p>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Dispositivos</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <?php if ($page_views !== null): ?>
+                                        <?php foreach ($page_views as $page_view): ?>
+                                            <li class="list-group-item"><?php echo $page_view->get_agent() ?></li>
+                                        <?php endforeach; ?>
+                                    <?php else: ?>
+                                        <li class="list-group-item">Sem Dispositivos...</li>
+                                    <?php endif; ?>
+                                </ul>
+                            </div>
+                            <div class="panel-footer center"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

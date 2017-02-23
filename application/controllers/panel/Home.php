@@ -28,7 +28,8 @@ class Home extends CI_Controller
             'current_online' => $this->page_view->online_counter(),
             'total_views'=> $this->page_view->count(),
             'page_views' => $this->page_view->paginate(7),
-            'pagination_links' => $this->page_view->pagination_links()
+            'pagination_links' => $this->page_view->pagination_links(),
+            'recent_messages'  => $this->message_list->all('desc')
         ]);
     }
 

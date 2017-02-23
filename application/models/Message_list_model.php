@@ -96,10 +96,16 @@ class Message_list_model extends CI_Model
     }
 
     /**
+     *
+     * @param string $order
+     * @param int $limit
+     *
      * @return Message_list_model
      */
-    public function all()
+    public function all($order = 'asc', $limit = 8)
     {
+        $this->db->limit($limit);
+        $this->db->order_by('created_at', $order);
         $query = $this->db->get($this->table);
 
         if ($query->num_rows() > 0) {
