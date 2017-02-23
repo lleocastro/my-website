@@ -10,20 +10,6 @@
     <meta itemprop="image" content="<?php echo asset('img/leobcastro-website.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="Como o site LEOBCASTRO foi desenvolvido"/>
-    <meta property="og:description" content="Todo o layout do site foi minuciosamente pensado na usabilidade e acessibilidade dos usuários. Leia mais!"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/leobcastro-website.jpg') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content="Como o site LEOBCASTRO foi desenvolvido"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Todo o layout do site foi minuciosamente pensado na usabilidade e acessibilidade dos usuários. Leia mais!"/>
-    <meta name="twitter:image" content="<?php echo asset('img/leobcastro-website.jpg') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
-
     <?php require_once ('includes/links.php') ?>
 
     <title><?php echo getenv('APP_NAME') ?> - Como o site LEOBCASTRO foi desenvolvido</title>
@@ -37,7 +23,7 @@
                 <div class="line line-space">
                     <header class="collist col-space">
                         <h1 class="no-margin title">Sobre o Site LEOBCASTRO</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Toda a interface foi minuciosamente pensada na usabilidade e acessibilidade dos usuários.</p>
                     </header>
                 </div>

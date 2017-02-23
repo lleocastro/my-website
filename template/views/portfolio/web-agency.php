@@ -10,23 +10,9 @@
     <meta itemprop="image" content="<?php echo asset('img/website-web-agency.png') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="<?php echo getenv('APP_NAME') ?> - Template de uma agência web"/>
-    <meta property="og:description" content="Template de uma agência de desenvolvimento web ficticia"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/website-web-agency.png') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content="<?php echo getenv('APP_NAME') ?> - Template de uma agência web"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Template de uma agência de desenvolvimento web ficticia"/>
-    <meta name="twitter:image" content="<?php echo asset('img/website-web-agency.png') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
-
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Template Agência Web</title>
+    <title><?php echo getenv('APP_NAME') ?> - Template de Agência Web</title>
 </head>
 <body>
     <main class="container-full" role="main">

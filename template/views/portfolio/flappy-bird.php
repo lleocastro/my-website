@@ -10,23 +10,9 @@
     <meta itemprop="image" content="<?php echo asset('img/game-flappy-bird.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="Game flappy bird"/>
-    <meta property="og:description" content="Jogo desenvolvido baseado no próprio seguindo um curso online sobre criação de jogos"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/game-flappy-bird.jpg') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content="Game flappy bird"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Jogo desenvolvido baseado no próprio seguindo um curso online sobre criação de jogos"/>
-    <meta name="twitter:image" content="<?php echo asset('img/game-flappy-bird.jpg') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
-
     <?php require_once ('includes/links.php') ?>
 
-    <title><?php echo getenv('APP_NAME') ?> - Portfólio - Flappy Bird</title>
+    <title><?php echo getenv('APP_NAME') ?> - Game - Flappy Bird</title>
 </head>
 <body>
     <main class="container-full" role="main">
@@ -37,7 +23,7 @@
                 <div class="line line-space">
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Flappy Bird: Um viciante game</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Desenvolvi esse jogo baseado no próprio seguindo um mini curso online sobre <em class="text-normal">criação de jogos</em>.</p>
                     </header>
                 </div>

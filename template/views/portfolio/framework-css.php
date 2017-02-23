@@ -10,20 +10,6 @@
     <meta itemprop="image" content="<?php echo asset('img/framewok-css.png') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="Framework CSS altamente customizavel"/>
-    <meta property="og:description" content="Esse framework permite criar websites unicos e exclusivos para cada projeto"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/framewok-css.png') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content="Framework CSS altamente customizavel"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Esse framework permite criar websites unicos e exclusivos para cada projeto"/>
-    <meta name="twitter:image" content="<?php echo asset('img/framewok-css.png') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
-
     <?php require_once ('includes/links.php') ?>
 
     <title><?php echo getenv('APP_NAME') ?> - Framework CSS altamente customizavel</title>
@@ -37,13 +23,13 @@
                 <div class="line line-space">
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Meu Framework Front-End</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Ele me permite <em class="text-normal">criar websites</em> unicos e exclusivos para cada projeto. Altamente produtivo.</p>
                     </header>
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="Código fonte do projeto" src="<?php echo asset('img/framework-css.png') ?>" alt="Código fonte do bootstylle aberto em um mac"/>
+                        <img title="Código fonte do projeto" src="<?php echo asset('img/framework-css.png') ?>" alt="Código fonte do bootstylle aberto em uma IDE"/>
                     </div>
                     <div class="m6col col-space">
                         <h2>Sobre a Ferramenta</h2>

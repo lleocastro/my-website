@@ -3,26 +3,12 @@
 <html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
+    <meta name="description" content="Autoload desenvolvido para integrar em projetos web PHP"/>
 
-    <meta itemprop="name" content=""/>
-    <meta itemprop="description" content=""/>
+    <meta itemprop="name" content="Autoloader PHP"/>
+    <meta itemprop="description" content="Autoload desenvolvido para integrar em projetos web PHP"/>
     <meta itemprop="image" content="<?php echo asset('img/component.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
-
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/component.jpg') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content=""/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content="<?php echo asset('img/component.jpg') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 
@@ -38,7 +24,7 @@
                 <div class="line line-space">
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Componente: Autoloader</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Autoload desenvolvido para integrar no meu framework <a title="Página do projeto" href="https://github.com/lleocastro/genniuz-framework" rel="nofollow">"Genniuz"</a>. Segue a especificação <a title="Site da especificação" href="http://www.php-fig.org/psr/psr-4/">PSR-4</a>.</p>
                     </header>
                 </div>

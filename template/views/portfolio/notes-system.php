@@ -3,26 +3,12 @@
 <html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content=""/>
+    <meta name="description" content="Um simples mas eficiente gerenciador de notas online para guardar anotações, listas e lembretes."/>
 
-    <meta itemprop="name" content=""/>
-    <meta itemprop="description" content=""/>
+    <meta itemprop="name" content="Sistema de notas simples"/>
+    <meta itemprop="description" content="Um simples mas eficiente gerenciador de notas online."/>
     <meta itemprop="image" content="<?php echo asset('img/notes.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
-
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/notes.jpg') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content=""/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content="<?php echo asset('img/notes.jpg') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 

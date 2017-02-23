@@ -3,26 +3,12 @@
 <html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <?php require_once ('includes/meta.php') ?>
-    <meta name="description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
+    <meta name="description" content="Versão customizada que extende e acrescenta varias outras funcionalidades para aumentar a produtividade no desenvolvimento back-end"/>
 
     <meta itemprop="name" content="Versão customizada do Codeigniter"/>
-    <meta itemprop="description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
+    <meta itemprop="description" content="Versão customizada que extende e acrescenta varias outras funcionalidades para aumentar a produtividade no desenvolvimento back-end"/>
     <meta itemprop="image" content="<?php echo asset('img/framewok-php.png') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
-
-    <meta property="og:title" content="Versão customizada do Codeigniter"/>
-    <meta property="og:description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="<?php echo asset('img/framewok-php.png') ?>"/>
-    <meta property="og:url" content="<?php echo base_url(uri_string()) ?>"/>
-    <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
-    <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
-
-    <meta name="twitter:title" content="Versão customizada do Codeigniter"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Minha versão customizada extende e acrescenta varias outras funcionalidades que aumentam a produtividade no desenvolvimento back-end"/>
-    <meta name="twitter:image" content="<?php echo asset('img/framewok-php.png') ?>"/>
-    <meta name="twitter:url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <?php require_once ('includes/links.php') ?>
 
@@ -37,7 +23,7 @@
                 <div class="line line-space">
                     <header class="collist col-space ">
                         <h1 class="no-margin title">Meu Framework Back-End</h1>
-                        <div class="heading-line"></div>
+                        <div class="heading-line" role="separator"></div>
                         <p class="tagline">Essa é minha versão customizada do <a title="Página do projeto" href="https://codeigniter.com/" rel="nofollow">Codeigniter</a>, um fantástico framework para dev web.</p>
                     </header>
                 </div>
