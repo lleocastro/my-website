@@ -1,13 +1,13 @@
 jQuery(function($) {
-    var visibleHeight = $(window).height();
+    //var visibleHeight = $(window).height();
     var visibleWidth  = $(window).width();
 
-    // Load Full Image
-    $(".backimage-full").css({'height': (visibleHeight - 50) + 'px'});
-    $(window).resize(function () {
-        'use strict',
-            $(".backimage-full").css({'height': (visibleHeight - 50) + 'px'});
-    });
+    // // Load Full Image
+    // $(".backimage-full").css({'height': (visibleHeight - 50) + 'px'});
+    // $(window).resize(function () {
+    //     'use strict',
+    //         $(".backimage-full").css({'height': (visibleHeight - 50) + 'px'});
+    // });
 
     // Active WOW
     var wow = new WOW({
