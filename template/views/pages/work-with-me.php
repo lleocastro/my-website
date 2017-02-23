@@ -10,20 +10,51 @@
     <meta name="robots" content="noindex, nofollow"/>
 
     <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
 
     <style>
-        p { color: #777777; font-size: .9em; }
-        ul li { padding: 4px; }
+        p {
+            color: #777777;
+        }
+        ul li {
+            padding: 4px;
+        }
+        .navbar-btn {
+            color: #ffffff !important;
+            float: right;
+            margin-right: 10px;
+            margin-top: 9px;
+        }
+        .margin-top {
+            margin-top: 80px;
+        }
     </style>
 
     <title><?php echo getenv('APP_NAME') ?> - Trabalhe comigo!</title>
 </head>
 <body>
     <main role="main">
-        <div class="container container-space">
+        <!-- NAVBAR -->
+        <div class="navbar navbar-fixed navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a title="Logo" class="scroll" href="<?php echo route('/') ?>">
+                        <img title="Logo" src="<?php echo asset('img/logo/logo-small.png') ?>" alt="Logo do website"/>
+                    </a>
+                </div>
+                <a title="Voltar para o final do site" href="<?php echo route('/#footer') ?>" class="btn btn-dark navbar-btn" role="button" rel="nofollow">
+                    <i class="material-icons" style="vertical-align: -29%">replay</i>
+                    Voltar
+                </a>
+            </div>
+        </div><!-- END NAVBAR -->
+
+        <!-- JOKE -->
+        <div class="container container-space margin-top">
             <p>Nem tudo é renderizado na tela ;)</p>
-        </div>
+        </div><!-- END JOKE -->
+
    <!-- <div class="container">
             <div class="line">
                 <div class="collist">
