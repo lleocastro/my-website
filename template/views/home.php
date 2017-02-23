@@ -555,20 +555,20 @@
                             <p class="nav-link-title"><strong>Navegue mais</strong></p>
                             <nav>
                                 <ul>
-                                    <li><a class="scroll" href="#contact-me">De um feedback</a></li>
-                                    <li><a class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
-                                    <li><a href="<?php echo route('/curriculo') ?>">De uma olhada no meu curriculo</a></li>
-                                    <li><a style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Descubra meu blog</a></li>
-                                    <li><a class="scroll" href="https://goo.gl/forms/rC5ZZDEAtxaJ1GEI2">Esse questionário é pra você!</a></li>
+                                    <li><a title="Me de um feedback" class="scroll" href="#contact-me">De um feedback</a></li>
+                                    <li><a title="Volte para o topo" class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
+                                    <li><a title="Meu currículo" href="<?php echo route('/curriculo') ?>">De uma olhada no meu currículo</a></li>
+                                    <li><a title="Blog pessoal" style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Descubra meu blog</a></li>
+                                    <li><a title="Questionario para orçamento" class="scroll" href="https://goo.gl/forms/rC5ZZDEAtxaJ1GEI2">Esse questionário é pra você!</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="s3col col-space">
                             <p class="nav-link-title"><strong>Informações</strong></p>
                             <ul>
-                                <li><a href="<?php echo route('portfolio/leobcastro') ?>">Sobre o site</a></li>
-                                <li><a href="<?php echo route('/trabalhe-comigo') ?>" rel="nofollow">Trabalhe comigo</a></li>
-                                <li><a href="<?php echo route('/creditos') ?>" rel="nofollow">Creditos</a></li>
+                                <li><a title="LEOBCASTRO" href="<?php echo route('portfolio/leobcastro') ?>">Sobre o site</a></li>
+                                <li><a title="Trabalhar no LEOBCASTRO Inc" href="<?php echo route('/trabalhe-comigo') ?>" rel="nofollow">Trabalhe comigo</a></li>
+                                <li><a title="Para autores" href="<?php echo route('/creditos') ?>" rel="nofollow">Creditos</a></li>
                             </ul>
                         </div>
                         <div class="s5col mobile-text-center">
@@ -580,10 +580,10 @@
                         <div class="s6col">
                             <p class="no-paragraph"><strong>Siga-me</strong>:</p>
                             <p>
-                                <a href="https://www.linkedin.com/in/leobcastro">LinkedIn</a> |
-                                <a href="https://www.instagram.com/leocastro94">Instagram</a> |
-                                <a href="https://www.facebook.com/leobcastro94">Facebook</a>  |
-                                <a href="https://github.com/lleocastro">Github</a>
+                                <a title="Me adicione no LinkedIn" href="https://www.linkedin.com/in/leobcastro">LinkedIn</a> |
+                                <a title="Siga-me no Instagram" href="https://www.instagram.com/leocastro94">Instagram</a> |
+                                <a title="Me adicione também no Facebook" href="https://www.facebook.com/leobcastro94">Facebook</a> |
+                                <a title="Veja meus projetos no Github" href="https://github.com/lleocastro">Github</a>
                             </p>
                         </div>
                         <div class="s6col"></div>
