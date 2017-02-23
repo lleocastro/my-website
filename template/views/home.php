@@ -450,7 +450,7 @@
         <!-- FOOTER -->
         <a name="contact-me"></a>
         <footer class="container-full footer">
-            <div class="container-full backimage" style="background-image: url(<?php echo asset('img/contact-me.jpeg') ?>)">
+            <div class="container-full backimage" style="background-image: url(<?php echo asset('img/contact-me.jpg') ?>)">
                 <div class="lightbox">
                     <div class="container container-space">
                         <div class="line line-space">
