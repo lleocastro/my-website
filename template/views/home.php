@@ -567,7 +567,7 @@
                             <p class="nav-link-title"><strong>Informações</strong></p>
                             <ul>
                                 <li><a href="<?php echo route('portfolio/leobcastro') ?>">Sobre o site</a></li>
-                                <li><a style="text-decoration: line-through" href="<?php echo route('/hahaha') ?>" rel="nofollow">Trabalhe comigo</a></li>
+                                <li><a href="<?php echo route('/trabalhe-comigo') ?>" rel="nofollow">Trabalhe comigo</a></li>
                                 <li><a href="<?php echo route('/creditos') ?>" rel="nofollow">Creditos</a></li>
                             </ul>
                         </div>

@@ -23,6 +23,17 @@ class Pages extends CI_Controller
     }
 
     /**
+     * Displays a work with me page.
+     *
+     * @return HttpResponse
+     */
+    public function page_work_with_me()
+    {
+        analytics();
+        return $this->load->view('pages/work-with-me');
+    }
+
+    /**
      * Displays a temporary error page.
      *
      * @return HttpResponse
