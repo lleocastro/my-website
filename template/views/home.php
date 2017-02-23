@@ -60,7 +60,7 @@
         }
     </script>
 
-    <title>Léo B. Castro - Desenvolvedor Web em São José dos Campos</title>
+    <title>Léo B. Castro | Desenvolvedor Web e Empreendedor - São José dos Campos</title>
 </head>
 <body>
     <main class="container-full" role="main">
