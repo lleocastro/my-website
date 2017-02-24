@@ -102,7 +102,9 @@
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/programming-language-at-workplace_902701.htm' rel="nofollow">programming-language-at-workplace_902701 (Freepik)</a></p>
                     <p class="no-paragraph"><a href="http://www.blognerdegeek.com/wp-content/uploads/flappy-bird-thumb.jpg" rel="nofollow">flappy-bird-thumb (Blognerdegeek)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-psd/business-stationery-mock-up-design_1014359.htm' rel="nofollow">business-stationery-mock-up-design_1014359 (Freepik)</a></p>
-                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/realistic-notepad-and-pen_812842.htm'>realistic-notepad-and-pen_812842 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/realistic-notepad-and-pen_812842.htm' rel="nofollow">realistic-notepad-and-pen_812842 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/laptop-on-wooden-desk-with-social-media-diagram_902720.htm' rel="nofollow">laptop-on-wooden-desk-with-social-media-diagram_902720 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/applications-to-be-connected_902853.htm' rel="nofollow">applications-to-be-connected_902853 (Freepik)</a></p>
                 </div>
             </div>
         </div><!-- END CREDITS -->
