@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta name="description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -14,13 +14,13 @@
     <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
-    <meta itemprop="name" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
-    <meta itemprop="description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
+    <meta itemprop="description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
     <meta itemprop="image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
-    <meta property="og:description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
+    <meta property="og:description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
@@ -30,9 +30,9 @@
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
+    <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta name="twitter:description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
     <meta name="twitter:image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
@@ -60,7 +60,7 @@
         }
     </script>
 
-    <title>Léo B. Castro | Desenvolvedor Web e Empreendedor - São José dos Campos</title>
+    <title>Léo B. Castro | Desenvolvimento de Soluções Web - São José dos Campos</title>
 </head>
 <body>
     <main class="container-full" role="main">
