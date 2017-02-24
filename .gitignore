@@ -1,4 +1,5 @@
 .idea/
+application/
 vendors/
 node_modules/
 composer.lock

@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8">
+    <meta name="description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="robots" content="index, follow"/>
+    <meta name="robots" content="noindex, nofollow"/>
 
-    <meta property="og:title" content="Full-Stack Web Developer"/>
-    <meta property="og:description" content="Desenvolvimento inteligente de soluções web para seu negócio."/>
+    <meta property="og:title" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
+    <meta property="og:description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="img/intro.jpg"/>
-    <meta property="og:url" content="https://lleocastro.github.io/hello-world-html/"/>
+    <meta property="og:image" content="assets/img/smo-share-image.jpg"/>
+    <meta property="og:image:type" content="image/jpg"/>
+    <meta property="og:image:width" content="800"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:url" content="https://lleocastro.github.io/my-website/"/>
     <meta property="og:site_name" content="LEOBCASTRO"/>
     <meta property="og:locale" content="pt_BR"/>
 
-    <meta name="twitter:title" content="Full-Stack Web Developer"/>
+    <meta name="twitter:title" content="Léo B. Castro - Desenvolvedor Web em SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
+    <meta name="twitter:description" content="Sou desenvolvedor web apaixonado por PHP e focado em desenvolver soluções web que geram resultados. Conheça meu trabalho!"/>
+    <meta name="twitter:image" content="assets/img/smo-share-image.jpg"/>
+    <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
+    <link rel="stylesheet" href="assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+    <link rel="stylesheet" href="assets/css/home.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="assets/css/toastr.min.css"/>
+    <link rel="shortcut icon" href="assets/img/logo/logo-icon.ico"/>
 
-    <link rel="shortcut icon" href="img/logo/logo-icon.ico"/>
-
-    <link rel="stylesheet" href="css/animate.min.css"/>
-    <link rel="stylesheet" href="css/bootstyle.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lte IE 8]>
+        <script src="assets/js/ie-support.min.js"></script>
+    <![endif]-->
 
     <script type="application/ld+json">
         {
@@ -37,180 +44,182 @@
             "name": "Léo B. Castro",
             "description": "Full-Stack Web Developer, UX/UI Designer, Creative",
             "jobTitle": "Web Developer",
-            "email": "leonardo_carvalho@outlook.com",
-            "url": "leobcastro.com",
+            "email": "leobcastroinc@gmail.com",
+            "url": "https://lleocastro.github.io/my-website/",
             "address": "São José dos Campos, São Paulo - Brasil",
-            "image": "img/eu.jpg"
+            "image": "assets/img/leo-castro.jpg"
         }
-        </script>
+    </script>
 
-    <title>Léo B. Castro - Full-Stack Web Developer - SJCampos</title>
+    <title>Léo B. Castro | Desenvolvedor Web e Empreendedor - São José dos Campos</title>
 </head>
 <body>
-    <div class="container-full">
-        <!-- NAVBAR -->
-        <div class="navbar navbar-fixed navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a title="Logo" class="scroll" href="#intro">
-                        <img title="Logo" src="img/logo/logo-small.png" alt="Logo"/>
-                    </a>
+    <main class="container-full" role="main">
+        <header>
+            <!-- NAVBAR -->
+            <div class="navbar navbar-fixed navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a title="Logo" class="scroll" href="#intro">
+                            <img title="Logo" src="assets/img/logo/logo-small.png" alt="Logo do site de desenvolvimento web do LEOBCASTRO"/>
+                        </a>
+                    </div>
+                    <!-- TOGGLE NAVBAR BUTTON -->
+                    <input type="checkbox" class="none" id="control-nav" role="button"/>
+                    <label for="control-nav" class="control-nav"></label>
+                    <label for="control-nav" class="control-nav-close"></label>
+                    <!-- COLLAPSE NAVBAR -->
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav" role="menu">
+                            <li class="active"><a title="Pagina inicial" class="scroll" href="#intro">Inicio</a></li>
+                            <li><a title="Um breve resumo" class="scroll" href="#about-me">Sobre Mim</a></li>
+                            <li><a title="Portfólio de projetos" class="scroll" href="#portfolio">Portfólio</a></li>
+                            <li><a title="Informações para contato" class="scroll" href="#contact-me">Contato</a></li>
+                            <li><a title="Blog pessoal" style="text-decoration: line-through" href="pages/in-construction.html">Meu Blog</a></li>
+                            <li><a title="Curriculo de Léo B. Castro" style="text-decoration: line-through" href="pages/in-construction.html">Curriculo</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- TOGGLE NAVBAR BUTTON -->
-                <input type="checkbox" class="none" id="control-nav" role="button"/>
-                <label for="control-nav" class="control-nav"></label>
-                <label for="control-nav" class="control-nav-close"></label>
-
-                <!-- COLLAPSE NAVBAR -->
-                <div class="navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="active"><a class="scroll" href="#intro">Inicio</a></li>
-                        <li><a class="scroll" href="#about-me">Sobre Mim</a></li>
-                        <li><a class="scroll" href="#portfolio">Portfólio</a></li>
-                        <li><a class="scroll" href="#contact-me">Contato</a></li>
-                        <li><a style="text-decoration: line-through" href="pags/in-construction.html">Meu Blog</a></li>
-                        <li><a style="text-decoration: line-through" href="pags/in-construction.html">Curriculo</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div><!-- END NAVBAR -->
-
+            </div><!-- END NAVBAR -->
+        </header>
         <!-- FULL IMAGE -->
         <a name="intro"></a>
-        <div class="container-full backimage backimage-full" style="background-image: url('img/intro.jpg')">
+        <div id="backimage-full" class="container-full backimage backimage-full animated fadeIn" style="background-image: url('assets/img/intro.jpg')">
             <div class="lightbox center">
                 <div class="caption">
-                    <h1>Léo B. <span>Castro</span></h1>
-                    <p>Web Developer, UX/UI Designer, Creative</p>
+                    <h2>Léo B. <span>Castro</span></h2>
+                    <p class="tagline">Web Developer, UX/UI Designer, Creative</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
-                        <i class="large material-icons" style="vertical-align: -29%">phone</i>
+                        <i class="material-icons" style="vertical-align: -29%">phone</i>
                         Contate-me
                     </a>
                 </div>
             </div>
-            <a title="Sobre mim" href="#about-me" class="btn btn-circle btn-arrow wow bounceInRight center scroll" data-wow-duration="2000ms" data-wow-delay="300ms" role="button">
-                <img title="Seta" src="img/icons/arrow-down.svg" alt="Seta apontando para baixo"/>
+            <a title="Resumo sobre Léo" href="#about-me" class="btn btn-circle btn-arrow wow bounceInRight center scroll" data-wow-duration="2000ms" data-wow-delay="300ms" role="button">
+                <img title="Seta" src="assets/img/icons/arrow-down.svg" alt="Seta apontando para baixo"/>
             </a>
         </div><!-- END FULL IMAGE -->
-
         <!-- ABOUT ME -->
         <a name="about-me"></a>
         <div class="container marg-top wow fadeInUp" data-wow-duration="0.5s" data-wow-offset="200" style="visibility: visible; animation-duration: 0.5s; animation-name: fadeInUp;">
             <div class="line line-space">
                 <div class="m4col col-space center">
                     <div class="my-pic center">
-                        <img title="Léo B. Castro" src="img/eu.jpg" alt="Foto de Léo B. Castro">
+                        <img title="Léo B. Castro" src="assets/img/leo-castro.jpg" alt="Foto de perfil do Léo B. Castro">
                     </div>
                 </div>
                 <div class="m8col col-space">
                     <div class="line">
                         <div class="collist col-space">
                             <section class="introduction">
-                                <h2 class="no-margin">Léo Castro</h2>
-                                <div class="heading-line"></div>
+                                <h4 class="no-margin">Resumo</h4>
+                                <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
-                                <p class="intro">Olá, sou webmaster full-stack em São José dos Campos, São Paulo. Atualmente desenvolvo sistemas, sites e aplicações para a web com o intuito de sempre inovar e gerar resultados (esse é meu mantra). Bom, também sou um eterno estudante, curso análise e desenvolvimento de sistemas, UX/UI design e um pouco de marketing digital nas horas vagas.</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
                             <ul>
                                 <li>
-                                    <a title="Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
-                                        <img title="Google Plus" src="img/icons/google-plus.svg" alt=""/>
+                                    <a title="Me siga no Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
+                                        <img title="Google Plus" src="assets/img/icons/google-plus2.svg" alt="Google plus pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
-                                        <img title="LinkedIn" src="img/icons/linkedin.svg" alt=""/>
+                                    <a title="Me siga no LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
+                                        <img title="LinkedIn" src="assets/img/icons/linkedin2.svg" alt="LinkedIn pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
-                                        <img title="Instagram" src="img/icons/instagram.svg" alt=""/>
+                                    <a title="Me siga no Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
+                                        <img title="Instagram" src="assets/img/icons/instagram2.svg" alt="Instagram pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
-                                        <img title="Facebook" src="img/icons/facebook.svg" alt=""/>
+                                    <a title="Me siga no Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
+                                        <img title="Facebook" src="assets/img/icons/facebook2.svg" alt="Facebook pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a title="Github" rel="nofollow" href="https://github.com/lleocastro">
-                                        <img title="Github" src="img/icons/github.svg" alt=""/>
+                                    <a title="Me siga no Github" rel="nofollow" href="https://github.com/lleocastro">
+                                        <img title="Github" src="assets/img/icons/github2.svg" alt="Github pessoal de Léo B. Castro"/>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                        <a title="Baixar currículo de Léo B. Castro" href="#" class="btn btn-transparent" role="button">
+                            <i class="material-icons" style="vertical-align: -29%">offline_pin</i>
+                            Baixar Currículo
+                        </a>
+                        <small style="margin-top: 5px">Seguro! Sem vírus.</small>
                     </div>
                 </div>
             </div>
         </div><!-- END ABOUT ME -->
-
         <!-- SERVICES -->
         <section class="container profile">
             <div class="line line-space">
-                <div class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
-                    <h1 class="no-margin">O que faço de melhor</h1>
-                    <div class="heading-line"></div>
-                    <p>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</p>
-                </div>
+                <header class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
+                    <h3 class="no-margin">O que faço de melhor</h3>
+                    <div class="heading-line" role="separator"></div>
+                    <p class="tagline"><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
+                </header>
             </div>
             <div class="line">
                 <div class="m6col">
                     <div class="line">
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="500ms">
-                                <img title="Web design" src="img/icons/design.svg" alt=""/>
-                                <h3>Criar Site</h3>
-                                <p>Aliquam laoreet in lacus suscipit ultrices. Donec pellentesque erat et accumsan cursus. Donec pla.</p>
-                            </div>
+                            <article class="service wow fadeInUp" data-wow-delay="500ms">
+                                <img title="Web design" src="assets/img/icons/design.svg" alt="Criação de site e web design"/>
+                                <h1>Website</h1>
+                                <p>Cada layout é projetado pensando no usuário, levando em consideração a praticidade e a usabilidade.</p>
+                            </article>
                         </div>
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="700ms">
-                                <img title="Web design" src="img/icons/development.svg" alt=""/>
-                                <h3>Sistema Web</h3>
-                                <p>Aliquam laoreet in lacus suscipit ultrices. Donec pellentesque erat et accumsan cursus. Donec pla.</p>
-                            </div>
+                            <article class="service wow fadeInUp" data-wow-delay="900ms">
+                                <img title="Search Engine Optimization" src="assets/img/icons/bar-chart.svg" alt="Otimização de site para rankear melhor em motores de busca"/>
+                                <h1>SEO/SMO</h1>
+                                <p>Toda a estrutura é semanticamente correta para um melhor rankeamento em motores de busca (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
+                            </article>
                         </div>
                     </div>
                 </div>
                 <div class="m6col">
                     <div class="line">
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="900ms">
-                                <img title="Web design" src="img/icons/responsive.svg" alt=""/>
-                                <h3>SEO Eficiente</h3>
-                                <p>Aliquam laoreet in lacus suscipit ultrices. Donec pellentesque erat et accumsan cursus. Donec pla.</p>
-                            </div>
+                            <article class="service wow fadeInUp" data-wow-delay="700ms">
+                                <img title="Desenvolvimento" src="assets/img/icons/laptop.svg" alt="Desenvolvimento de aplicações web"/>
+                                <h1>Aplicações</h1>
+                                <p>O desenvolvimento é 100% otimizado para obter o máximo de performance e desempenho nos sistemas.</p>
+                            </article>
                         </div>
                         <div class="s6col">
-                            <div class="service wow fadeInUp" data-wow-delay="1100ms">
-                                <img title="Web design" src="img/icons/support.svg" alt=""/>
-                                <h3>Suporte</h3>
-                                <p>Aliquam laoreet in lacus suscipit ultrices. Donec pellentesque erat et accumsan cursus. Donec pla.</p>
-                            </div>
+                            <article class="service wow fadeInUp" data-wow-delay="1100ms">
+                                <img title="Suporte" src="assets/img/icons/support2.svg" alt="Icone ilustrando suporte 24 horas"/>
+                                <h1>Suporte</h1>
+                                <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
+                            </article>
                         </div>
                     </div>
                 </div>
             </div>
         </section><!-- END SERVICES -->
-
         <!-- SKILLS -->
-        <section class="container-full backimage skills marg-top" style="background-image: url('img/my-skills.jpeg')">
+        <section class="container-full backimage skills marg-top" style="background-image: url('assets/img/my-skills.jpeg')">
             <div class="lightbox">
                 <div class="container container-space">
                     <div class="line line-space">
                         <div class="collist col-space">
-                            <h1 class="no-margin">Minhas Habilidades</h1>
-                            <div class="heading-line"></div>
+                            <h3 class="no-margin">Minhas Habilidades</h3>
+                            <div class="heading-line" role="separator"></div>
                         </div>
                     </div>
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                                <p>As opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search of lorem ipsum</p>
+                                <p>Sou <em class="text-normal">desenvolvedor web</em>, tenho 23 anos, estou cursando análise e desenvolvimento de sistemas, porém atuando na área desde 2014.</p>
+                                <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop e android.</p>
+                                <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, objetivando aumentar a produtividade e gerar mais resultados.</p>
                             </div>
                         </div>
                         <div class="s6col">
@@ -218,8 +227,8 @@
                                 <div class="collist">
                                     <p class="mini-text">HTML5 / CSS3</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="2900ms" data-wow-delay="500ms">
-                                            <span class="progress-label" data-from="0" data-to="73" data-speed="2800" data-refresh-interval="30">73%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="4000ms" data-wow-delay="500ms">
+                                            <span class="progress-label" data-from="0" data-to="73" data-speed="4000" data-refresh-interval="30">73%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -228,8 +237,8 @@
                                 <div class="collist">
                                     <p class="mini-text">Javascript</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 41%" data-wow-duration="2600ms" data-wow-delay="900ms">
-                                            <span class="progress-label" data-from="0" data-to="41" data-speed="2500" data-refresh-interval="30">41%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 59%" data-wow-duration="4000ms" data-wow-delay="900ms">
+                                            <span class="progress-label" data-from="0" data-to="59" data-speed="4000" data-refresh-interval="30">59%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -238,8 +247,8 @@
                                 <div class="collist">
                                     <p class="mini-text">PHP 5/7</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 86%" data-wow-duration="3000ms" data-wow-delay="700ms">
-                                            <span class="progress-label" data-from="0" data-to="86" data-speed="2900" data-refresh-interval="30">86%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 91%" data-wow-duration="4100ms" data-wow-delay="700ms">
+                                            <span class="progress-label" data-from="0" data-to="91" data-speed="4400" data-refresh-interval="30">91%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -249,154 +258,200 @@
                 </div>
             </div>
         </section><!-- END SKILLS -->
-
         <!-- PORTFÓLIO -->
         <a name="portfolio"></a>
         <div class="container-full back-portfolio">
             <section class="container container-space portfolio">
                 <div class="line line-space">
-                    <div class="collist">
-                        <h1 class="no-margin">Meu Portfólio</h1>
-                        <div class="heading-line"></div>
-                        <p>Veja alguns dos meus principais projetos, que vai desde desenvolver sites, sistemas web a games. Clique para mais informações!</p>
-                    </div>
+                    <header class="collist">
+                        <h3 class="no-margin">Meu Portfólio</h3>
+                        <div class="heading-line" role="separator"></div>
+                        <p class="tagline">Veja alguns dos meus projetos mais recentes, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns simples games.</p>
+                        <p class="mini-text">*Clique no projeto para mais informações!</p>
+                    </header>
                 </div>
                 <div class="line line-space">
-                    <div class="m4col s4col col-space">
-                        <a href="pags/portfolio/web-template.html">
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/web-agency.html">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="img/escape-preview.png"/>
+                                        <img title="Agência Web" src="assets/img/website-web-agency.png" alt="Website de uma agência web."/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Web Template</h1>
-                                        <p>Website ficticio para uma agencia de desenvolvimento web.</p>
+                                        <h1>Agência Web</h1>
+                                        <p>Desenvolvimento de um website ficticio para uma agência de desenvolvimento web. Leia!</p>
                                     </div>
                                 </div>
                             </article>
                         </a>
                     </div>
-                    <div class="m4col s4col col-space">
-                        <a href="pags/portfolio/flappy-bird.html">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/notes-system.html">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="img/flappy-bird.jpg"/>
+                                        <img title="Sistema de Notas" src="assets/img/notes.jpg" alt="Sistema de notas online"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Flappy Bird</h1>
-                                        <p>Um divertido e viciante game para se jogar no browser desktop.</p>
+                                        <h1>Sistema de Notas</h1>
+                                        <p>Aplicativo para o <em class="text-normal">gerenciamento de notas</em> com uma separação por marcadores e painel ADM.</p>
                                     </div>
                                 </div>
                             </article>
                         </a>
                     </div>
-                    <div class="m4col s4col col-space">
-                        <a href="pags/portfolio/leobcastro.html">
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/leobcastro.html">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="img/44839-O4FYT8.jpg"/>
+                                        <img title="Site LEOBCASTRO" src="assets/img/leobcastro-website.jpg" alt="Desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>LEOBCASTRO</h1>
-                                        <p>Sim! Meu site também entra nessa lista, porque ele não é só um site :p</p>
+                                        <p>Meu próprio website entra nessa lista, porque ele é meu projeto mais recente. Veja detalhes!</p>
                                     </div>
                                 </div>
                             </article>
                         </a>
                     </div>
-                </div>
-                <div class="line line-space">
-                    <div class="m4col s4col col-space">
-                        <a href="pags/portfolio/framework.html">
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/framework-css.html">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="img/startup-framework-preview.png"/>
+                                        <img title="Framework CSS" src="assets/img/website-layout.jpg" alt="Um simples mas eficiente criador de site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Framework</h1>
-                                        <p>Minha versão customizada do CodeIgniter (um fantástico framework web).</p>
+                                        <h1>Web Design</h1>
+                                        <p>Meu "<em class="text-normal">criador de site</em>". Uma biblioteca CSS que me permite criar sites unicos para o projeto.</p>
                                     </div>
                                 </div>
                             </article>
                         </a>
                     </div>
-                    <div class="m4col s4col col-space">
-                        <a href="#contact-me" class="scroll">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="1100ms">
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/flappy-bird.html">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img src="img/icons/marketing.svg"/>
+                                        <img title="Game flappy bird" src="assets/img/game-flappy-bird.jpg" alt="Jogo desenvolvido baseado no flappy bird"/>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <h1>Flappy Bird</h1>
+                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso de desenvolvimento de jogos. Jogue!</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/framework-php.html">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                                <div class="line">
+                                    <div class="collist">
+                                        <img title="Framework PHP" src="assets/img/framework-preview.png" alt="Uma versão customizada do Codeigniter"/>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <h1>Framework PHP</h1>
+                                        <p>Esse framework me possibilita entregar projetos em menos tempo e ainda sim manter a qualidade.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="s6col m4col col-space">
+                        <a href="portfolio/includder-component.html">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                                <div class="line">
+                                    <div class="collist">
+                                        <img title="Componente Autoloader" src="assets/img/component.jpg" alt="Autoload PHP para o carregamento de classes"/>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <h1>Carregador de Classes</h1>
+                                        <p><em class="text-normal">Algoritmo</em> para <em class="text-normal">carregar classes com namespaces</em>, facilitando a importação e instanciação.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="s6col m4col col-space">
+                        <a href="#contact-me" class="scroll">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
+                                <div class="line">
+                                    <div class="collist">
+                                        <img title="Posição premium" src="assets/img/icons/marketing.svg" alt="Premio de melhor posição"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Seu Projeto</h1>
-                                        <p>Talvez seu projeto seja o proximo nesta lista.. Vamos conversar?</p>
+                                        <p>Quem sabe seu projeto seja o proximo nesta lista... Vamos conversar? Consultoria? Café? 😜</p>
                                     </div>
                                 </div>
                             </article>
                         </a>
                     </div>
-                    <div class="m4col"></div>
                 </div>
             </section>
         </div><!-- END PORTFÓLIO -->
-
         <!-- CALL TO ACTION -->
         <a name="to-action"></a>
         <div class="container-full to-action">
             <section class="container container-space wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                 <div class="line line-space">
                     <div class="collist">
-                        <h4 class="no-margin">Deixe seu E-mail!</h4>
-                        <div class="heading-line"></div>
-                        <p>Deixe seu email para que eu possa lhe enviar um pequeno questionário para ajudá-lo a descobrir do que você precisa.</p>
+                        <h3 class="no-margin">Orçamento Rápido</h3>
+                        <div class="heading-line" role="separator"></div>
+                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo.</p>
                     </div>
                 </div>
                 <div class="line">
                     <div class="collist">
-                        <form method="post" action="" accept-charset="utf-8">
-                            <input class="form" type="email" placeholder="Coloque seu principal email que eu entro em contato" required/>
-                            <button type="submit" class="btn btn-default wow fadeInRightBig" data-wow-duration="2000ms" data-wow-delay="800ms">
+                        <form id="action-form" method="post" action="#" accept-charset="utf-8">
+                            <input class="form" type="email" id="email" name="email" placeholder="Coloque seu principal email"/>
+                            <button id="action-submit" type="button" class="btn btn-default wow fadeInRightBig" data-wow-duration="2000ms" data-wow-delay="800ms">
                                 <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                                 Cadastrar
                             </button>
                         </form>
                         <p class="mini-text wow fadeInLeftBig" data-wow-duration="2000ms" data-wow-delay="900ms">Também odeio spam!</p>
                     </div>
+                    <div class="callback"></div>
                 </div>
             </section>
         </div><!-- END CALL TO ACTION -->
-
         <!-- GOOGLE MAPS -->
         <div class="container-full">
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1834.4985550220156!2d-45.911423442053184!3d-23.133780896224213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc37da6f20a1a3%3A0xde4d472955df01b2!2sR.+Jo%C3%A3o+Vila%C3%A7a+de+Oliveira%2C+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP!5e0!3m2!1spt-BR!2sbr!4v1486245011238" width="1200" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div><!-- END GOOGLE MAPS -->
-
         <!-- FOOTER -->
         <a name="contact-me"></a>
         <footer class="container-full footer">
-            <div class="container-full backimage" style="background-image: url('img/contact-me.jpeg')">
+            <div class="container-full backimage" style="background-image: url('assets/img/contact-me.jpg')">
                 <div class="lightbox">
                     <div class="container container-space">
                         <div class="line line-space">
                             <div class="m6col s6col mobile-text-center">
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h4 class="no-margin">Contate-me</h4>
-                                        <div class="heading-line"></div>
+                                        <h3 class="no-margin">Contate-me</h3>
+                                        <div class="heading-line" role="separator"></div>
                                     </div>
                                 </div>
                                 <div class="line">
@@ -405,7 +460,7 @@
                                             E-mail
                                         </p>
                                         <p class="no-paragraph">leonardo_carvalho@outlook.com</p>
-                                        <p class="no-paragraph">lleocarvalho0@gmail.com</p>
+                                        <p class="no-paragraph">leobcastroinc@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -413,7 +468,7 @@
                                         <p><i class="material-icons" style="vertical-align: -29%">phone</i>
                                             Telefone
                                         </p>
-                                        <p class="no-paragraph">+55 (012) 992739408</p>
+                                        <p class="no-paragraph">+55 (012) 991729408</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -425,9 +480,18 @@
                                         <p class="no-paragraph">São José dos Campos, SP</p>
                                     </div>
                                 </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <p><i class="material-icons" style="vertical-align: -29%">today</i>
+                                            Atendimento
+                                        </p>
+                                        <p class="no-paragraph">De segunda-feira à sexta-feira</p>
+                                        <p class="no-paragraph">Das 08:00 as 17:00 horas</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="m6col s6col col-space contact-form">
-                                <form method="post" action="" accept-charset="utf-8">
+                                <form id="message-form" method="post" action="#" accept-charset="utf-8">
                                     <div class="line line-space">
                                         <div class="collist mobile-text-center">
                                             <h4>Mande-me uma mensagem</h4>
@@ -440,36 +504,38 @@
                                             <input id="name" name="name" class="form" type="text" placeholder="Seu nome"/>
                                         </div>
                                         <div class="m6col col-space">
-                                            <label for="lastname">Sobrenome:</label>
-                                            <input id="lastname" name="lastname" class="form" type="text" placeholder="Seu sobrenome"/>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="collist col-space">
                                             <label for="email">E-mail:</label>
-                                            <input id="email" name="email" class="form" type="email" placeholder="Seu principal email"/>
+                                            <input id="email" name="email" class="form" type="email" placeholder="Principal email"/>
                                         </div>
                                     </div>
                                     <div class="line">
                                         <div class="collist col-space">
-                                            <label for="msg">Mensagem:</label>
-                                            <textarea id="msg" name="msg" class="form" placeholder="Sua mensagem"></textarea>
+                                            <label for="subject">Assunto:</label>
+                                            <input id="subject" name="subject" class="form" type="text" placeholder="Assunto"/>
                                         </div>
                                     </div>
                                     <div class="line">
                                         <div class="collist col-space">
-                                            <button type="submit" class="btn btn-default">
+                                            <label for="message">Mensagem:</label>
+                                            <textarea id="message" name="message" class="form" placeholder="Sua mensagem"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="collist col-space">
+                                            <button id="message-submit" type="button" class="btn btn-default">
                                                 <i class="material-icons" style="vertical-align: -29%">verified_user</i>
                                                 Enviar
                                             </button>
                                         </div>
                                     </div>
+                                    <div class="line line-space callback"></div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="separator-light"></div>
             <a name="footer"></a>
             <div class="container-full sub-footer">
                 <div class="container container-space">
@@ -478,35 +544,35 @@
                             <p class="nav-link-title"><strong>Navegue mais</strong></p>
                             <nav>
                                 <ul>
-                                    <li><a class="scroll" href="#contact-me">De um feedback</a></li>
-                                    <li><a class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
-                                    <li><a style="text-decoration: line-through" href="pags/in-construction.html">De uma olhada no meu curriculo</a></li>
-                                    <li><a style="text-decoration: line-through" href="pags/in-construction.html">Descubra meu blog</a></li>
-                                    <li><a style="text-decoration: line-through" class="scroll" href="#">Esse questionário é pra você!</a></li>
+                                    <li><a title="Me de um feedback" class="scroll" href="#contact-me">De um feedback</a></li>
+                                    <li><a title="Volte para o topo" class="scroll" href="#intro">Volte para o topo (inicio)</a></li>
+                                    <li><a title="Meu currículo" style="text-decoration: line-through" href="pages/in-construction.html">De uma olhada no meu currículo</a></li>
+                                    <li><a title="Blog pessoal" style="text-decoration: line-through" href="pages/in-construction.html">Descubra meu blog</a></li>
+                                    <li><a title="Questionario para orçamento" class="scroll" href="https://goo.gl/forms/rC5ZZDEAtxaJ1GEI2">Esse questionário é pra você!</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="s3col col-space">
                             <p class="nav-link-title"><strong>Informações</strong></p>
                             <ul>
-                                <li><a href="#intro">Sobre o site</a></li>
-                                <li><a style="text-decoration: line-through" href="pags/in-construction.html">Não entre aqui!</a></li>
-                                <li><a href="pags/author-credits.html" rel="nofollow">Creditos</a></li>
+                                <li><a title="LEOBCASTRO" href="portfolio/leobcastro.html">Sobre o site</a></li>
+                                <li><a title="Trabalhar no LEOBCASTRO Inc" href="pages/work-with-me.html" rel="nofollow">Trabalhe comigo</a></li>
+                                <li><a title="Para autores" href="pages/credits.html" rel="nofollow">Creditos</a></li>
                             </ul>
                         </div>
                         <div class="s5col mobile-text-center">
-                            <h5>Já que chegou até aqui..</h5>
-                            <p>Uau! Se você chegou até aqui e não deixou seu email ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um feedback para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
+                            <h6>Já que chegou até aqui..</h6>
+                            <p>Uau! Se você chegou até aqui e não deixou seu email ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um <a title="Feedback" href="#contact-me" class="scroll">feedback</a> para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
                         </div>
                     </div>
                     <div class="line line-space mobile-text-center">
                         <div class="s6col">
                             <p class="no-paragraph"><strong>Siga-me</strong>:</p>
                             <p>
-                                <a href="https://www.linkedin.com/in/leobcastro">LinkedIn</a> |
-                                <a href="https://www.instagram.com/leocastro94">Instagram</a> |
-                                <a href="https://www.facebook.com/leobcastro94">Facebook</a>  |
-                                <a href="https://github.com/lleocastro">Github</a>
+                                <a title="Me adicione no LinkedIn" href="https://www.linkedin.com/in/leobcastro">LinkedIn</a> |
+                                <a title="Siga-me no Instagram" href="https://www.instagram.com/leocastro94">Instagram</a> |
+                                <a title="Me adicione também no Facebook" href="https://www.facebook.com/leobcastro94">Facebook</a> |
+                                <a title="Veja meus projetos no Github" href="https://github.com/lleocastro">Github</a>
                             </p>
                         </div>
                         <div class="s6col"></div>
@@ -517,11 +583,32 @@
                 <p class="center">&copy; 2017 LEOBCASTRO - todos os direitos reservados.</p>
             </div>
         </footer><!-- END FOOTER -->
-    </div>
+    </main>
 </body>
+    <script>
+        var visibleHeight = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+        // Resize full intro image
+        backImg = document.getElementById("backimage-full");
+        backImg.style.height = (visibleHeight - 50) + "px";
+        // Window object resize
+        var addEvent = function(object, type, callback) {
+            if (object == null || typeof(object) == 'undefined') return;
+            if (object.addEventListener) {
+                object.addEventListener(type, callback, false);
+            } else if (object.attachEvent) {
+                object.attachEvent("on" + type, callback);
+            } else {
+                object["on" + type] = callback;
+            }
+        };
+        addEvent(window, "resize", function(event) {
+            backImg.style.height = (visibleHeight - 50) + "px";
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="assets/js/animations.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
 </html>
