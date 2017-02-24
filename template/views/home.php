@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
+    <meta name="description" content="Atrair mais clientes. Isso é o que mais pedem para mim. Porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -15,14 +15,14 @@
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta itemprop="description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
-    <meta itemprop="image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
+    <meta itemprop="description" content="Atrair mais clientes. Isso é o que mais pedem para mim. Porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
+    <meta itemprop="image" content="<?php echo asset('img/laptop-on-wooden-desk-with-social-media-diagram.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta property="og:description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
+    <meta property="og:description" content="Atrair mais clientes. Isso é o que mais pedem para mim. Porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
+    <meta property="og:image" content="<?php echo asset('img/laptop-on-wooden-desk-with-social-media-diagram.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
     <meta property="og:image:width" content="800"/>
     <meta property="og:image:height" content="600"/>
@@ -33,7 +33,7 @@
     <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
-    <meta name="twitter:image" content="<?php echo asset('img/smo-share-image.jpg') ?>"/>
+    <meta name="twitter:image" content="<?php echo asset('img/laptop-on-wooden-desk-with-social-media-diagram.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
