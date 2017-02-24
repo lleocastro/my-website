@@ -319,7 +319,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/leobcastro-website.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
+                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/OAYTJO0.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -336,7 +336,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework CSS" src="<?php echo asset('img/website-layout.jpg') ?>" alt="Um simples mas eficiente criador de site"/>
+                                        <img title="Framework CSS" src="<?php echo asset('img/OLEVLK0.jpg') ?>" alt="Um simples mas eficiente criador de site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -349,17 +349,17 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="<?php echo route('/portfolio/flappy-bird') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
+                        <a href="<?php echo route('/portfolio/carregador-de-classes') ?>">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Jogo desenvolvido baseado no flappy bird"/>
+                                        <img title="Componente Autoloader" src="<?php echo asset('img/OIU9GV0.jpg') ?>" alt="Autoload PHP para o carregamento de classes"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Flappy Bird</h1>
-                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso de desenvolvimento de jogos. Jogue!</p>
+                                        <h1>Carregador de Classes</h1>
+                                        <p><em class="text-normal">Algoritmo</em> para <em class="text-normal">carregar classes com namespaces</em>, facilitando a importação e instanciação.</p>
                                     </div>
                                 </div>
                             </article>
@@ -383,17 +383,17 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="<?php echo route('/portfolio/carregador-de-classes') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                        <a href="<?php echo route('/portfolio/flappy-bird') ?>">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Componente Autoloader" src="<?php echo asset('img/component.jpg') ?>" alt="Autoload PHP para o carregamento de classes"/>
+                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird-2.jpg') ?>" alt="Jogo desenvolvido baseado no flappy bird"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Carregador de Classes</h1>
-                                        <p><em class="text-normal">Algoritmo</em> para <em class="text-normal">carregar classes com namespaces</em>, facilitando a importação e instanciação.</p>
+                                        <h1>Flappy Bird</h1>
+                                        <p>Esse jogo foi densenvolvido seguindo aulas de um curso de desenvolvimento de jogos. Jogue!</p>
                                     </div>
                                 </div>
                             </article>
