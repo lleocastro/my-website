@@ -319,13 +319,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/OAYTJO0.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
+                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/web-development.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>LEOBCASTRO</h1>
-                                        <p>Meu próprio website entra nessa lista, porque ele é meu projeto mais recente. Veja detalhes!</p>
+                                        <p>Ele entra nessa lista porque é um projeto recente e engloba várias tecnologias. Veja detalhes!</p>
                                     </div>
                                 </div>
                             </article>
@@ -336,13 +336,13 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework CSS" src="<?php echo asset('img/OLEVLK0.jpg') ?>" alt="Um simples mas eficiente criador de site"/>
+                                        <img title="Framework CSS" src="<?php echo asset('img/website-planning.jpg') ?>" alt="Um simples mas eficiente criador de site"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Web Design</h1>
-                                        <p>Meu "<em class="text-normal">criador de site</em>". Uma biblioteca CSS que me permite criar sites unicos para o projeto.</p>
+                                        <p>Meu "<em class="text-normal">criador de site</em>". Uma biblioteca CSS que me permite criar sites unicos para cada projeto.</p>
                                     </div>
                                 </div>
                             </article>
@@ -353,7 +353,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Componente Autoloader" src="<?php echo asset('img/OIU9GV0.jpg') ?>" alt="Autoload PHP para o carregamento de classes"/>
+                                        <img title="Componente Autoloader" src="<?php echo asset('img/component-architecture.jpg') ?>" alt="Autoload PHP para o carregamento de classes"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -370,7 +370,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Framework PHP" src="<?php echo asset('img/framework-preview.png') ?>" alt="Uma versão customizada do Codeigniter"/>
+                                        <img title="Framework PHP" src="<?php echo asset('img/framework-php.jpg') ?>" alt="Uma versão customizada do Codeigniter"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -387,7 +387,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird-2.jpg') ?>" alt="Jogo desenvolvido baseado no flappy bird"/>
+                                        <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Jogo desenvolvido baseado no flappy bird"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
