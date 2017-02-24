@@ -70,38 +70,39 @@ html {
         bottom: 0;
         left: 0;
         display: block;
-        z-index: 1;
         background: rgba(0, 0, 0, .5);
-        -webkit-transition: all 500ms ease;
         transition: all 500ms ease;
         -webkit-transform: translate(100%, 0);
-        -ms-transform: translate(100%, 0);
-        transform: translate(100%, 0);
+           -moz-transform: translate(100%, 0);
+            -ms-transform: translate(100%, 0);
+                transform: translate(100%, 0);
     }
 
     .navbar-collapse {
         position: fixed;
-        z-index: 20000;
         top: 0;
         right: 0;
-        bottom: 0;
-        width: 170px;
+        z-index: 99999;
+        bottom: 0 !important;
+        width: 200px;
         border-left: 1px solid #ccc;
         background: #fff;
         overflow-x: auto;
-        -webkit-transition: all 500ms ease;
         transition: all 500ms ease;
         -webkit-transform: translate(100%, 0);
-        -ms-transform: translate(100%, 0);
-        transform: translate(100%, 0);
+           -moz-transform: translate(100%, 0);
+            -ms-transform: translate(100%, 0);
+                transform: translate(100%, 0);
     }
 
     .navbar-nav {
         text-align: right;
-        float: right;
         margin-top: 10px;
     }
 
+    .navbar-nav {
+        width: 100%;
+    }
     .navbar-nav li {
         display: block;
         padding: 15px;
@@ -116,13 +117,15 @@ html {
 }
 #control-nav:checked ~ .control-nav-close {
     -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
+       -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
 }
 #control-nav:checked ~ .navbar-collapse {
     -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
+       -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
 }
 
 /**
