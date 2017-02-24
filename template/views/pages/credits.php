@@ -66,7 +66,7 @@
                 <div class="collist">
                     <h4 class="no-margin">Creditos para Autores</h4>
                     <div class="heading-line"></div>
-                    <p class="tagline">Nunc feugiat nibh id tellus tempor, in suscipit mauris sodales. Maecenas pharetra fringilla nulla.</p>
+                    <p class="tagline">Agradecimentos aos autores dos icones e imagens que estou usando no site. Excelente qualidade!</p>
                 </div>
             </div>
             <div class="line line-space">
@@ -97,6 +97,12 @@
                     <p class="no-paragraph"><a href="http://www.freepik.com/free-vector/web-design-background_1015293.htm" rel="nofollow">css-stylle-logo (Freepik)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/weekly-planner-with-colores-post-it_848978.htm' rel="nofollow">weekly-planner-with-colores-post-it_848978 (Freepik)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/adaptative-web-development-vector_757643.htm' rel="nofollow">adaptative-web-development-vector_757643 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-psd/blank-page-mock-up-design_1053171.htm' rel="nofollow">blank-page-mock-up-design_1053171 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/architecture-infographic-template_1003600.htm' rel="nofollow">architecture-infographic-template_1003600 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/programming-language-at-workplace_902701.htm' rel="nofollow">programming-language-at-workplace_902701 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href="http://www.blognerdegeek.com/wp-content/uploads/flappy-bird-thumb.jpg" rel="nofollow">flappy-bird-thumb (Blognerdegeek)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-psd/business-stationery-mock-up-design_1014359.htm' rel="nofollow">business-stationery-mock-up-design_1014359 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/realistic-notepad-and-pen_812842.htm'>realistic-notepad-and-pen_812842 (Freepik)</a></p>
                 </div>
             </div>
         </div><!-- END CREDITS -->
