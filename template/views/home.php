@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Atrair mais clientes. Isso é o que mais pedem para mim. Porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
+    <meta name="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -15,14 +15,14 @@
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta itemprop="description" content="Atrair mais clientes. Isso é o que mais pedem para mim. Porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
-    <meta itemprop="image" content="<?php echo asset('img/laptop-on-wooden-desk-with-social-media-diagram.jpg') ?>"/>
+    <meta itemprop="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
+    <meta itemprop="image" content="<?php echo asset('img/applications-to-be-connected.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta property="og:description" content="Atrair mais clientes. Isso é o que mais pedem para mim. Porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
+    <meta property="og:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<?php echo asset('img/laptop-on-wooden-desk-with-social-media-diagram.jpg') ?>"/>
+    <meta property="og:image" content="<?php echo asset('img/applications-to-be-connected.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
     <meta property="og:image:width" content="800"/>
     <meta property="og:image:height" content="600"/>
@@ -32,8 +32,8 @@
 
     <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Atrair mais clientes. Isso é o que mais pedem para mim, porque é o que faço! Gero resultados para seu negócio. Conheça meu trabalho!"/>
-    <meta name="twitter:image" content="<?php echo asset('img/laptop-on-wooden-desk-with-social-media-diagram.jpg') ?>"/>
+    <meta name="twitter:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
+    <meta name="twitter:image" content="<?php echo asset('img/applications-to-be-connected.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
@@ -124,7 +124,7 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Full-Stack Web Developer / Creative</p>
-                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com o <em class="text-normal">desenvolvimento de soluções web</em> e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
@@ -299,7 +299,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/sistema-de-notas') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="1000ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Sistema de Notas" src="<?php echo asset('img/notes.jpg') ?>" alt="Sistema de notas online"/>
