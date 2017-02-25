@@ -14,12 +14,12 @@
     <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
-    <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
+    <meta itemprop="name" content="Léo B. Castro | Desenvolvimento de Soluções Web - São José dos Campos"/>
     <meta itemprop="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta itemprop="image" content="<?php echo asset('img/applications-to-be-connected.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
-    <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
+    <meta property="og:title" content="Léo B. Castro | Desenvolvimento de Soluções Web - São José dos Campos"/>
     <meta property="og:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="<?php echo asset('img/applications-to-be-connected.jpg') ?>"/>
@@ -30,7 +30,7 @@
     <meta property="og:site_name" content="<?php echo getenv('APP_NAME') ?>"/>
     <meta property="og:locale" content="<?php echo $this->config->item('language') ?>"/>
 
-    <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
+    <meta name="twitter:title" content="Léo B. Castro | Desenvolvimento de Soluções Web - São José dos Campos"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta name="twitter:image" content="<?php echo asset('img/applications-to-be-connected.jpg') ?>"/>
