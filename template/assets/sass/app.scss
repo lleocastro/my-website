@@ -146,14 +146,14 @@ th {
   margin: 0 auto;
 }
 .container-space {
-  padding: 10px;
+  padding: 3px;
   margin: 10px auto;
 }
 .line {
   margin: 0 auto;
 }
 .line-space {
-  padding: 10px 3px;
+  padding: 10px 0;
 }
 .line:before,
 .line:after {
@@ -174,7 +174,7 @@ th {
   width: 100% !important;
 }
 .col-space {
-  padding: 5px;
+  padding: 5px 1px;
 }
 @media (min-width: 768px) {
   .s12col, .s11col, .s10col, .s9col, .s8col, .s7col, .s6col, .s5col, .s4col, .s3col, .s2col, .s1col {
@@ -215,6 +215,16 @@ th {
   }
   .s1col {
     width: 8.33333333%;
+  }
+  .container-space {
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .line-space {
+    padding: 10px 3px;
+  }
+  .col-space {
+    padding: 5px;
   }
 }
 @media (min-width: 992px) {
@@ -257,6 +267,16 @@ th {
   .m1col {
     width: 8.33333333%;
   }
+  .container-space {
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .line-space {
+    padding: 10px 3px;
+  }
+  .col-space {
+    padding: 5px;
+  }
 }
 @media (min-width: 1200px) {
   .l12col, .l11col, .l10col, .l9col, .l8col, .l7col, .l6col, .l5col, .l4col, .l3col, .l2col, .l1col {
@@ -297,6 +317,16 @@ th {
   }
   .l1col {
     width: 8.33333333%;
+  }
+  .container-space {
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .line-space {
+    padding: 10px 3px;
+  }
+  .col-space {
+    padding: 5px;
   }
 }
 
