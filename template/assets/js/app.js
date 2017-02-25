@@ -13,7 +13,7 @@ jQuery(function($) {
     var wow = new WOW({
         boxClass:     'wow',
         animateClass: 'animated',
-        offset:       10,
+        offset:       5,
         mobile:       true,
         live:         true
     }).init();
