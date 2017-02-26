@@ -123,7 +123,7 @@
                             <section class="introduction">
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
-                                <p class="introduce">Full-Stack Web Developer / Creative</p>
+                                <p class="introduce">Desenvolvedor Web Full-Stack / Criativo</p>
                                 <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
@@ -188,7 +188,7 @@
                             <article class="service wow fadeInUp" data-wow-delay="900ms">
                                 <img title="Search Engine Optimization" src="<?php echo asset('img/icons/bar-chart.svg') ?>" alt="Otimização de site para rankear melhor em motores de busca"/>
                                 <h1>SEO/SMO</h1>
-                                <p>Toda a estrutura é semanticamente correta para um melhor rankeamento em motores de busca (<a href="https://www.google.com.br" rel="nofollow">google</a>).</p>
+                                <p>Toda a estrutura é  otimizada para buscadores, redes sociais e pessoas. "Mais conversões para o site".</p>
                             </article>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                     <header class="collist">
                         <h3 class="no-margin">Meu Portfólio</h3>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Veja alguns dos meus projetos mais recentes, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns simples games.</p>
+                        <p class="tagline">Veja alguns dos meus projetos <strong>mais recentes</strong>, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns simples games.</p>
                         <p class="mini-text">*Clique no projeto para mais informações!</p>
                     </header>
                 </div>
