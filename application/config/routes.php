@@ -63,6 +63,7 @@ $route['portfolio/framework-css'] = 'Portfolio/page_framework_css';
 $route['portfolio/leobcastro'] = 'Portfolio/page_leobcastro';
 $route['portfolio/sistema-de-notas'] = 'Portfolio/page_notes_system';
 $route['portfolio/carregador-de-classes'] = 'Portfolio/page_includder';
+$route['portfolio/ecommerce-template'] = 'Pages/in_construction';
 // ...
 
 /**

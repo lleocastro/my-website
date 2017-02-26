@@ -85,7 +85,7 @@
                             <li><a title="Portfólio de projetos" class="scroll" href="#portfolio">Portfólio</a></li>
                             <li><a title="Informações para contato" class="scroll" href="#contact-me">Contato</a></li>
                             <li><a title="Blog pessoal" style="text-decoration: line-through" href="<?php echo route('/blog') ?>">Meu Blog</a></li>
-                            <li><a title="Curriculo de Léo B. Castro" href="<?php echo route('/curriculo') ?>">Curriculo</a></li>
+                            <li><a title="Curriculo de Léo B. Castro" href="<?php echo route('/curriculo') ?>">Currículo</a></li>
                         </ul>
                     </div>
                 </div>
@@ -359,7 +359,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h1>Carregador de Classes</h1>
-                                        <p><em class="text-normal">Algoritmo</em> para <em class="text-normal">carregar classes com namespaces</em>, facilitando a importação e instanciação.</p>
+                                        <p>Algoritmo para carregar classes com namespaces, facilitando a importação e instanciação.</p>
                                     </div>
                                 </div>
                             </article>
@@ -400,11 +400,28 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
+                        <a href="<?php echo route('/portfolio/ecommerce-template') ?>">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                                <div class="line">
+                                    <div class="collist">
+                                        <img title="Loja e-commerce" src="<?php echo asset('img/e-commerce.jpg') ?>" alt="Desenvolvimento de uma loja e-commerce"/>
+                                    </div>
+                                </div>
+                                <div class="line line-space">
+                                    <div class="collist">
+                                        <h1>Loja E-Commerce</h1>
+                                        <p>Um template de uma loja de venda de computadores para implementar em e-commerce systems.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="s6col m4col col-space">
                         <a href="#contact-me" class="scroll">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Posição premium" src="<?php echo asset('img/icons/marketing.svg') ?>" alt="Premio de melhor posição"/>
+                                        <img title="Posição premium" src="<?php echo asset('img/premium.jpg') ?>" alt="Premio de melhor posição"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
@@ -427,7 +444,7 @@
                     <div class="collist">
                         <h3 class="no-margin">Orçamento Rápido</h3>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo.</p>
+                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo..</p>
                     </div>
                 </div>
                 <div class="line">
