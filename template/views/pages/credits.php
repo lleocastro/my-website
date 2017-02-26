@@ -105,6 +105,8 @@
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/realistic-notepad-and-pen_812842.htm' rel="nofollow">realistic-notepad-and-pen_812842 (Freepik)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/laptop-on-wooden-desk-with-social-media-diagram_902720.htm' rel="nofollow">laptop-on-wooden-desk-with-social-media-diagram_902720 (Freepik)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/applications-to-be-connected_902853.htm' rel="nofollow">applications-to-be-connected_902853 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/billie-dollar-with-business-chart_1025792.htm' rel="nofollow">billie-dollar-with-business-chart_1025792 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/silvery-badge-best-quality_1036661.htm' rel="nofollow">silvery-badge-best-quality_1036661 (Freepik)</a></p>
                 </div>
             </div>
         </div><!-- END CREDITS -->
