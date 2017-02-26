@@ -319,7 +319,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1300ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/web-development.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
+                                        <img title="Site LEOBCASTRO" src="<?php echo asset('img/intro.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
