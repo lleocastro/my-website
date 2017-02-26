@@ -316,7 +316,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/leobcastro') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1200ms" data-wow-delay="1100ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1300ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Site LEOBCASTRO" src="<?php echo asset('img/web-development.jpg') ?>" alt="Desenvolvimento do site LEOBCASTRO"/>
@@ -333,7 +333,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/framework-css') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1300ms" data-wow-delay="900ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1600ms" data-wow-delay="1100ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Framework CSS" src="<?php echo asset('img/website-planning.jpg') ?>" alt="Um simples mas eficiente criador de site"/>
@@ -350,7 +350,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/carregador-de-classes') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="1900ms" data-wow-delay="1300ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Componente Autoloader" src="<?php echo asset('img/component-architecture.jpg') ?>" alt="Autoload PHP para o carregamento de classes"/>
@@ -367,7 +367,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/framework-php') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="2300ms" data-wow-delay="1500ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Framework PHP" src="<?php echo asset('img/framework-php.jpg') ?>" alt="Uma versão customizada do Codeigniter"/>
@@ -384,7 +384,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/flappy-bird') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1100ms" data-wow-delay="700ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="2500ms" data-wow-delay="1800ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Game flappy bird" src="<?php echo asset('img/game-flappy-bird.jpg') ?>" alt="Jogo desenvolvido baseado no flappy bird"/>
@@ -401,7 +401,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="<?php echo route('/portfolio/ecommerce-template') ?>">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1400ms" data-wow-delay="900ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="2800ms" data-wow-delay="1900ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Loja e-commerce" src="<?php echo asset('img/e-commerce.jpg') ?>" alt="Desenvolvimento de uma loja e-commerce"/>
@@ -418,7 +418,7 @@
                     </div>
                     <div class="s6col m4col col-space">
                         <a href="#contact-me" class="scroll">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="1500ms" data-wow-delay="1100ms">
+                            <article class="portfolio-card wow fadeIn" data-wow-duration="3000ms" data-wow-delay="2000ms">
                                 <div class="line">
                                     <div class="collist">
                                         <img title="Posição premium" src="<?php echo asset('img/premium.jpg') ?>" alt="Premio de melhor posição"/>
