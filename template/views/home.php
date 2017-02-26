@@ -421,7 +421,7 @@
                             <article class="portfolio-card wow fadeIn" data-wow-duration="3000ms" data-wow-delay="2000ms">
                                 <div class="line">
                                     <div class="collist">
-                                        <img title="Posição premium" src="<?php echo asset('img/premium.jpg') ?>" alt="Premio de melhor posição"/>
+                                        <img title="Posição premium" src="<?php echo asset('img/your-project.jpg') ?>" alt="Premio de melhor posição"/>
                                     </div>
                                 </div>
                                 <div class="line line-space">
