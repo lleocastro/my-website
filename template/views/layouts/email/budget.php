@@ -1,8 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 Opa! Léo aqui de novo,
 
-Bom, agora que chegamos até aqui, preciso que você me responda uma simples pergunta para que
-eu tenha uma ideia inicial do seu problema.
+Bom, agora que chegamos até aqui, preciso que você me responda uma simples pergunta, para que
+eu tenha uma ideia inicial do seu problema..
 
 É apenas para mim ter em mente que tipo de problema você está tendo, assim marcamos uma reunião onde vou
 colher mais alguns detalhes para montar um briefing da solução para que você aprove. 😁
