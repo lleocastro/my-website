@@ -188,7 +188,7 @@
                             <article class="service wow fadeInUp" data-wow-delay="900ms">
                                 <img title="Search Engine Optimization" src="<?php echo asset('img/icons/bar-chart.svg') ?>" alt="Otimização de site para rankear melhor em motores de busca"/>
                                 <h1>SEO/SMO</h1>
-                                <p>Toda a estrutura é  otimizada para buscadores, redes sociais e pessoas. "Mais conversões para o site".</p>
+                                <p>Toda a estrutura é otimizada para buscadores e redes sociais. Atraindo mais visitantes para o website.</p>
                             </article>
                         </div>
                     </div>
