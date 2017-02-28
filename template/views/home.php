@@ -486,7 +486,6 @@
                                         <p><i class="material-icons" style="vertical-align: -29%">email</i>
                                             E-mail
                                         </p>
-                                        <p class="no-paragraph">leonardo_carvalho@outlook.com</p>
                                         <p class="no-paragraph">leobcastroinc@gmail.com</p>
                                     </div>
                                 </div>
@@ -496,6 +495,7 @@
                                             Telefone
                                         </p>
                                         <p class="no-paragraph">+55 (012) 991729408</p>
+                                        <p class="mini-text no-paragraph">(preferencial email)</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
