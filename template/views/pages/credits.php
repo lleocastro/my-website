@@ -108,6 +108,7 @@
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/billie-dollar-with-business-chart_1025792.htm' rel="nofollow">billie-dollar-with-business-chart_1025792 (Freepik)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-vector/silvery-badge-best-quality_1036661.htm' rel="nofollow">silvery-badge-best-quality_1036661 (Freepik)</a></p>
                     <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/laptop-and-coffee-cup_926723.htm' rel="nofollow">laptop-and-coffee-cup_926723 (Freepik)</a></p>
+                    <p class="no-paragraph"><a href='http://www.freepik.com/free-photo/planning-and-writing-about-social-media_902867.htm' rel="nofollow">planning-and-writing-about-social-media (Freepik)</a></p>
                 </div>
             </div>
         </div><!-- END CREDITS -->
