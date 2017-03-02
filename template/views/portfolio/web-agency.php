@@ -15,6 +15,7 @@
     <title><?php echo getenv('APP_NAME') ?> - Template de Agência Web</title>
 </head>
 <body>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/google-analytics.php') ?>
     <main class="container-full" role="main">
         <?php require_once ('includes/navbar.php') ?>
         <!-- CASE DESCRIPTION -->

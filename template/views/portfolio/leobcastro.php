@@ -15,6 +15,7 @@
     <title><?php echo getenv('APP_NAME') ?> - Como o site LEOBCASTRO foi desenvolvido</title>
 </head>
 <body>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/google-analytics.php') ?>
     <main class="container-full" role="main">
         <?php require_once ('includes/navbar.php') ?>
         <!-- CASE DESCRIPTION -->

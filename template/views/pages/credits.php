@@ -45,6 +45,7 @@
     <title><?php echo getenv('APP_NAME') ?> - Creditos para Autores</title>
 </head>
 <body>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/google-analytics.php') ?>
     <main class="container-full" role="main">
         <!-- NAVBAR -->
         <div class="navbar navbar-fixed navbar-default" role="navigation">

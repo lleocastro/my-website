@@ -34,6 +34,7 @@
     <title><?php echo getenv('APP_NAME') ?> - Trabalhe comigo!</title>
 </head>
 <body>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/google-analytics.php') ?>
     <main role="main">
         <!-- NAVBAR -->
         <div class="navbar navbar-fixed navbar-default" role="navigation">

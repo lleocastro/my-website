@@ -64,6 +64,7 @@
     <title>Léo B. Castro | Desenvolvimento de Soluções Web - São José dos Campos</title>
 </head>
 <body>
+    <?php require_once ('layouts/includes/google-analytics.php') ?>
     <main class="container-full" role="main">
         <header>
             <!-- NAVBAR -->
