@@ -44,4 +44,15 @@ class Pages extends CI_Controller
         return $this->load->view('errors/in-construction');
     }
 
+    /**
+     * Displays a error 404 page.
+     *
+     * @return HttpResponse
+     */
+    public function page_404()
+    {
+        analytics();
+        return $this->load->view('errors/custom-404');
+    }
+
 }
