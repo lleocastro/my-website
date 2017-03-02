@@ -495,7 +495,7 @@
                                             Telefone
                                         </p>
                                         <p class="no-paragraph">+55 (012) 991729408</p>
-                                        <p class="mini-text no-paragraph">(preferencial email)</p>
+                                        <p class="mini-text no-paragraph">(preferencial: email)</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
