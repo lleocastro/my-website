@@ -444,7 +444,7 @@
                     <div class="collist">
                         <h3 class="no-margin">Orçamento Rápido</h3>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo..</p>
+                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo.</p>
                     </div>
                 </div>
                 <div class="line">
@@ -522,7 +522,7 @@
                                     <div class="line line-space">
                                         <div class="collist mobile-text-center">
                                             <h4>Mande-me uma mensagem</h4>
-                                            <p>Alguma sugestão ou feedback? Projeto? Dica? Mande-me uma mensagem</p>
+                                            <p>Alguma sugestão ou feedback? Projeto? Dica? Mande uma mensagem.</p>
                                         </div>
                                     </div>
                                     <div class="line">
