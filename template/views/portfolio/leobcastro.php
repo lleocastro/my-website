@@ -29,7 +29,7 @@
                 </div>
                 <article class="line line-space">
                     <div class="m6col col-space center">
-                        <img title="Home page do site LEOBCASTRO" src="<?php echo asset('img/leobcastro-print.png') ?>" alt="Website do Léo B. Castro aberto em um mac"/>
+                        <img title="Home page do site LEOBCASTRO" src="<?php echo asset('img/leobcastro-print.png') ?>" alt="Website do Léo B. Castro aberto em um browser"/>
                     </div>
                     <div class="m6col col-space">
                         <h2>Detalhes Técnicos</h2>
@@ -51,13 +51,13 @@
                         <p>É possivel saber <em class="text-normal">o que os usuários estão fazendo no site</em>, o que estão vendo, de qual dispositivo estão acessando, horário do acesso, etc...</p>
                         <p><strong>Esse dashboard possui uma interface bem simples para que qualquer pessoa sem conhecimento técnico consiga facilmente utiliza-lo</strong>.</p>
                         <p>É possivel ver e manipular emails (captura e disparo), ver mensagens que os visitantes deixam no site, podendo responde-los ou adiciona-los em alguma lista para nutrição de leads (<em class="text-normal">marketing de conversão</em>).</p>
-                        <a title="Exemplo da interface do dashboard" href="<?php echo route('/dashboard-template') ?>" class="btn btn-light" role="button">
+                        <a title="Exemplo da interface do dashboard" href="https://github.com/lleocastro/site-manager" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>
-                            Ver o Template do Dashboard
+                            Ver o Projeto do Dashboard
                         </a>
                     </div>
                     <div class="m6col col-space center">
-                        <img title="LEOBCASTRO Dashboard" src="<?php echo asset('img/dashboard-print.png') ?>" alt="Dashboard do website aberto em um ipad"/>
+                        <img title="LEOBCASTRO Dashboard" src="<?php echo asset('img/dashboard-print.png') ?>" alt="Dashboard do website aberto em um tablet"/>
                     </div>
                     <div class="collist col-space">
                         <p class="info-text">*Esse painel de controle (<a title="Ir para o portfólio do projeto" href="https://github.com/lleocastro/site-manager" rel="nofollow">dashboard</a>) é um projeto novo que estou desenvolvendo, para tornar a gestão de sites simples e trivial.</p>
