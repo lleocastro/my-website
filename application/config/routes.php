@@ -115,10 +115,17 @@ $route['dashboard/message/show/(:num)'] = 'panel/Show_messages/show/$1';
 $route['dashboard/message/delete/(:num)'] = 'panel/Show_messages/destroy/$1';
 $route['dashboard/download/messages'] = 'panel/Show_messages/messages_download';
 
+/** Panel bloqueios */
 $route['dashboard/bloqueios'] = 'panel/Blocker';
 $route['dashboard/bloqueios/(:num)'] = 'panel/Blocker';
 $route['dashboard/bloqueio/store'] = 'panel/Blocker/store';
 $route['dashboard/bloqueio/delete/(:num)'] = 'panel/Blocker/destroy/$1';
+
+/** Panel notificações */
+$route['dashboard/notificacoes'] = 'panel/Show_notifications';
+$route['dashboard/notificacoes/(:num)'] = 'panel/Show_notifications';
+$route['dashboard/notificacao/delete/(:num)'] = 'panel/Show_notifications/destroy/$1';
+$route['dashboard/download/notificacoes'] = 'panel/Show_notifications/notifications_download';
 
 /** Ajax Requests */
 $route['email/store'] = 'Index_page/store_email';

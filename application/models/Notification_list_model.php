@@ -31,13 +31,29 @@ class Notification_list_model extends CI_Model
     }
 
     /**
+     * Retrieve a email from list.
+     *
+     * @param string $id
+     *
+     * @return Email_list_model
+     */
+    public function find($id)
+    {
+        $sql = "SELECT * FROM {$this->table} WHERE id = ? LIMIT 1";
+        $query = $this->db->query($sql, (int) $id);
+        $result = $query->row(0, 'Notification_list_model');
+
+        return (!empty($result)) ? $result : null;
+    }
+
+    /**
      * Retrieve a specific from list.
      *
      * @param string $email
      *
      * @return Email_list_model
      */
-    public function find($email)
+    public function find_by_email($email)
     {
         $sql = "SELECT * FROM {$this->table} WHERE email = ?";
         $query = $this->db->query($sql, $this->security->xss_clean($email));
@@ -81,6 +97,83 @@ class Notification_list_model extends CI_Model
         }
 
         return null;
+    }
+
+    /**
+     * @return array
+     */
+    public function all_in_array()
+    {
+        $query = $this->db->get($this->table);
+
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        }
+
+        return null;
+    }
+
+    /**
+     * @return int
+     */
+    public function count()
+    {
+        return $this->db->count_all($this->table);
+    }
+
+    /**
+     * @param int $total_lines
+     *
+     * @return Page_view_model
+     */
+    public function paginate($total_lines)
+    {
+        $this->total_lines = (int)$total_lines;
+
+        $offset = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $query = $this->db->get($this->table, $this->total_lines, $offset);
+
+        if ($query->num_rows() > 0) {
+            return $query->result('Notification_list_model');
+        }
+
+        return null;
+    }
+
+    /**
+     * @return string
+     */
+    public function pagination_links()
+    {
+        if ($this->total_lines !== null) {
+            $this->load->library('pagination');
+
+            $config = [
+                'base_url' => base_url('/dashboard/notificacoes'),
+                'per_page' => $this->total_lines,
+                'num_links' => 5,
+                'uri_segment' => 3,
+                'total_rows' => $this->count(),
+            ];
+
+            $this->pagination->initialize(array_merge($config, pagination_styled()));
+            return $this->pagination->create_links();
+        }
+
+        return null;
+    }
+
+    /**
+     * @param int $id
+     *
+     * @return bool
+     */
+    public function delete($id)
+    {
+        $this->db->where('id', (int) $id);
+        $status = $this->db->delete($this->table);
+
+        return $status;
     }
 
     /**
