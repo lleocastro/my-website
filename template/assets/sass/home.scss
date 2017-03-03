@@ -152,7 +152,7 @@ html {
     text-align: center;
 }
 
-.caption h2 {
+.caption h1 {
     font-size: 4.5em;
     font-weight: 700;
     text-transform: uppercase;
@@ -198,7 +198,7 @@ html {
 }
 
 @media (max-width: 1025px) {
-    .caption h2 {
+    .caption h1 {
         font-size: 3.5em;
     }
     .caption p {
@@ -212,7 +212,7 @@ html {
 }
 
 @media (max-width: 838px) {
-    .caption h2 {
+    .caption h1 {
         font-size: 3em;
     }
     .caption p {
@@ -225,7 +225,7 @@ html {
     }
 }
 @media (max-width: 768px) {
-    .caption h2 {
+    .caption h1 {
         font-size: 2.5em;
     }
     .caption .btn {
@@ -279,7 +279,7 @@ html {
 
 @media screen and (max-width: 768px) {
     .introduction h4 {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     .my-pic {
         width: 180px;
@@ -290,9 +290,15 @@ html {
 .profile {
     padding-bottom: 35px;
 }
-.profile-header h3 {
+.profile-header h1 {
+    font-size: 1.6em;
     font-weight: 700;
     text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .profile-header h1 {
+        font-size: 1.5em;
+    }
 }
 .social-links ul {
     margin-left: -45px;
@@ -332,9 +338,14 @@ html {
 .service p {
     font-size: 1em;
 }
-.service h1 {
+.service h2 {
     font-size: 1.5em;
     font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+    .service h2 {
+        font-size: 1.3em;
+    }
 }
 .service img {
     width: 70px;
@@ -403,9 +414,14 @@ html {
     padding-top: 20px;
     padding-bottom: 50px;
 }
-.portfolio h3 {
+.portfolio h1 {
     font-size: 2em;
     font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+    .portfolio h1 {
+        font-size: 1.7em;
+    }
 }
 .portfolio-card {
     text-align: center;
@@ -425,7 +441,7 @@ html {
     height: 280px;
     overflow: visible;
 }
-.portfolio-card h1 {
+.portfolio-card h2 {
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -447,11 +463,11 @@ html {
 .to-action {
     background-color: #00bcd4;
 }
-.to-action h3 {
+.to-action h1 {
     font-size: 2em;
     font-weight: 700;
 }
-.to-action h3, .to-action p {
+.to-action h1, .to-action p {
     color: #ffffff;
 }
 .to-action .heading-line {
@@ -470,7 +486,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-    .to-action h5 {
+    .to-action h1 {
         font-size: 1.7em;
     }
     .to-action .btn {

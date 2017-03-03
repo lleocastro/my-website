@@ -8,7 +8,6 @@
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
-    <meta name="robots" content="noimageindex"/>
 
     <link rel="base" href="https://www.leobcastro.com"/>
     <link rel="canonical" href="<?php echo base_url() ?>"/>
@@ -94,24 +93,24 @@
             </div><!-- END NAVBAR -->
         </header>
         <!-- FULL IMAGE -->
-        <a name="intro"></a>
+        <a id="intro"></a>
         <div id="backimage_full" class="container-full backimage animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)" onload="backimage_full.style.backgroundAttachment = 'fixed'">
             <div class="lightbox center">
-                <div class="caption">
-                    <h2>Léo B. <span>Castro</span></h2>
+                <header class="caption">
+                    <h1>Léo B. <span>Castro</span></h1>
                     <p class="tagline">Web Developer, UX/UI Designer, Criativo</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
                         <i class="material-icons" style="vertical-align: -29%">phone</i>
                         Contate-me
                     </a>
-                </div>
+                </header>
             </div>
             <a title="Resumo sobre Léo" href="#about-me" class="btn btn-circle btn-arrow wow bounceInRight center scroll" data-wow-duration="2000ms" data-wow-delay="300ms" role="button">
                 <img title="Seta" src="<?php echo asset('img/icons/arrow-down.svg') ?>" alt="Seta apontando para baixo"/>
             </a>
         </div><!-- END FULL IMAGE -->
         <!-- ABOUT ME -->
-        <a name="about-me"></a>
+        <a id="about-me"></a>
         <div class="container marg-top wow fadeInUp" data-wow-duration="0.5s" data-wow-offset="200" style="visibility: visible; animation-duration: 0.5s; animation-name: fadeInUp;">
             <div class="line line-space">
                 <div class="m4col col-space center">
@@ -120,14 +119,14 @@
                     </div>
                 </div>
                 <div class="m8col col-space">
-                    <div class="line">
+                    <section class="line">
                         <div class="collist col-space">
-                            <section class="introduction">
+                            <header class="introduction">
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Desenvolvedor Web Freelancer / Empreendedor</p>
                                 <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
-                            </section>
+                            </header>
                         </div>
                         <div class="collist col-space social-links">
                             <ul>
@@ -163,7 +162,7 @@
                             Baixar Currículo
                         </a>
                         <small style="margin-top: 5px">Seguro! Sem vírus.</small>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div><!-- END ABOUT ME -->
@@ -171,7 +170,7 @@
         <section class="container profile">
             <div class="line line-space">
                 <header class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
-                    <h3 class="no-margin">O que faço de melhor</h3>
+                    <h1 class="no-margin">O que faço de melhor</h1>
                     <div class="heading-line" role="separator"></div>
                     <p class="tagline"><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
                 </header>
@@ -182,14 +181,14 @@
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="500ms">
                                 <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt="Criação de site e web design"/>
-                                <h1>Website</h1>
+                                <h2>Website</h2>
                                 <p>Cada layout é projetado pensando no usuário, levando em consideração a praticidade e a usabilidade.</p>
                             </article>
                         </div>
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="900ms">
                                 <img title="Search Engine Optimization" src="<?php echo asset('img/icons/bar-chart.svg') ?>" alt="Otimização de site para rankear melhor em motores de busca"/>
-                                <h1>SEO/SMO</h1>
+                                <h2>SEO/SMO</h2>
                                 <p>Toda a estrutura é otimizada para buscadores e redes sociais. Atraindo mais visitantes para o website.</p>
                             </article>
                         </div>
@@ -200,14 +199,14 @@
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="700ms">
                                 <img title="Desenvolvimento" src="<?php echo asset('img/icons/laptop.svg') ?>" alt="Desenvolvimento de aplicações web"/>
-                                <h1>Aplicações</h1>
+                                <h2>Aplicações</h2>
                                 <p>O desenvolvimento é 100% otimizado para obter o máximo de performance e desempenho nos sistemas.</p>
                             </article>
                         </div>
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="1100ms">
                                 <img title="Suporte" src="<?php echo asset('img/icons/support2.svg') ?>" alt="Icone ilustrando suporte 24 horas"/>
-                                <h1>Suporte</h1>
+                                <h2>Suporte</h2>
                                 <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
                             </article>
                         </div>
@@ -270,12 +269,12 @@
             </div>
         </section><!-- END SKILLS -->
         <!-- PORTFÓLIO -->
-        <a name="portfolio"></a>
+        <a id="portfolio"></a>
         <div class="container-full back-portfolio">
             <section class="container container-space portfolio">
                 <div class="line line-space">
                     <header class="collist">
-                        <h3 class="no-margin">Meu Portfólio</h3>
+                        <h1 class="no-margin">Meu Portfólio</h1>
                         <div class="heading-line" role="separator"></div>
                         <p class="tagline">Veja alguns dos meus projetos <strong>mais recentes</strong>, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns simples games.</p>
                         <p class="mini-text">*Clique no projeto para mais informações!</p>
@@ -292,7 +291,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Agência Web</h1>
+                                        <h2>Agência Web</h2>
                                         <p>Desenvolvimento de um website ficticio para uma agência de desenvolvimento web. Leia!</p>
                                     </div>
                                 </div>
@@ -309,7 +308,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Sistema de Notas</h1>
+                                        <h2>Sistema de Notas</h2>
                                         <p>Aplicativo para o <em class="text-normal">gerenciamento de notas</em> com uma separação por marcadores e painel ADM.</p>
                                     </div>
                                 </div>
@@ -326,7 +325,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>LEOBCASTRO</h1>
+                                        <h2>LEOBCASTRO</h2>
                                         <p>Ele entra nessa lista porque é um projeto recente e engloba várias tecnologias. Veja detalhes!</p>
                                     </div>
                                 </div>
@@ -343,7 +342,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Web Design</h1>
+                                        <h2>Web Design</h2>
                                         <p>Meu "<em class="text-normal">criador de site</em>". Uma biblioteca CSS que me permite criar sites unicos para cada projeto.</p>
                                     </div>
                                 </div>
@@ -360,7 +359,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Carregador de Classes</h1>
+                                        <h2>Carregador de Classes</h2>
                                         <p>Algoritmo para carregar classes com namespaces, facilitando a importação e instanciação.</p>
                                     </div>
                                 </div>
@@ -377,7 +376,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Framework PHP</h1>
+                                        <h2>Framework PHP</h2>
                                         <p>Esse framework me possibilita entregar projetos em menos tempo e ainda sim manter a qualidade.</p>
                                     </div>
                                 </div>
@@ -394,7 +393,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Flappy Bird</h1>
+                                        <h2>Flappy Bird</h2>
                                         <p>Esse jogo foi densenvolvido seguindo aulas de um curso de desenvolvimento de jogos. Jogue!</p>
                                     </div>
                                 </div>
@@ -411,7 +410,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Loja E-Commerce</h1>
+                                        <h2>Loja E-Commerce</h2>
                                         <p>Um template de uma loja de venda de computadores para implementar em e-commerce systems.</p>
                                     </div>
                                 </div>
@@ -428,7 +427,7 @@
                                 </div>
                                 <div class="line line-space">
                                     <div class="collist">
-                                        <h1>Seu Projeto</h1>
+                                        <h2>Seu Projeto</h2>
                                         <p>Quem sabe seu projeto seja o proximo nesta lista... Vamos conversar? Consultoria? Café? 😜</p>
                                     </div>
                                 </div>
@@ -439,15 +438,15 @@
             </section>
         </div><!-- END PORTFÓLIO -->
         <!-- CALL TO ACTION -->
-        <a name="to-action"></a>
+        <a id="to-action"></a>
         <div class="container-full to-action">
             <section class="container container-space wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                 <div class="line line-space">
-                    <div class="collist">
-                        <h3 class="no-margin">Orçamento Rápido</h3>
+                    <header class="collist">
+                        <h1 class="no-margin">Orçamento Rápido</h1>
                         <div class="heading-line" role="separator"></div>
                         <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo.</p>
-                    </div>
+                    </header>
                 </div>
                 <div class="line">
                     <div class="collist">
@@ -470,7 +469,7 @@
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1834.4985550220156!2d-45.911423442053184!3d-23.133780896224213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc37da6f20a1a3%3A0xde4d472955df01b2!2sR.+Jo%C3%A3o+Vila%C3%A7a+de+Oliveira%2C+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP!5e0!3m2!1spt-BR!2sbr!4v1486245011238" width="1200" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div><!-- END GOOGLE MAPS -->
         <!-- FOOTER -->
-        <a name="contact-me"></a>
+        <a id="contact-me"></a>
         <footer class="container-full footer">
             <div id="oBdy" class="container-full backimage" style="background-image: url(<?php echo asset('img/contact-me.jpg') ?>)" onload="oBdy.style.backgroundAttachment = 'fixed'">
                 <div class="lightbox">
@@ -566,7 +565,7 @@
                 </div>
             </div>
             <div class="separator-light"></div>
-            <a name="footer"></a>
+            <a id="footer"></a>
             <div class="container-full sub-footer">
                 <div class="container container-space">
                     <div class="line line-space">
@@ -612,7 +611,6 @@
             <?php require_once ('layouts/includes/final-footer.php') ?>
         </footer><!-- END FOOTER -->
     </main>
-</body>
     <script>
         var visibleHeight = window.innerHeight
             || document.documentElement.clientHeight
@@ -639,4 +637,5 @@
     <script src="<?php echo asset('js/animations.min.js') ?>"></script>
     <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
     <script src="<?php echo asset('js/app.min.js') ?>"></script>
+</body>
 </html>
