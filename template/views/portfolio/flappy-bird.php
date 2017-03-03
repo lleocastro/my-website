@@ -47,7 +47,7 @@
             </section>
         </div><!-- END CASE DESCRIPTION -->
         <!-- DEV INFORMATIONS -->
-        <div class="container-full backimage informations" style="background-image: url(<?php echo asset('img/portfolio.jpeg') ?>)">
+        <div id="oBdy" class="container-full backimage informations" style="background-image: url(<?php echo asset('img/portfolio.jpeg') ?>)" onload="oBdy.style.backgroundAttachment = 'fixed'">
             <div class="lightbox">
                 <div class="container container-space">
                     <div class="line line-space">
