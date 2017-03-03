@@ -95,7 +95,7 @@
         </header>
         <!-- FULL IMAGE -->
         <a name="intro"></a>
-        <div id="backimage-full" class="container-full backimage backimage-full animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)">
+        <div id="backimage-full" class="container-full backimage animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)" onload="backimage-full.style.backgroundAttachment = 'fixed'">
             <div class="lightbox center">
                 <div class="caption">
                     <h2>Léo B. <span>Castro</span></h2>
@@ -126,7 +126,7 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce">Desenvolvedor Web Freelancer / Empreendedor</p>
-                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Estou cursando uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </section>
                         </div>
                         <div class="collist col-space social-links">
@@ -216,7 +216,7 @@
             </div>
         </section><!-- END SERVICES -->
         <!-- SKILLS -->
-        <section class="container-full backimage skills marg-top" style="background-image: url(<?php echo asset('img/my-skills.jpeg') ?>)">
+        <section id="oBdy" class="container-full backimage skills marg-top" style="background-image: url(<?php echo asset('img/my-skills.jpeg') ?>)" onload="oBdy.style.backgroundAttachment = 'fixed'">
             <div class="lightbox">
                 <div class="container container-space">
                     <div class="line line-space">
@@ -228,8 +228,8 @@
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>Sou <em class="text-normal">programador web</em>, tenho <?php echo date('Y') - 1994 ?> anos, estou cursando análise e desenvolvimento de sistemas, porém atuando na área desde 2014.</p>
-                                <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop e android.</p>
+                                <p>Sou <em class="text-normal">programador web</em>, tenho <?php echo date('Y') - 1994 ?> anos, cursei uma faculdade de análise e desenvolvimento de sistemas de 2015 a 2016, porém atuando na área desde 2014.</p>
+                                <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop (computadores) e android (smartphones e tablets).</p>
                                 <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em <em class="text-normal">desenvolver soluções</em> e ferramentas para automatizar processos, objetivando aumentar a produtividade e gerar mais resultados.</p>
                             </div>
                         </div>
@@ -472,7 +472,7 @@
         <!-- FOOTER -->
         <a name="contact-me"></a>
         <footer class="container-full footer">
-            <div class="container-full backimage" style="background-image: url(<?php echo asset('img/contact-me.jpg') ?>)">
+            <div id="oBdy" class="container-full backimage" style="background-image: url(<?php echo asset('img/contact-me.jpg') ?>)" onload="oBdy.style.backgroundAttachment = 'fixed'">
                 <div class="lightbox">
                     <div class="container container-space">
                         <div class="line line-space">
