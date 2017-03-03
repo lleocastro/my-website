@@ -95,7 +95,7 @@
         </header>
         <!-- FULL IMAGE -->
         <a name="intro"></a>
-        <div id="backimage-full" class="container-full backimage animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)" onload="backimage-full.style.backgroundAttachment = 'fixed'">
+        <div id="backimage_full" class="container-full backimage animated fadeIn" style="background-image: url(<?php echo asset('img/intro.jpg') ?>)" onload="backimage_full.style.backgroundAttachment = 'fixed'">
             <div class="lightbox center">
                 <div class="caption">
                     <h2>Léo B. <span>Castro</span></h2>
@@ -618,7 +618,7 @@
             || document.documentElement.clientHeight
             || document.body.clientHeight;
         // Resize full intro image
-        backImg = document.getElementById("backimage-full");
+        backImg = document.getElementById("backimage_full");
         backImg.style.height = (visibleHeight - 50) + "px";
         // Window object resize
         var addEvent = function(object, type, callback) {
