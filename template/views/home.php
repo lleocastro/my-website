@@ -205,8 +205,8 @@
                         </div>
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="1100ms">
-                                <img title="Suporte" src="<?php echo asset('img/icons/support2.svg') ?>" alt="Icone ilustrando suporte 24 horas"/>
-                                <h2>Suporte</h2>
+                                <img title="Segurança" src="<?php echo asset('img/icons/firewall2.svg') ?>" alt="Segurança em sistemas web"/>
+                                <h2>Segurança</h2>
                                 <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
                             </article>
                         </div>
