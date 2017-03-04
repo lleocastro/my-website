@@ -75,7 +75,7 @@
                 <header class="m4col col-space">
                     <h1>Resultados é o que me motiva</h1>
                     <p class="tagline">Meu pensamento é simples! Resultados geram resultados, então dou o meu máximo em cada projeto para gerar resultados para meus clientes, e eles geram resultados para mim.</p>
-                    <a href="#to-action" class="btn btn-light scroll">Quero Resultados!</a>
+                    <a title="Orçamento" href="#to-action" class="btn btn-light scroll" role="button">Quero Resultados!</a>
                 </header>
             </div>
             <div class="line line-space">
