@@ -163,7 +163,7 @@ if (!function_exists('analytics')) {
             ->set_addr(filter_input(INPUT_SERVER, 'REMOTE_ADDR'))
             ->set_host(filter_input(INPUT_SERVER, 'HTTP_HOST'))
             ->set_route(base_url(uri_string()))
-            ->ignores(['127.0.0.1'])
+            //->ignores(['127.0.0.1'])
             ->save();
     }
 }

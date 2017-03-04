@@ -40,6 +40,15 @@ class Page_view_model extends CI_Model
         parent::__construct();
     }
 
+    public function find_by_addr($addr)
+    {
+        $sql = "SELECT * FROM {$this->table} WHERE addr = ? LIMIT 1";
+        $query = $this->db->query($sql, $this->security->xss_clean($addr));
+        $result = $query->row(0, 'Page_view_model');
+
+        return (!empty($result)) ? $result : null;
+    }
+
     /**
      * Store a informations.
      *
@@ -168,6 +177,14 @@ class Page_view_model extends CI_Model
     {
         $this->ignore_list = $addrs;
         return $this;
+    }
+
+    public function delete($ip)
+    {
+        $this->db->where('addr', $this->security->xss_clean($ip));
+        $status = $this->db->delete($this->table);
+
+        return $status;
     }
 
     /**

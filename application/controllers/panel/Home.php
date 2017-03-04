@@ -33,4 +33,15 @@ class Home extends CI_Controller
         ]);
     }
 
+    public function destroy()
+    {
+        $addr = $this->input->post()['addr'];
+
+        if ($this->page_view->find_by_addr($addr) !== null) {
+            $this->page_view->delete($addr);
+        }
+
+        redirect('/dashboard');
+    }
+
 }

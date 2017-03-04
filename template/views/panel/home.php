@@ -127,7 +127,14 @@
                 <div class="row">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title"></h3>
+                            <h3 class="panel-title">
+                                Deletar Rastro:
+                                <form method="post" action="<?php echo route('dashboard/trail/delete') ?>" accept-charset="utf-8">
+                                    <input type="text" name="addr" placeholder="IP origem..."/>
+                                    <?php echo csrf_field() ?>
+                                    <button type="submit">Apagar</button>
+                                </form>
+                            </h3>
                         </div>
                         <div class="panel-body">
                             <table id="email-table" class="table table-striped table-responsive table-hover table-responsive">
