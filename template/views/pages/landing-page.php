@@ -96,7 +96,7 @@
                 <div class="m4col col-space">
                     <div class="xcard">
                         <h2>Facil de Gerenciar com Meu Dashboard</h2>
-                        <p>Com o painel de controle que estou criando é muito facil gerenciar o site, é possivel visualizar algumas métricas de acesso ao site, como também é possivel gerenciar emails e mensagens que os visitantes deixam no site. Veja detalhes sobre o projeto <a href="#">aqui</a>.</p>
+                        <p>Com o painel de controle que estou criando é muito facil gerenciar o site, é possivel visualizar algumas métricas de acesso ao site, como também é possivel gerenciar emails e mensagens que os visitantes deixam no site. Veja detalhes sobre o projeto <a title="Portfólio do projeto" href="<?php echo route('/portfolio/leobcastro') ?>">aqui</a>.</p>
                     </div>
                 </div>
                 <div class="m4col col-space">
