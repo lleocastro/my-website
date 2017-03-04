@@ -428,7 +428,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h2>Seu Projeto</h2>
-                                        <p>Ainda não se convenceu? Ok! Clique aqui e leia mais sobre o que farei por você. Cliqueee 😜</p>
+                                        <p>Ainda não se convenceu? Ok! Clique aqui e leia mais sobre o que farei por você. <strong>Cliqueee</strong>! 😜</p>
                                     </div>
                                 </div>
                             </article>
