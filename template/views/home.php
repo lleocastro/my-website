@@ -418,7 +418,7 @@
                         </a>
                     </div>
                     <div class="s6col m4col col-space">
-                        <a href="#contact-me" class="scroll">
+                        <a href="<?php echo route('/solucao-web') ?>" class="scroll">
                             <article class="portfolio-card wow fadeIn" data-wow-duration="3000ms" data-wow-delay="2000ms">
                                 <div class="line">
                                     <div class="collist">
@@ -428,7 +428,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h2>Seu Projeto</h2>
-                                        <p>Quem sabe seu projeto seja o proximo nesta lista... Vamos conversar? Consultoria? Café? 😜</p>
+                                        <p>Ainda não se convenceu? Ok! Clique aqui e leia mais sobre o que farei por você. Cliqueee 😜</p>
                                     </div>
                                 </div>
                             </article>

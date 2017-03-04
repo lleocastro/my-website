@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content=""/>
+    <meta name="description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -15,14 +15,14 @@
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Desenvolvimento de Soluções Web - SJCampos"/>
-    <meta itemprop="description" content=""/>
-    <meta itemprop="image" content=""/>
+    <meta itemprop="description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
+    <meta itemprop="image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Desenvolvimento de Soluções Web - SJCampos"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
     <meta property="og:image:width" content="800"/>
     <meta property="og:image:height" content="600"/>
@@ -32,8 +32,8 @@
 
     <meta name="twitter:title" content="Desenvolvimento de Soluções Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:image" content=""/>
+    <meta name="twitter:description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
+    <meta name="twitter:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
@@ -48,6 +48,7 @@
     <title>Desenvolvimento de Soluções Web - São José dos Campos</title>
 </head>
 <body>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/google-analytics.php') ?>
     <main class="container-full" role="main">
         <header>
             <!-- NAVBAR -->
@@ -64,18 +65,18 @@
                 </div>
             </div><!-- END NAVBAR -->
         </header>
-        <div class="container container-space margin-top">
+        <section class="container container-space margin-top">
             <div class="line line-space intro">
                 <div class="m8col col-space center">
                     <div class="img-box">
-                        <img src="<?php echo asset('img/laptop-with-colorful-business-documents_1232-821.jpg') ?>"/>
+                        <img title="Resultados" src="<?php echo asset('img/laptop-with-colorful-business-documents.jpg') ?>" alt="Geramos resultodos para seu negócio"/>
                     </div>
                 </div>
-                <div class="m4col col-space">
+                <header class="m4col col-space">
                     <h1>Resultados é o que me motiva</h1>
-                    <p>Meu pensamento é simples! Resultados geram resultados, então dou o meu máximo em cada projeto para gerar resultados para meus clientes, e eles geram resultados para mim.</p>
+                    <p class="tagline">Meu pensamento é simples! Resultados geram resultados, então dou o meu máximo em cada projeto para gerar resultados para meus clientes, e eles geram resultados para mim.</p>
                     <a href="#to-action" class="btn btn-light scroll">Quero Resultados!</a>
-                </div>
+                </header>
             </div>
             <div class="line line-space">
                 <div class="collist">
@@ -88,24 +89,24 @@
             <div class="line line-space">
                 <div class="m4col col-space">
                     <div class="xcard">
-                        <h1>Otimizado para o Mercado Web Nacional</h1>
+                        <h2>Otimizado para o Mercado Web Nacional</h2>
                         <p>O desenvolvimento é focando em distribuição de conteúdo otimizado, o que levará os usuários a converterem mais, e também é aplicado protocolos das principais redes sociais para definir um conteúdo de compartilhamento personalizado.</p>
                     </div>
                 </div>
                 <div class="m4col col-space">
                     <div class="xcard">
-                        <h1>Facil de Gerenciar com Meu Dashboard</h1>
+                        <h2>Facil de Gerenciar com Meu Dashboard</h2>
                         <p>Com o painel de controle que estou criando é muito facil gerenciar o site, é possivel visualizar algumas métricas de acesso ao site, como também é possivel gerenciar emails e mensagens que os visitantes deixam no site. Veja detalhes sobre o projeto <a href="#">aqui</a>.</p>
                     </div>
                 </div>
                 <div class="m4col col-space">
                     <div class="xcard">
-                        <h1>Suporte Gratuito 24h para Clientes</h1>
+                        <h2>Suporte Gratuito 24h para Clientes</h2>
                         <p>Estou sempre disposto a atender clientes da melhor forma possível, atendendo 24h por dia, 7 dias por semana. Além de correções de problemas que possam surgir o suporte também Inclui atualizações para novas versões e melhorias.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- CALL TO ACTION -->
         <a id="to-action"></a>
         <div class="container-full backimage to-action" style="background-image: url(<?php echo asset('img/pexels-photo-30776.jpg') ?>)">
@@ -136,9 +137,7 @@
             </div>
         </div><!-- END CALL TO ACTION -->
     </main>
-    <footer class="container-full final-footer">
-        <p class="center">&copy; 2017 <?php echo getenv('APP_NAME') ?> - todos os direitos reservados.</p>
-    </footer>
+    <?php require_once (dirname(__DIR__) . '/layouts/includes/final-footer.php') ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
     <script src="<?php echo asset('js/landing-page.min.js') ?>"></script>
