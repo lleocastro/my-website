@@ -55,4 +55,15 @@ class Pages extends CI_Controller
         return $this->load->view('errors/custom-404');
     }
 
+    /**
+     * Displays a call to action page.
+     *
+     * @return HttpResponse
+     */
+    public function page_web_solution()
+    {
+        analytics();
+        return $this->load->view('pages/landing-page');
+    }
+
 }

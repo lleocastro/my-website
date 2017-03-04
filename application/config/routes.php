@@ -84,6 +84,7 @@ $route['confirm/email/(:any)'] = 'Confirmation/email_list/$1';
 $route['confirm/email/delete/(:any)'] = 'Confirmation/destroy_email_list/$1';
 $route['resend/budget/(:any)'] = 'Confirmation/budget/$1';
 $route['download/curriculo'] = 'Index_page/curriculum_download';
+$route['solucao-web'] = 'Pages/page_web_solution';
 
 /**
  * Panel Routes
