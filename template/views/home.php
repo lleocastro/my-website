@@ -100,7 +100,7 @@
                     <h1>Léo B. <span>Castro</span></h1>
                     <p class="tagline">Web Developer, UX/UI Designer, Creative</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
-                        <i class="material-icons" style="vertical-align: -29%">phone</i>
+                        <i class="material-icons" style="vertical-align: -29%">email</i>
                         Contate-me
                     </a>
                 </header>
@@ -235,30 +235,30 @@
                         <div class="s6col">
                             <div class="line">
                                 <div class="collist">
-                                    <p class="mini-text">HTML5 / CSS3</p>
+                                    <p class="mini-text">Programação</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 73%" data-wow-duration="4000ms" data-wow-delay="500ms">
-                                            <span class="progress-label" data-from="0" data-to="73" data-speed="4000" data-refresh-interval="30">73%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 87%" data-wow-duration="4000ms" data-wow-delay="500ms">
+                                            <span class="progress-label" data-from="0" data-to="87" data-speed="4000" data-refresh-interval="30">87%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="line">
                                 <div class="collist">
-                                    <p class="mini-text">Javascript</p>
+                                    <p class="mini-text">Web Design</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 59%" data-wow-duration="4000ms" data-wow-delay="900ms">
-                                            <span class="progress-label" data-from="0" data-to="59" data-speed="4000" data-refresh-interval="30">59%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="4000ms" data-wow-delay="700ms">
+                                            <span class="progress-label" data-from="0" data-to="61" data-speed="4000" data-refresh-interval="30">61%</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="line">
                                 <div class="collist">
-                                    <p class="mini-text">PHP 5/7</p>
+                                    <p class="mini-text">Criatividade</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 91%" data-wow-duration="4100ms" data-wow-delay="700ms">
-                                            <span class="progress-label" data-from="0" data-to="91" data-speed="4400" data-refresh-interval="30">91%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 97%" data-wow-duration="4100ms" data-wow-delay="1000ms">
+                                            <span class="progress-label" data-from="0" data-to="97" data-speed="4400" data-refresh-interval="30">97%</span>
                                         </div>
                                     </div>
                                 </div>
