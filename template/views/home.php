@@ -100,7 +100,7 @@
                     <h1>Léo B. <span>Castro</span></h1>
                     <p class="tagline">Web Developer, UX/UI Designer, Creative</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
-                        <i class="material-icons" style="vertical-align: -29%">email</i>
+                        <i class="material-icons" style="vertical-align: -29%">question_answer</i>
                         Contate-me
                     </a>
                 </header>
@@ -247,8 +247,8 @@
                                 <div class="collist">
                                     <p class="mini-text">Web Design</p>
                                     <div class="progress">
-                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="4000ms" data-wow-delay="700ms">
-                                            <span class="progress-label" data-from="0" data-to="61" data-speed="4000" data-refresh-interval="30">61%</span>
+                                        <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 61%" data-wow-duration="4000ms" data-wow-delay="800ms">
+                                            <span class="progress-label" data-from="0" data-to="61" data-speed="4500" data-refresh-interval="30">61%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +258,7 @@
                                     <p class="mini-text">Criatividade</p>
                                     <div class="progress">
                                         <div class="progress-bar wow fadeInLeftBig" role="progressbar" style="width: 97%" data-wow-duration="4100ms" data-wow-delay="1000ms">
-                                            <span class="progress-label" data-from="0" data-to="97" data-speed="4400" data-refresh-interval="30">97%</span>
+                                            <span class="progress-label" data-from="0" data-to="97" data-speed="4800" data-refresh-interval="30">97%</span>
                                         </div>
                                     </div>
                                 </div>
