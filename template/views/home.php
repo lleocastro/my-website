@@ -207,7 +207,7 @@
                             <article class="service wow fadeInUp" data-wow-delay="1100ms">
                                 <img title="Segurança" src="<?php echo asset('img/icons/firewall2.svg') ?>" alt="Segurança em sistemas web"/>
                                 <h2>Segurança</h2>
-                                <p>Precaução é crucial para resolver qualquer problema que possa surgir no ciclo de vida da aplicação.</p>
+                                <p>Todo o sistema/app é rigorosamente testado diversas vezes para encontrar e corrigir possíveis falhas e erros.</p>
                             </article>
                         </div>
                     </div>
@@ -441,11 +441,11 @@
         <a id="to-action"></a>
         <div class="container-full to-action">
             <section class="container container-space wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
-                <div class="line line-space">
+                <div class="line">
                     <header class="collist">
-                        <h1 class="no-margin">Orçamento Rápido</h1>
+                        <h1 class="no-margin">Bora Bater um Papo?</h1>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo.</p>
+                        <p class="tagline">Deixe seu email para que eu possa entrar em contato com você, assim trocamos algumas ideias sobre o projeto...</p>
                     </header>
                 </div>
                 <div class="line">
