@@ -109,7 +109,7 @@
         </section>
         <!-- CALL TO ACTION -->
         <a id="to-action"></a>
-        <div class="container-full backimage to-action" style="background-image: url(<?php echo asset('img/pexels-photo-30776.jpg') ?>)">
+        <div id="oBdy" class="container-full backimage to-action" style="background-image: url(<?php echo asset('img/pexels-photo-30776.jpg') ?>)" onload="oBdy.style.backgroundAttachment = 'fixed'">
             <div class="lightbox">
                 <section class="container container-space">
                     <div class="line">
