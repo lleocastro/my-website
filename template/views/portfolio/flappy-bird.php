@@ -36,7 +36,7 @@
                         <h2>Sobre o Desenvolvimento</h2>
                         <p>Bom, como já disse antes, esse jogo foi densenvolvido seguindo aulas de um mini curso sobre desenvolvimento de jogos para web, onde o objetivo era utilizar as <em class="text-normal">tecnologias web</em> para implementar a lógica do jogo.</p>
                         <p>Ele foi desenvolvido basicamente com <em class="text-normal">HTML5</em>, <em class="text-normal">CSS3</em>, <em class="text-normal">Javascript</em> e algumas bibliotecas para reproduzir os sons do game.</p>
-                        <p><strong>Infelizmente esse jogo não funciona corretamente em dispositivos moveis (tablets e smartphones) por uma pequena incompatibilidades com algumas bibliotecas e algumas ações do jogo</strong>.</p>
+                        <p><strong>Infelizmente esse jogo não funciona corretamente em dispositivos moveis (tablets e smartphones) por uma pequena incompatibilidade com algumas bibliotecas e com algumas ações do jogo</strong>.</p>
                         <a title="Entrar no site do jogo" href="https://lleocastro.github.io/flappy-bird" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">play_arrow</i>
                             Bora jogar?

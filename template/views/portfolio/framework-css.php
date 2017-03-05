@@ -36,7 +36,7 @@
                         <h2>Sobre a Ferramenta</h2>
                         <p>Estou desenvolvendo esse framework para suprir uma necessidade minha de ter um bootstrap CSS flexivel e facilmente customizavel.</p>
                         <p>Basicamente o "<a title="Framework" href="https://github.com/lleocastro/bootstylle" rel="nofollow">Bootstylle</a>" possui varios componentes pré estilizados possibilitando estilizar efetivamente o componente por projeto, o que me permite <em class="text-normal">desenvolver sites</em> unicos.</p>
-                        <p>Toda a interface do meu site "<a title="Home page" href="<?php echo route('/') ?>">leobcastro.com</a>" foi desenvolvida com o Bootstylle. Ele me fornece tudo que preciso para criar sites fluidos e responsivos (acessivel a dispositivos móveis).</p>
+                        <p>Toda a interface do meu site "<a title="Home page" href="<?php echo route('/') ?>">leobcastro.com.br</a>" foi desenvolvida com o Bootstylle. Ele me fornece tudo que preciso para criar sites fluidos e responsivos (acessivel a dispositivos móveis).</p>
                         <a title="Ir para a página do projeto" href="https://github.com/lleocastro/bootstylle" rel="nofollow" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">visibility</i>
                             Ver no Github

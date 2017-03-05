@@ -35,7 +35,7 @@
                     <div class="m6col col-space">
                         <h2>Sobre o Projeto</h2>
                         <p>Este é um projeto antigo, meu, onde o objetivo era aplicar técnicas de <em class="text-normal">SEO</em> e <em class="text-normal">marketing digital</em> (como palavras chave, <em class="text-normal">captura de emails</em>, elementos estratégicamente posicionados para gerar mais conversões, etc...) para fins de testes.</p>
-                        <p>Sucesso! Veja meu site (<a title="Ir para o portfólio do projeto" href="<?php echo route('/portfolio/leobcastro') ?>">leobastro.com</a>) :p</p>
+                        <p>Sucesso! Veja meu site (<a title="Ir para o portfólio do projeto" href="<?php echo route('/portfolio/leobcastro') ?>">leobastro.com.br</a>) :p</p>
                         <a title="Entrar no site da Prisme" class="btn btn-light" href="https://lleocastro.github.io/developer-agency-template" rel="nofollow" role="button">
                             <i class="material-icons" style="vertical-align: -29%">web</i>
                             Visitar o site
