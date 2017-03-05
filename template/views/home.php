@@ -130,31 +130,24 @@
                         </div>
                         <div class="collist col-space social-links">
                             <ul>
-                                <li>
-                                    <a title="Me siga no Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
-                                        <img title="Google Plus" src="<?php echo asset('img/icons/google-plus2.svg') ?>" alt="Google plus pessoal de Léo B. Castro"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a title="Me siga no LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
-                                        <img title="LinkedIn" src="<?php echo asset('img/icons/linkedin2.svg') ?>" alt="LinkedIn pessoal de Léo B. Castro"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a title="Me siga no Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
-                                        <img title="Instagram" src="<?php echo asset('img/icons/instagram2.svg') ?>" alt="Instagram pessoal de Léo B. Castro"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a title="Me siga no Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
-                                        <img title="Facebook" src="<?php echo asset('img/icons/facebook2.svg') ?>" alt="Facebook pessoal de Léo B. Castro"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a title="Me siga no Github" rel="nofollow" href="https://github.com/lleocastro">
-                                        <img title="Github" src="<?php echo asset('img/icons/github2.svg') ?>" alt="Github pessoal de Léo B. Castro"/>
-                                    </a>
-                                </li>
+                                <li><a title="Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
+                                        <img title="Me siga no Google Plus" src="<?php echo asset('img/icons/google-plus2.svg') ?>" alt="Google plus pessoal de Léo B. Castro"/>
+                                    </a></li>
+                                <li><a title="LinkedIn" rel="nofollow" href="https://www.linkedin.com/in/leobcastro">
+                                        <img title="Me siga no LinkedIn" src="<?php echo asset('img/icons/linkedin2.svg') ?>" alt="LinkedIn pessoal de Léo B. Castro"/>
+                                    </a></li>
+                                <li><a title="Spotify" rel="nofollow" href="https://open.spotify.com/user/12143025577">
+                                        <img title="Me siga no Spotify" src="<?php echo asset('img/icons/spotify.svg') ?>" alt="Meu perfil no Spotify"/>
+                                    </a></li>
+                                <li><a title="Instagram" rel="nofollow" href="https://www.instagram.com/leocastro94">
+                                        <img title="Me siga no Instagram" src="<?php echo asset('img/icons/instagram2.svg') ?>" alt="Instagram de Léo B. Castro"/>
+                                    </a></li>
+                                <li><a title="Facebook" rel="nofollow" href="https://www.facebook.com/leobcastro94">
+                                        <img title="Me siga no Facebook" src="<?php echo asset('img/icons/facebook2.svg') ?>" alt="Facebook pessoal de Léo B. Castro"/>
+                                    </a></li>
+                                <li><a title="Github" rel="nofollow" href="https://github.com/lleocastro">
+                                        <img title="Me siga no Github" src="<?php echo asset('img/icons/github2.svg') ?>" alt="Perfil no Github de Léo B. Castro"/>
+                                    </a></li>
                             </ul>
                         </div>
                         <a title="Baixar currículo de Léo B. Castro" href="<?php echo route('/download/curriculo') ?>" class="btn btn-transparent" role="button" download>
