@@ -38,9 +38,10 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
     <link rel="stylesheet" href="<?php echo asset('css/app.min.css') ?>"/>
-    <link rel="stylesheet" href="<?php echo asset('css/toastr.min.css') ?>"/>
     <link rel="stylesheet" href="<?php echo asset('css/landing-page.min.css') ?>"/>
+    <link rel="stylesheet" href="<?php echo asset('css/animate.min.css') ?>"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="<?php echo asset('css/toastr.min.css') ?>"/>
     <link rel="shortcut icon" href="<?php echo asset('img/logo/logo-icon.ico') ?>"/>
 
     <?php echo ie_support_field() ?>
@@ -59,7 +60,7 @@
                             <img title="Logo" src="<?php echo asset('img/logo/logo-small.png') ?>" alt="Logo do site de desenvolvimento web do LEOBCASTRO"/>
                         </a>
                     </div>
-                    <a title="Contate Léo B. Castro" href="<?php echo route('/#contact-me') ?>" class="btn btn-default navbar-btn" role="button">
+                    <a title="Contate Léo B. Castro" href="<?php echo route('/#contact-me') ?>" class="btn btn-default navbar-btn wow pulse infinite" data-wow-delay="2800ms" role="button">
                         Contate-me!
                     </a>
                 </div>
@@ -139,7 +140,8 @@
     </main>
     <?php require_once (dirname(__DIR__) . '/layouts/includes/final-footer.php') ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
+    <script src="<?php echo asset('js/animations.min.js') ?>"></script>
     <script src="<?php echo asset('js/landing-page.min.js') ?>"></script>
+    <script src="<?php echo asset('js/toastr.min.js') ?>"></script>
 </body>
 </html>

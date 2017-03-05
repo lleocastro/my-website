@@ -17,6 +17,15 @@ jQuery(function($) {
         });
     });
 
+    // Active WOW
+    var wow = new WOW({
+        boxClass:     'wow',
+        animateClass: 'animated',
+        offset:       5,
+        mobile:       true,
+        live:         true
+    }).init();
+
     // Ajax Action Form
     $(document).ready(function() {
         $('#action-form').submit(function(event) {
