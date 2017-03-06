@@ -98,7 +98,7 @@
             <div class="lightbox center">
                 <header class="caption">
                     <h1>Léo B. <span>Castro</span></h1>
-                    <p class="tagline">Desenvolvedor Web, UX/UI Designer, Criativo</p>
+                    <p class="tagline">Desenvolvedor Web, Empreendedor, Criativo</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
                         <i class="material-icons" style="vertical-align: -29%">question_answer</i>
                         Contate-me
@@ -124,7 +124,7 @@
                             <header class="introduction">
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
-                                <p class="introduce"><em class="text-normal">Desenvolvedor Web Freelancer</em> / Empreendedor</p>
+                                <p class="introduce"><em class="text-normal">Desenvolvedor Web Freelancer</em> / Social Media</p>
                                 <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </header>
                         </div>
