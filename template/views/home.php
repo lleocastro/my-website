@@ -98,7 +98,7 @@
             <div class="lightbox center">
                 <header class="caption">
                     <h1>Léo B. <span>Castro</span></h1>
-                    <p class="tagline">Web Developer, UX/UI Designer, Creative</p>
+                    <p class="tagline">Desenvolvedor Web, UX/UI Designer, Criativo</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
                         <i class="material-icons" style="vertical-align: -29%">question_answer</i>
                         Contate-me
