@@ -175,14 +175,14 @@
                             <article class="service wow fadeInUp" data-wow-delay="500ms">
                                 <img title="Web design" src="<?php echo asset('img/icons/design.svg') ?>" alt="Criação de site e web design"/>
                                 <h2>Website</h2>
-                                <p>Cada layout é projetado pensando no usuário, levando em consideração a praticidade e a usabilidade.</p>
+                                <p>Cada interface é projetada pensando no usuário, levando em consideração a praticidade e a usabilidade.</p>
                             </article>
                         </div>
                         <div class="s6col">
                             <article class="service wow fadeInUp" data-wow-delay="900ms">
                                 <img title="Search Engine Optimization" src="<?php echo asset('img/icons/bar-chart.svg') ?>" alt="Otimização de site para rankear melhor em motores de busca"/>
                                 <h2>SEO/SMO</h2>
-                                <p>Toda a estrutura é otimizada para buscadores e redes sociais. Atraindo mais visitantes para o website.</p>
+                                <p>Toda a estrutura &nbsp;é&nbsp; otimizada para buscadores e redes sociais. Atraindo mais visitantes para o website.</p>
                             </article>
                         </div>
                     </div>
