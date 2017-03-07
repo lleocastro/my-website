@@ -421,7 +421,7 @@
                                 <div class="line line-space">
                                     <div class="collist">
                                         <h2>Seu Projeto</h2>
-                                        <p>Ainda não se convenceu? Ok! Clique aqui e leia mais sobre o que farei por você. <strong>Veja detalhes</strong>! 😜</p>
+                                        <p>Ainda não se convenceu? Ok! Clique aqui e leia mais sobre o que farei por você. <strong>Veja detalhes</strong>! 😄</p>
                                     </div>
                                 </div>
                             </article>
@@ -438,7 +438,7 @@
                     <header class="collist">
                         <h1 class="no-margin">Bora Bater um Papo?</h1>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Deixe seu email para que eu possa entrar em contato com você, assim trocamos algumas ideias sobre o projeto...</p>
+                        <p class="tagline">Deixe seu email para que eu possa entrar em contato com você, assim trocamos algumas ideias sobre o projeto.</p>
                     </header>
                 </div>
                 <div class="line">
