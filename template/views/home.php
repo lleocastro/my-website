@@ -125,7 +125,7 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce"><em class="text-normal">Desenvolvedor Web Freelancer</em> / Social Media</p>
-                                <p class="tagline intro">Olá, sou <em class="text-normal">webmaster</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
+                                <p class="tagline intro">Olá, sou <em class="text-normal">desenvolvedor web</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </header>
                         </div>
                         <div class="collist col-space social-links">
@@ -220,8 +220,8 @@
                     <div class="line">
                         <div class="s6col">
                             <div class="skills-left">
-                                <p>Sou <em class="text-normal">programador web</em>, tenho <?php echo date('Y') - 1994 ?> anos, cursei uma faculdade de análise e desenvolvimento de sistemas de 2015 a 2016, porém atuando na área desde 2014.</p>
-                                <p>Possuo experiência na área de <em class="text-normal">desenvolvimento web</em>, mas já desenvolvi para desktop (computadores) e android (smartphones e tablets).</p>
+                                <p>Sou <em class="text-normal">	desenvolvedor web freelancer</em>, tenho <?php echo date('Y') - 1994 ?> anos, cursei uma faculdade de análise e desenvolvimento de sistemas de 2015 a 2016, porém &nbsp; atuando na área desde 2014.</p>
+                                <p>Possuo experiência na área de desenvolvimento web, mas já desenvolvi para desktop (computadores) e android (smartphones e tablets).</p>
                                 <p>Atualmente programo em <em class="text-normal">PHP</em> com foco em desenvolver soluções e ferramentas para automatizar processos, objetivando aumentar a produtividade e gerar mais resultados.</p>
                             </div>
                         </div>
