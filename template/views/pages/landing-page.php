@@ -82,7 +82,7 @@
             <div class="line line-space">
                 <div class="collist">
                     <div class="fund">
-                        <strong>Ei</strong>! Ainda está com dúvidas? Não tem certeza se isso resolveria seu problema? Entre em <a title="Contate Léo B. Castro" href="<?php echo route('/#contact-me') ?>"><strong>contato</strong></a>! Vamos conversar. 😄
+                        Ainda está com dúvidas? Não tem certeza se uma solução web resolveria seu problema? Entre em <a title="Contate Léo B. Castro" href="<?php echo route('/#contact-me') ?>"><strong>CONTATO</strong></a>! Vamos conversar. 😄
                     </div>
                 </div>
             </div>
@@ -102,8 +102,8 @@
                 </div>
                 <div class="m4col col-space">
                     <div class="xcard">
-                        <h2>Suporte Gratuito 24h para Clientes</h2>
-                        <p>Estou sempre disposto a atender clientes da melhor forma possível, atendendo 24h por dia, 7 dias por semana. Além de correções de problemas que possam surgir o suporte também Inclui atualizações para novas versões e melhorias.</p>
+                        <h2>Suporte 24h para Meus Clientes</h2>
+                        <p>Atendo clientes da melhor forma possível, atendendo 24 horas por dia, 7 dias por semana. Fornecendo suporte rapido e eficiente para solucionar quaisquer problemas que possam surgir nos serviços e/ou produtos, como, sites, sistemas, aplicações, etc...</p>
                     </div>
                 </div>
             </div>
@@ -115,9 +115,9 @@
                 <section class="container container-space">
                     <div class="line">
                         <header class="collist">
-                            <h1 class="no-margin">Orçamento Rápido</h1>
+                            <h1 class="no-margin">Orçamento</h1>
                             <div class="heading-line" role="separator"></div>
-                            <p class="tagline">Deixe seu email para conversarmos um pouco sobre o projeto, antes de efetivamente marcarmos algo.</p>
+                            <p class="tagline">Se interessou por tudo que viu? Ok! Então, agora deixe seu email para conversarmos sobre a solução que irar alavancar seu negócio...</p>
                         </header>
                     </div>
                     <div class="line">
