@@ -1,20 +1,20 @@
-# Uncomment the following to prevent the httpoxy vulnerability
-# See: https://httpoxy.org/
-<IfModule mod_headers.c>
-    RequestHeader unset Proxy
-</IfModule>
+RewriteEngine on
 
-# Redirect all access to public folder
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://leobcastro.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://leobcastro.com.br$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.leobcastro.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.leobcastro.com.br$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://leobcastro.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://leobcastro.com.br$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.leobcastro.com.br/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.leobcastro.com.br$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp|pdf|svg)$ http://www.leobcastro.com.br [R,NC]
 
-# Redirect all access to public folder
-#<IfModule mod_rewrite.c>
-    #RewriteEngine on
-    #RewriteCond %{HTTP_HOST} ^leobcastro.com.br$ [NC,OR]
-    #RewriteCond %{HTTP_HOST} ^www.leobcastro.com.br$
-    #RewriteCond %{REQUEST_URI} !public/
-    #RewriteRule (.*) /public/$1 [L]
-#</IfModule>
+RewriteCond %{REQUEST_URI} !public/
+RewriteCond %{HTTP_HOST} ^leobcastro.com.br$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.leobcastro.com.br$
+RewriteRule (.*) /public/$1 [L]
+RewriteCond %{HTTP_HOST} ^leobcastro\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.leobcastro\.com\.br$
+RewriteRule ^public\/?$ "http\:\/\/leobcastro\.com\.br\/" [R=301,L]

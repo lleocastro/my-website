@@ -6,9 +6,56 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>http://leobcastro.com.br/</loc>
-        <lastmod>2017-03-04 12:22</lastmod>
+        <lastmod>2017-03-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
+    <url>
+        <loc>http://www.leobcastro.com.br/solucao-web</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/leobcastro</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>anual</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/flappy-bird</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/sistema-de-notas</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/framework-php</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/framework-css</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/agencia-web</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/portfolio/carregador-de-classes</loc>
+        <lastmod>2017-03-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>
