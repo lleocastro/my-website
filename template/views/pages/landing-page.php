@@ -82,7 +82,7 @@
             <div class="line line-space">
                 <div class="collist">
                     <div class="fund">
-                        Ainda está com dúvidas? Não tem certeza se uma solução web resolveria seu problema? Entre em <a title="Contate Léo B. Castro" href="<?php echo route('/#contact-me') ?>"><strong>CONTATO</strong></a>! Vamos conversar. 😄
+                        Ainda está com dúvidas? <strong>Não tem certeza se uma solução web resolveria seu problema?</strong> Entre em <a title="Contate Léo B. Castro" href="<?php echo route('/#contact-me') ?>"><strong>CONTATO</strong></a>! Vamos conversar. 😄
                     </div>
                 </div>
             </div>
