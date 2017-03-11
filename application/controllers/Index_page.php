@@ -97,12 +97,12 @@ class Index_page extends CI_Controller
                 ->save();
 
             // Sent to email too
-            sender(
-                $data['email'], $data['name'],
-                'leonardo_carvalho@outlook.com',
-               '['. $data['email'] . '] ' . $data['subject'],
-                $data['message']
-            );
+//            sender(
+//                $data['email'], $data['name'],
+//                'leonardo_carvalho@outlook.com',
+//               '['. $data['email'] . '] ' . $data['subject'],
+//                $data['message']
+//            );
 
             $return = [
                 'status' => true

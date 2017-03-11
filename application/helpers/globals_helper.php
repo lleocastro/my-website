@@ -159,11 +159,12 @@ if (!function_exists('analytics')) {
     function analytics()
     {
         $CI =& get_instance();
-        $CI->page_views->set_agent(filter_input(INPUT_SERVER, 'HTTP_USER_AGENT'))
-            ->set_addr(filter_input(INPUT_SERVER, 'REMOTE_ADDR'))
+        $CI->load->library('user_agent');
+        $CI->page_views->set_agent($CI->agent->agent_string())
+            ->set_addr($CI->input->ip_address())
             ->set_host(filter_input(INPUT_SERVER, 'HTTP_HOST'))
             ->set_route(base_url(uri_string()))
-            //->ignores(['127.0.0.1'])
+            ->ignores(['127.0.0.1'])
             ->save();
     }
 }
