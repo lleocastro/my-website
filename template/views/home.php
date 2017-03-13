@@ -1,10 +1,15 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
+<!--
+    Olá, curioso! :p
+    Esta só olhando ou também vai copiar? Kk
+    Qualquer dúvida entre em contado...
+-->
 <html lang="<?php echo $this->config->item('language') ?>" itemscope itemtype="https://schema.org/WebSite">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
+    <meta name="description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -14,14 +19,14 @@
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta itemprop="description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
-    <meta itemprop="image" content="<?php echo asset('img/social-share.jpg') ?>"/>
+    <meta itemprop="description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
+    <meta itemprop="image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta property="og:description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
+    <meta property="og:description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
+    <meta property="og:image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
     <meta property="og:image:width" content="800"/>
     <meta property="og:image:height" content="600"/>
@@ -31,8 +36,8 @@
 
     <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
-    <meta name="twitter:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
+    <meta name="twitter:description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
+    <meta name="twitter:image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
@@ -50,7 +55,7 @@
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Léo B. Castro",
-            "description": "Desenvolvedor de Soluções Web e Empreendedor",
+            "description": "Desenvolvedor Web Freelancer",
             "jobTitle": "Web Developer",
             "email": "<?php echo getenv('MAIL_USERNAME') ?>",
             "url": "<?php echo base_url(uri_string()) ?>",
@@ -59,7 +64,7 @@
         }
     </script>
 
-    <title>Léo B. Castro | Desenvolvedor Web Full-Stack - São José dos Campos</title>
+    <title>Léo B. Castro | Desenvolvedor Web Freelancer - São José dos Campos</title>
 </head>
 <body>
     <?php require_once ('layouts/includes/google-analytics.php') ?>
@@ -132,7 +137,7 @@
                                         js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
                                         fjs.parentNode.insertBefore(js, fjs);
                                     }(document, 'script', 'facebook-jssdk'));</script>
-                                <div class="fb-follow" data-href="https://www.facebook.com/leobcastro94" data-layout="standard" data-size="small" data-show-faces="true" style="padding-top: 5px !important; margin-bottom: -10px !important;"></div>
+                                <div class="fb-follow" data-href="https://www.facebook.com/leobcastro94" data-layout="standard" data-size="small" data-show-faces="true" style="padding-top: 6px !important; margin-bottom: -10px !important;"></div>
                                 <p class="tagline intro">Olá, sou <em class="text-normal">desenvolvedor web</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </header>
                         </div>
@@ -480,7 +485,7 @@
                                         <p><i class="material-icons" style="vertical-align: -29%">phone</i>
                                             Telefone
                                         </p>
-                                        <p class="no-paragraph">+55 (012) 991729408 (off)</p>
+                                        <p class="no-paragraph">+55 (012) 991729408 (<strong>off</strong>)</p>
                                         <p class="mini-text no-paragraph">(preferencial: WhatsApp ou E-mail)</p>
                                     </div>
                                 </div>
@@ -593,7 +598,9 @@
                     </div>
                 </div>
             </div>
-            <?php require_once ('layouts/includes/final-footer.php') ?>
+            <div class="container-full final-footer">
+                <p class="center">&copy; 2017 <?php echo getenv('APP_NAME') ?> - todos os direitos reservados.</p>
+            </div>
         </footer><!-- END FOOTER -->
     </main>
     <script>

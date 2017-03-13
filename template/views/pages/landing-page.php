@@ -14,13 +14,13 @@
 
     <meta itemprop="name" content="Desenvolvimento de Soluções Web - SJCampos"/>
     <meta itemprop="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
-    <meta itemprop="image" content="<?php echo asset('img/social-share.jpg') ?>"/>
+    <meta itemprop="image" content="<?php echo asset('img/web-solution-2.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Desenvolvimento de Soluções Web - SJCampos"/>
     <meta property="og:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
+    <meta property="og:image" content="<?php echo asset('img/web-solution-2.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
     <meta property="og:image:width" content="800"/>
     <meta property="og:image:height" content="600"/>
@@ -31,7 +31,7 @@
     <meta name="twitter:title" content="Desenvolvimento de Soluções Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
-    <meta name="twitter:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
+    <meta name="twitter:image" content="<?php echo asset('img/web-solution-2.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
