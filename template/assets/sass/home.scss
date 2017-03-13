@@ -531,10 +531,14 @@ html {
 }
 .contact-form input, .contact-form textarea {
     background-color: transparent !important;
-    color: #ffffff !important;
+    color: #f7f7f7 !important;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #B2B2B2 !important;
 }
 .contact-form label {
-    color: #ccc;
+    color: #CCCCCC;
 }
 .contact-form .btn {
     width: 100%;

@@ -477,7 +477,7 @@
                                         <p><i class="material-icons" style="vertical-align: -29%">email</i>
                                             E-mail
                                         </p>
-                                        <p class="no-paragraph">leobcastroinc@gmail.com</p>
+                                        <p class="no-paragraph">contato@leobcastro.com.br</p>
                                     </div>
                                 </div>
                                 <div class="line line-space">
