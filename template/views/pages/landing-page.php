@@ -4,23 +4,21 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
+    <meta name="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
 
-    <link rel="base" href="http://www.leobcastro.com.br"/>
-    <link rel="canonical" href="<?php echo base_url() ?>"/>
     <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Desenvolvimento de Soluções Web - SJCampos"/>
-    <meta itemprop="description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
+    <meta itemprop="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta itemprop="image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Desenvolvimento de Soluções Web - SJCampos"/>
-    <meta property="og:description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
+    <meta property="og:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
@@ -32,7 +30,7 @@
 
     <meta name="twitter:title" content="Desenvolvimento de Soluções Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Desenvolvimento focado em gerar resultados para clientes, com processos e técnicas de desenvolvimento 100% otimizadas para o mercado web nacional."/>
+    <meta name="twitter:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
     <meta name="twitter:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
@@ -50,7 +48,7 @@
 </head>
 <body>
     <?php require_once (dirname(__DIR__) . '/layouts/includes/google-analytics.php') ?>
-    <main class="container-full" role="main">
+    <main class="container-full">
         <header>
             <!-- NAVBAR -->
             <div class="navbar navbar-fixed navbar-default" role="navigation">

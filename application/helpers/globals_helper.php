@@ -164,7 +164,7 @@ if (!function_exists('analytics')) {
             ->set_addr($CI->input->ip_address())
             ->set_host(filter_input(INPUT_SERVER, 'HTTP_HOST'))
             ->set_route(base_url(uri_string()))
-            ->ignores(['127.0.0.1'])
+            ->ignores(['127.0.0.1', '177.189.252.180', '177.139.194.143'])
             ->save();
     }
 }

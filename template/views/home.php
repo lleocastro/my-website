@@ -4,23 +4,22 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
+    <meta name="description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
 
-    <link rel="base" href="http://www.leobcastro.com.br"/>
     <link rel="canonical" href="<?php echo base_url() ?>"/>
     <link rel="sitemap" type="application/xml" href="<?php echo $this->config->item('base_url') ?>sitemap.xml"/>
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta itemprop="description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
+    <meta itemprop="description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
     <meta itemprop="image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta property="og:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
+    <meta property="og:description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
@@ -32,7 +31,7 @@
 
     <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Como atrair mais clientes? Essa é a principal pergunta que me fazem. Quer saber como ter mais clientes, lucro e tempo? Conheça meu trabalho!"/>
+    <meta name="twitter:description" content="Desenvolvimento focado em criar soluções e ferramentas para automatizar processos objetivando aumentar a produtividade e gerar mais resultados. Conheça meu trabalho!"/>
     <meta name="twitter:image" content="<?php echo asset('img/social-share.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
@@ -60,11 +59,11 @@
         }
     </script>
 
-    <title>Léo B. Castro | Desenvolvimento de Soluções Web - São José dos Campos</title>
+    <title>Léo B. Castro | Desenvolvedor Web Full-Stack - São José dos Campos</title>
 </head>
 <body>
     <?php require_once ('layouts/includes/google-analytics.php') ?>
-    <main class="container-full" role="main">
+    <main class="container-full">
         <header>
             <!-- NAVBAR -->
             <div class="navbar navbar-fixed navbar-default" role="navigation">
@@ -125,10 +124,20 @@
                                 <h4 class="no-margin">Resumo</h4>
                                 <div class="heading-line" role="separator"></div>
                                 <p class="introduce"><em class="text-normal">Desenvolvedor Web Freelancer</em> / Social Media</p>
+                                <div id="fb-root"></div>
+                                <script>(function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-follow" data-href="https://www.facebook.com/leobcastro94" data-layout="standard" data-size="small" data-show-faces="true" style="padding-top: 5px !important; margin-bottom: -10px !important;"></div>
                                 <p class="tagline intro">Olá, sou <em class="text-normal">desenvolvedor web</em> full-stack de <em class="text-normal">São José dos Campos</em> - SP. Atualmente trabalho principalmente com a criação de soluções web e com o desenvolvimento de ferramentas open source para o auxílio 'interno". Cursei brevemente uma faculdade de análise e desenvolvimento de sistemas e fiz/faço varios outros cursos como <em class="text-normal">UX/UI design</em>, <em class="text-normal">marketing digital</em>, <em class="text-normal">performance web</em>, etc...</p>
                             </header>
                         </div>
                         <div class="collist col-space social-links">
+                            <p><strong>Me persiga nas redes sociais 😜</strong></p>
                             <ul>
                                 <li><a title="Google Plus" rel="nofollow" href="https://plus.google.com/u/0/113635065418336259527">
                                         <img title="Me siga no Google Plus" src="<?php echo asset('img/icons/google-plus2.svg') ?>" alt="Google plus pessoal de Léo B. Castro"/>
@@ -410,23 +419,6 @@
                             </article>
                         </a>
                     </div>
-                    <div class="s6col m4col col-space">
-                        <a href="<?php echo route('/solucao-web') ?>" class="scroll">
-                            <article class="portfolio-card wow fadeIn" data-wow-duration="3000ms" data-wow-delay="2000ms">
-                                <div class="line">
-                                    <div class="collist">
-                                        <img title="Posição premium" src="<?php echo asset('img/your-project.jpg') ?>" alt="Premio de melhor posição"/>
-                                    </div>
-                                </div>
-                                <div class="line line-space">
-                                    <div class="collist">
-                                        <h2>Seu Projeto</h2>
-                                        <p>Tem algum projeto em mente? <strong>Quer mais resultados em seu negócio?</strong> Veja mais detalhes aqui!</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
                 </div>
             </section>
         </div><!-- END PORTFÓLIO -->
@@ -488,7 +480,7 @@
                                         <p><i class="material-icons" style="vertical-align: -29%">phone</i>
                                             Telefone
                                         </p>
-                                        <p class="no-paragraph">+55 (012) 991729408</p>
+                                        <p class="no-paragraph">+55 (012) 991729408 (off)</p>
                                         <p class="mini-text no-paragraph">(preferencial: WhatsApp ou E-mail)</p>
                                     </div>
                                 </div>
@@ -507,7 +499,7 @@
                                             Atendimento
                                         </p>
                                         <p class="no-paragraph">De segunda-feira à sexta-feira</p>
-                                        <p class="no-paragraph">Das 08:00 as 17:00 horas</p>
+                                        <p class="no-paragraph">Das 09:00 as 17:00 horas</p>
                                     </div>
                                 </div>
                             </div>
