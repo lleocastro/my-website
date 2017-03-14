@@ -24,7 +24,7 @@
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta property="og:description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
+    <meta property="og:description" content="Sou webmaster full-stack de São José dos Campos - SP. Atualmente trabalho com o desenvolvimento de soluções web e..."/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
@@ -102,7 +102,7 @@
             <div class="lightbox center">
                 <header class="caption">
                     <h1>Léo B. <span>Castro</span></h1>
-                    <p class="tagline">Desenvolvedor Web, Empreendedor, Criativo</p>
+                    <p class="tagline">Desenvolvedor Web, UX/UI Designer, Criativo</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
                         <i class="material-icons" style="vertical-align: -29%">question_answer</i>
                         Contate-me
