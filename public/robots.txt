@@ -7,5 +7,11 @@ Disallow: /*.jpeg$
 Disallow: /*.svg$
 Disallow: /*.png$
 Disallow: /*.gif$
+Disallow: /portfolio/
+Disallow: /dashboard
+Disallow: /message/store
+Disallow: /email/store
+Disallow: /creditos
+Disallow: /trabalhe-comigo
 
 Sitemap: http://www.leobcastro.com.br/sitemap.xml

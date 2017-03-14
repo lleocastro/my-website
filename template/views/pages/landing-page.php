@@ -125,7 +125,7 @@
                                 <?php echo csrf_field('action_token') ?>
                                 <button id="action-submit" type="submit" class="btn btn-default">
                                     <i class="material-icons" style="vertical-align: -29%">verified_user</i>
-                                    Cadastrar
+                                    Continuar
                                 </button>
                             </form>
                             <p class="mini-text">Também odeio spam!</p>

@@ -64,7 +64,7 @@ jQuery(function($) {
                     } else {
                         $("#action-submit").html(
                             '<i class="material-icons" style="vertical-align: -29%">verified_user</i>'
-                            + ' Cadastrar'
+                            + ' Continuar'
                         );
 
                         data.errors.forEach(function(error) {
