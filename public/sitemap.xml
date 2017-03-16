@@ -13,7 +13,13 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
     <url>
         <loc>http://www.leobcastro.com.br/solucao-web</loc>
         <lastmod>2017-03-08</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.leobcastro.com.br/curriculo</loc>
+        <lastmod>2017-03-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>
