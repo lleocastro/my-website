@@ -471,7 +471,7 @@
             <section class="container container-space wow fadeIn" data-wow-duration="1000ms" data-wow-delay="500ms">
                 <div class="line">
                     <header class="collist">
-                        <h1 class="no-margin">Bora Bater um Papo?</h1>
+                        <h1 class="no-margin">Bora Conversar?</h1>
                         <div class="heading-line" role="separator"></div>
                         <p class="tagline">Deixe seu email para que eu possa entrar em contato com você, assim trocamos algumas ideias sobre o projeto.</p>
                     </header>
@@ -557,23 +557,23 @@
                                     <div class="line">
                                         <div class="m6col col-space">
                                             <label for="name">Nome:</label>
-                                            <input id="name" name="name" class="form" type="text" placeholder="Seu nome"/>
+                                            <input id="name" name="name" class="form" type="text" placeholder="Como vc se chama?"/>
                                         </div>
                                         <div class="m6col col-space">
                                             <label for="email">E-mail:</label>
-                                            <input id="email" name="email" class="form" type="email" placeholder="Principal email"/>
+                                            <input id="email" name="email" class="form" type="email" placeholder="Seu principal email"/>
                                         </div>
                                     </div>
                                     <div class="line">
                                         <div class="collist col-space">
                                             <label for="subject">Assunto:</label>
-                                            <input id="subject" name="subject" class="form" type="text" placeholder="Assunto"/>
+                                            <input id="subject" name="subject" class="form" type="text" placeholder="Ex: Tenho um projeto em mente! Vamos conversar?"/>
                                         </div>
                                     </div>
                                     <div class="line">
                                         <div class="collist col-space">
                                             <label for="message">Mensagem:</label>
-                                            <textarea id="message" name="message" class="form" placeholder="Sua mensagem"></textarea>
+                                            <textarea id="message" name="message" class="form" placeholder="Dê uma breve descrição sobre..."></textarea>
                                         </div>
                                     </div>
                                     <div class="line">
