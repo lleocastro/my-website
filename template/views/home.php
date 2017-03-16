@@ -9,7 +9,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta charset="<?php echo $this->config->item('charset') ?>">
-    <meta name="description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
+    <meta name="description" content="Desenvolvimento soluções web para empresas e negócios, como, criação de sites, automação de processos, aplicações web, otimização para SEO, estratégias de marketing e muito mais."/>
     <meta name="author" content="Léo B. Castro"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="index, follow"/>
@@ -19,12 +19,12 @@
     <link rel="publisher" href="https://plus.google.com/u/0/113635065418336259527"/>
 
     <meta itemprop="name" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta itemprop="description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
+    <meta itemprop="description" content="Desenvolvimento soluções web para empresas e negócios, como, criação de sites, automação de processos, aplicações web, otimização para SEO, estratégias de marketing e muito mais."/>
     <meta itemprop="image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta itemprop="url" content="<?php echo base_url(uri_string()) ?>"/>
 
     <meta property="og:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
-    <meta property="og:description" content="Sou webmaster full-stack de São José dos Campos - SP. Atualmente trabalho com o desenvolvimento de soluções web e..."/>
+    <meta property="og:description" content="Desenvolvimento soluções web para empresas e negócios, como, criação de sites, automação de processos, aplicações web, otimização para SEO, estratégias de marketing e muito mais."/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta property="og:image:type" content="image/jpg"/>
@@ -36,7 +36,7 @@
 
     <meta name="twitter:title" content="Léo B. Castro | Desenvolvedor Web - SJCampos"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:description" content="Desenvolvo soluções sob medida para empresas e negócios, como, criação de sites, desenvolvimento de sistemas, aplicações web, otimização para SEO. Veja mais!"/>
+    <meta name="twitter:description" content="Desenvolvimento soluções web para empresas e negócios, como, criação de sites, automação de processos, aplicações web, otimização para SEO, estratégias de marketing e muito mais."/>
     <meta name="twitter:image" content="<?php echo asset('img/social-share-intro.jpg') ?>"/>
     <meta name="twitter:url" content="@leobcastro94"/>
 
@@ -102,7 +102,7 @@
             <div class="lightbox center">
                 <header class="caption">
                     <h1>Léo B. <span>Castro</span></h1>
-                    <p class="tagline">Desenvolvedor Web, UX/UI Designer, Criativo</p>
+                    <p class="tagline">Desenvolvedor Web, UX/UI Designer, Social Media</p>
                     <a title="Contate-me" class="btn btn-default wow pulse infinite scroll" href="#contact-me" data-wow-delay="2100ms" role="button">
                         <i class="material-icons" style="vertical-align: -29%">question_answer</i>
                         Contate-me

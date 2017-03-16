@@ -36,7 +36,7 @@
                         <h2>Detalhes Técnicos</h2>
                         <p>O layout é simples e amigável (<a title="Ir para o portfólio do projeto" href="<?php echo route('portfolio/framework-css') ?>">desenvolvido com meu framework CSS</a>) para que qualquer pessoal possa navegar sem dificuldades, além disso, toda a estrutura é semanticamente correta com uma arquitetura de informações bem organizadas para tornar o site mais pratico de usar.</p>
                         <p><strong>"Levo muito a sério qualidade e performance nas aplicações, mas você já deve ter notado isso no meu site, certo?</strong> 😜</p>
-                        <p>Não basta apenas ser "bonito" e rapido, também tem que gerar resultados, por isso tem todo um trabalho de <em class="text-normal">SEO</em> e marketing digital em cima dele. A final, foi por esse trabalho que você me encontrou...</p>
+                        <p>Não basta apenas ser "bonitinho" e rapido, também tem que gerar resultados, por isso tem todo um trabalho de <em class="text-normal">SEO</em> e marketing digital em cima dele. A final, foi por esse trabalho que você me encontrou ;)</p>
                         <a title="Voltar para a home do site" href="<?php echo route('/') ?>" class="btn btn-light" role="button">
                             <i class="material-icons" style="vertical-align: -29%">replay</i>
                             Vamos Lá de Novo?
