@@ -125,7 +125,7 @@ jQuery(function($) {
                         );
 
                         data.errors.forEach(function(error) {
-                            toastr.warning(error);
+                            toastr.info(error);
                         });
 
                         document.getElementById("action_token").setAttribute("value", data.token);
@@ -187,7 +187,7 @@ jQuery(function($) {
                         );
 
                         data.errors.forEach(function(error, index) {
-                            toastr.warning(error);
+                            toastr.info(error);
                         });
 
                         document.getElementById("message_token").setAttribute("value", data.token);
