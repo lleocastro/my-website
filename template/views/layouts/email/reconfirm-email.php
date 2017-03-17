@@ -9,7 +9,8 @@ problemas na sua empresa/negócio.
 
 - Um sistema para automatizar processos/tarefas, e consequentemente diminuir custos operacionais.
 - Conquistar novos clientes e manter contato com os atuais através de um blog, portal, site, email marketing ou newsletter.
-- Planejamento web completo.
+- Planejamento web completo. (recomendado)
+
 - etc..
 
 

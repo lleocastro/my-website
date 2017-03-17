@@ -9,11 +9,12 @@ colher mais alguns detalhes para montar um briefing da solução para que você 
 
 <strong>Que tipo de solução você tem em mente?</strong>
 
+- Quero apoio em um projeto pessoal/da minha empresa.
 - Automatizar processos na minha empresa/negócio.
 - Meu atual sistema esta lento/desatualizado.
 - Quero ser encontrado em mecanismos de busca.
-- Planejamento web completo.
 - Um site para minha empresa/negócio.
+- Planejamento web completo.
 - Não tenho certeza.
 
 

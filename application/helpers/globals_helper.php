@@ -297,7 +297,7 @@ if (!function_exists('day_message')) {
 
         if (($data >= 1) && ($data <= 12)) {
             return 'Bom dia';
-        } elseif (($data >= 12) && ($data <= 18)) {
+        } elseif (($data > 12) && ($data < 18)) {
             return 'Boa tarde';
         } elseif (($data >= 18) && ($data <= 24)) {
             return 'Boa noite';
