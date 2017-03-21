@@ -179,7 +179,7 @@
                 <header class="collist col-space profile-header wow fadeIn" data-wow-delay="300ms">
                     <h1 class="no-margin">O que faço de melhor</h1>
                     <div class="heading-line" role="separator"></div>
-                    <p class="tagline"><strong>"</strong><em>Criar um site é apenas o começo. Um planejamento estratégico é essencial para que o projeto se destaque e gere o resultado esperado.</em></p>
+                    <p class="tagline">Como desenvolvedor web full-stack procuro sempre entregar soluções de qualidade e com alta performance, independente da tecnologia utilizada.</p>
                 </header>
             </div>
             <div class="line">
@@ -321,7 +321,7 @@
                     <header class="collist">
                         <h1 class="no-margin">Meu Portfólio</h1>
                         <div class="heading-line" role="separator"></div>
-                        <p class="tagline">Veja alguns dos meus projetos <strong>mais recentes</strong>, que vai desde criar sites, <em class="text-normal">desenvolver sistemas web</em> a fazer alguns simples games.</p>
+                        <p class="tagline">Alguns dos meus projetos <strong>mais recentes</strong> como desenvolvedor web freelancer, que vai desde criar sites, desenvolver sistemas a fazer alguns games.</p>
                         <p class="mini-text">*Clique no projeto para mais informações!</p>
                     </header>
                 </div>
