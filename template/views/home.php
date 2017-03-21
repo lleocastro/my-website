@@ -619,7 +619,7 @@
                         </div>
                         <div class="s5col mobile-text-center">
                             <h6>Já que chegou até aqui..</h6>
-                            <p>Uau! Se você chegou até aqui e não deixou seu email ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um <a title="Feedback" href="#contact-me" class="scroll">feedback</a> para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
+                            <p>Uau! Se você chegou até aqui e não deixou seu email ou não vai entrar em contato, talvez possa me dizer o porquê? Me de um <a title="Feedback" href="#contact-me" class="scroll" style="color: #2e6da4;">feedback</a> para que eu possa melhorar ou esclarecer algum mal entendido. :)</p>
                         </div>
                     </div>
                     <div class="line line-space mobile-text-center">
